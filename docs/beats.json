@@ -1,0 +1,760 @@
+{
+  "project": "01_信息茧房",
+  "version": "v3.0-visual-led-animatic-dual-mode",
+  "hook_locked": "Option A (LinuxDO #3098643 同一张沙发上的两个平行末日)",
+  "bpm": 75.0,
+  "fps": 30,
+  "beat_sec": 0.8,
+  "bar_sec": 3.2,
+  "shot_bars": 2,
+  "shot_sec": 6.4,
+  "total_bars": 40,
+  "total_shots": 20,
+  "total_duration_sec": 128.0,
+  "total_frames": 3840,
+  "audio_master": "../03_配乐精析与卡点试听/bgm_composed/01_微光与破茧_Komorebi_x_开智融合原声.mp3",
+  "shots": [
+    {
+      "id": "S01",
+      "act": 1,
+      "actName": "第一幕：平行沙发与阴阳评论区",
+      "bars": "Bar 1-2",
+      "t0": 0.0,
+      "t1": 6.4,
+      "role": "起钩 (Hook)",
+      "container": "左主右留白分屏",
+      "l1": "相距 0.20 m ｜ 左屏：顺转剖 · 羊水栓塞 · 进产房留密码",
+      "l2_a": "同一张沙发，相距不到 20 厘米",
+      "l2_b": "未婚妻刷完产房事故，吓得想留银行卡密码",
+      "visual_action": "暖光双人沙发俯拍标尺拉出 0.20 m → 左侧升起冷青色手机视窗，定格 LinuxDO #3098643 原帖词条“顺转剖 · 羊水栓塞 · 进产房前留银行卡密码”",
+      "sfx": "轻柔胶片开机声",
+      "f0": 0,
+      "f1": 192,
+      "duration_s": 6.4,
+      "duration_frames": 192,
+      "stagger_windows": {
+        "phase1_beatA_l1_l2a_in": 0.2,
+        "phase2_watch_canvas_window": [
+          1.4,
+          3.2
+        ],
+        "phase3_beatB_downbeat_l2b_in": 3.2,
+        "phase4_hold_breath_window": [
+          4.6,
+          6.4
+        ]
+      },
+      "medium_id": "I",
+      "medium_name": "深夜胡桃木客厅",
+      "intrinsic_t0": 0.0,
+      "intrinsic_t1": 5.8,
+      "intrinsic_duration_s": 5.8,
+      "intrinsic_hold_s": 1.86
+    },
+    {
+      "id": "S02",
+      "act": 1,
+      "actName": "第一幕：平行沙发与阴阳评论区",
+      "bars": "Bar 3-4",
+      "t0": 6.4,
+      "t1": 12.8,
+      "role": "对照 (Contrast)",
+      "container": "双栏对称反差卡",
+      "l1": "右屏：娃非亲生 · 转移财产骗彩礼 → 0.20 m 裂为 ∞",
+      "l2_a": "男友拿手机一对比，后背瞬间发凉",
+      "l2_b": "紧挨着坐，指尖下却是两个平行末日",
+      "visual_action": "相机横移激活右侧暗红手机视窗，定格“养娃非亲生 / 转移财产骗彩礼” → 中央 0.20 m 标尺裂开深渊变为 ∞",
+      "sfx": "低频脉冲刷卡声",
+      "f0": 192,
+      "f1": 384,
+      "duration_s": 6.4,
+      "duration_frames": 192,
+      "stagger_windows": {
+        "phase1_beatA_l1_l2a_in": 6.6,
+        "phase2_watch_canvas_window": [
+          7.8,
+          9.6
+        ],
+        "phase3_beatB_downbeat_l2b_in": 9.6,
+        "phase4_hold_breath_window": [
+          11.0,
+          12.8
+        ]
+      },
+      "medium_id": "I",
+      "medium_name": "深夜胡桃木客厅",
+      "intrinsic_t0": 5.8,
+      "intrinsic_t1": 10.8,
+      "intrinsic_duration_s": 5.0,
+      "intrinsic_hold_s": 1.6
+    },
+    {
+      "id": "S03",
+      "act": 1,
+      "actName": "第一幕：平行沙发与阴阳评论区",
+      "bars": "Bar 5-6",
+      "t0": 12.8,
+      "t1": 19.2,
+      "role": "二阶升级 (Escalation)",
+      "container": "同顶异底拉链卡",
+      "l1": "同一视频链接 → 男前排：无理取闹 vs 女前排：冷暴力分手",
+      "l2_a": "哪怕两人点开完全同一条吵架视频",
+      "l2_b": "连前排高赞评论，都切成了阴阳两界",
+      "visual_action": "两块手机屏合拢显示同一 BV12P41187fs 视频，下半部评论区像拉链一样左右劈开",
+      "sfx": "whoosh_deep.wav",
+      "f0": 384,
+      "f1": 576,
+      "duration_s": 6.4,
+      "duration_frames": 192,
+      "stagger_windows": {
+        "phase1_beatA_l1_l2a_in": 13.0,
+        "phase2_watch_canvas_window": [
+          14.2,
+          16.0
+        ],
+        "phase3_beatB_downbeat_l2b_in": 16.0,
+        "phase4_hold_breath_window": [
+          17.4,
+          19.2
+        ]
+      },
+      "medium_id": "I",
+      "medium_name": "深夜胡桃木客厅",
+      "intrinsic_t0": 10.8,
+      "intrinsic_t1": 16.8,
+      "intrinsic_duration_s": 6.0,
+      "intrinsic_hold_s": 1.92
+    },
+    {
+      "id": "S04",
+      "act": 2,
+      "actName": "第二幕：打破“算法替罪羊”迷思",
+      "bars": "Bar 7-8",
+      "t0": 19.2,
+      "t1": 25.6,
+      "role": "第一重转折 (Twist 1 Setup)",
+      "container": "中心档案纪年台",
+      "l1": "2006《Infotopia》 ｜ 桑斯坦首提“信息茧房”",
+      "l2_a": "我们总习惯把这一切怪罪给算法",
+      "l2_b": "但 2006 年这词诞生时，还没有短视频",
+      "visual_action": "评论区分割线化作时间轴倒拨至 2006 → 落下桑斯坦《Infotopia》档案卡并盖下中文铭牌“信息茧房概念首提”，旁侧短视频图标打斜杠",
+      "sfx": "机械齿轮倒拨声",
+      "f0": 576,
+      "f1": 768,
+      "duration_s": 6.4,
+      "duration_frames": 192,
+      "stagger_windows": {
+        "phase1_beatA_l1_l2a_in": 19.4,
+        "phase2_watch_canvas_window": [
+          20.6,
+          22.4
+        ],
+        "phase3_beatB_downbeat_l2b_in": 22.4,
+        "phase4_hold_breath_window": [
+          23.8,
+          25.6
+        ]
+      },
+      "medium_id": "II",
+      "medium_name": "拓印学术档案纸",
+      "intrinsic_t0": 16.8,
+      "intrinsic_t1": 22.2,
+      "intrinsic_duration_s": 5.4,
+      "intrinsic_hold_s": 1.73
+    },
+    {
+      "id": "S05",
+      "act": 2,
+      "actName": "第二幕：打破“算法替罪羊”迷思",
+      "bars": "Bar 9-10",
+      "t0": 25.6,
+      "t1": 32.0,
+      "role": "概念正本清源 (Reframing)",
+      "container": "书页微距荧光划线",
+      "l1": "病根：选择性接触 ｜ 蚕主动吐丝自缚",
+      "l2_a": "桑斯坦当年警告的，其实是人的本能",
+      "l2_b": "我们天生偏爱顺耳话，主动吐丝自缚",
+      "visual_action": "推近书页内部，荧光笔扫亮 Selective Exposure（选择性接触） → 文字线条向上缠绕成蚕茧",
+      "sfx": "书页翻动与荧光笔划线声",
+      "f0": 768,
+      "f1": 960,
+      "duration_s": 6.4,
+      "duration_frames": 192,
+      "stagger_windows": {
+        "phase1_beatA_l1_l2a_in": 25.8,
+        "phase2_watch_canvas_window": [
+          27.0,
+          28.8
+        ],
+        "phase3_beatB_downbeat_l2b_in": 28.8,
+        "phase4_hold_breath_window": [
+          30.2,
+          32.0
+        ]
+      },
+      "medium_id": "II",
+      "medium_name": "拓印学术档案纸",
+      "intrinsic_t0": 22.2,
+      "intrinsic_t1": 28.0,
+      "intrinsic_duration_s": 5.8,
+      "intrinsic_hold_s": 1.86
+    },
+    {
+      "id": "S06",
+      "act": 2,
+      "actName": "第二幕：打破“算法替罪羊”迷思",
+      "bars": "Bar 11-12",
+      "t0": 32.0,
+      "t1": 38.4,
+      "role": "第一重认知颠覆 (Steelmanning)",
+      "container": "三柱实测对比图",
+      "l1": "阿姆斯特丹大学实测 ｜ 多样性：协同过滤 > 朋友圈",
+      "l2_a": "现实朋友圈往往同质抱团、视野最窄",
+      "l2_b": "协同过滤反而能借陌生人跨界拓宽视野",
+      "visual_action": "蚕丝展开立起 Möller et al. (2018) 三根实测柱：熟人朋友圈最矮，协同过滤最高并向外弹出跨界节点",
+      "sfx": "柔和钟琴泛音点亮",
+      "f0": 960,
+      "f1": 1152,
+      "duration_s": 6.4,
+      "duration_frames": 192,
+      "stagger_windows": {
+        "phase1_beatA_l1_l2a_in": 32.2,
+        "phase2_watch_canvas_window": [
+          33.4,
+          35.2
+        ],
+        "phase3_beatB_downbeat_l2b_in": 35.2,
+        "phase4_hold_breath_window": [
+          36.6,
+          38.4
+        ]
+      },
+      "medium_id": "II",
+      "medium_name": "拓印学术档案纸",
+      "intrinsic_t0": 28.0,
+      "intrinsic_t1": 34.4,
+      "intrinsic_duration_s": 6.4,
+      "intrinsic_hold_s": 2.05
+    },
+    {
+      "id": "S07",
+      "act": 3,
+      "actName": "第三幕：36分钟坠落实验与负面停留权重",
+      "bars": "Bar 13-14",
+      "t0": 38.4,
+      "t1": 44.8,
+      "role": "追问入局 (Probe)",
+      "container": "10x10 极客实验点阵",
+      "l1": "WSJ 受控实验 ｜ 100 个空白机器人账号",
+      "l2_a": "既然算法本能拓宽视野，为何还会结茧？",
+      "l2_b": "华尔街日报派出了百个机器人进场实测",
+      "visual_action": "跨界节点褪色归零，排列成 10x10 的 100 个纯白机器人测试账号，卡 Bar 13 钟琴进入同时点亮屏幕",
+      "sfx": "lock_click.wav (Bar 13 钟琴切入)",
+      "f0": 1152,
+      "f1": 1344,
+      "duration_s": 6.4,
+      "duration_frames": 192,
+      "stagger_windows": {
+        "phase1_beatA_l1_l2a_in": 38.6,
+        "phase2_watch_canvas_window": [
+          39.8,
+          41.6
+        ],
+        "phase3_beatB_downbeat_l2b_in": 41.6,
+        "phase4_hold_breath_window": [
+          43.0,
+          44.8
+        ]
+      },
+      "medium_id": "III",
+      "medium_name": "黑曜石实验矩阵",
+      "intrinsic_t0": 34.4,
+      "intrinsic_t1": 39.6,
+      "intrinsic_duration_s": 5.2,
+      "intrinsic_hold_s": 1.66
+    },
+    {
+      "id": "S08",
+      "act": 3,
+      "actName": "第三幕：36分钟坠落实验与负面停留权重",
+      "bars": "Bar 15-16",
+      "t0": 44.8,
+      "t1": 51.2,
+      "role": "变量控制 (Control)",
+      "container": "HUD 微距计时器",
+      "l1": "0 点赞 · 0 关注 ｜ 唯一变量：悲伤视频完播停留",
+      "l2_a": "它们不点赞、不评论、不关注任何人",
+      "l2_b": "唯一动作，是在悲伤视频上多停几秒",
+      "visual_action": "微距推入 1 号机器人视窗：点赞/评论/关注锁死为 0，唯独右上角完播停留计时器（Dwell Time）高亮读秒",
+      "sfx": "电子脉冲读秒声",
+      "f0": 1344,
+      "f1": 1536,
+      "duration_s": 6.4,
+      "duration_frames": 192,
+      "stagger_windows": {
+        "phase1_beatA_l1_l2a_in": 45.0,
+        "phase2_watch_canvas_window": [
+          46.2,
+          48.0
+        ],
+        "phase3_beatB_downbeat_l2b_in": 48.0,
+        "phase4_hold_breath_window": [
+          49.4,
+          51.2
+        ]
+      },
+      "medium_id": "III",
+      "medium_name": "黑曜石实验矩阵",
+      "intrinsic_t0": 39.6,
+      "intrinsic_t1": 45.2,
+      "intrinsic_duration_s": 5.6,
+      "intrinsic_hold_s": 1.79
+    },
+    {
+      "id": "S09",
+      "act": 3,
+      "actName": "第三幕：36分钟坠落实验与负面停留权重",
+      "bars": "Bar 17-18",
+      "t0": 51.2,
+      "t1": 57.6,
+      "role": "实证暴击 (Data Slam)",
+      "container": "瀑布流 + 环形吞噬图",
+      "l1": "36 分钟 · 224 条 → 93% 抑郁深渊",
+      "l2_a": "哪怕全程一言不发，仅仅过了半小时",
+      "l2_b": "整个信息流，已被绝望内容彻底吞没",
+      "visual_action": "时间瀑布流滚过 224 张缩略图定格 36 分钟 → 外围圆环饼图瞬间被 93% 深蓝色吞噬",
+      "sfx": "低频下潜蜂鸣",
+      "f0": 1536,
+      "f1": 1728,
+      "duration_s": 6.4,
+      "duration_frames": 192,
+      "stagger_windows": {
+        "phase1_beatA_l1_l2a_in": 51.4,
+        "phase2_watch_canvas_window": [
+          52.6,
+          54.4
+        ],
+        "phase3_beatB_downbeat_l2b_in": 54.4,
+        "phase4_hold_breath_window": [
+          55.8,
+          57.6
+        ]
+      },
+      "medium_id": "III",
+      "medium_name": "黑曜石实验矩阵",
+      "intrinsic_t0": 45.2,
+      "intrinsic_t1": 52.0,
+      "intrinsic_duration_s": 6.8,
+      "intrinsic_hold_s": 2.18
+    },
+    {
+      "id": "S10",
+      "act": 3,
+      "actName": "第三幕：36分钟坠落实验与负面停留权重",
+      "bars": "Bar 19-20",
+      "t0": 57.6,
+      "t1": 64.0,
+      "role": "机制落槌 (Mechanism)",
+      "container": "扇区坍缩几何动画",
+      "l1": "负面停留权重 4.7x ｜ 360° 视野 → 2° 气泡",
+      "l2_a": "恐惧与愤怒，能让停留时长暴涨 4.7 倍",
+      "l2_b": "追逐停留的代码，把视野坍缩成 2 度窄缝",
+      "visual_action": "360° 视野罗盘在 4.7x 负面停留权重下坍缩成 2° 过滤气泡，窄缝尽头映出 S01 沙发情侣青红双屏",
+      "sfx": "reverse_suck.wav",
+      "f0": 1728,
+      "f1": 1920,
+      "duration_s": 6.4,
+      "duration_frames": 192,
+      "stagger_windows": {
+        "phase1_beatA_l1_l2a_in": 57.8,
+        "phase2_watch_canvas_window": [
+          59.0,
+          60.8
+        ],
+        "phase3_beatB_downbeat_l2b_in": 60.8,
+        "phase4_hold_breath_window": [
+          62.2,
+          64.0
+        ]
+      },
+      "medium_id": "III",
+      "medium_name": "黑曜石实验矩阵",
+      "intrinsic_t0": 52.0,
+      "intrinsic_t1": 58.2,
+      "intrinsic_duration_s": 6.2,
+      "intrinsic_hold_s": 1.98
+    },
+    {
+      "id": "S11",
+      "act": 4,
+      "actName": "第四幕：杜克大学 1652 人破茧逆火实验",
+      "bars": "Bar 21-22",
+      "t0": 64.0,
+      "t1": 70.4,
+      "role": "第二重转折铺垫 (Twist 2 Setup)",
+      "container": "学术实验阵列图",
+      "l1": "PNAS 2018 · 杜克大学 ｜ 受试者 N = 1,652",
+      "l2_a": "那如果关掉过滤，强行看相反观点呢？",
+      "l2_b": "学者招募上千名鲜明立场者做了测试",
+      "visual_action": "配乐鼓点骤停！2° 玻璃罩被敲出裂纹，浮现 PNAS (2018) · Bail et al. 与 N = 1,652 红蓝对立点阵",
+      "sfx": "glass_shatter.wav + heartbeat_lub_dub.wav",
+      "f0": 1920,
+      "f1": 2112,
+      "duration_s": 6.4,
+      "duration_frames": 192,
+      "stagger_windows": {
+        "phase1_beatA_l1_l2a_in": 64.2,
+        "phase2_watch_canvas_window": [
+          65.4,
+          67.2
+        ],
+        "phase3_beatB_downbeat_l2b_in": 67.2,
+        "phase4_hold_breath_window": [
+          68.6,
+          70.4
+        ]
+      },
+      "medium_id": "II",
+      "medium_name": "拓印学术档案纸",
+      "intrinsic_t0": 58.2,
+      "intrinsic_t1": 63.6,
+      "intrinsic_duration_s": 5.4,
+      "intrinsic_hold_s": 1.73
+    },
+    {
+      "id": "S12",
+      "act": 4,
+      "actName": "第四幕：杜克大学 1652 人破茧逆火实验",
+      "bars": "Bar 23-24",
+      "t0": 70.4,
+      "t1": 76.8,
+      "role": "实验投喂 (Intervention)",
+      "container": "跨阵营粒子流投射",
+      "l1": "连续 30 天 × 24 条异见/日",
+      "l2_a": "团队付钱让他们关注对立阵营的账号",
+      "l2_b": "高强度投喂整整一个月的相反观点",
+      "visual_action": "顶部日历飞速翻过 Day 01 → Day 30，每天 24 条异见信息流跨越中线双向投喂",
+      "sfx": "粒子流高速穿梭声",
+      "f0": 2112,
+      "f1": 2304,
+      "duration_s": 6.4,
+      "duration_frames": 192,
+      "stagger_windows": {
+        "phase1_beatA_l1_l2a_in": 70.6,
+        "phase2_watch_canvas_window": [
+          71.8,
+          73.6
+        ],
+        "phase3_beatB_downbeat_l2b_in": 73.6,
+        "phase4_hold_breath_window": [
+          75.0,
+          76.8
+        ]
+      },
+      "medium_id": "II",
+      "medium_name": "拓印学术档案纸",
+      "intrinsic_t0": 63.6,
+      "intrinsic_t1": 69.4,
+      "intrinsic_duration_s": 5.8,
+      "intrinsic_hold_s": 1.86
+    },
+    {
+      "id": "S13",
+      "act": 4,
+      "actName": "第四幕：杜克大学 1652 人破茧逆火实验",
+      "bars": "Bar 25-26",
+      "t0": 76.8,
+      "t1": 83.2,
+      "role": "中场王炸扭转 (Midpoint Twist)",
+      "container": "预期 vs 实测劈叉折线",
+      "l1": "预期收敛 ↘ vs 实测极化翻倍 +100% ↗",
+      "l2_a": "所有人都以为，这能消除偏见与隔阂",
+      "l2_b": "结果受试者向两端滑坡，保守派极化翻倍",
+      "visual_action": "绿色虚线画出预期温和收敛，突然刺眼红线猛烈劈叉冲顶，保守派峰值弹出“极化翻倍 (+100% · 逆火效应)”",
+      "sfx": "slam_impact.wav",
+      "f0": 2304,
+      "f1": 2496,
+      "duration_s": 6.4,
+      "duration_frames": 192,
+      "stagger_windows": {
+        "phase1_beatA_l1_l2a_in": 77.0,
+        "phase2_watch_canvas_window": [
+          78.2,
+          80.0
+        ],
+        "phase3_beatB_downbeat_l2b_in": 80.0,
+        "phase4_hold_breath_window": [
+          81.4,
+          83.2
+        ]
+      },
+      "medium_id": "II",
+      "medium_name": "拓印学术档案纸",
+      "intrinsic_t0": 69.4,
+      "intrinsic_t1": 76.6,
+      "intrinsic_duration_s": 7.2,
+      "intrinsic_hold_s": 2.3
+    },
+    {
+      "id": "S14",
+      "act": 4,
+      "actName": "第四幕：杜克大学 1652 人破茧逆火实验",
+      "bars": "Bar 27-28",
+      "t0": 83.2,
+      "t1": 89.6,
+      "role": "脑科学根因 (Neuro Root)",
+      "container": "神经拓扑护盾图",
+      "l1": "杏仁核警报 → 身份防御护盾",
+      "l2_a": "把异见怼到脸上，会触发大脑身份防御",
+      "l2_b": "在拼命反驳中，把自己的茧织得更厚",
+      "visual_action": "推近受试者大脑剖面：异见箭头刺入触发杏仁核红光，外围结出六边形蚕丝装甲将箭头弹飞",
+      "sfx": "神经突触放电与护盾弹开声",
+      "f0": 2496,
+      "f1": 2688,
+      "duration_s": 6.4,
+      "duration_frames": 192,
+      "stagger_windows": {
+        "phase1_beatA_l1_l2a_in": 83.4,
+        "phase2_watch_canvas_window": [
+          84.6,
+          86.4
+        ],
+        "phase3_beatB_downbeat_l2b_in": 86.4,
+        "phase4_hold_breath_window": [
+          87.8,
+          89.6
+        ]
+      },
+      "medium_id": "II",
+      "medium_name": "拓印学术档案纸",
+      "intrinsic_t0": 76.6,
+      "intrinsic_t1": 82.6,
+      "intrinsic_duration_s": 6.0,
+      "intrinsic_hold_s": 1.92
+    },
+    {
+      "id": "S15",
+      "act": 5,
+      "actName": "第五幕：三重咬合与第四面墙暴击",
+      "bars": "Bar 29-30",
+      "t0": 89.6,
+      "t1": 96.0,
+      "role": "仿真铁证 (ABM Proof)",
+      "container": "多智能体聚类网格",
+      "l1": "BJSP 2018 仿真 ｜ 零算法 → 依然自发结茧",
+      "l2_a": "多智能体仿真实验同样证实了这一点",
+      "l2_b": "哪怕关掉算法，人类偏误也会自发结茧",
+      "visual_action": "切换为 Geschke et al. (2018) 仿真网格：在 Algorithm = OFF 状态下，节点依然凭确认偏误自发聚拢成孤岛",
+      "sfx": "集群节点吸附声",
+      "f0": 2688,
+      "f1": 2880,
+      "duration_s": 6.4,
+      "duration_frames": 192,
+      "stagger_windows": {
+        "phase1_beatA_l1_l2a_in": 89.8,
+        "phase2_watch_canvas_window": [
+          91.0,
+          92.8
+        ],
+        "phase3_beatB_downbeat_l2b_in": 92.8,
+        "phase4_hold_breath_window": [
+          94.2,
+          96.0
+        ]
+      },
+      "medium_id": "III",
+      "medium_name": "黑曜石实验矩阵",
+      "intrinsic_t0": 82.6,
+      "intrinsic_t1": 88.2,
+      "intrinsic_duration_s": 5.6,
+      "intrinsic_hold_s": 1.79
+    },
+    {
+      "id": "S16",
+      "act": 5,
+      "actName": "第五幕：三重咬合与第四面墙暴击",
+      "bars": "Bar 31-32",
+      "t0": 96.0,
+      "t1": 102.4,
+      "role": "理论总装 (Synthesis)",
+      "container": "三重同心环剖面",
+      "l1": "个体茧房 × 社交回音室 × 算法气泡",
+      "l2_a": "个体偏食吐丝、群聊排异、算法加压",
+      "l2_b": "三道同心环咬合，把人锁进《楚门的世界》",
+      "visual_action": "孤岛中心再次浮现 S01 情侣青红双屏，外围扣上“个体茧房 × 社交回音室 × 算法气泡”三道同心环反向锁死",
+      "sfx": "glitch_tear.wav",
+      "f0": 2880,
+      "f1": 3072,
+      "duration_s": 6.4,
+      "duration_frames": 192,
+      "stagger_windows": {
+        "phase1_beatA_l1_l2a_in": 96.2,
+        "phase2_watch_canvas_window": [
+          97.4,
+          99.2
+        ],
+        "phase3_beatB_downbeat_l2b_in": 99.2,
+        "phase4_hold_breath_window": [
+          100.6,
+          102.4
+        ]
+      },
+      "medium_id": "III",
+      "medium_name": "黑曜石实验矩阵",
+      "intrinsic_t0": 88.2,
+      "intrinsic_t1": 95.0,
+      "intrinsic_duration_s": 6.8,
+      "intrinsic_hold_s": 2.18
+    },
+    {
+      "id": "S17",
+      "act": 5,
+      "actName": "第五幕：三重咬合与第四面墙暴击",
+      "bars": "Bar 33-34",
+      "t0": 102.4,
+      "t1": 108.8,
+      "role": "第四面墙暴击 (Meta Moment)",
+      "container": "微距证据卡直视",
+      "l1": "B站 @深色椿 · 11,219 赞 ｜ “你刷到这条破茧视频，也是茧房推给你的吗？”",
+      "l2_a": "直到一条万赞评论刺破了屏幕：",
+      "l2_b": "连此刻的清醒，是不是也在算法算计之中？",
+      "visual_action": "配乐瞬间切入 440Hz 水下低通滤波！三重同心环瞳孔收缩弹出 B 站 @深色椿 11,219 赞真实评论卡，直逼观众视线",
+      "sfx": "440Hz 水下低通滤波切入 + 呼吸声放大",
+      "f0": 3072,
+      "f1": 3264,
+      "duration_s": 6.4,
+      "duration_frames": 192,
+      "stagger_windows": {
+        "phase1_beatA_l1_l2a_in": 102.6,
+        "phase2_watch_canvas_window": [
+          103.8,
+          105.6
+        ],
+        "phase3_beatB_downbeat_l2b_in": 105.6,
+        "phase4_hold_breath_window": [
+          107.0,
+          108.8
+        ]
+      },
+      "medium_id": "III",
+      "medium_name": "黑曜石实验矩阵",
+      "intrinsic_t0": 95.0,
+      "intrinsic_t1": 101.4,
+      "intrinsic_duration_s": 6.4,
+      "intrinsic_hold_s": 2.05
+    },
+    {
+      "id": "S18",
+      "act": 6,
+      "actName": "第六幕：主动蜜罐与沙发暖光闭环",
+      "bars": "Bar 35-36",
+      "t0": 108.8,
+      "t1": 115.2,
+      "role": "破局实操一 (Payoff 1)",
+      "container": "博弈驯化流程图",
+      "l1": "主动蜜罐 → 诱捕 7 折券 · 用完即拆",
+      "l2_a": "但摸清规则的人，开始反向驯化算法",
+      "l2_b": "刻意搜停诱出 7 折券，买完划走三天清空",
+      "visual_action": "水下滤镜豁然打开转入明亮 AbMaj7 大调！评论卡 180° 翻转为发光搜索框，依次演示“搜蛋白粉停 15s 加购 → 诱出 7 折券下单 → 毫秒级划走 3 天清空”",
+      "sfx": "AbMaj7 温暖大七和弦如阳光洒入",
+      "f0": 3264,
+      "f1": 3456,
+      "duration_s": 6.4,
+      "duration_frames": 192,
+      "stagger_windows": {
+        "phase1_beatA_l1_l2a_in": 109.0,
+        "phase2_watch_canvas_window": [
+          110.2,
+          112.0
+        ],
+        "phase3_beatB_downbeat_l2b_in": 112.0,
+        "phase4_hold_breath_window": [
+          113.4,
+          115.2
+        ]
+      },
+      "medium_id": "I",
+      "medium_name": "暖阳破局客厅",
+      "intrinsic_t0": 101.4,
+      "intrinsic_t1": 107.6,
+      "intrinsic_duration_s": 6.2,
+      "intrinsic_hold_s": 1.98
+    },
+    {
+      "id": "S19",
+      "act": 6,
+      "actName": "第六幕：主动蜜罐与沙发暖光闭环",
+      "bars": "Bar 37-38",
+      "t0": 115.2,
+      "t1": 121.6,
+      "role": "破局实操二 (Payoff 2)",
+      "container": "点线面光谱扩张图",
+      "l1": "点·线·面食谱 ｜ 主动跨界检索",
+      "l2_a": "别只靠单一推荐流被动投喂大脑",
+      "l2_b": "用主动搜索与长文，把 2 度窄缝撑开",
+      "visual_action": "搜索框向两侧延展化作光束射入 2° 窄缝，“短视频(点)·深度长文(线)·跨圈社区(面)”三束暖白光将其撑开为 360° 全景圆环",
+      "sfx": "清澈钟琴高音泛音展开",
+      "f0": 3456,
+      "f1": 3648,
+      "duration_s": 6.4,
+      "duration_frames": 192,
+      "stagger_windows": {
+        "phase1_beatA_l1_l2a_in": 115.4,
+        "phase2_watch_canvas_window": [
+          116.6,
+          118.4
+        ],
+        "phase3_beatB_downbeat_l2b_in": 118.4,
+        "phase4_hold_breath_window": [
+          119.8,
+          121.6
+        ]
+      },
+      "medium_id": "I",
+      "medium_name": "暖阳破局客厅",
+      "intrinsic_t0": 107.6,
+      "intrinsic_t1": 113.0,
+      "intrinsic_duration_s": 5.4,
+      "intrinsic_hold_s": 1.73
+    },
+    {
+      "id": "S20",
+      "act": 6,
+      "actName": "第六幕：主动蜜罐与沙发暖光闭环",
+      "bars": "Bar 39-40",
+      "t0": 121.6,
+      "t1": 128.0,
+      "role": "首尾闭环 (Callback)",
+      "container": "暖光合成 + 留白落幕",
+      "l1": "0.20 m → 0.00 m ｜ 看见身边具体的人",
+      "l2_a": "今晚回到那张相距 20 厘米的沙发上",
+      "l2_b": "和身边人交换屏幕，看见彼此的担忧",
+      "visual_action": "360° 暖白全景圆环平滑化作客厅落地灯光晕照亮 S01 沙发：男女主角轻轻交换重叠手机屏幕，中央标尺从 0.20 m 归零为 0.00 m",
+      "sfx": "手机屏幕轻触重叠 + 温暖长延音自然淡出",
+      "f0": 3648,
+      "f1": 3840,
+      "duration_s": 6.4,
+      "duration_frames": 192,
+      "stagger_windows": {
+        "phase1_beatA_l1_l2a_in": 121.8,
+        "phase2_watch_canvas_window": [
+          123.0,
+          124.8
+        ],
+        "phase3_beatB_downbeat_l2b_in": 124.8,
+        "phase4_hold_breath_window": [
+          126.2,
+          128.0
+        ]
+      },
+      "medium_id": "I",
+      "medium_name": "深夜胡桃木客厅",
+      "intrinsic_t0": 113.0,
+      "intrinsic_t1": 120.0,
+      "intrinsic_duration_s": 7.0,
+      "intrinsic_hold_s": 2.24
+    }
+  ],
+  "intrinsic_total_duration_sec": 120.0,
+  "intrinsic_total_frames": 3600
+}

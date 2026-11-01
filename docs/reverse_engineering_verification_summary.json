@@ -1,0 +1,256 @@
+{
+  "01_开智小曲": {
+    "bpm": 75.0,
+    "median_micro_offset_ms": -8.1,
+    "harmonic_profile_H1_H8": [
+      1.0,
+      0.2975,
+      0.1953,
+      0.0674,
+      0.033,
+      0.033,
+      0.0115,
+      0.011
+    ],
+    "transcribed_drum_hits_16bars": 424,
+    "verification_metrics": {
+      "evaluated_duration_s": 38.4,
+      "rhythm_onset_envelope_correlation": 0.9585,
+      "six_band_spectral_cosine_similarity": 0.997
+    },
+    "reconstructed_mp3": "assets/audio/01_开智小曲_1比1逆向扒谱复刻验证.mp3",
+    "sample_bars_1_to_8_drum_grid": [
+      {
+        "bar": 1,
+        "voicing": [
+          "G4",
+          "F3",
+          "C3",
+          "F5"
+        ],
+        "kick_16th": "Kk..|K...|k..K|KK.k",
+        "snare_16th": "SS.S|SS..|sS.S|SS.s",
+        "hat_16th": "HH.H|HH.H|HH.H|HH.H",
+        "melody_jianpu": "6. 7. 7. 1 1 6. 6. 7."
+      },
+      {
+        "bar": 2,
+        "voicing": [
+          "Eb4",
+          "C3",
+          "F4",
+          "F3"
+        ],
+        "kick_16th": "...K|kK..|..k.|..K.",
+        "snare_16th": "S..S|s..s|S.SS|..SS",
+        "hat_16th": "HH.H|H..H|H.HH|H.HH",
+        "melody_jianpu": "1 7. 7. 4. 5. 5. 5. 7."
+      },
+      {
+        "bar": 3,
+        "voicing": [
+          "G4",
+          "Eb3",
+          "G3",
+          "Bb3"
+        ],
+        "kick_16th": "K.KK|k.kK|K.kK|k.kK",
+        "snare_16th": "S.SS|s.SS|Ss.S|s.SS",
+        "hat_16th": "H.HH|H.HH|H.HH|H.HH",
+        "melody_jianpu": "7. 6. 7. 1 5. 6. 7. 6."
+      },
+      {
+        "bar": 4,
+        "voicing": [
+          "F3",
+          "C4",
+          "F5",
+          "Eb4"
+        ],
+        "kick_16th": "...k|..KK|....|..k.",
+        "snare_16th": "S..S|..SS|..S.|..S.",
+        "hat_16th": "H.HH|H.Hh|..h.|..h.",
+        "melody_jianpu": "6. 6 3. 6. 5. 3. 1 6."
+      },
+      {
+        "bar": 5,
+        "voicing": [
+          "F4",
+          "C#3",
+          "Eb4",
+          "Bb3"
+        ],
+        "kick_16th": ".K.k|.k..|....|kk..",
+        "snare_16th": "..sS|.Ss.|..SS|.Sss",
+        "hat_16th": ".Hhh|.H..|..HH|.HHh",
+        "melody_jianpu": "6. 5. 6. 6. 6. 7. 5. 6."
+      },
+      {
+        "bar": 6,
+        "voicing": [
+          "F4",
+          "C3",
+          "G3",
+          "Bb3"
+        ],
+        "kick_16th": ".k..|..K.|..K.|....",
+        "snare_16th": ".s.s|s.Ss|.SSS|..Ss",
+        "hat_16th": ".h..|..HH|.HHH|.HHH",
+        "melody_jianpu": "6. 6. 6. 6. 6. 2 6. 3"
+      },
+      {
+        "bar": 7,
+        "voicing": [
+          "F4",
+          "C3",
+          "F3",
+          "Eb5"
+        ],
+        "kick_16th": ".kKK|.k..|....|....",
+        "snare_16th": ".SSS|.sS.|.Ss.|..S.",
+        "hat_16th": ".HHH|.HHH|..hh|.HH.",
+        "melody_jianpu": "6. 6. 6. 6. 6. 2' 4. 5"
+      },
+      {
+        "bar": 8,
+        "voicing": [
+          "D3",
+          "F4",
+          "Bb5",
+          "Eb5"
+        ],
+        "kick_16th": "K...|....|.K..|..k.",
+        "snare_16th": "SSS.|SsS.|SSs.|SSS.",
+        "hat_16th": "hHH.|HHHH|HHH.|HHHh",
+        "melody_jianpu": "5 6. 6. 2 2 6. 5. 6."
+      }
+    ]
+  },
+  "03_Komorebi": {
+    "bpm": 68.6,
+    "median_micro_offset_ms": -40.2,
+    "harmonic_profile_H1_H8": [
+      1.0,
+      0.3481,
+      0.1822,
+      0.0988,
+      0.04,
+      0.0303,
+      0.0139,
+      0.0136
+    ],
+    "transcribed_drum_hits_16bars": 480,
+    "verification_metrics": {
+      "evaluated_duration_s": 41.98,
+      "rhythm_onset_envelope_correlation": 0.9244,
+      "six_band_spectral_cosine_similarity": 0.9979
+    },
+    "reconstructed_mp3": "assets/audio/03_Komorebi_1比1逆向扒谱复刻验证.mp3",
+    "sample_bars_1_to_8_drum_grid": [
+      {
+        "bar": 1,
+        "voicing": [
+          "A5",
+          "B4",
+          "D5",
+          "E5"
+        ],
+        "kick_16th": "..K.|k..K|..K.|K.k.",
+        "snare_16th": "..S.|S.SS|..S.|SsS.",
+        "hat_16th": "....|....|....|....",
+        "melody_jianpu": "2' 4 6 5' 1'' 3' 5' 1'"
+      },
+      {
+        "bar": 2,
+        "voicing": [
+          "D5",
+          "A4",
+          "F#5",
+          "B4"
+        ],
+        "kick_16th": "k.K.|K...|k.k.|K.kk",
+        "snare_16th": "S.Ss|S..S|S.sS|SsS.",
+        "hat_16th": "....|....|...h|h...",
+        "melody_jianpu": "1' 3 5 2' 6 6 5 1"
+      },
+      {
+        "bar": 3,
+        "voicing": [
+          "E4",
+          "B4",
+          "B3",
+          "G4"
+        ],
+        "kick_16th": "K.k.|...k|....|k...",
+        "snare_16th": "S.Ss|s.sS|S.ss|S.Ss",
+        "hat_16th": "....|....|....|....",
+        "melody_jianpu": "5 2 2 2 1 1 6 2'"
+      },
+      {
+        "bar": 4,
+        "voicing": [
+          "A5",
+          "D5",
+          "B3",
+          "E4"
+        ],
+        "kick_16th": "k.Kk|Kk.K|.k.k|K...",
+        "snare_16th": "S.Ss|S.SS|.SsS|S.SS",
+        "hat_16th": "..h.|....|....|....",
+        "melody_jianpu": "5' 1 3' 5' 2 1' 1' 1'"
+      },
+      {
+        "bar": 5,
+        "voicing": [
+          "A4",
+          "F#5",
+          "C4",
+          "G4"
+        ],
+        "kick_16th": "..kk|k..K|.KkK|k...",
+        "snare_16th": "S.SS|s.SS|sS.S|S.Ss",
+        "hat_16th": "....|...h|....|....",
+        "melody_jianpu": "3 b7. b7. 5 5 5 4 2"
+      },
+      {
+        "bar": 6,
+        "voicing": [
+          "G4",
+          "D5",
+          "C4",
+          "D4"
+        ],
+        "kick_16th": "..k.|...K|kKK.|kK.k",
+        "snare_16th": "S.S.|ss.S|s..S|s..S",
+        "hat_16th": "....|.h.h|h..H|HHHH",
+        "melody_jianpu": "2 1 1 4 b7. b7. 1' 1"
+      },
+      {
+        "bar": 7,
+        "voicing": [
+          "D5",
+          "B5",
+          "A4",
+          "B4"
+        ],
+        "kick_16th": ".kK.|.k.k|K.K.|k.K.",
+        "snare_16th": "s.S.|S..s|S..S|Ss.S",
+        "hat_16th": "HHHH|H.HH|HH.H|HHHH",
+        "melody_jianpu": "5 6 1' 1' 3 1' 5 4"
+      },
+      {
+        "bar": 8,
+        "voicing": [
+          "B5",
+          "B4",
+          "D5",
+          "A4"
+        ],
+        "kick_16th": "..KK|.kkk|kKK.|kK..",
+        "snare_16th": "s.SS|Ss.S|S.s.|.S.S",
+        "hat_16th": "HHHH|H.HH|HH.H|HHhH",
+        "melody_jianpu": "b7. 1' 5 1' 6 6' 6 6"
+      }
+    ]
+  }
+}
