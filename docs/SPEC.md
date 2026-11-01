@@ -1,124 +1,104 @@
-# 《信息茧房》导演视觉技术规格书 V2.0 (SPEC.md · Huashu × Kashi-Motion × HyperFrames 标准)
+# Claude Opus 5.5 终极一镜到底成片工程指令 V3.0 (`OPUS_PROMO_PROMPT_V3.md`)
 
-> **版本定位**：V2.0 突破天花板版（Kinetic Editorial & Studio Beat-Locked Edition）。深度融合 [`alchaincyf/huashu-design`](https://github.com/alchaincyf/huashu-design) (`v3.1.0`) 电影级分镜七律、[`ShizukiR1n/kashi-motion`](https://github.com/ShizukiR1n/kashi-motion) 多频段真鼓点驱动相机与动态排印系统、[`haidrrrry/claude-remotion-skill`](https://github.com/haidrrrry/claude-remotion-skill) 五层视觉深度栈，以及 [`heygen-com/hyperframes`](https://github.com/heygen-com/hyperframes) 三重物理媒介规范。
-
----
-
-## 1. 核心目标与输出规格 (`GOAL & OUTPUT`)
-
-- **GOAL**：让观众从“把一切怪罪给推荐算法”的惯性抱怨，转向看清“毫秒级停留时长商业指标 × 大脑杏仁核身份防御”的双向共谋，并在今晚放下手机与枕边人交换屏幕。
-- **OUTPUT**：`1920 × 1080` (`16:9` 横屏主片，兼容 `80% Title-Safe` 安全区)，`30 fps`，总长 **`120.0 秒`（`3,600 帧 @ 30fps`，精确对应 `75.00 BPM` 下的 `150 拍`）**。
-- **PRIMARY SOUNDTRACK（真实录音室标杆原曲母带直驱，彻底弃用合成器自制 BGM）**：
-  - **主轨 Track 1（默认主打）**：`assets/audio/kaizhi_studio_120s.mp3` —— **《开智小曲》（vibe 知识大赏原曲母带 · 相干锁相版）**。已精准裁除前导 `0.62804s` 拾音留白，使 **Beat 0 严格对齐 `t = 0.000s (Frame 0)`**，`75.00 BPM`（双倍速 `150.00 BPM`），每拍周期 $T = 0.8000\text{ s} = \mathbf{24.00\text{ 帧}}$，每半拍（8 分音符）$= 0.4000\text{ s} = \mathbf{12.00\text{ 帧}}$，每 16 分音符 $= 0.2000\text{ s} = \mathbf{6.00\text{ 帧}}$，全片 120 秒累积漂移 `< 4.6ms (0.14 帧)`。
-  - **副轨 Track 2（电影叙事母带）**：`assets/audio/komorebi_studio_120s.mp3` —— **mabanua《Komorebi》原曲母带（`137.19 BPM` 相干锁相版）**。
-  - **副轨 Track 3（硬核脉冲母带）**：`assets/audio/wenever_studio_120s.mp3` —— **《We Never》原曲母带（`110.30 BPM` 相干锁相版）**。
-  - **帧级真鼓点数据包**：`assets/audio/beat_maps.json`（及 `docs/BEAT_ANALYSIS.json`）内含三首原曲经 HPSS 谐波/打击乐分离与 Hilbert 对数新颖度提取的完整 `beats[]`、`downbeats[]`、`kick[]` (`{t, frame, s}`)、`snare[]`、`hat[]`、`energy[]` (`30fps` 3600 帧数组) 与 20 镜卡点时间表 `shotsCueSheet`。
+以下为直接投递至 Arena.ai (`Code Battle`) 以单轮一次性生成 `135.2 秒`（`4,056 帧 @ 30fps`，基于未截断经典《开智小曲 / We Never (Remix)》64 小节完整母带）电影级 `#Vibe知识大赏#` 完整成片与审片工作台的自包含提示词：
 
 ---
 
-## 2. 破局核心法则一：零传统底部字幕条 & 杂志级动态排印 (`ZERO CLOSED-CAPTION BAR · EDITORIAL KINETIC TYPOGRAPHY`)
+```markdown
+You are an elite `#Vibe知识大赏#` Film Director, Motion Graphics Architect, and Principal Remotion / React Engineer (synthesizing the craft of `@Iwanau`, `@Juno`, `@叁号暗房`, `@浙大猫学长` `vibe-motion`, `HeyChengC/vibe-knowledge-film`, `Rafael8830/vibe-knowledge-video`, `aliangSSS/aliang-knowledge-video`, and `GuanLi22/vibe-knowledge-video-skill`).
 
-> **铁律（源自 `huashu-design/storyboard-basics.md` 律四 & `kashi-motion/docs/effects.md`）**：
-> 在无全局人声配音的 #Vibe知识大赏# / 视觉散文短片中，**绝对禁止在画面底部 (`y = 940px`) 放置常规电视字幕条或半透明黑底字幕胶囊**！传统底部字幕条会让无配音短片沦为“静音的 PPT 录像”。
-> **文字本身就是画面构图与空间叙事的第一主角（字画一体 / 杂志级动态排印）**。
+Your task is to build the **complete, one-shot, full-length V3.0 Masterpiece Edition (`135.2 seconds = 4,056 frames @ 30fps`, `1920×1080`, `64 musical bars`, `20 scenes S01–S20`)** of our programmatic motion-graphics documentary film **"Information Cocoon: 20 Centimeters, Parallel Universes" (《信息茧房：相隔二十厘米的平行宇宙》)**, paired with an interactive **Director's Screening Room & Downbeat Inspector Workbench**.
 
-1. **每镜三层杂志级字号阶梯 (`3-Tier Editorial Hierarchy @ 1920×1080`)**：
-   - **Tier 1 · 巨型视觉锚点大字/核心实证大数 (`Hero Anchor`)**：**`96px – 168px`**（`font-weight: 900`，字距 `-0.03em`，行高 `0.95`），如 `0.20 m`、`BV12P41187fs`、`2006 · 桑斯坦`、`100 BOTS`、`0 赞 · 0 评 · 0 关注`、`36 min → 93%`、`360° → 2°`、`极化翻倍 +100%`、`11,219 赞`。
-   - **Tier 2 · 两拍式叙事主句 (`Two-Beat Narrative Clauses`)**：**`40px – 54px`**（`font-weight: 700`，每镜严格控制在 **2 句精炼短句**，总字数 `18–28 字`），直接嵌入画面**负空间（Negative Space）**（左上杂志眉题区、分屏对峙侧翼、图表留白象限或高潮全屏字卡），绝不遮挡核心几何图形，绝不贴底边居中变成传统字幕。
-   - **Tier 3 · 具象档案/系统印章角标 (`Diegetic Stamp & Direct Leader Callout`)**：**`24px – 32px`**（等宽字体 `JetBrains Mono` + 边框印章或图表直接引线标注，如 `PNAS EXPERIMENT · 2018`、`WSJ INVESTIGATION · 2021`）。
-2. **两拍式节奏砸落 (`Two-Beat Kinetic Slam Choreography`)**：
-   - **第 1 拍 (`Beat +0.75 = startFrame + 18f`)**：`Hero Anchor` 巨型锚点大字与第 1 句叙事短句随镜头落位及鼓点同步砸入画面；
-   - **第 2 拍 (`Beat +2.0 = startFrame + 48f` 正拍/军鼓重音)**：第 2 句转折/实证短句与对比色高亮块（或印章角标）卡在原曲 Snare / Kick 瞬态上精准扣合；
-   - **第 3 拍至镜末 (`startFrame + 72f .. endFrame`，驻留 `>= 2.4s – 4.8s`)**：**阅读静止锁死期（Comprehension Hold）**——所有文字一旦落位必须 100% 静止（零持续缩放、零飘移），确保观众从容读完每一处论据。
-3. **8 种动态文字入场原语与冷却反重复机制 (`8 Kinetic Text Effects with Cooldown`)**：
-   - 相邻两个镜头**严禁重复同一种文字入场方式**，按 `beat_maps.json -> shotsCueSheet[].textEffect` 轮换执行：
-     1. `slam`：重锤物理砸落（从 `scale(2.1)` + 径向模糊砸至 `1.0`，触发 `CameraRig` 震动与地面冲击波纹）；
-     2. `maskslide`：基线遮罩上滑 + 速度切变（从 `overflow: hidden` 基线下方以 `skewX(-8deg) -> 0deg` 利落抽出）；
-     3. `split`：左右/上下双半裂变对撞合拢（契合双屏分裂与两党对立）；
-     4. `punch`：全屏节拍连击定格（每个关键词卡在连续半拍 `12f` 上依次暴击弹出）；
-     5. `focus`：大景深高斯模糊拉焦（从 `blur(18px) scale(1.12)` 瞬间聚焦至刀锋锐利）；
-     6. `decode`：算法乱码矩阵解码锁定（契合 WSJ 100 机器人与 Geschke 仿真代码感）；
-     7. `stroke`：钢笔/粉笔矢量描边先行绘制，随后墨色瞬间充盈（契合 2006 档案手稿与破局三束光）；
-     8. `follow`：相机沿长句横向追踪扫视后拉远揭示全貌。
+### STEP 1: IMMEDIATELY CLONE OUR ASSET & 64-BAR BEAT-STRUCTURE REPOSITORY
+Before writing any code, run this shell command to pull our uncut `135.2s` classic `#Vibe知识大赏#` studio master soundtrack (`kaizhi_uncut_135s.mp3`), `150.1s` 3-Drop alternate master (`claude_vibe_150s.mp3`), physical Foley SFX, and pre-computed 64-bar STFT + Ellis (2007) dynamic-programming beat/downbeat structure (`beat_maps.json`):
+
+```bash
+git clone --depth 1 https://github.com/Evan-Joseph/info-cocoon-promo.git /tmp/info-cocoon-promo
+ls -la /tmp/info-cocoon-promo/docs /tmp/info-cocoon-promo/assets/audio
+```
+
+Copy all audio files from `/tmp/info-cocoon-promo/assets/audio/*.mp3` and `beat_maps.json` into your project's `public/audio/` (and import `beat_maps.json` into `src/data/beatMaps.json` so your Remotion components access the exact 64-bar `downbeatFrames`, `beatFrames`, `kick`, `snare`, `energy`, and `bassEnergy` arrays synchronously at render time).
 
 ---
 
-## 3. 破局核心法则二：真鼓点驱动 2.5D 摄像机与零裸切 (`BEAT-REACTIVE 2.5D CAMERA RIG & ZERO BARE CUTS`)
+### STEP 2: FIVE NON-NEGOTIABLE V3.0 ARCHITECTURAL LAWS
 
-1. **真鼓点阻尼弹簧相机 (`Beat-Reactive <CameraRig>`，源自 `kashi-motion/CameraRig.tsx`)**：
-   - 摄像机包装层 `<CameraRig>` 与场景世界层 `<WorldStage>` 严格分离；
-   - 实时读取当前所选原曲的 `kick[]`、`snare[]` 与 `energy[]`：
-     - **Kick 低频重拍冲击**：每当距离最近一记真实 Kick 瞬态 `dt = t - kick.t` 处于 `[0, 1.1s]` 内，叠加闭式阻尼弹簧缩放脉冲 $\Delta S_{\text{kick}} = 0.042 \cdot s \cdot e^{-7.5 dt} \cos(11 dt)$，使画面随真实底鼓产生极具肉感的呼吸震动；
-     - **Snare 军鼓微震与高光闪烁**：Snare 瞬态触发 `0.35deg` 高频角位移微颤与强调色描边亮度脉冲；
-     - **连续有机漂移**：叠加低频双正弦呼吸漂移 $(\Delta x = 18\sin(0.35t)\text{ px}, \Delta y = 12\cos(0.28t)\text{ px})$，彻底告别死板静态画布。
-2. **五档景别阶梯交替 (`5-Tier Shot Scale Alternation`，源自 `huashu-design` 律一)**：
-   - 全片 20 镜严格在 **远景 `0.78x` / 全景 `1.00x` / 中景 `1.35x` / 近景 `1.80x` / 特写 `2.30x`** 五档景别间交替切换，**相邻两镜景别绝对不同**。
-3. **三层 Z 轴视差与 3D 透视倾斜 (`3-Layer Parallax & 3D Perspective`)**：
-   - 每个场景内部拆分为：**远景环境层（`0.35x` 位移速率 + `blur(4px)` 景深柔化）**、**中景主叙事与动态排印层（`1.00x` 基准速率，支持 `perspective(2400px) rotateX(6deg) rotateY(-4deg)` 空间透视）**、**前景微粒/标尺/光斑层（`1.40x` 位移速率）**。
-4. **零裸切动机转场 (`Zero Bare Cuts`，源自 `huashu-design` 律七)**：
-   - 严禁生硬直接切换镜头！每处切镜点（精确落在 `frame % 24 === 0` 原曲整数拍上）必须执行 `shotsCueSheet[].transIn` 指定的 `12 帧 (0.40s)` 动机转场：
-     - `push`：镜头加速穿过当前镜头的核心几何孔洞/屏幕，直接进入下一镜头空间；
-     - `whip`：带水平方向动态模糊（`scaleX(1.08) blur(6px)`）的高速甩镜横移；
-     - `pullout`：从微观特写急速拉远，揭示上一镜其实嵌在下一镜的宏观容器内；
-     - `flash`：媒介翻转处的重拍胶片曝光闪白/朱砂印泥震荡转场。
+#### LAW 1: UNCUT FULL-LENGTH CLASSIC "开智小曲" BGM PLAYED STRAIGHT THROUGH (ZERO LOOPING · ZERO VOLUME DUCKING)
+- **Primary Default Soundtrack (`kaizhi_studio`)**: `/audio/kaizhi_uncut_135s.mp3` — **`ZHENLOE - We Never (Remix)` / 《千年之后（氛围版）》 / 《开智小曲》 (`135.19s = 4,056 frames @ 30fps`, `112.35 BPM`, `F major`, `64 Bars`)**.
+- **STRICTLY FORBIDDEN (Fixing V2's Audio Flaw)**:
+  1. **NO LOOPING OR SPLICING**: Play `/audio/kaizhi_uncut_135s.mp3` continuously from `frame = 0` (`0.00s`) to `frame = 4056` (`135.20s`).
+  2. **NO MID-TRACK VOLUME DUCKING**: Keep BGM volume at a steady, majestic **`0.72`** across the entire film (with only a smooth `15-frame` fade-in at `frame 0..15` and a natural outro fade-out at `frame 3930..4056`). **NEVER drop or duck the BGM volume to `0.16` or `0.26` in the middle of the film**—jarring volume changes ruin musical flow!
+  3. **FOLEY RESTRAINT (`点睛物理拟音`)**: Trigger at most **8 subtle, crisp physical Foley accents** across the entire 135.2-second film (`lock_click.mp3`, `paper_crumple.mp3`, `glass_shatter.mp3`, `slam_impact.mp3`, `whoosh_deep.mp3`, `singing_bowl_strike.mp3`) at gentle volume (`0.26–0.34`), strictly on key physical actions (clothespin flip, red seal stamp, `2°` glass crack, `+100%` curve breaking the ceiling). Never spam SFX on every subtitle line!
+
+#### LAW 2:AUTHENTIC `#Vibe知识大赏#` 5-ZONE CANVAS & BORDERLESS BILINGUAL SERIF NARRATIVE (`@Juno` / `@Iwanau` / `@浙大猫学长` DNA)
+Every frame (`1920×1080`) must follow the authentic 5-zone `#Vibe知识大赏#` spatial architecture:
+1. **Zone 1 · Top-Left Constant Watermark & Top-Center Chapter Status Strip (`y = 42px..78px`)**:
+   - Top-Left (`x = 64px`): `@Vibe知识大赏 · 认知与算法系列` (`18px`, tracked uppercase/sans, `rgba(243, 233, 210, 0.55)`);
+   - Top-Center (`x = 960px`): Chapter & Era Stamp Pill that evolves per Act, e.g. `ACT I · 23:42 客厅沙发 · 相距 20 厘米`, `1995–2006 · HARVARD · 桑斯坦《信息乌托邦》`, `2021 · 华尔街日报 · 100 机器人实测`, `2018 · 杜克大学 PNAS · 1,652 人逆火实验`, `ACT VI · 破茧指南 · 把算法当工具`.
+2. **Zone 2 · Top-Right Persistent Concept Gauge (`y = 42px, right = 64px` — "一把尺子量到底")**:
+   - A live miniature instrument dial & digital readout **`「认知视野夹角 · HORIZON ANGLE」`** that persists across all 20 scenes, dynamically narrowing from **`360.0°`** (`S01`) $\to$ **`180.0°`** (`S03`) $\to$ **`42.0°`** (`S07`) $\to$ **`2.0°`** (`S10` rabbit hole collapse) $\to$ **`1.0° [告警: 逆火翻倍]`** (`S13`) $\to$ reopening to **`360.0° [全彩破局]`** (`S17–S20`)!
+3. **Zone 3 · Center Tangible Stage & Continuous Protagonist (`y = 120px..750px`, occupying `45%–65%` of screen height)**:
+   - **NO generic floating icon collages!** Use `@Juno` / `@Iwanau`'s **11 Authentic Tangible Visual Motifs** connected by a **Continuous Golden/Cyan Light Filament Protagonist** (`World + Camera Pan/Zoom/Tilt`):
+     - **Motif A · Brass Vernier Caliper & Dual-Temperature Sofa (`S01–S03`, `S19–S20`)**: Overhead living-room sofa where a gleaming `0.20 m` (`20 厘米`) brass caliper measures the tiny gap between two people scrolling phones lit in `3200K` warm amber vs `8000K` cold cyan.
+     - **Motif B · Red Clothesline & Wooden Clothespin Cream Paper Cards (`S04`, `S11`)**: A taut crimson cord across the stage holding textured aged cream cards (`#EDE4D3`, with punch holes and wooden clothespins) that flip open on exact downbeats.
+     - **Motif C · Aged Historical Monograph & Vermilion Chinese Seal (`S05`, `S11`)**: Realistic tilted paper reproduction of `2006 · HARVARD · 《Infotopia》 (Cass R. Sunstein)` and `2018 · PNAS · Bail et al.` with an animated **vermilion ink seal stamp (`#B53A2F`)** slamming down on the downbeat (`「选择性接触」`, `「逆火效应」`).
+     - **Motif D · Side-by-Side Same-Layout Empirical Comparison (`S06`)**: University of Amsterdam (`2020`, `N = 10,800`) twin mechanical meters comparing `协同过滤算法 (7.8 类话题 · 视野更宽)` vs `纯熟人社交圈 (4.2 类话题 · 同质化更重)`.
+     - **Motif E · `10 × 10` 100-Bot Simulation Matrix & Rolling Millisecond Counter (`S07–S09`)**: *Wall Street Journal* (`2021`) 100 phone bot cells ticking in real time; Account `#32 (Kentucky_99)` zooms out with `0 赞 · 0 评 · 0 关注` while `停留时长 (Dwell Time ms)` races and `93 / 100` cells lock into deep depression blue (`93%`) at `36:00`.
+     - **Motif F · Hand-Drawn Coordinate Curve Shattering the Ceiling (`S13`)**: Expected green dashed curve (`-30%` bias reduction) vs. actual vermilion curve (`#E11D48`) violently shooting upward and cracking through the top frame border to **`极化翻倍 +100%`**.
+4. **Zone 4 · Inline Stage Annotation (`y ≈ 775px`)**:
+   - Concise `22px` muted gold/slate note (`#94A3B8`) directly explaining the visual mechanism or citing the exact source (`注：图表据 Bail et al. (PNAS, 2018) 实测数据重绘，图为示意`).
+5. **Zone 5 · Borderless Cinematic Bilingual Narrative Subtitle (`y ≈ 875px..980px`)**:
+   - **CRITICAL VISUAL RULE**: Do **NOT** draw a dark rectangular pill, card, or border box behind the bottom subtitle! And do **NOT** hide the narrative in tiny corner blocks!
+   - Render the narrative in **authentic `@Juno` / `GuanLi22` / `Rafael8830` borderless cinema typography** floating over a soft bottom vignette gradient:
+     - **Primary Chinese Line (`48px–52px`, `"Noto Serif SC", "Source Han Serif SC", "Songti SC", serif`, `font-weight: 700`, warm parchment `#F3E9D2`, `filter: drop-shadow(0 3px 16px rgba(0,0,0,0.92))`)**:
+       - Parse `【...】` brackets into **burnished metallic gold `#D9B45A`** (`font-weight: 900`);
+       - **Two-Beat Reveal Cadence**: First half of the sentence fades/slides in smoothly at `localFrame = 4..14`; if the line has a second clause after `——` or `，`, reveal or highlight the punchline on the **mid-scene downbeat (`Bar 2 Beat 1`)** so every key revelation lands on a drum hit!
+     - **Secondary English Italic Line (`25px`, `"EB Garamond", "Instrument Serif", Georgia, serif`, `font-style: italic`, `#8A94A8`, `marginTop: 8px`)**: Full bilingual literary subtitle under every scene.
+
+#### LAW 3: EXACT 64-BAR DOWNBEAT-SNAPPED 20-SCENE TIMELINE (`4,056 FRAMES = 135.20s @ 30FPS`)
+Lock all 20 scenes (`S01`–`S20`) to the exact measured downbeat frames (`DOWNBEAT_FRAMES`) of `/audio/kaizhi_uncut_135s.mp3`:
+
+| Scene | Bar Range | Exact Frames (`30fps`) | Time (`s`) | Musical Section | Visual Motif & Key Action | Bilingual Narrative Subtitle (`【】` = Gold `#D9B45A`) |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **`S01`** | `Bars 00–02` | `0 – 142` (`142f`) | `0.00 – 4.74s` | `Intro` | **20cm Midnight Sofa (Left)**: Brass caliper locks `0.20 m`; wife's phone (`3200K` warm amber) flips card *"产房里，请把手机密码留给爸妈"*. | 深夜十一点，你们坐在同一张沙发上，相隔不到【20 厘米】。<br>*11 PM on the same sofa, less than twenty centimeters apart.* |
+| **`S02`** | `Bars 02–05` | `142 – 334` (`192f`) | `4.74 – 11.12s` | `Intro` | **20cm Midnight Sofa (Right)**: Camera pans across the caliper to husband's phone (`8000K` cold cyan): *"38万彩礼背后：两个孩子均非亲生"*. | 左边屏幕满眼是【生育的代价】，右边屏幕全是【婚姻的背叛】。<br>*One screen sees only the price of childbirth; the other, only marital betrayal.* |
+| **`S03`** | `Bars 05–08` | `334 – 525` (`191f`) | `11.12 – 17.50s` | `Pre-Drop Build` | **Same Wedding Video (`BV12P41187fs`)**: Top half plays the same clip; bottom comment section unzips into two hostile camps. | 明明刷到【同一条婚礼视频】，评论区却像被刀劈成两个平行宇宙。<br>*Watching the exact same wedding clip, yet the comments split into two warring worlds.* |
+| **`S04`** | `Bars 08–11` | `525 – 716` (`191f`) | `17.50 – 23.87s` | **`DROP 1 [TITLE]`** | **Monumental Title Card & Red Clothesline**: On the `17.50s` Drop 1 downbeat, `VIBE知识大赏` + golden serif **《信息茧房》** + 3 clothespin question cards snap into place. | 是谁，把相距二十厘米的枕边人，关进了各自的【信息茧房】？<br>*Who locked two people sitting side by side into their own information cocoons?* |
+| **`S05`** | `Bars 11–15` | `716 – 971` (`255f`) | `23.87 – 32.37s` | `Flow A` | **2006 Harvard Monograph (`Infotopia`)**: Aged paper document (`2006 · HARVARD`) with red seal `「选择性接触」` slamming down. | 很多人第一反应是骂算法。但【2006 年】桑斯坦提出这个词时，世界上还没有短视频。<br>*Most blame algorithms. Yet when Cass Sunstein coined the term in 2006, short video feeds did not exist.* |
+| **`S06`** | `Bars 15–19` | `971 – 1226` (`255f`) | `32.37 – 40.88s` | `Flow A` | **UvA (`2020`, `N=10,800`) Twin Comparison**: Same-layout meters show Algorithm (`7.8 类话题`) > Human Friends (`4.2 类话题`). | 阿姆斯特丹大学实测一万名用户：算法推荐的视野，反而比【熟人朋友圈】更宽。<br>*A study of 10,800 users found algorithmic feeds actually expose you to more topics than your own friends.* |
+| **`S07`** | `Bars 19–23` | `1226 – 1481` (`255f`) | `40.88 – 49.38s` | `Flow B` | **WSJ (`2021`) `10 × 10` 100-Bot Matrix**: 100 automated phone bots light up simultaneously in an obsidian test grid. | 既然算法起初比人更宽，它又是在哪一刻【变味】的？《华尔街日报》派出【100 个】机器人账号。<br>*If algorithms start wider than human circles, when do they turn toxic? The WSJ deployed 100 bot accounts.* |
+| **`S08`** | `Bars 23–27` | `1481 – 1737` (`256f`) | `49.38 – 57.89s` | `Flow B` | **Bot `#32` (`Kentucky_99`) HUD**: `0 赞 · 0 评 · 0 关注` badge locks in while the `停留时长 (ms)` counter accelerates. | 不点赞、不评论、不关注——只做一件事：在悲伤视频上，多【停留几秒钟】。<br>*Zero likes, zero comments, zero follows—doing only one thing: lingering a few extra seconds on sad videos.* |
+| **`S09`** | `Bars 27–32` | `1737 – 2055` (`318f`) | `57.89 – 68.51s` | `Flow B` | **36-Minute Spiral (`93%` Depression Blue)**: Stopwatch hits `36:00` as `93 / 100` bot screens turn deep indigo-blue. | 仅仅【36 分钟】后，信息流里【93%】的内容，全部坠入抑郁与绝望的深渊。<br>*In just 36 minutes, 93% of its entire feed plunged into an abyss of depression and despair.* |
+| **`S10`** | `Bars 32–36` | `2055 – 2304` (`249f`) | `68.51 – 76.81s` | `Flow C` | **`360° → 2°` Horizon Collapse**: Compass sector collapses from `360°` to a `2°` razor slit under `4.7×` negative weight. | 算法没有价值观，它只算停留时长；而人性对恐惧与愤怒的驻足，是平淡真相的【4.7 倍】。<br>*Algorithms have no morals, only dwell-time math—and human eyes linger 4.7 times longer on outrage and fear.* |
+| **`S11`** | `Bars 36–40` | `2304 – 2559` (`255f`) | `76.81 – 85.30s` | **`MID BREAK [PREDICT]`** | **3-2-1 Prediction Pause & Duke (`PNAS 2018`, `N=1,652`) Card**: Two wooden clothespin choice cards (`A. 偏见消融` vs `B. 更加极端`) pulse with a 3-2-1 countdown. | 那么，如果强行撬开这【2° 窄缝】，逼你每天看相反观点——偏见会消失吗？<br>*What if we pry open that 2-degree slit and force you to read opposing views every day—will bias vanish?* |
+| **`S12`** | `Bars 40–44` | `2559 – 2814` (`255f`) | `85.30 – 93.81s` | `Pre-Climax Build` | **30-Day Forced Feed (`1,652 Voters × 24 Tweets/Day`)**: Red and blue ideological cards stream across a `Day 01 → Day 30` counter. | 杜克大学花重金招募【1,652 名】选民，连续【30 天】，每天强制阅读 24 条对立阵营言论。<br>*Duke University paid 1,652 voters to read 24 opposing political posts every single day for a full month.* |
+| **`S13`** | `Bars 44–48` | `2814 – 3069` (`255f`) | `93.81 – 102.31s` | **`CLIMAX [TWIST]`** | **Backfire Curve Shatters Ceiling (`+100%`)**: On `93.81s` (`Frame 2814`), the crimson actual line rockets upward, smashing the chart border (`极化翻倍 +100%`) + seal `「逆火效应」`. | 结果令学界脊背发凉：没有一个人被说服，保守派的极端化程度反而【翻了一倍（+100%）】。<br>*The result chilled researchers: not one person softened, and conservative polarization literally doubled (+100%).* |
+| **`S14`** | `Bars 48–51` | `3069 – 3260` (`191f`) | `102.31 – 108.68s` | `Flow D` | **Brain Amygdala Shield**: Sagittal brain blueprint where incoming facts ricochet off a hexagonal identity shield. | 心理学称之为【逆火效应】：当观点绑架了“我是谁”，异见就会被杏仁核当成【生存威胁】。<br>*Psychology calls this the Backfire Effect: when beliefs define who you are, counter-evidence feels like a physical attack.* |
+| **`S15`** | `Bars 51–54` | `3260 – 3452` (`192f`) | `108.68 – 115.07s` | `Flow D` | **`Algorithm = OFF` ABM Swarm (`JASSS 2024`)**: Toggle switch flips `Algorithm = OFF`; 200 particles still self-segregate into 4 isolated islands. | 仿真实验关掉一切推荐算法（【Algorithm = OFF】），仅凭人类趋利避害的本能，人群依然会自发结茧。<br>*Even with all algorithms switched OFF, simulations show human comfort-seeking alone splits society into isolated tribes.* |
+| **`S16`** | `Bars 54–57` | `3452 – 3643` (`191f`) | `115.07 – 121.44s` | `Flow D` | **Triple Concentric Lock & `@深色椿 11,219 赞` Card**: Three rings (`个体茧房 × 社交回音室 × 算法气泡`) lock, then reveal the viral Bilibili comment card. | 个体本能、熟人回音室与算法气泡【三重锁死】——甚至连你点开这条视频，也是算法算准了你想看“反思”。<br>*Instinct, echo chambers, and algorithms interlock—even this very video was served because the algorithm knew you liked reflection.* |
+| **`S17`** | `Bars 57–59` | `3643 – 3771` (`128f`) | `121.44 – 125.69s` | **`FULL-COLOR AWAKENING`** | **Sole Full-Color Shot — Active Honeypot (`蛋白粉7折券`)**: Canvas blooms into warm sunrise gold & emerald! Three clothespin bait tags (`蛋白粉` · `量子力学` · `古典吉他`) hijack the feed. | 既然逃不出算法，不如【反向驯化它】：主动搜索一个新领域停留【15 秒】，把推荐流变成你的免费猎犬。<br>*If you cannot escape the algorithm, domesticate it: intentionally linger 15 seconds on a new craft and make it your hound.* |
+| **`S18`** | `Bars 59–61` | `3771 – 3899` (`128f`) | `125.69 – 129.95s` | `Full-Color Flow` | **`Point · Line · Plane` Information Diet**: Three golden light wedges pry the `2°` slit back open to a full `360°` compass. | 给大脑换一份【点、线、面】食谱：少吃顺耳的情绪零食，多看跨立场的长文与【经得起时间检验的书】。<br>*Rebuild your diet across points, lines, and planes: fewer emotional snacks, more cross-stance essays and time-tested books.* |
+| **`S19`** | `Bars 61–63` | `3899 – 4026` (`127f`) | `129.95 – 134.20s` | `Outro Reunion` | **Return to the Sofa (`0.20 m → 0.00 m`)**: Camera returns to the opening sofa; husband and wife swap phones as the brass caliper closes to `0.00 m`. | 打破茧房最简单的一步，就在今晚：把手机递给身边相隔【20 厘米】的人，看看他眼里的世界。<br>*The simplest step out of the cocoon starts tonight: hand your phone across that 20-centimeter gap and see their world.* |
+| **`S20`** | `Bar 63–End` | `4026 – 4056` (`30f`) | `134.20 – 135.20s` | `Final Chord Hold` | **Aphorism & Academic Citations**: Golden serif aphorism + 5 academic citations (`Sunstein 2006 · UvA 2020 · WSJ 2021 · PNAS 2018 · JASSS 2024`). | 【算法只负责计算你的停留，而你可以决定——为谁停留。】<br>*Algorithms only calculate where you linger; you decide who is worth lingering for.* |
+
+#### LAW 4: CONTINUOUS WORLD CAMERA RIG + SVG FILTER SAFETY + BRIGHTNESS GATE
+- **Continuous World Camera (`<CameraRig />`)**:
+  - Combine smooth macro camera moves (`pan`, `zoom`, `3D perspective tilt`) with subtle real-drum impulse (`0.032 * kick.s * Math.exp(-7.5 * dt) * Math.cos(11 * dt)`) from `beat_maps.json`.
+  - **SVG Glow Filter Safety**: Whenever applying `<filter>` to horizontal/vertical lines, always set `filterUnits="userSpaceOnUse" x="-400" y="-400" width="2720" height="1880"` so 0-height/0-width lines never vanish!
+  - **Anti-Darkness Gate (`YAVG 32–55`)**: While the background is deep midnight navy (`#080B18` to `#12182E`), always render a warm radial ambient light pool behind the center stage apparatus so the frame is rich, luminous, and never pitch-black.
+
+#### LAW 5: APPLE/LINEAR-GRADE DIRECTOR'S SCREENING ROOM (`src/App.tsx`)
+Build an interactive Screening Room hosting `<Player />` (`1920×1080`, `30fps`, `4056 frames = 135.2s`) with:
+1. **Dual Uncut Master Switcher**:
+   - `《开智小曲 / We Never (Remix)》· 135.2s 原速一镜到底母带 (112.35 BPM · 64 Bars)` (`kaizhi_studio` -> `/audio/kaizhi_uncut_135s.mp3`)
+   - `《Claude算法小曲 / 若如初见 (Remix)》· 三段式 Drop 原片母带 (114.84 BPM)` (`claude_vibe_150s` -> `/audio/claude_vibe_150s.mp3`)
+2. **Live `64-Bar Downbeat & Horizon Angle HUD` Toggle**:
+   - Real-time scrolling `-2.0s .. +4.0s` downbeat & drum transient timeline (`downbeatFrames` gold markers, `beatFrames` ticks, `kick` red pulses, `snare` amber pulses) + current `BAR # / 64`, `SCENE S01–S20`, and `HORIZON ANGLE (360° → 2° → 360°)`.
+3. **20-Scene Storyboard Matrix**: Click any scene `S01`–`S20` to jump to its exact `startFrame`.
 
 ---
 
-## 4. 破局核心法则三：五层电影级视觉深度栈与三重物理媒介 (`5-LAYER VISUAL STACK & 3 PHYSICAL MEDIA`)
-
-### 4.1 每一帧强制渲染的五层深度栈 (`haidrrrry/claude-remotion-skill`)
-1. **Layer 1 · 动态物理肌理底板 (`Animated Physical Surface`)**：随 `bassEnergy[frame]` 微幅呼吸的双径向光晕 + 物理媒介网格/纸张纤维肌理（绝不用纯平 `#000000` 或 `#FFFFFF`）；
-2. **Layer 2 · 远景视差环境层 (`0.35x Parallax Backplate`)**：空间纵深参照物（客厅百叶窗光影 / 档案馆微缩引文矩阵 / 实验室坐标刻度环）；
-3. **Layer 3 · 核心主体图表与杂志级动态排印 (`Hero Graphic & Editorial Kinetic Type`)**：核心图表占比 **`48% – 72%`**，面板展开遵循「先水平拉开宽度 `0–8f`，再垂直展开高度 `6–16f`」，入场遵循 `Anticipation (3f 反向蓄力) -> Action (弹簧主动作) -> Follow-through (惯性回弹)`；
-4. **Layer 4 · 全局调色统一层 (`Soft-Light Color Grade Overlay`)**：`mix-blend-mode: soft-light` 冷暖情绪滤镜；
-5. **Layer 5 · 逐帧胶片颗粒与光学暗角 (`Per-Frame SVG feTurbulence Grain + Radial Vignette`)**。
-
-### 4.2 三重物理媒介轮换表 (`Three Physical Media`)
-
-| 媒介代号与适用幕次 | 底色 (`Ground`) | 主墨与结构线 (`Ink A`) | 焦点强调色 (`Ink B`) | 杂志级排版与物理材质特征 |
-| :--- | :--- | :--- | :--- | :--- |
-| **媒介 I：深夜客厅胡桃木与双屏冷暖玻璃 (`walnut`)**<br>适用：Act I (`S01–S03`) & Act VI (`S18–S20`) | `#141210`<br>（深胡桃木暖黑） | `#F5F2EB`<br>（暖白羊皮纸字）<br>标尺金：`#D97706` | 左屏冷青：`#0EA5E9`<br>右屏暗红：`#E11D48`<br>晨光暖金：`#F59E0B` | 玻璃视窗具真实倒角高光；大字采用粗衬线/重黑体杂志标题对比布局，分屏两侧形成冷暖戏剧张力。 |
-| **媒介 II：拓印学术档案纸 (`paper`)**<br>适用：Act II (`S04–S06`) & Act IV (`S11–S14`) | `#F3EFE6`<br>（暖棉学术档案纸，带坐标方格与纸纤维） | `#141413`<br>（深碳素印刷黑墨） | 朱砂批注印泥：`#D94E34`<br>档案钴蓝：`#1D4ED8`<br>荧光笔黄：`#FACC15` | 模拟 PNAS 期刊与学术专著版式：顶栏刊头线、粗黑大号实证数字、荧光笔横向涂抹高亮、朱砂印章砸落。 |
-| **媒介 III：算法实验室黑曜石矩阵 (`obsidian`)**<br>适用：Act III (`S07–S10`) & Act V (`S15–S17`) | `#0D1015`<br>（消光碳黑实验室底板） | `#E6EDF3`<br>（高对比骨白）<br>网格线：`#222834` | 抑郁深蓝：`#2563EB`<br>负面权重红：`#EF4444`<br>破局翡翠绿：`#10B981` | 瑞士国际主义网格排版：超大等宽数字读秒器、工业级几何点阵、直接引线标注（Direct Leader Callout）。 |
-
----
-
-## 5. 20 镜「非等长整数拍呼吸网格」与动态排印总表 (`BEAT-SNAPPED INTRINSIC CUE SHEET`)
-
-> **数学原理**：在相干锁相的《开智小曲》原曲母带（`75.00 BPM`，每拍 $T = 0.8000\text{ s} = 24\text{ 帧}$）上，通过为不同复杂度的镜头分配 **`6 拍 (4.8s)`、`7 拍 (5.6s)`、`8 拍 (6.4s)`、`9 拍 (7.2s)`** 的非等长整数拍序列 `[7, 6, 8, 7, 7, 8, 6, 7, 9, 8, 7, 7, 9, 7, 7, 9, 8, 8, 6, 9]`（总计 **150 拍 = 120.0 秒 = 3,600 帧**）：
-> 1. **消除等长节拍器催眠感**（全片无任何连续 3 镜具有相同秒数）；
-> 2. **100% 切镜点 (`startFrame`) 严丝合缝落在原曲整数拍 (`frame % 24 === 0`) 与真实鼓点上（零毫秒误差）**；
-> 3. **100% 镜内两拍大字砸落 (`Beat 1 Slam = +18f`, `Beat 2 Snap = +48f`) 精确锁死在原曲節拍脉冲上**。
-
-| 镜号 | 幕次 | 媒介 | 拍数 (`Beats`) | 时长 | 时间窗 (`Sec`) | 帧区间 (`30fps`) | 景别 (`Scale`) | 转场 (`transIn`) | 文字动效 (`textEffect`) | Tier 1 巨型锚点大字 (`Hero Anchor`) | Tier 2 两拍杂志级叙事主句（画内负空间排版，零底部字幕条） |
-| :--- | :--- | :--- | :---: | :---: | :--- | :--- | :---: | :---: | :---: | :--- | :--- |
-| **S01** | Act I | `walnut` | **7 拍** | `5.6s` | `0.0 – 5.6s` | `0 – 168` | `1.00x` | `focus` | `slam` | **`0.20 m`** | ① 物理距离仅二十厘米 ／ ② 灵魂却隔着平行宇宙 |
-| **S02** | Act I | `walnut` | **6 拍** | `4.8s` | `5.6 – 10.4s` | `168 – 312` | `1.35x` | `whip` | `split` | **`0.20m → ∞`** | ① 左屏：进产房前留密码 ／ ② 右屏：崩溃发现非亲生 |
-| **S03** | Act I | `walnut` | **8 拍** | `6.4s` | `10.4 – 16.8s` | `312 – 504` | `1.80x` | `push` | `maskslide` | **`BV12P41187fs`** | ① 明明刷到同一个视频 ／ ② 评论区却劈成两个战场 |
-| **S04** | Act II | `paper` | **7 拍** | `5.6s` | `16.8 – 22.4s` | `504 – 672` | `1.00x` | `flash` | `slam` | **`2006 · 桑斯坦`** | ① 《Infotopia》首次命名信息茧房 ／ ② 那是算法尚未统治的时代 |
-| **S05** | Act II | `paper` | **7 拍** | `5.6s` | `22.4 – 28.0s` | `672 – 840` | `1.80x` | `push` | `stroke` | **`选择性接触`** | ① 人类天生偏爱顺耳的回音 ／ ② 第一根蚕丝其实是自己吐出的 |
-| **S06** | Act II | `paper` | **8 拍** | `6.4s` | `28.0 – 34.4s` | `840 – 1032` | `1.35x` | `whip` | `maskslide` | **`协同过滤 · 最高`** | ① 阿姆斯特丹大学实测三类推荐 ／ ② 老派协同过滤反而最促跨界 |
-| **S07** | Act III | `obsidian` | **6 拍** | `4.8s` | `34.4 – 39.2s` | `1032 – 1176` | `0.78x` | `flash` | `decode` | **`100 BOTS`** | ① 《华尔街日报》零干预实验 ／ ② 一百个全新账号放进推荐流 |
-| **S08** | Act III | `obsidian` | **7 拍** | `5.6s` | `39.2 – 44.8s` | `1176 – 1344` | `2.30x` | `push` | `punch` | **`0 赞 · 0 评 · 0 关注`** | ① 算法根本不需要你点亮红心 ／ ② 毫秒级停留时长才是唯一底牌 |
-| **S09** | Act III | `obsidian` | **9 拍** | `7.2s` | `44.8 – 52.0s` | `1344 – 1560` | `1.35x` | `pullout` | `slam` | **`36 min → 93%`** | ① 连看 224 条视频仅用 36 分钟 ／ ② 信息流 93% 被抑郁深蓝吞没 |
-| **S10** | Act III | `obsidian` | **8 拍** | `6.4s` | `52.0 – 58.4s` | `1560 – 1752` | `1.80x` | `whip` | `focus` | **`360° → 2°`** | ① 负面情绪停留权重高出 4.7 倍 ／ ② 全景视野坍缩成两度窄缝 |
-| **S11** | Act IV | `paper` | **7 拍** | `5.6s` | `58.4 – 64.0s` | `1752 – 1920` | `1.00x` | `flash` | `split` | **`N = 1,652`** | ① 那把他们强行拉出茧房呢？ ／ ② 杜克大学追踪两党真实受试者 |
-| **S12** | Act IV | `paper` | **7 拍** | `5.6s` | `64.0 – 69.6s` | `1920 – 2088` | `1.35x` | `push` | `maskslide` | **`24 条 / 天 × 30 天`** | ① 每天硬塞 24 条对立阵营推文 ／ ② 足足持续整整一个月 |
-| **S13** | Act IV | `paper` | **9 拍** | `7.2s` | `69.6 – 76.8s` | `2088 – 2304` | `2.30x` | `whip` | `slam` | **`极化翻倍 +100%`** | ① 受试者非但没有走向温和妥协 ／ ② 反而比原来极端了整整一倍 |
-| **S14** | Act IV | `paper` | **7 拍** | `5.6s` | `76.8 – 82.4s` | `2304 – 2472` | `1.80x` | `push` | `focus` | **`杏仁核防御`** | ① 异见被大脑直接判定为身份威胁 ／ ② 每一次硬劝都在替旧偏见加厚装甲 |
-| **S15** | Act V | `obsidian` | **7 拍** | `5.6s` | `82.4 – 88.0s` | `2472 – 2640` | `0.78x` | `pullout` | `decode` | **`Algorithm = OFF`** | ① Geschke 多智能体仿真铁证 ／ ② 关掉算法，认知偏误照样结成孤岛 |
-| **S16** | Act V | `obsidian` | **9 拍** | `7.2s` | `88.0 – 95.2s` | `2640 – 2856` | `1.35x` | `push` | `slam` | **`三重死锁`** | ① 个体心理茧房 × 社交回音室 ／ ② 再套上商业算法过滤气泡 |
-| **S17** | Act V | `obsidian` | **8 拍** | `6.4s` | `95.2 – 101.6s` | `2856 – 3048` | `2.30x` | `focus` | `maskslide` | **`11,219 赞`** | ① “觉得全是蠢货时先想是否在茧房” ／ ② 还是说——连这话也是为你定制的？ |
-| **S18** | Act VI | `dawn` | **8 拍** | `6.4s` | `101.6 – 108.0s` | `3048 – 3240` | `1.35x` | `whip` | `punch` | **`15s 投喂蜜罐`** | ① 主动搜索异见词条并停留十五秒 ／ ② 用虚假正反馈亲手污染用户画像 |
-| **S19** | Act VI | `dawn` | **6 拍** | `4.8s` | `108.0 – 112.8s` | `3240 – 3384` | `1.00x` | `pullout` | `stroke` | **`点 · 线 · 面`** | ① 短视频抓线索 · 深度长文看逻辑 ／ ② 跨圈社区对冲单一信源 |
-| **S20** | Act VI | `walnut` | **9 拍** | `7.2s` | `112.8 – 120.0s` | `3384 – 3600` | `0.78x` | `push` | `slam` | **`0.20m → 0.00m`** | ① 今晚放下手机，和枕边人交换屏幕 ／ ② 去看看相隔二十厘米的另一个宇宙 |
-
----
-
-## 6. 分频段双轨混音与卡点调试 HUD (`AUDIO MIXING & BEAT DEBUG OVERLAY`)
-
-1. **分频段双轨混音法则 (`huashu-design/audio-design-rules.md`)**：
-   - 原曲母带 BGM 音量设定为 `0.55`（在 S11 音乐骤停呼吸处降为 `0.15`，在 S17 水下窒息段降为 `0.25`，在 S13 与 S18 高潮段升至 `0.68`）；
-   - Foley 音效（`whoosh_deep.mp3`, `slam_impact.mp3`, `glass_shatter.mp3`, `lock_click.mp3`, `paper_crumple.mp3`, `coin_clatter.mp3`, `singing_bowl_strike.mp3`）聚焦于中高频瞬态，在视觉转场或大字砸落前 **`1–2 帧 (-33ms)`** 提前触发，与原曲底鼓毫不掩蔽。
-2. **放映室内置 `卡点核验 HUD (Beat-Sync Debug Overlay)`（源自 `kashi-motion/BeatLayer.tsx`）**：
-   - 在放映室（Screening Room）提供一键开关 **`[卡点脉冲调试 HUD]`**：开启后在画布底部叠加实时滚动的节拍与鼓点时间轴（红色圆点 = 真实 Kick 瞬态、黄色圆点 = 真实 Snare 瞬态、青色圆点 = Hi-Hat、白色竖线 = 整数拍网格、金色旗标 = 镜头切点），并在每次真实 Kick 命中时触发画布边框脉冲闪光，让审片人用肉眼即可验证 100% 帧级音画咬合。
+### STEP 3: BUILD & VERIFICATION
+1. Verify `npx tsc --noEmit` and `npx vite build` pass with zero errors.
+2. Render key frames (`S01`, `S04` Title Card, `S06` UvA Comparison, `S09` 36-Min 93% Grid, `S13` +100% Backfire Curve, `S17` Full-Color Awakening, `S19` Sofa Reunion) to confirm every scene is visually distinct, tangible, legible, and 100% free of ugly bottom subtitle boxes.
+```
