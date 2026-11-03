@@ -1,104 +1,93 @@
-# Claude Opus 5.5 终极一镜到底成片工程指令 V3.0 (`OPUS_PROMO_PROMPT_V3.md`)
+# 《超级个体：一人成军的幻觉与科斯暗箱》导演视觉技术规格书 (SPEC.md · V4 Opus 5.5 × Argon 标准)
 
-以下为直接投递至 Arena.ai (`Code Battle`) 以单轮一次性生成 `135.2 秒`（`4,056 帧 @ 30fps`，基于未截断经典《开智小曲 / We Never (Remix)》64 小节完整母带）电影级 `#Vibe知识大赏#` 完整成片与审片工作台的自包含提示词：
-
----
-
-```markdown
-You are an elite `#Vibe知识大赏#` Film Director, Motion Graphics Architect, and Principal Remotion / React Engineer (synthesizing the craft of `@Iwanau`, `@Juno`, `@叁号暗房`, `@浙大猫学长` `vibe-motion`, `HeyChengC/vibe-knowledge-film`, `Rafael8830/vibe-knowledge-video`, `aliangSSS/aliang-knowledge-video`, and `GuanLi22/vibe-knowledge-video-skill`).
-
-Your task is to build the **complete, one-shot, full-length V3.0 Masterpiece Edition (`135.2 seconds = 4,056 frames @ 30fps`, `1920×1080`, `64 musical bars`, `20 scenes S01–S20`)** of our programmatic motion-graphics documentary film **"Information Cocoon: 20 Centimeters, Parallel Universes" (《信息茧房：相隔二十厘米的平行宇宙》)**, paired with an interactive **Director's Screening Room & Downbeat Inspector Workbench**.
-
-### STEP 1: IMMEDIATELY CLONE OUR ASSET & 64-BAR BEAT-STRUCTURE REPOSITORY
-Before writing any code, run this shell command to pull our uncut `135.2s` classic `#Vibe知识大赏#` studio master soundtrack (`kaizhi_uncut_135s.mp3`), `150.1s` 3-Drop alternate master (`claude_vibe_150s.mp3`), physical Foley SFX, and pre-computed 64-bar STFT + Ellis (2007) dynamic-programming beat/downbeat structure (`beat_maps.json`):
-
-```bash
-git clone --depth 1 https://github.com/Evan-Joseph/info-cocoon-promo.git /tmp/info-cocoon-promo
-ls -la /tmp/info-cocoon-promo/docs /tmp/info-cocoon-promo/assets/audio
-```
-
-Copy all audio files from `/tmp/info-cocoon-promo/assets/audio/*.mp3` and `beat_maps.json` into your project's `public/audio/` (and import `beat_maps.json` into `src/data/beatMaps.json` so your Remotion components access the exact 64-bar `downbeatFrames`, `beatFrames`, `kick`, `snare`, `energy`, and `bassEnergy` arrays synchronously at render time).
+> **依据**：遵循首期《信息茧房》V4 终极定稿经验（[`CODE_VIDEO_METHODOLOGY.md`](file:///Users/joseph/Desktop/【副业】视频创作/01_通用方法论与技能库/CODE_VIDEO_METHODOLOGY.md)）、[`heygen-com/hyperframes`](https://github.com/heygen-com/hyperframes) `references/spec.md` 与 [`Vincentwei1021/video-shotcraft`](https://github.com/Vincentwei1021/video-shotcraft) `Rule Q11` 净空标准。
 
 ---
 
-### STEP 2: FIVE NON-NEGOTIABLE V3.0 ARCHITECTURAL LAWS
+## 1. 核心目标与输出规格 (`GOAL & OUTPUT`)
 
-#### LAW 1: UNCUT FULL-LENGTH CLASSIC "开智小曲" BGM PLAYED STRAIGHT THROUGH (ZERO LOOPING · ZERO VOLUME DUCKING)
-- **Primary Default Soundtrack (`kaizhi_studio`)**: `/audio/kaizhi_uncut_135s.mp3` — **`ZHENLOE - We Never (Remix)` / 《千年之后（氛围版）》 / 《开智小曲》 (`135.19s = 4,056 frames @ 30fps`, `112.35 BPM`, `F major`, `64 Bars`)**.
-- **STRICTLY FORBIDDEN (Fixing V2's Audio Flaw)**:
-  1. **NO LOOPING OR SPLICING**: Play `/audio/kaizhi_uncut_135s.mp3` continuously from `frame = 0` (`0.00s`) to `frame = 4056` (`135.20s`).
-  2. **NO MID-TRACK VOLUME DUCKING**: Keep BGM volume at a steady, majestic **`0.72`** across the entire film (with only a smooth `15-frame` fade-in at `frame 0..15` and a natural outro fade-out at `frame 3930..4056`). **NEVER drop or duck the BGM volume to `0.16` or `0.26` in the middle of the film**—jarring volume changes ruin musical flow!
-  3. **FOLEY RESTRAINT (`点睛物理拟音`)**: Trigger at most **8 subtle, crisp physical Foley accents** across the entire 135.2-second film (`lock_click.mp3`, `paper_crumple.mp3`, `glass_shatter.mp3`, `slam_impact.mp3`, `whoosh_deep.mp3`, `singing_bowl_strike.mp3`) at gentle volume (`0.26–0.34`), strictly on key physical actions (clothespin flip, red seal stamp, `2°` glass crack, `+100%` curve breaking the ceiling). Never spam SFX on every subtitle line!
-
-#### LAW 2:AUTHENTIC `#Vibe知识大赏#` 5-ZONE CANVAS & BORDERLESS BILINGUAL SERIF NARRATIVE (`@Juno` / `@Iwanau` / `@浙大猫学长` DNA)
-Every frame (`1920×1080`) must follow the authentic 5-zone `#Vibe知识大赏#` spatial architecture:
-1. **Zone 1 · Top-Left Constant Watermark & Top-Center Chapter Status Strip (`y = 42px..78px`)**:
-   - Top-Left (`x = 64px`): `@Vibe知识大赏 · 认知与算法系列` (`18px`, tracked uppercase/sans, `rgba(243, 233, 210, 0.55)`);
-   - Top-Center (`x = 960px`): Chapter & Era Stamp Pill that evolves per Act, e.g. `ACT I · 23:42 客厅沙发 · 相距 20 厘米`, `1995–2006 · HARVARD · 桑斯坦《信息乌托邦》`, `2021 · 华尔街日报 · 100 机器人实测`, `2018 · 杜克大学 PNAS · 1,652 人逆火实验`, `ACT VI · 破茧指南 · 把算法当工具`.
-2. **Zone 2 · Top-Right Persistent Concept Gauge (`y = 42px, right = 64px` — "一把尺子量到底")**:
-   - A live miniature instrument dial & digital readout **`「认知视野夹角 · HORIZON ANGLE」`** that persists across all 20 scenes, dynamically narrowing from **`360.0°`** (`S01`) $\to$ **`180.0°`** (`S03`) $\to$ **`42.0°`** (`S07`) $\to$ **`2.0°`** (`S10` rabbit hole collapse) $\to$ **`1.0° [告警: 逆火翻倍]`** (`S13`) $\to$ reopening to **`360.0° [全彩破局]`** (`S17–S20`)!
-3. **Zone 3 · Center Tangible Stage & Continuous Protagonist (`y = 120px..750px`, occupying `45%–65%` of screen height)**:
-   - **NO generic floating icon collages!** Use `@Juno` / `@Iwanau`'s **11 Authentic Tangible Visual Motifs** connected by a **Continuous Golden/Cyan Light Filament Protagonist** (`World + Camera Pan/Zoom/Tilt`):
-     - **Motif A · Brass Vernier Caliper & Dual-Temperature Sofa (`S01–S03`, `S19–S20`)**: Overhead living-room sofa where a gleaming `0.20 m` (`20 厘米`) brass caliper measures the tiny gap between two people scrolling phones lit in `3200K` warm amber vs `8000K` cold cyan.
-     - **Motif B · Red Clothesline & Wooden Clothespin Cream Paper Cards (`S04`, `S11`)**: A taut crimson cord across the stage holding textured aged cream cards (`#EDE4D3`, with punch holes and wooden clothespins) that flip open on exact downbeats.
-     - **Motif C · Aged Historical Monograph & Vermilion Chinese Seal (`S05`, `S11`)**: Realistic tilted paper reproduction of `2006 · HARVARD · 《Infotopia》 (Cass R. Sunstein)` and `2018 · PNAS · Bail et al.` with an animated **vermilion ink seal stamp (`#B53A2F`)** slamming down on the downbeat (`「选择性接触」`, `「逆火效应」`).
-     - **Motif D · Side-by-Side Same-Layout Empirical Comparison (`S06`)**: University of Amsterdam (`2020`, `N = 10,800`) twin mechanical meters comparing `协同过滤算法 (7.8 类话题 · 视野更宽)` vs `纯熟人社交圈 (4.2 类话题 · 同质化更重)`.
-     - **Motif E · `10 × 10` 100-Bot Simulation Matrix & Rolling Millisecond Counter (`S07–S09`)**: *Wall Street Journal* (`2021`) 100 phone bot cells ticking in real time; Account `#32 (Kentucky_99)` zooms out with `0 赞 · 0 评 · 0 关注` while `停留时长 (Dwell Time ms)` races and `93 / 100` cells lock into deep depression blue (`93%`) at `36:00`.
-     - **Motif F · Hand-Drawn Coordinate Curve Shattering the Ceiling (`S13`)**: Expected green dashed curve (`-30%` bias reduction) vs. actual vermilion curve (`#E11D48`) violently shooting upward and cracking through the top frame border to **`极化翻倍 +100%`**.
-4. **Zone 4 · Inline Stage Annotation (`y ≈ 775px`)**:
-   - Concise `22px` muted gold/slate note (`#94A3B8`) directly explaining the visual mechanism or citing the exact source (`注：图表据 Bail et al. (PNAS, 2018) 实测数据重绘，图为示意`).
-5. **Zone 5 · Borderless Cinematic Bilingual Narrative Subtitle (`y ≈ 875px..980px`)**:
-   - **CRITICAL VISUAL RULE**: Do **NOT** draw a dark rectangular pill, card, or border box behind the bottom subtitle! And do **NOT** hide the narrative in tiny corner blocks!
-   - Render the narrative in **authentic `@Juno` / `GuanLi22` / `Rafael8830` borderless cinema typography** floating over a soft bottom vignette gradient:
-     - **Primary Chinese Line (`48px–52px`, `"Noto Serif SC", "Source Han Serif SC", "Songti SC", serif`, `font-weight: 700`, warm parchment `#F3E9D2`, `filter: drop-shadow(0 3px 16px rgba(0,0,0,0.92))`)**:
-       - Parse `【...】` brackets into **burnished metallic gold `#D9B45A`** (`font-weight: 900`);
-       - **Two-Beat Reveal Cadence**: First half of the sentence fades/slides in smoothly at `localFrame = 4..14`; if the line has a second clause after `——` or `，`, reveal or highlight the punchline on the **mid-scene downbeat (`Bar 2 Beat 1`)** so every key revelation lands on a drum hit!
-     - **Secondary English Italic Line (`25px`, `"EB Garamond", "Instrument Serif", Georgia, serif`, `font-style: italic`, `#8A94A8`, `marginTop: 8px`)**: Full bilingual literary subtitle under every scene.
-
-#### LAW 3: EXACT 64-BAR DOWNBEAT-SNAPPED 20-SCENE TIMELINE (`4,056 FRAMES = 135.20s @ 30FPS`)
-Lock all 20 scenes (`S01`–`S20`) to the exact measured downbeat frames (`DOWNBEAT_FRAMES`) of `/audio/kaizhi_uncut_135s.mp3`:
-
-| Scene | Bar Range | Exact Frames (`30fps`) | Time (`s`) | Musical Section | Visual Motif & Key Action | Bilingual Narrative Subtitle (`【】` = Gold `#D9B45A`) |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **`S01`** | `Bars 00–02` | `0 – 142` (`142f`) | `0.00 – 4.74s` | `Intro` | **20cm Midnight Sofa (Left)**: Brass caliper locks `0.20 m`; wife's phone (`3200K` warm amber) flips card *"产房里，请把手机密码留给爸妈"*. | 深夜十一点，你们坐在同一张沙发上，相隔不到【20 厘米】。<br>*11 PM on the same sofa, less than twenty centimeters apart.* |
-| **`S02`** | `Bars 02–05` | `142 – 334` (`192f`) | `4.74 – 11.12s` | `Intro` | **20cm Midnight Sofa (Right)**: Camera pans across the caliper to husband's phone (`8000K` cold cyan): *"38万彩礼背后：两个孩子均非亲生"*. | 左边屏幕满眼是【生育的代价】，右边屏幕全是【婚姻的背叛】。<br>*One screen sees only the price of childbirth; the other, only marital betrayal.* |
-| **`S03`** | `Bars 05–08` | `334 – 525` (`191f`) | `11.12 – 17.50s` | `Pre-Drop Build` | **Same Wedding Video (`BV12P41187fs`)**: Top half plays the same clip; bottom comment section unzips into two hostile camps. | 明明刷到【同一条婚礼视频】，评论区却像被刀劈成两个平行宇宙。<br>*Watching the exact same wedding clip, yet the comments split into two warring worlds.* |
-| **`S04`** | `Bars 08–11` | `525 – 716` (`191f`) | `17.50 – 23.87s` | **`DROP 1 [TITLE]`** | **Monumental Title Card & Red Clothesline**: On the `17.50s` Drop 1 downbeat, `VIBE知识大赏` + golden serif **《信息茧房》** + 3 clothespin question cards snap into place. | 是谁，把相距二十厘米的枕边人，关进了各自的【信息茧房】？<br>*Who locked two people sitting side by side into their own information cocoons?* |
-| **`S05`** | `Bars 11–15` | `716 – 971` (`255f`) | `23.87 – 32.37s` | `Flow A` | **2006 Harvard Monograph (`Infotopia`)**: Aged paper document (`2006 · HARVARD`) with red seal `「选择性接触」` slamming down. | 很多人第一反应是骂算法。但【2006 年】桑斯坦提出这个词时，世界上还没有短视频。<br>*Most blame algorithms. Yet when Cass Sunstein coined the term in 2006, short video feeds did not exist.* |
-| **`S06`** | `Bars 15–19` | `971 – 1226` (`255f`) | `32.37 – 40.88s` | `Flow A` | **UvA (`2020`, `N=10,800`) Twin Comparison**: Same-layout meters show Algorithm (`7.8 类话题`) > Human Friends (`4.2 类话题`). | 阿姆斯特丹大学实测一万名用户：算法推荐的视野，反而比【熟人朋友圈】更宽。<br>*A study of 10,800 users found algorithmic feeds actually expose you to more topics than your own friends.* |
-| **`S07`** | `Bars 19–23` | `1226 – 1481` (`255f`) | `40.88 – 49.38s` | `Flow B` | **WSJ (`2021`) `10 × 10` 100-Bot Matrix**: 100 automated phone bots light up simultaneously in an obsidian test grid. | 既然算法起初比人更宽，它又是在哪一刻【变味】的？《华尔街日报》派出【100 个】机器人账号。<br>*If algorithms start wider than human circles, when do they turn toxic? The WSJ deployed 100 bot accounts.* |
-| **`S08`** | `Bars 23–27` | `1481 – 1737` (`256f`) | `49.38 – 57.89s` | `Flow B` | **Bot `#32` (`Kentucky_99`) HUD**: `0 赞 · 0 评 · 0 关注` badge locks in while the `停留时长 (ms)` counter accelerates. | 不点赞、不评论、不关注——只做一件事：在悲伤视频上，多【停留几秒钟】。<br>*Zero likes, zero comments, zero follows—doing only one thing: lingering a few extra seconds on sad videos.* |
-| **`S09`** | `Bars 27–32` | `1737 – 2055` (`318f`) | `57.89 – 68.51s` | `Flow B` | **36-Minute Spiral (`93%` Depression Blue)**: Stopwatch hits `36:00` as `93 / 100` bot screens turn deep indigo-blue. | 仅仅【36 分钟】后，信息流里【93%】的内容，全部坠入抑郁与绝望的深渊。<br>*In just 36 minutes, 93% of its entire feed plunged into an abyss of depression and despair.* |
-| **`S10`** | `Bars 32–36` | `2055 – 2304` (`249f`) | `68.51 – 76.81s` | `Flow C` | **`360° → 2°` Horizon Collapse**: Compass sector collapses from `360°` to a `2°` razor slit under `4.7×` negative weight. | 算法没有价值观，它只算停留时长；而人性对恐惧与愤怒的驻足，是平淡真相的【4.7 倍】。<br>*Algorithms have no morals, only dwell-time math—and human eyes linger 4.7 times longer on outrage and fear.* |
-| **`S11`** | `Bars 36–40` | `2304 – 2559` (`255f`) | `76.81 – 85.30s` | **`MID BREAK [PREDICT]`** | **3-2-1 Prediction Pause & Duke (`PNAS 2018`, `N=1,652`) Card**: Two wooden clothespin choice cards (`A. 偏见消融` vs `B. 更加极端`) pulse with a 3-2-1 countdown. | 那么，如果强行撬开这【2° 窄缝】，逼你每天看相反观点——偏见会消失吗？<br>*What if we pry open that 2-degree slit and force you to read opposing views every day—will bias vanish?* |
-| **`S12`** | `Bars 40–44` | `2559 – 2814` (`255f`) | `85.30 – 93.81s` | `Pre-Climax Build` | **30-Day Forced Feed (`1,652 Voters × 24 Tweets/Day`)**: Red and blue ideological cards stream across a `Day 01 → Day 30` counter. | 杜克大学花重金招募【1,652 名】选民，连续【30 天】，每天强制阅读 24 条对立阵营言论。<br>*Duke University paid 1,652 voters to read 24 opposing political posts every single day for a full month.* |
-| **`S13`** | `Bars 44–48` | `2814 – 3069` (`255f`) | `93.81 – 102.31s` | **`CLIMAX [TWIST]`** | **Backfire Curve Shatters Ceiling (`+100%`)**: On `93.81s` (`Frame 2814`), the crimson actual line rockets upward, smashing the chart border (`极化翻倍 +100%`) + seal `「逆火效应」`. | 结果令学界脊背发凉：没有一个人被说服，保守派的极端化程度反而【翻了一倍（+100%）】。<br>*The result chilled researchers: not one person softened, and conservative polarization literally doubled (+100%).* |
-| **`S14`** | `Bars 48–51` | `3069 – 3260` (`191f`) | `102.31 – 108.68s` | `Flow D` | **Brain Amygdala Shield**: Sagittal brain blueprint where incoming facts ricochet off a hexagonal identity shield. | 心理学称之为【逆火效应】：当观点绑架了“我是谁”，异见就会被杏仁核当成【生存威胁】。<br>*Psychology calls this the Backfire Effect: when beliefs define who you are, counter-evidence feels like a physical attack.* |
-| **`S15`** | `Bars 51–54` | `3260 – 3452` (`192f`) | `108.68 – 115.07s` | `Flow D` | **`Algorithm = OFF` ABM Swarm (`JASSS 2024`)**: Toggle switch flips `Algorithm = OFF`; 200 particles still self-segregate into 4 isolated islands. | 仿真实验关掉一切推荐算法（【Algorithm = OFF】），仅凭人类趋利避害的本能，人群依然会自发结茧。<br>*Even with all algorithms switched OFF, simulations show human comfort-seeking alone splits society into isolated tribes.* |
-| **`S16`** | `Bars 54–57` | `3452 – 3643` (`191f`) | `115.07 – 121.44s` | `Flow D` | **Triple Concentric Lock & `@深色椿 11,219 赞` Card**: Three rings (`个体茧房 × 社交回音室 × 算法气泡`) lock, then reveal the viral Bilibili comment card. | 个体本能、熟人回音室与算法气泡【三重锁死】——甚至连你点开这条视频，也是算法算准了你想看“反思”。<br>*Instinct, echo chambers, and algorithms interlock—even this very video was served because the algorithm knew you liked reflection.* |
-| **`S17`** | `Bars 57–59` | `3643 – 3771` (`128f`) | `121.44 – 125.69s` | **`FULL-COLOR AWAKENING`** | **Sole Full-Color Shot — Active Honeypot (`蛋白粉7折券`)**: Canvas blooms into warm sunrise gold & emerald! Three clothespin bait tags (`蛋白粉` · `量子力学` · `古典吉他`) hijack the feed. | 既然逃不出算法，不如【反向驯化它】：主动搜索一个新领域停留【15 秒】，把推荐流变成你的免费猎犬。<br>*If you cannot escape the algorithm, domesticate it: intentionally linger 15 seconds on a new craft and make it your hound.* |
-| **`S18`** | `Bars 59–61` | `3771 – 3899` (`128f`) | `125.69 – 129.95s` | `Full-Color Flow` | **`Point · Line · Plane` Information Diet**: Three golden light wedges pry the `2°` slit back open to a full `360°` compass. | 给大脑换一份【点、线、面】食谱：少吃顺耳的情绪零食，多看跨立场的长文与【经得起时间检验的书】。<br>*Rebuild your diet across points, lines, and planes: fewer emotional snacks, more cross-stance essays and time-tested books.* |
-| **`S19`** | `Bars 61–63` | `3899 – 4026` (`127f`) | `129.95 – 134.20s` | `Outro Reunion` | **Return to the Sofa (`0.20 m → 0.00 m`)**: Camera returns to the opening sofa; husband and wife swap phones as the brass caliper closes to `0.00 m`. | 打破茧房最简单的一步，就在今晚：把手机递给身边相隔【20 厘米】的人，看看他眼里的世界。<br>*The simplest step out of the cocoon starts tonight: hand your phone across that 20-centimeter gap and see their world.* |
-| **`S20`** | `Bar 63–End` | `4026 – 4056` (`30f`) | `134.20 – 135.20s` | `Final Chord Hold` | **Aphorism & Academic Citations**: Golden serif aphorism + 5 academic citations (`Sunstein 2006 · UvA 2020 · WSJ 2021 · PNAS 2018 · JASSS 2024`). | 【算法只负责计算你的停留，而你可以决定——为谁停留。】<br>*Algorithms only calculate where you linger; you decide who is worth lingering for.* |
-
-#### LAW 4: CONTINUOUS WORLD CAMERA RIG + SVG FILTER SAFETY + BRIGHTNESS GATE
-- **Continuous World Camera (`<CameraRig />`)**:
-  - Combine smooth macro camera moves (`pan`, `zoom`, `3D perspective tilt`) with subtle real-drum impulse (`0.032 * kick.s * Math.exp(-7.5 * dt) * Math.cos(11 * dt)`) from `beat_maps.json`.
-  - **SVG Glow Filter Safety**: Whenever applying `<filter>` to horizontal/vertical lines, always set `filterUnits="userSpaceOnUse" x="-400" y="-400" width="2720" height="1880"` so 0-height/0-width lines never vanish!
-  - **Anti-Darkness Gate (`YAVG 32–55`)**: While the background is deep midnight navy (`#080B18` to `#12182E`), always render a warm radial ambient light pool behind the center stage apparatus so the frame is rich, luminous, and never pitch-black.
-
-#### LAW 5: APPLE/LINEAR-GRADE DIRECTOR'S SCREENING ROOM (`src/App.tsx`)
-Build an interactive Screening Room hosting `<Player />` (`1920×1080`, `30fps`, `4056 frames = 135.2s`) with:
-1. **Dual Uncut Master Switcher**:
-   - `《开智小曲 / We Never (Remix)》· 135.2s 原速一镜到底母带 (112.35 BPM · 64 Bars)` (`kaizhi_studio` -> `/audio/kaizhi_uncut_135s.mp3`)
-   - `《Claude算法小曲 / 若如初见 (Remix)》· 三段式 Drop 原片母带 (114.84 BPM)` (`claude_vibe_150s` -> `/audio/claude_vibe_150s.mp3`)
-2. **Live `64-Bar Downbeat & Horizon Angle HUD` Toggle**:
-   - Real-time scrolling `-2.0s .. +4.0s` downbeat & drum transient timeline (`downbeatFrames` gold markers, `beatFrames` ticks, `kick` red pulses, `snare` amber pulses) + current `BAR # / 64`, `SCENE S01–S20`, and `HORIZON ANGLE (360° → 2° → 360°)`.
-3. **20-Scene Storyboard Matrix**: Click any scene `S01`–`S20` to jump to its exact `startFrame`.
+- **GOAL**：让观众从“一人配 10 个 AI 等于一家估值 10 亿公司”的商业神话中清醒，看清 **1937 科斯交易成本剪刀差（生产成本归零 $\to$ 全网供给通胀 100 倍 $\to$ 外部获客与信任壁垒暴涨 10 倍）** 与 **6,505 人自主权悖论 / 70% 平台买路钱漏斗 / 上下双向蒸馏暗箱**，并在今晚用“60 分杂活交代码托管 + 90% 心力死磕 95 分审美与真名兜底 + 14 天最小样本收费验真”锻造不可被算法蒸馏的个人信誉支点。
+- **OUTPUT**：`1920 × 1080` (`16:9` 横屏主片)，`30 fps`，总长 **`132.0 秒`（`3,960 帧 @ 30fps`）**。
+- **MASTER AUDIO (`唯一锁定原曲母带`)**：
+  - `assets/audio/jingwei_master_132s.mp3`（`痛劣 - 精卫 (DJ 0.88x 纯音乐)`，`115.0 BPM`，`F Minor`，从原曲 `13.61s` 起播，在第 **`3.80s`** 精准砸下首个四四拍重型底鼓 Drop，一刀不剪自然流淌至 `132.0s`，全片保持恒定音量 `0.78`，**严禁中途音量闪避或循环拼接**）。
+- **FOLEY SFX (`点睛实录拟音`)**：
+  - `lock_click.mp3`（`0.45s` 首脉冲十臂机械咬合、`9.36s` 天平重压、`15.97s` 三道质检闸门锁死）
+  - `slam_impact.mp3`（`3.82s` 首重拍 Drop 十臂崩断化红链、`128.36s` 终幕主权黄铜印章落款）
+  - `whoosh_deep.mp3`（`19.43s`、`39.43s`、`65.83s`、`92.03s`、`111.63s` 幕际物理媒介翻转）
+  - `glass_shatter.mp3`（`35.65s` 科斯剪刀差裂谷撕裂）
+  - `heartbeat_lub_dub.mp3`（`54.96s` 精神倦怠 `+42%` 心电图冲顶）
+  - `reverse_suck.mp3`（`61.94s` 地底 70% 平台抽水漏斗揭秘）
+  - `glitch_tear.mp3`（`88.57s` 双向蒸馏器把单兵压制成标准插头）
+  - `singing_bowl_strike.mp3`（`105.03s` `S17` 第四面墙知乎 `4,172 赞` 提问卡浮现）
 
 ---
 
-### STEP 3: BUILD & VERIFICATION
-1. Verify `npx tsc --noEmit` and `npx vite build` pass with zero errors.
-2. Render key frames (`S01`, `S04` Title Card, `S06` UvA Comparison, `S09` 36-Min 93% Grid, `S13` +100% Backfire Curve, `S17` Full-Color Awakening, `S19` Sofa Reunion) to confirm every scene is visually distinct, tangible, legible, and 100% free of ugly bottom subtitle boxes.
-```
+## 2. 四重物理媒介视觉系统 (`FOUR PHYSICAL MEDIA — 严禁廉价发光球与顶栏双卡片套路`)
+
+全片严格在以下四种具有真实物理质感的媒介之间切换，每次媒介切换形成强烈的视觉模式打断（Pattern Interrupt）：
+
+| 媒介代号与适用幕次 | 底色 (`Ground`) | 主墨与结构线 (`Ink A`) | 焦点强调色 (`Ink B`) | 物理材质与运动法则 |
+| :--- | :--- | :--- | :--- | :--- |
+| **媒介 I (`walnut`)：深夜接线台胡桃木与黑曜石**<br>适用：Act I (`S01–S03`) & Act VI (`S20`) | `#141210` $\to$ `#0B0A08`<br>（深胡桃木暖黑 + 柔金顶光晕） | `#F4EFE6`<br>（羊皮纸宣纸白）<br>黄铜骨架：`#D4AF37` | 破局/告警朱砂：`#C83E2B`<br>冷青数据光：`#0EA5E9`<br>暖金台灯：`#F59E0B` | 真实桌面俯视与天平/闸门机械结构；相机在 `03:00` 接线台、失衡天平与三道黄铜质检闸门之间做连续刚体推拉与变形。 |
+| **媒介 II (`paper`)：拓印学术档案纸 (`Archival Risograph Paper`)**<br>适用：Act II (`S04–S06`) & Act IV (`S11–S14`) | `#F3EFE6`<br>（暖棉学术手稿纸，带 `1px` `rgba(20,20,19,0.06)` 精密坐标方格） | `#141413`<br>（深碳素印刷黑墨，标题字重 `800`） | 朱砂批注印泥：`#C83E2B`<br>档案钴蓝：`#1D4ED8`<br>荧光笔黄：`#FACC15` | 模拟 *The Economist* / Vox 铜版画建筑剖面与经济学手稿；1937 科斯齿轮大厦、双曲线剪刀差、70 项存活矩阵与上下双向蒸馏器均采用扎实印刷线条与荧光笔涂抹。 |
+| **媒介 III (`obsidian`)：算法暗箱黑曜石矩阵 (`Obsidian Matrix`)**<br>适用：Act III (`S07–S10`) & Act V (`S15–S17`) | `#0B0D13`<br>（消光碳黑实验室底板 + `#1E2430` 工业坐标刻度） | `#F4EFE6`<br>（高对比骨白） | 抽水/倦怠朱砂：`#E11D48`<br>拉丝黄铜：`#D4AF37`<br>抑郁冷蓝：`#2563EB` | 6,505 人脉冲矩阵、24 小时断更沙漏、心电图倦怠曲线与地底巨型 70% 抽水漏斗均采用精密工程剖面与直接引线标注（`<Leader />`）。 |
+| **媒介 IV (`dawn`)：破局晨曦暖金 (`Dawn Break`)**<br>适用：Act VI (`S18–S19`) | `#141210` 叠温暖晨曦径向光晕 `rgba(245,158,11,0.28)` | `#F4EFE6`<br>（暖白宣纸色） | 鎏金尖峰：`#D4AF37`<br>生机翡翠：`#10B981`<br>朱砂印泥：`#C83E2B` | 水下滤镜豁然散去，60 分机械底座托起刺破顶棚的 95 分黄金尖峰，继而化作 14 天收费验真探针。 |
+
+---
+
+## 3. 铁律级版面构图与 Q11 画面净空门禁 (`CLEAN-CANVAS & ANTI-PPT MANDATE`)
+
+1. **严禁顶栏左右成对悬浮卡片（`NO Twin Top-Left/Top-Right Stamp Boxes`）**：
+   - **绝对禁止**在每一镜的左上角和右上角固定放置两个圆角矩形标题框！那种“顶上两个框 + 中间一个框 + 底下一行字”的布局会让画面沦为呆板的 PPT 模板，导致观众视线分裂、完全看不懂重点。
+   - **唯一正确做法（对齐首期 `01_Opus55_Battle1_OptionA`）**：画面上方 85% 区域（`y = 60..860px`）是**完整的、无割裂的 2.5D 物理舞台**！每一镜的 `L1A` 与 `L1B` 屏上锚字（`48px–84px`，`font-weight: 800`）必须作为**舞台内空间排印（In-Scene Spatial Typography）**或通过**带折角的工业引线（`<Leader />`）**直接焊在画面左右/上下的核心视觉主体上！
+2. **一屏一具象物理隐喻（`One Self-Explanatory Physical Apparatus Per Shot`）**：
+   - 核心视觉主体必须占据画幅 **`50% – 75%`** 的面积。
+   - **严禁画“几个矩形框里面写几行字”的抽象流程图**！每一镜都必须画出具体、可感、不看字幕也能一眼秒懂的具象物理装置（如：十臂机械工牌崩断化作红色电话线锁链、左轻右重的失衡天平、拦截缩略图瀑布的三道黄铜闸门、由 50 枚齿轮咬合挡住外部风暴的 1937 科斯大楼、单舱顶部的 24 小时断更沙漏、锁死所有算力舱底部的巨型地下 70% 抽水漏斗、山脚 66 枚坠落残骸与山顶卖金铲子的售票亭、把单兵压成三脚插头的双向蒸馏机、知乎 `4,172 赞` 羊皮纸提问卡、刺破 60 分玻璃顶棚的 95 分黄金尖峰、盖在契约上的主权黄铜印章）。
+3. **L1 / L2 语言物理隔离与 Q11 字高门禁**：
+   - **画内 `L1` 与所有图表辅助文字**：**100% 纯中文汉字 + 核心数字**（严禁在画布内出现英文单词或 `->` 符号；所有字号必须 $\ge 28\text{px}$，严禁出现 `<24px` 的角标、分镜号 `S01`、导演注记或伪 HUD 小字）。
+   - **底部 `L2` 无边框中英双语衬线字幕（`y = 880..1050px`）**：
+     - 底部 `180px` 柔和渐变暗角内，居中悬浮**无边框、无胶囊背景框**的双语字幕：
+     - 第一行（中文主行）：`47px`，`Noto Serif SC / Source Han Serif SC / Songti SC`，`font-weight: 700`；前半拍（`beatA`）在镜头切入时浮现，后半拍转折句（`beatB`）在镜头中段重拍（`beat_b_sec`）精准切换并触发关键词高亮放大脉冲！
+     - 第二行（英文副行）：`23px`，`EB Garamond / Instrument Serif / Georgia`，`font-style: italic`，紧随中文主行下方 `7px`。
+
+---
+
+## 4. 双脉冲黄金前 4 秒硬门禁 (`DUAL-PULSE FIRST 4 SECONDS IN S01`)
+
+为彻底攻克短视频前 2 秒划走率，第 1 镜 `S01` (`0.00s – 6.20s`) 必须严格实现三阶物理状态：
+1. **`t = 0.00s`（Frame 0 首帧零淡入，`opacity: 1`）**：
+   - 严禁第 0 帧黑屏或 `opacity: 0 -> 1` 慢速淡入！
+   - `t = 0.00s` 首帧直接满对比度呈现：左侧立着金碧辉煌的宣传立牌 **`单兵估值 10 亿`**，中央是凌晨桌前佩戴金色工牌的独立创作者与 10 条蓄势待发的黄铜机械臂，右侧悬着刺眼的暗红数字钟 **`03:00 · 10 路报错工单`**。
+2. **`t = 0.45s`（Frame 13 第一重机械咬合脉冲 + `lock_click.mp3`）**：
+   - 10 条黄铜机械臂（分别标注 `写代码`、`画海报`、`剪视频`、`写文案`、`做客服`、`管账单`、`跑投流`、`抓数据`、`修接口`、`盯运维`）在 `t = 0.45s` 瞬间向外弹射咔哒锁死，产生强烈的首秒视觉抓手。
+3. **`t = 3.80s`（Frame 114 第二重重拍 Drop 崩裂反噬 + `slam_impact.mp3`）**：
+   - 在原曲首个四四拍重型底鼓轰然砸落瞬间（`t = 3.80s`），左侧 `单兵估值 10 亿` 金牌表面裂开暗纹并熄灭高光；中央 10 条黄铜机械臂瞬间崩断倒戈为 **10 条缠绕朱砂红报错工单的电话线锁链**（`接口崩了`、`模型幻觉`、`客户拒付`、`账号限流`、`账单超支`、`合规警告`、`差评投诉`、`服务宕机`、`数据丢失`、`并发死锁`），将创作者死死捆在 `03:00` 接线台上！
+
+---
+
+## 5. 六幕 20 镜完整时序、共享锚点变形 (`SEAM & CARRY`) 与双层台词总表
+
+全片 20 镜严格锁定以下起止秒数（`start` / `end`）、半拍切入秒数（`beatB`）、屏上纯中文锚字（`L1`）、底部双语字幕（`L2`）及跨镜共享物件变形（`Seam & Carry`）：
+
+| 镜号 | 幕次 & 媒介 | 起止时间 (`s`) | 拍B切入 (`beatB`) | `L1` 屏上纯中文视觉锚字（直接焊于画面主体，严禁顶栏双框） | `L2` 底部中文主行 (`[拍A]` ｜ `[拍B]`) & 英文斜体副行 | 画面具象物理装置与跨镜无缝变形 (`Bespoke Apparatus & Seam Carry`) |
+| :--- | :--- | :---: | :---: | :--- | :--- | :--- |
+| **S01** | Act I<br>`walnut` | `0.0 – 6.2`<br>*(6.2s)* | `3.80s`<br>*(Drop 1)* | 左立牌：`单兵估值 10 亿`<br>右警报：`03:00 · 10 路报错工单` | `[拍A]` 一人配10个AI像家公司<br>`[拍B]` 凌晨3点沦为算法接线员<br>*Ten engines crown a solo founder; at 3 a.m., ten alarms chain the operator.* | **[双脉冲开场]** `0.0s` 首帧满对比直出；`0.45s` 十条黄铜机械臂咔哒弹出锁死；`3.80s` 重拍鼓点落下，十臂崩断倒戈为十根朱砂红报错电话锁链捆死接线员。 |
+| **S02** | Act I<br>`walnut` | `6.2 – 13.0`<br>*(6.8s)* | `9.33s` | 左星柱：`周访客 200 万`<br>右巨石：`营收账面赤字` | `[拍A]` 头号一人项目揽14万星<br>`[拍B]` 月入1万刀倒贴算力费<br>*140,000 stars on OpenClaw, yet monthly revenue drowns beneath token bills.* | **[翻转化秤]** `S01` 中心的金色工牌横转拉伸为失衡黄铜天平横梁：左盘升起高耸入云的 `14万星` 金色光柱（引线标 `周访客 200 万`）；`9.33s` 右盘轰然砸下沉重的朱砂红算力账单巨石，将右盘压垮触底（引线标 `营收账面赤字`）。 |
+| **S03** | Act I<br>`walnut` | `13.0 – 19.4`<br>*(6.4s)* | `15.94s` | 左瀑布：`社区实录 14 天`<br>右闸门：`连续 3 轮零通过` | `[拍A]` 两周狂造520条AI视频<br>`[拍B]` 全栈3次评审转化归零<br>*Five hundred generated clips in two weeks; zero survivors across three user audits.* | **[账单化流]** `S02` 右盘赤字巨石裂解为左右双路实证管道：左路高速喷射 `520` 张缩略图瀑布（标 `社区实录 14 天`）；`15.94s` 右路三道厚重黄铜质检闸门依次落下锁死（标 `连续 3 轮零通过`），将缩略图全部拦截弹回，转化计数归 `0`。 |
+| **S04** | Act II<br>`paper` | `19.4 – 26.2`<br>*(6.8s)* | `22.53s` | 建筑眉题：`1937 企业的性质`<br>墙内核心：`50 枚齿轮防波堤` | `[拍A]` 1937科斯追问公司起源<br>`[拍B]` 50人同楼只为挡摩擦<br>*Coase asked in 1937 why firms exist: fifty gears under one roof shield against market friction.* | **[立闸筑楼 · 媒介翻转为档案纸]** `S03` 的三道黄铜闸门旋转 $90^\circ$ 纵向升起，合拢筑成一座铜版画剖面大楼（顶部篆刻 `1937 企业的性质 · 罗纳德·科斯`）；大楼内部 `50 枚黄铜齿轮` 精密咬合运转（标 `50 枚齿轮防波堤`），厚重外墙将外部翻涌的暗红风暴（`寻客成本 · 合同博弈 · 坏账风险`）牢牢挡在墙外。 |
+| **S05** | Act II<br>`paper` | `26.2 – 32.4`<br>*(6.2s)* | `29.05s` | 左消融：`组织协调减 9 成`<br>右升空：`生产吞吐涨 10 倍` | `[拍A]` AI把内部沟通砍90%<br>`[拍B]` 单兵10倍产能拆旧楼<br>*Permissionless leverage slashes internal coordination by 90% and multiplies solo output tenfold.* | **[大楼解构 · Steelmanning]** 一束金色脉冲切过 `1937` 大楼，内部代表“层级汇报与开会”的阻尼弹簧消融（标 `组织协调减 9 成`）；`29.05s` 整座大楼外墙解体，50 枚齿轮脱开化作 `50` 枚光芒四射、自由悬浮的金色菱形算力舱升空（标 `生产吞吐涨 10 倍`）。 |
+| **S06** | Act II<br>`paper` | `32.4 – 39.4`<br>*(7.0s)* | `35.62s` | 左矩阵：`供给通胀 100 倍`<br>右高墙：`交易壁垒高 10 倍` | `[拍A]` 生产归零同质品暴涨<br>`[拍B]` 获客与信任反贵10倍<br>*When production cost hits zero, supply inflates a hundredfold and trust becomes ten times pricier.* | **[复制劈叉 · 科斯剪刀差]** 悬浮菱形算力舱瞬间分裂复制为密密麻麻的同质化算力舱海洋（标 `供给通胀 100 倍`）；`35.62s` 画面画出巨型双曲线剪刀差：金色“生产边际成本线”贴地归零，而朱砂红“获客与信任摩擦曲线”陡峭刺破顶棚立起高墙（标 `交易壁垒高 10 倍`）。 |
+| **S07** | Act III<br>`obsidian` | `39.4 – 45.8`<br>*(6.4s)* | `42.34s` | 左印章：`2026 心理学顶刊`<br>右矩阵：`实测样本 6505 人` | `[拍A]` 拆掉公司围墙真自由？<br>`[拍B]` 追踪6505名独立个体<br>*Does tearing down corporate walls grant freedom? A 2026 study tracked 6,505 solo workers.* | **[下潜点阵化 · 媒介翻转为黑曜石]** 相机顺着朱砂红高墙垂直下潜进入黑曜石实验室，悬浮算力舱收拢对齐为精密脉冲点阵（标 `实测样本 6505 人`），左侧弹出档案印章 `2026 心理学顶刊`。 |
+| **S08** | Act III<br>`obsidian` | `45.8 – 51.8`<br>*(6.0s)* | `48.56s` | 左碎钟：`零行政考勤约束`<br>右沙漏：`断更 24 小时清零` | `[拍A]` 没老板打卡按件计酬<br>`[拍B]` 停工1天流量即刻归零<br>*No manager clocks your hours, yet pausing for twenty-four hours resets algorithmic weight to zero.* | **[微距推舱]** 从 `6,505` 点阵微距推入 `1` 号算力舱：左侧传统“打卡考勤钟”碎裂（标 `零行政考勤约束`）；`48.56s` 舱顶巨型倒计时沙漏流尽 `24:00 -> 00:00`，算力舱外围的推荐曝光光环瞬间归零熄灭（标 `断更 24 小时清零`）。 |
+| **S09** | Act III<br>`obsidian` | `51.8 – 58.6`<br>*(6.8s)* | `54.93s` | 下虚线：`预期排班松弛`<br>上红线：`精神倦怠激增 42%` | `[拍A]` 自由越高耗竭增42%<br>`[拍B]` 炒掉老板请回算法鞭<br>*The autonomy paradox: higher scheduling freedom drives a 42% surge in emotional exhaustion.* | **[沙漏化鞭 · 自主权悖论曲线]** `S08` 的沙漏扭曲拉长为一根抽打算力舱的朱砂红算法皮鞭；右侧坐标系中，下方平缓虚线标 `预期排班松弛`，而 `54.93s` 实测朱砂红心电曲线猛烈劈叉冲顶至 `精神倦怠激增 42%`。 |
+| **S10** | Act III<br>`obsidian` | `58.6 – 65.8`<br>*(7.2s)* | `61.91s` | 左热评：`热评 2831 赞`<br>下阀门：`平台抽水阀门 70%` | `[拍A]` 8人工坊升专业号断流<br>`[拍B]` 省下房租全交买路钱<br>*Organic reach shuts overnight; every dollar saved on office rent feeds a 70% platform toll.* | **[下潜揭底 · 地下巨型抽水漏斗]** 相机沿算力舱底部导管垂直深潜至地底暗箱：揭开所有独立算力舱底部其实全部插在同一个**巨型朱砂红流量漏斗**上！左侧浮现 `热评 2831 赞`（`8人工坊断流实录`），`61.91s` 漏斗底部阀门轰然开启，将金色金币流狂抽走 `70%`（标 `平台抽水阀门 70%`）。 |
+| **S11** | Act IV<br>`paper` | `65.8 – 72.4`<br>*(6.6s)* | `68.84s` | 左账册：`公开底表 70 项`<br>右幸存：`66 折戟 · 存活率 5.7%` | `[拍A]` 鼻祖试水70个独立项<br>`[拍B]` 66个阵亡仅4个跑通<br>*Even solo pioneer Pieter Levels watched 66 of 70 projects fail—a 5.7% survival rate.* | **[阵列熄灭 · 媒介翻转为档案纸]** 镜头拉向档案纸上整齐排列的 `10 × 7` 共 `70` 枚独立项目徽章（标 `公开底表 70 项`）；`68.84s` 其中 `66` 枚徽章瞬间划上朱砂红叉并黯淡下坠，仅右上角 `4` 枚亮起金色微光（标 `66 折戟 · 存活率 5.7%`）。 |
+| **S12** | Act IV<br>`paper` | `72.4 – 78.6`<br>*(6.2s)* | `75.25s` | 下塔基：`月净利低于 500`<br>上售票亭：`淘金热真赢家卖铲` | `[拍A]` 83%开发月赚不足500刀<br>`[拍B]` 多数神话靠卖课割同行<br>*83% of indie builders net under $500 a month while gold-rush gurus profit from selling shovels.* | **[坠舱堆基 · 淘金卖铲金字塔]** `S11` 坠落的 66 枚暗淡徽章堆积成庞大的金字塔底层（`83%` 占比，标 `月净利低于 500`）；`75.25s` 金字塔顶端升起一座金碧辉煌的售票亭（标 `淘金热真赢家卖铲`），向下兜售金色铁锹与速成课并抽走塔基仅存的铜币。 |
+| **S13** | Act IV<br>`paper` | `78.6 – 85.6`<br>*(7.0s)* | `81.82s` | 中五爪：`单兵跨界 5 工种`<br>上顶棚：`困于 60 分均值顶棚` | `[拍A]` 包揽5岗只用AI的60分<br>`[拍B]` 缺同伴纠偏盲区狂奔<br>*Wearing five hats traps solo builders beneath a 60-point ceiling with zero peer calibration.* | **[单舱五触手 · 60分玻璃顶棚]** 从塔基升起一枚独立算力舱，向五个方向伸出机械臂（`写码 · 设计 · 剪辑 · 投流 · 客服`，标 `单兵跨界 5 工种`）；`81.82s` 五只触手同时撞上一道厚重的 `60 分` 水平玻璃天花板（标 `困于 60 分均值顶棚`），火花四溅却无法突破 `95 分` 专业线。 |
+| **S14** | Act IV<br>`paper` | `85.6 – 92.0`<br>*(6.4s)* | `88.54s` | 下层压机：`向下裁撤外包层`<br>上层插座：`向上沦为标准插头` | `[拍A]` 以为把员工蒸馏成代码<br>`[拍B]` 平台反手把你蒸成零工<br>*You think you distilled staff into prompts; upstream platforms distill you into a replaceable plug.* | **[顶棚化管 · 上下双向蒸馏机]** `S13` 的 60 分玻璃顶棚变形为上下双层工业蒸馏压机：下层单兵把初级外包工压成提示词（标 `向下裁撤外包层`）；`88.54s` 上层平台巨型液压母座轰然压下，将单兵自己冲压成一枚毫无议价权的**三脚标准插头**（标 `向上沦为标准插头`）。 |
+| **S15** | Act V<br>`obsidian` | `92.0 – 98.2`<br>*(6.2s)* | `94.85s` | 左阵列：`2026 博弈矩阵`<br>右坍缩：`同质接口溢价清零` | `[拍A]` 仿真测算纯执行归零<br>`[拍B]` 越标准手艺越快成耗材<br>*Game-theoretic modeling proves standardized execution collapses toward zero pricing power.* | **[插头阵列化 · 竞价归零图]** `S14` 的单个三脚插头复制排列为黑曜石盘面上的百枚同质化插头竞价槽（标 `2026 博弈矩阵`）；`94.85s` 右侧代表“手艺溢价与客单价”的柱状阶梯一路断崖式坍缩至 `0.0%`（标 `同质接口溢价清零`）。 |
+| **S16** | Act V<br>`obsidian` | `98.2 – 105.0`<br>*(6.8s)* | `101.33s` | 上孤岛：`防波堤解体`<br>下合围：`10 倍高墙与 7 成漏斗` | `[拍A]` 生产越便宜信任越昂贵<br>`[拍B]` 算力孤岛锁死沦为佃农<br>*Stripped of corporate walls, isolated nodes are squeezed between tenfold trust walls and platform tolls.* | **[全景合体 · 三层暗箱总装剖面]** 镜头拉远完成全片暗箱总装：上方是 `S05` 拆掉公司后的 `防波堤解体` 孤岛，左右两侧是 `S06` 的十倍获客与合规高墙，底部是 `S10` 的七成平台抽水漏斗（标 `10 倍高墙与 7 成漏斗`）——`101.33s` 三者合拢咬死，将 `S01` 那个凌晨 3 点的接线员困在核心。 |
+| **S17** | Act V<br>`obsidian` | `105.0 – 111.6`<br>*(6.6s)* | `108.04s` | 卡片眉题：`高赞 4172 追问`<br>卡片主文：`背后 10 路模型凭何选你` | `[拍A]` 四千赞热评刺破幻象<br>`[拍B]` 算力平权后谁为你买单<br>*When everyone commands ten AI models behind the screen, why should anyone choose you?* | **[瞳孔破壁 · 第四面墙暴击]** 三层暗箱向中心瞳孔般收缩，一张温润厚重的知乎羊皮纸高赞证据卡（顶栏刻 `高赞 4172 追问`）迎面升起直视观众；`108.04s` 卡片正中央逐字烙下朱砂红大字：**`背后 10 路模型凭何选你`**。 |
+| **S18** | Act VI<br>`dawn` | `111.6 – 118.0`<br>*(6.4s)* | `114.54s` | 下底座：`60 分机械底座`<br>上尖峰：`95 分审美与赔付尖峰` | `[拍A]` 平庸杂活交代码托管<br>`[拍B]` 留90%心力死磕极致<br>*Delegate 60-point routine work to code; pour 90% of human focus into 95-point taste and liability.* | **[折卡筑基 · 破局暖光刺破天花板]** 晨曦暖金光晕破开暗夜：`S17` 提问卡向下水平折叠为稳固的自动化基座（标 `60 分机械底座`）；`114.54s` 全部 `90%` 的金色人类心力从底座中央凝聚喷薄，化作一枚锋利的黄金方尖碑一举刺穿 `60 分` 玻璃顶棚直抵 `95 分审美与赔付尖峰`！ |
+| **S19** | Act VI<br>`dawn` | `118.0 – 125.2`<br>*(7.2s)* | `121.31s` | 左刻度：`敬畏 4 比 70 底表`<br>右命中：`最小样本收费验真` | `[拍A]` 牢记70死66真实概率<br>`[拍B]` 14天小原型先验付款<br>*Respect the 4-in-70 odds: validate real willingness to pay with a 14-day prototype before going all in.* | **[尖峰化针 · 14天最小原型验真]** `S18` 的黄金尖峰横转化作一枚精密的 `14 天试错探针`（标 `敬畏 4 比 70 底表`），沿时间轴快速刺过前 `3` 个灰暗的伪需求泡沫并果断剪断止损；`121.31s` 探针精准命中第 `4` 个真实落入金币的付费节点并绽放翡翠与鎏金光环（标 `最小样本收费验真`）。 |
+| **S20** | Act VI<br>`walnut` | `125.2 – 132.0`<br>*(6.8s)* | `128.33s` | 左桌面：`凌晨 3 点接线台`<br>右落印：`熔铸主权黄铜印章` | `[拍A]` 拔70%漏斗重铸信誉<br>`[拍B]` 告别零工做时代支点<br>*Unplug the 70% toll funnel and forge an un-distillable brass seal of personal reputation.* | **[拔管铸印 · 100% 回归 S01 桌面闭环]** 镜头回到 `S01` 那张 `凌晨 3 点接线台`，温暖台灯光晕照亮胡桃木桌面：底部 `70%` 抽水管道被彻底拔除断开，`S01` 的十条接线与金色工牌在中央熔铸成一枚厚重、棱角分明的立体黄铜印章；`128.33s` 印章重重盖在羊皮纸主权契约上（标 `熔铸主权黄铜印章`），定格余韵。 |
