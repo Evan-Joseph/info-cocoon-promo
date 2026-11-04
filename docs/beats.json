@@ -4,8 +4,8 @@
   "shot_count": 20,
   "first_frame_zero_fade_in": true,
   "first_heavy_drop_sec": 3.8,
-  "l2_total_chars": 980,
-  "l2_chars_per_sec": 7.42,
+  "l2_total_chars": 1009,
+  "l2_chars_per_sec": 7.64,
   "macro_act_boundaries_sec": [
     0.0,
     19.4,
@@ -18,8 +18,9 @@
     3.8,
     19.4,
     39.4,
-    65.8,
+    58.6,
     78.6,
+    98.2,
     105.0
   ],
   "shot_bounds": [
@@ -30,7 +31,7 @@
       "duration": 6.2,
       "beat_a_sec": 0.0,
       "beat_b_sec": 3.8,
-      "hold_window_sec": 2.0,
+      "hold_window_sec": 1.5,
       "pulse_1_sec": 0.45
     },
     {
@@ -39,7 +40,7 @@
       "end": 13.0,
       "duration": 6.8,
       "beat_a_sec": 6.35,
-      "beat_b_sec": 9.33,
+      "beat_b_sec": 9.54,
       "hold_window_sec": 2.4
     },
     {
@@ -48,8 +49,8 @@
       "end": 19.4,
       "duration": 6.4,
       "beat_a_sec": 13.15,
-      "beat_b_sec": 15.94,
-      "hold_window_sec": 2.2
+      "beat_b_sec": 16.32,
+      "hold_window_sec": 2.0
     },
     {
       "shot": "S04",
@@ -57,7 +58,7 @@
       "end": 26.2,
       "duration": 6.8,
       "beat_a_sec": 19.55,
-      "beat_b_sec": 22.53,
+      "beat_b_sec": 22.58,
       "hold_window_sec": 2.4
     },
     {
@@ -66,7 +67,7 @@
       "end": 32.4,
       "duration": 6.2,
       "beat_a_sec": 26.35,
-      "beat_b_sec": 29.05,
+      "beat_b_sec": 28.84,
       "hold_window_sec": 2.2
     },
     {
@@ -75,7 +76,7 @@
       "end": 39.4,
       "duration": 7.0,
       "beat_a_sec": 32.55,
-      "beat_b_sec": 35.62,
+      "beat_b_sec": 35.63,
       "hold_window_sec": 2.6
     },
     {
@@ -84,7 +85,7 @@
       "end": 45.8,
       "duration": 6.4,
       "beat_a_sec": 39.55,
-      "beat_b_sec": 42.34,
+      "beat_b_sec": 42.41,
       "hold_window_sec": 2.2
     },
     {
@@ -93,7 +94,7 @@
       "end": 51.8,
       "duration": 6.0,
       "beat_a_sec": 45.95,
-      "beat_b_sec": 48.56,
+      "beat_b_sec": 48.67,
       "hold_window_sec": 2.0
     },
     {
@@ -111,8 +112,8 @@
       "end": 65.8,
       "duration": 7.2,
       "beat_a_sec": 58.75,
-      "beat_b_sec": 61.91,
-      "hold_window_sec": 2.6
+      "beat_b_sec": 62.23,
+      "hold_window_sec": 2.4
     },
     {
       "shot": "S11",
@@ -120,7 +121,7 @@
       "end": 72.4,
       "duration": 6.6,
       "beat_a_sec": 65.95,
-      "beat_b_sec": 68.84,
+      "beat_b_sec": 68.5,
       "hold_window_sec": 2.2
     },
     {
@@ -129,7 +130,7 @@
       "end": 78.6,
       "duration": 6.2,
       "beat_a_sec": 72.55,
-      "beat_b_sec": 75.25,
+      "beat_b_sec": 74.76,
       "hold_window_sec": 2.2
     },
     {
@@ -138,7 +139,7 @@
       "end": 85.6,
       "duration": 7.0,
       "beat_a_sec": 78.75,
-      "beat_b_sec": 81.82,
+      "beat_b_sec": 82.06,
       "hold_window_sec": 2.4
     },
     {
@@ -147,7 +148,7 @@
       "end": 92.0,
       "duration": 6.4,
       "beat_a_sec": 85.75,
-      "beat_b_sec": 88.54,
+      "beat_b_sec": 88.32,
       "hold_window_sec": 2.2
     },
     {
@@ -156,8 +157,8 @@
       "end": 98.2,
       "duration": 6.2,
       "beat_a_sec": 92.15,
-      "beat_b_sec": 94.85,
-      "hold_window_sec": 2.2
+      "beat_b_sec": 95.1,
+      "hold_window_sec": 2.0
     },
     {
       "shot": "S16",
@@ -165,7 +166,7 @@
       "end": 105.0,
       "duration": 6.8,
       "beat_a_sec": 98.35,
-      "beat_b_sec": 101.33,
+      "beat_b_sec": 101.36,
       "hold_window_sec": 2.4
     },
     {
@@ -174,7 +175,7 @@
       "end": 111.6,
       "duration": 6.6,
       "beat_a_sec": 105.15,
-      "beat_b_sec": 108.04,
+      "beat_b_sec": 108.15,
       "hold_window_sec": 2.4
     },
     {
@@ -183,7 +184,7 @@
       "end": 118.0,
       "duration": 6.4,
       "beat_a_sec": 111.75,
-      "beat_b_sec": 114.54,
+      "beat_b_sec": 114.41,
       "hold_window_sec": 2.2
     },
     {
@@ -192,7 +193,7 @@
       "end": 125.2,
       "duration": 7.2,
       "beat_a_sec": 118.15,
-      "beat_b_sec": 121.31,
+      "beat_b_sec": 121.19,
       "hold_window_sec": 2.6
     },
     {
@@ -201,12 +202,12 @@
       "end": 132.0,
       "duration": 6.8,
       "beat_a_sec": 125.35,
-      "beat_b_sec": 128.33,
+      "beat_b_sec": 128.5,
       "hold_window_sec": 2.6
     }
   ],
-  "l2_total_hanzi": 842,
-  "l2_hanzi_per_sec": 6.38,
+  "l2_total_hanzi": 826,
+  "l2_hanzi_per_sec": 6.26,
   "primary_bgm": {
     "track_id": "07",
     "title": "精卫 (DJ 0.88x 纯音乐)",
@@ -218,7 +219,7 @@
     "start_offset_sec": 13.61,
     "first_pulse_sec": 0.45,
     "video_drop_sec": 3.8,
-    "master_file": "03_配乐精析与卡点试听/bgm_composed/01_JingWei_DJ0.88x_Offset3.8sDrop_132s_Master.mp3",
+    "master_file": "03_配乐精析与卡点试听/bgm_composed/jingwei_master_132s.mp3",
     "beat_sec": 0.521739
   },
   "first_pulse_sec": 0.45,

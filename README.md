@@ -4,7 +4,7 @@
 
 ## Core Production Files
 - `docs/SPEC.md` — Complete Technical & Visual Specification (`Opus 5.5 × Argon` V4 Standard, 20 Bespoke Physical Apparatuses, Continuous `Seam & Carry` Morphs, Dual-Pulse First 4 Seconds, Q11 Clean-Canvas Gate)
-- `docs/SCRIPT_AND_DIRECTOR_TABLE.md` — 6-Act 20-Shot Master Script & 9-Column Director Table (`v2.1`)
+- `docs/SCRIPT_AND_DIRECTOR_TABLE.md` — 5-Act 20-Shot Master Script & 9-Column Director Table (`v4.0`)
 - `docs/SUPER_INDIVIDUAL_COASE_DOSSIER.md` — Empirical Research Dossier (Coase 1937, OpenClaw 2026, JOHP N=6,505, Pieter Levels 4/70, Bilibili/Zhihu High-Like Cases)
 - `assets/audio/jingwei_master_132s.mp3` — Single Locked 132.0s BGM Master (`115.0 BPM`, `F Minor`, First Heavy Drop at `t = 3.80s / Frame 114`)
 - `assets/audio/beat_maps.json` — Pre-computed Frame-Accurate Downbeats (`62 bars`), Drum Transients (`272 kicks`, `383 snares`), and Multi-Band Energy Envelopes
