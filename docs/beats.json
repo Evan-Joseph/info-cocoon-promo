@@ -4,15 +4,14 @@
   "shot_count": 20,
   "first_frame_zero_fade_in": true,
   "first_heavy_drop_sec": 3.8,
-  "l2_total_chars": 407,
-  "l2_chars_per_sec": 3.08,
+  "l2_total_chars": 980,
+  "l2_chars_per_sec": 7.42,
   "macro_act_boundaries_sec": [
     0.0,
     19.4,
     39.4,
-    65.8,
-    92.0,
-    111.6,
+    58.6,
+    98.2,
     132.0
   ],
   "pattern_interrupts_sec": [
@@ -206,8 +205,8 @@
       "hold_window_sec": 2.6
     }
   ],
-  "l2_total_hanzi": 340,
-  "l2_hanzi_per_sec": 2.58,
+  "l2_total_hanzi": 842,
+  "l2_hanzi_per_sec": 6.38,
   "primary_bgm": {
     "track_id": "07",
     "title": "精卫 (DJ 0.88x 纯音乐)",
