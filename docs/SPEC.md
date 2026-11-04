@@ -91,3 +91,19 @@
 | **S18** | Act VI<br>`dawn` | `111.6 – 118.0`<br>*(6.4s)* | `114.54s` | 下底座：`60 分机械底座`<br>上尖峰：`95 分审美与赔付尖峰` | `[拍A]` 平庸杂活交代码托管<br>`[拍B]` 留90%心力死磕极致<br>*Delegate 60-point routine work to code; pour 90% of human focus into 95-point taste and liability.* | **[折卡筑基 · 破局暖光刺破天花板]** 晨曦暖金光晕破开暗夜：`S17` 提问卡向下水平折叠为稳固的自动化基座（标 `60 分机械底座`）；`114.54s` 全部 `90%` 的金色人类心力从底座中央凝聚喷薄，化作一枚锋利的黄金方尖碑一举刺穿 `60 分` 玻璃顶棚直抵 `95 分审美与赔付尖峰`！ |
 | **S19** | Act VI<br>`dawn` | `118.0 – 125.2`<br>*(7.2s)* | `121.31s` | 左刻度：`敬畏 4 比 70 底表`<br>右命中：`最小样本收费验真` | `[拍A]` 牢记70死66真实概率<br>`[拍B]` 14天小原型先验付款<br>*Respect the 4-in-70 odds: validate real willingness to pay with a 14-day prototype before going all in.* | **[尖峰化针 · 14天最小原型验真]** `S18` 的黄金尖峰横转化作一枚精密的 `14 天试错探针`（标 `敬畏 4 比 70 底表`），沿时间轴快速刺过前 `3` 个灰暗的伪需求泡沫并果断剪断止损；`121.31s` 探针精准命中第 `4` 个真实落入金币的付费节点并绽放翡翠与鎏金光环（标 `最小样本收费验真`）。 |
 | **S20** | Act VI<br>`walnut` | `125.2 – 132.0`<br>*(6.8s)* | `128.33s` | 左桌面：`凌晨 3 点接线台`<br>右落印：`熔铸主权黄铜印章` | `[拍A]` 拔70%漏斗重铸信誉<br>`[拍B]` 告别零工做时代支点<br>*Unplug the 70% toll funnel and forge an un-distillable brass seal of personal reputation.* | **[拔管铸印 · 100% 回归 S01 桌面闭环]** 镜头回到 `S01` 那张 `凌晨 3 点接线台`，温暖台灯光晕照亮胡桃木桌面：底部 `70%` 抽水管道被彻底拔除断开，`S01` 的十条接线与金色工牌在中央熔铸成一枚厚重、棱角分明的立体黄铜印章；`128.33s` 印章重重盖在羊皮纸主权契约上（标 `熔铸主权黄铜印章`），定格余韵。 |
+
+---
+
+## 6. 连续六幕主时钟引擎架构 (`src/film/` CONTINUOUS 6-ACT MASTER-CLOCK ARCHITECTURE)
+
+严禁编写 20 个彼此割裂的静态卡片组件（`<S01>`–`<S20>` 硬切）！必须继承并超越首期《信息茧房》V4 终极母带工程（参考仓库内 `/tmp/ep02-promo/reference_ep01_opus_v4/src/film/`），采用**六幕连续主时钟变形架构（`2,600+` 行高密度程序化 SVG 与阻尼弹簧物理）**：
+
+1. **`src/film/core.ts`**：
+   - 定义 20 镜精确时间边界 `SHOT_BOUNDS`（总长 `132.0s`，`3,960 帧 @ 30fps`）、连续数学与缓动原语（`clamp`、`lerp`、`remap`、`eo`、`io`、`eio`、`seg`）、解析解阻尼弹簧 `sp(t, d, zeta, omega)`、偶数小节重拍脉冲包络 `beatPulseAt(t)`（锁定 `115.0 BPM`《精卫》`3.80s` 首重拍与声学抽空点），以及包含 `l2: [string, string]`（`【...】` 关键词金/朱砂高亮与重拍弹跳 `kwPop`）和 `en: [string, string]` 的 `SHOTS` 数组。
+2. **`src/film/kit.tsx`**：
+   - 定义四重物理媒介调色盘（`MEDIA.walnut`、`MEDIA.paper`、`MEDIA.obsidian`、`MEDIA.dawn`）、全局 SVG 滤镜与纹理 `<Defs />`、背景容器 `<Backdrop mode={...} />`、双线复古档案印章 `<Stamp />` 以及工业折角引线标注 `<Leader />`（纯中文标注字号 $\ge 32\text{px}$）。
+3. **`src/film/Film.tsx`**：
+   - 渲染 6 个存在 `~0.9s` 时间重叠的幕图层（`LAYERS`: `a1`–`a6`），幕与幕之间通过物理 `clipPath`（`inset(...)` 居中裂开或 `circle(r at x y)` 瞳孔缩放）平滑过渡；挂载无删减母带 `public/audio/jingwei_master_132s.mp3`（`volume = 0.78`，零音量闪避）与 10 处精确锁拍拟音 `CUES`，顶层叠加无边框双语呼吸字幕 `<VibeFiveZoneOverlay />`。
+4. **`src/film/ActOne.tsx` – `src/film/ActSix.tsx`（幕内连续跨镜变形 `Seam Carry`）**：
+   - 每一幕是一个接收连续主时钟 `t` 的单一连续组件 `<ActOne t={t} />` .. `<ActSix t={t} />`；幕内镜头切换时，核心视觉道具留在舞台上直接发生几何与物理形态演进（如 `ActOne` 中 `S01` 的金色工牌旋转拉伸为 `S02` 的失衡天平横梁，右盘赤字巨石裂解为 `S03` 的 520 条缩略图瀑布与三道黄铜闸门），彻底消除 PPT 式翻页感。
+

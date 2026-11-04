@@ -1,91 +1,127 @@
-# Role & Mission Briefing (`OPUS_PROMO_PROMPT_V4.md`)
+Build a 132.0-second (`3,960 frames @ 30fps`, `1920x1080`) **zero-voiceover, beat-driven kinetic visual essay** in Remotion for **UNRAVEL STUDIO (《抽丝剥茧》)** Episode 02: **《超级个体：一人成军的幻觉与科斯暗箱》(The "One-Person Unicorn" Mirage & Coase's Black Box)**.
 
-你是一位屡获国际大奖的独立纪录片视觉导演（Visual Investigation Director）、资深动态设计大师（Motion Graphics Architect，深谙 Vox / 3Blue1Brown / Apple Keynote / Lemomo Opuscar 具象机械隐喻叙事美学）与程序化视频总工程师（Remotion / React 19 / SVG Programmatic Video Engineer）。
-
-你的终极使命是：基于我们在 GitHub 仓库 `ep02-super-individual` 分支中为你准备好的《抽丝剥茧》(UNRAVEL STUDIO) EP02 **《超级个体：一人成军的幻觉与科斯暗箱》（Super Individual: The One-Person Army Illusion & The Coasean Black Box）** 全量学术实证档案、六幕 20 镜导演分镜台本（`v2.1`）与 `132.0 秒`（`3,960 帧 @ 30fps`）声学母带，自主构建一套**电影级、零 PPT/零仪表盘感、一镜到底无缝变形（Continuous Seam & Carry Morphing）、可直接渲染导出 1080P 高清 MP4 成片并自带高保真交互审片室的程序化深度调查视频工程**。
-
----
-
-## 第一步：拉取制作资产仓库与全量盘点 (Action Zero — MANDATORY FIRST STEP)
-
-由于云端沙盒环境无法直接读取我们本地 Mac 的文件系统，我们已将全套剧本、导演视觉技术规格书、声学节拍图谱（`beat_maps.json`）、唯一锁定配乐母带（`jingwei_master_132s.mp3`）与实录物理拟音（Foley SFX）完整同步至公开 GitHub 仓库的 `ep02-super-individual` 分支。
-
-**请在你的沙盒终端中第一时间执行以下命令拉取并阅读仓库内容**：
+First, clone the production asset & reference repository into `/tmp/ep02-promo` and copy its audio assets and reference files:
 
 ```bash
-git clone -b ep02-super-individual --depth 1 https://github.com/Evan-Joseph/info-cocoon-promo.git /tmp/ep02-promo
-ls -la /tmp/ep02-promo/docs/ /tmp/ep02-promo/assets/audio/
+git clone --branch ep02-super-individual https://github.com/Evan-Joseph/info-cocoon-promo.git /tmp/ep02-promo
+ls -la /tmp/ep02-promo/docs/ /tmp/ep02-promo/assets/audio/ /tmp/ep02-promo/reference_ep01_opus_v4/src/film/
 ```
 
-拉取后，请务必第一时间读取以下核心真源文件（并将 `/tmp/ep02-promo/assets/audio/*.mp3` 与 `beat_maps.json` 复制到你的视频工程 `public/promo/audio/` 与 `src/data/` 下以便静态引用）：
-1. **`docs/SPEC.md`（导演视觉技术规格书 · Opus 5.5 × Argon 终极标准）**：
-   - 定义了 `1920 × 1080 @ 30fps` 输出规格、**`132.0 秒`（`3,960 帧`，`115.0 BPM`，`F Minor`）** 精确到帧的 20 镜分镜时序、**四重物理材质宇宙（`walnut` 暗胡桃木工作台、`paper` 暖米白科斯手稿纸、`obsidian` 深黑曜石平台审视场、`dawn` 破局晨曦金）**、**前 4 秒双脉冲黄金钩子（`0.00s` 零淡入直出、`0.45s` 十臂锁死脉冲、`3.80s` 首重拍 Drop 结构崩裂反转为 10 根朱砂红催命工单线）**、以及 20 镜定制具象物理装置与无缝跨镜变形（`Seam & Carry`）。
-2. **`docs/SCRIPT_AND_DIRECTOR_TABLE.md`（六幕 20 镜终版导演分镜台本 v2.1 · 单一真相源）**：
-   - 本片采用 **“无配音纯视觉动态图景 + 双语衬线字幕（Zero-Voiceover Beat-Driven Visual Essay）”** 叙事范式：全片无 TTS 人声口播，100% 依靠《精卫（DJ 0.88x 纯音乐母带）》的节拍重音、抽空停顿（`S17` 水下低通抽空）与物理拟音驱动画面演进。
-   - 详列了 `S01` 至 `S20` 每一镜的精确秒数与帧区间、具象几何物理装置、唯一主视觉动作（`One Hero Move`）、静止阅读窗口（`Comprehension Hold >= 1.6s–2.5s`）、跨镜无缝变形（`Seam & Carry`）、画布内纯中文锚字（`L1`）与底部无边框双语衬线字幕（`L2`）。
-3. **`docs/SUPER_INDIVIDUAL_COASE_DOSSIER.md`（学术实证与高赞评论真源档案）**：
-   - 严禁捏造任何虚假数据！全片所有物理装置、图表与文案均严格锚定真实研究与社区一手案例：
-     - **Act I (`S01–S03` · 破题反差：一人成军的幻觉 vs 凌晨三点的接线员)**：
-       - `S01` (`0.0–6.2s`)：Sam Altman “一人十亿美元独角兽”神话 vs 凌晨 `03:00` 被 10 路 AI 报错工单反锁的算法接线员（`t = 0.00s` 零淡入高对比直出；`t = 0.45s` 10 支黄铜机械臂咔哒锁死；`t = 3.80s` Drop 1 瞬间崩裂反转为 10 根朱砂红电话催命线缠死剪影）；
-       - `S02` (`6.2–13.0s`)：徽章无缝变形为黄铜不等臂天平——左托盘竖起 OpenClaw 创始人 Peter Steinberger `14 万星 / 周访客 200 万` 的金色灯塔，右托盘在 `9.33s` 砸下巨型朱砂红算力账单巨石（月入 1 万美元不够付 2 万美元 Token 费，`营收账面赤字`）；
-       - `S03` (`13.0–19.4s`)：天平横梁拉伸为流水线导轨——左侧 14 天狂造 `520 条` AI 视频瀑布倾泻，右侧在 `15.94s` 落下 3 道沉重黄铜检验闸门（`连续 3 轮零通过`，真实转化归零）。
-     - **Act II (`S04–S06` · 溯源拆解：1937 科斯暗箱与交易成本剪刀差)**：
-       - `S04` (`19.4–26.2s`)：3 道闸门拔地而起咬合成 **1937 年罗纳德·科斯（Ronald Coase）《企业的性质》50 枚精密黄铜齿轮防波堤堡垒**，将外部暗红市场搜寻、议价与违约风暴挡在墙外；
-       - `S05` (`26.2–32.4s` · 钢人论证 Steelmanning)：先承认超级个体的真实红利——金色算力光束将堡垒内部沟通摩擦弹簧消融 `90%`，50 枚齿轮解耦升空为 50 颗高速旋转的黄金菱形算力舱（`组织协调减 9 成` / `生产吞吐涨 10 倍`）；
-       - `S06` (`32.4–39.4s` · 第一重认知颠覆)：当每个菱形舱裂变出 100 倍同质化供给，画幅中央立起巨型双曲线剪刀差——黄铜制造曲线贴地归零，而朱砂红市场信任与获客高墙在 `35.62s` 拔地暴涨 `10 倍`（`供给通胀 100 倍` / `交易壁垒高 10 倍`）。
-     - **Act III (`S07–S10` · 实证暴击：6,505 人自由悖论与 70% 买路钱漏斗)**：
-       - `S07` (`39.4–45.8s`)：镜头沿 10 倍高墙俯冲入深黑曜石场，点亮 2026 年职业健康心理学顶刊追踪的 `6505 人` 独立工作者发光样本点阵；
-       - `S08` (`45.8–51.8s`)：微距推入 `01 号` 独立舱体——左半舱壁是碎裂的朝九晚五行政考勤钟（`零行政考勤约束`），右半舱壁在 `48.56s` 浮现悬顶的朱砂红 `24 小时` 算法断更沙漏，沙粒流尽瞬间熄灭舱体光环（`断更 24 小时清零`）；
-       - `S09` (`51.8–58.6s`)：沙漏流沙凝固为实测双轨心电坐标——黄铜虚线预期松弛曲线平稳向下，而朱砂红精神耗竭实测折线在 `54.93s` 猛烈劈叉冲顶 **`+42%`**，末端化作无形算法长鞭抽击舱体（`精神倦怠激增 42%`）；
-       - `S10` (`58.6–65.8s`)：长鞭向下绷直拉动摄影机潜入点阵地底——揭开 B 站 `2831 赞` 8 人设计工坊实录：所有悬浮独立舱底部都插着透明输血管，汇入地底巨型朱砂红平台竞价漏斗，在 `61.91s` 将省下的房租抽走 **`70%`**（`平台抽水阀门 70%`）。
-     - **Act IV (`S11–S14` · 幸存者偏差与双向蒸馏陷阱)**：
-       - `S11` (`65.8–72.4s`)：镜头升回暖米白手稿桌面，70 颗独立算力舱整齐排列（独立开发鼻祖 Pieter Levels 公开底表 `70 项`），在 `68.84s` 随重锤声 **66 颗瞬间熄灭坠落**，仅剩 4 颗亮起黄铜金光（`66 折戟 · 存活率 5.7%`）；
-       - `S12` (`72.4–78.6s`)：66 颗熄灭残骸堆叠成底部占 `83%` 的灰暗基座（`月净利低于 500` 美元），而金字塔尖的镀金售票亭正在向下方源源不断出售镀金铁锹与焦虑教程（`淘金热真赢家卖铲`）；
-       - `S13` (`78.6–85.6s`)：推近基座中一颗幸存单兵舱，它伸出 5 支机械臂（产品、设计、前端、后端、营销）向上冲刺，却在 `81.82s` 齐刷刷撞上沉重的 **`60 分均值顶棚`** 钢化玻璃天花板并被压弯；
-       - `S14` (`85.6–92.0s` · 第二重认知颠覆)：60 分玻璃顶棚化作上下双向蒸馏压机——单兵舱向下将外包员工蒸馏为代码滴液，上方巨型平台冷凝罩在 `88.54s` 轰然压下，将单兵舱自身压铸成一枚可随时拔插替换的标准三脚零工插头（`向上沦为标准插头`）。
-     - **Act V (`S15–S17` · 终极合流与第四面墙灵魂追问)**：
-       - `S15` (`92.0–98.2s`)：镜头拉远为 2026 博弈论矩阵，数百枚一模一样的标准三脚插头互相竞价踩踏，右侧议价权黄铜立柱在 `94.85s` 崩塌归零（`同质接口溢价清零`）；
-       - `S16` (`98.2–105.0s`)：全景纵深合流剖面——上方是解体的科斯防波堤，左右是夹击的 10 倍获客高墙，下方是抽水 70% 的平台红漏斗，中央正是 `S01` 凌晨三点被锁死的接线员剪影；
-       - `S17` (`105.0–111.6s` · 全片最静谧的第四面墙凝视)：配合音乐水下低通滤波，全场机械装置瞬间退隐，镜头中央黄铜光圈收缩聚焦于一张知乎 **`4172 赞`** 羊皮纸高赞追问卡，在 `108.15s` 伴随清脆机械敲击逐字烙印出：**`背后 10 路模型凭何选你`**。
-     - **Act VI (`S18–S20` · 破局指南与首尾闭环：熔铸主权黄铜印章)**：
-       - `S18` (`111.6–118.0s`)：破局晨曦金光刺破黑曜石背景！追问卡折叠压实为稳固的 **`60 分机械底座`**（AI 托管平庸杂活），在 `114.54s` 一根闪耀拉丝黄铜光泽的 **`95 分审美与赔付尖峰`** 向上冲破 60 分玻璃顶棚；
-       - `S19` (`118.0–125.2s`)：95 分黄铜尖峰化作精密探针，在 `14 天` 最小可行性刻度尺上连续刺破 3 个虚假伪需求泡沫，在 `121.31s` 精准扎入第 4 个亮起真实付费金币的锚点（`敬畏 4 比 70 底表` / `最小样本收费验真`）；
-       - `S20` (`125.2–132.0s` · 首尾闭环 Callback)：镜头平滑拉回 `S01` 凌晨三点的工作台——主角亲手拔掉脚下 70% 抽水软管，将 10 根报错线与金色徽章在 `128.36s` 熔铸成一枚沉甸甸的 **`熔铸主权黄铜印章`**，重重盖在暖金契约卷轴中央，余音绕梁。
+Read `/tmp/ep02-promo/docs/SPEC.md` and inspect `/tmp/ep02-promo/reference_ep01_opus_v4/src/film/` (`core.ts`, `kit.tsx`, `Film.tsx`, `ActOne.tsx`–`ActSix.tsx`) before writing code.
 
 ---
 
-## 第二步：五大不可妥协的导演与工程铁律 (Five Non-Negotiable Laws)
+## 1. ARCHITECTURAL BASELINE TO SURPASS (`src/film/` CONTINUOUS 6-ACT ENGINE)
 
-### 铁律 1：彻底封杀“左上/右上双框题头卡片”与抽象流程图框（NO Twin Header Boxes · Concrete Physical Apparatus Only）
-- **严禁画顶部双框卡片**：绝不允许在每一镜的左上角和右上角放两个圆角矩形文字框（如左边一个框写 `单兵估值 10 亿`、右边一个框写 `03:00 · 10 路报错工单`）！那是拙劣的 PPT 仪表盘，会导致画面呆板、视线撕裂、莫名其妙。
-- **具象机械隐喻与工业引线焊接（Direct `<Leader />` Callouts）**：
-  - 每一镜的中央舞台（占据画幅 **`55%–75%`** 面积）必须是一座**一眼就能看懂物理因果关系的 2.5D 具象机械/几何装置**（天平、50 齿轮防波堤、剪刀差双曲线、24h 沙漏、地底漏斗、70 舱坠落、5 臂撞顶棚、双向蒸馏压机、主权黄铜印章）。
-  - 画布内的 `L1` 核心锚字（每镜仅限 2 组、每组严格 `4–8 个纯中文汉字 + 核心数字`）必须通过 **带 45° 折角与实心圆点的工业制图引线（`<Leader />`）** 或 **直接铭刻在物理器物表面（如天平底座、闸门横梁、漏斗阀门、印章正面）**，与视觉主体融为一体！
+In Episode 01 (`《信息茧房》`), our winning production codebase (`/tmp/ep02-promo/reference_ep01_opus_v4/src/film/`) achieved viral retention because it did **NOT** build 20 disconnected static slide components (`<S01>`..`<S20>`). Instead, it used a **Continuous 6-Act Master-Clock Architecture (`2,600+` lines of procedural SVG & spring physics)**:
+1. **`src/film/core.ts`**:
+   - Defines the exact 20-shot boundary array `SHOT_BOUNDS` (`132.0s` total, `3,960 frames @ 30fps`), continuous clock helpers (`clamp`, `lerp`, `remap`, `eo`, `io`, `eio`, `seg`), closed-form damped spring `sp(t, d, zeta, omega)`, `beatPulseAt(t)` (locks to `115.0 BPM`《精卫》even-bar downbeats starting at `t = 3.80s` + pre-drop acoustic vacuums + shockwave flashes), and the `SHOTS` array with `l2: [string, string]` (`【...】` keywords highlighted in burnished gold `#E5B85B` or vermilion `#C83E2B` with downbeat pop `kwPop`) and `en: [string, string]`.
+2. **`src/film/kit.tsx`**:
+   - Defines the 4 tactile physical media palettes (`MEDIA.walnut`, `MEDIA.paper`, `MEDIA.obsidian`, `MEDIA.dawn`), `<Defs />` (paper grain, risograph grid, blind-hatch, brass gradients, soft shadows), `<Backdrop mode={...} />`, `<Stamp />` (tilted double-border archival stamp), and `<Leader />` (elbow callout line with solid anchor dot and pure Chinese label $\ge 32\text{px}$).
+3. **`src/film/Film.tsx`**:
+   - Renders 6 overlapping Act layers (`LAYERS`: `a1`–`a6`) where adjacent Acts overlap by `~0.9s` and transition via physical `clipPath` (`inset(...)` split wipe or `circle(r at x y)` iris) with Foley audio (`CUES`) and the uncut master soundtrack `public/audio/jingwei_master_132s.mp3` (`volume = 0.78`, zero ducking), topped by `<VibeFiveZoneOverlay />` (borderless `47px` `Noto Serif SC` Chinese primary line + `23px` `EB Garamond Italic` English subtitle over a seamless `180px` bottom vignette).
+4. **`src/film/ActOne.tsx` through `src/film/ActSix.tsx` (`Continuous Within-Act Seam Carry`)**:
+   - Each Act is a **single continuous component `<ActOne t={t} />` .. `<ActSix t={t} />`** where tangible editorial props stay on stage and physically morph from shot to shot (`Seam Carry`) without hard cuts!
+   - **Your mission for Episode 02**: Inherit and **surpass** `/tmp/ep02-promo/reference_ep01_opus_v4/src/film/` by building `src/film/core.ts`, `src/film/kit.tsx`, `src/film/Film.tsx`, and `src/film/ActOne.tsx`–`src/film/ActSix.tsx` (`2,600+` lines of rich, bespoke SVG mechanisms) for **《超级个体：一人成军的幻觉与科斯暗箱》**.
 
-### 铁律 2：画面绝对净空（Q11 Clean Canvas Gate）与 L1/L2 语言物理隔离
-- **UNRAVEL STUDIO 5 色设计令牌**：
-  - 深黑曜石 `#0B0A08`、暗胡桃 `#171411`、羊皮纸宣纸金 `#F4EFE6`（深色文本 `#141413`）、拉丝黄铜 `#D4AF37`（纸面深铜 `#9A6B16`）、破局朱砂 `#C83E2B`。
-- **L1 画布内视觉锚字（In-Canvas Visual Stamp）**：
-  - 字号 **`34px–76px`**（核心数字可达 `64px–110px`），仅限纯中文汉字与阿拉伯数字（**严禁在画布图形内出现任何英文单词、严禁出现 `->` 符号、严禁出现 `<24px` 小字、严禁出现 `S01` 分镜编号、严禁出现底部 `s.note` 导演注记、严禁出现常驻角落 HUD 仪表框**）。
-- **L2 底部无边框双语衬线字幕（Borderless Cinematic Bilingual Subtitle，`y = 885px..1030px`）**：
-  - **严禁在字幕背后画矩形黑盒或胶囊边框**！仅使用柔和底部暗角渐变遮罩托底：
-  - **第一行（中文主叙事，`47px`，`"Noto Serif SC", "Source Han Serif SC", "Songti SC", serif`，`font-weight: 700`）**：严格遵循 `docs/SPEC.md` 中的两拍渐进揭示（Two-Beat Reveal：前半句在入镜 `0.12s` 浮现，后半句在镜头中段重拍 `midRevealSec` 伴随鼓点精准点亮），并将 `【...】` 内的核心词渲染为拉丝黄铜 `#D4AF37` 或破局朱砂 `#C83E2B`；
-  - **第二行（英文文学副标，`23px`，`"EB Garamond", "Instrument Serif", Georgia, serif`，`font-style: italic`）**：全片所有英文统一且唯一放置在底部第二行副标区。
+---
 
-### 铁律 3：单一定稿 BGM 母带一镜到底 + 前 4 秒双脉冲黄金钩子（Dual-Pulse First 4 Seconds）
-- **唯一主音轨**：加载 `/promo/audio/jingwei_master_132s.mp3`（`132.0s = 3,960 frames @ 30fps`，`115.0 BPM`，`F Minor`）。从 `frame = 0` 到 `frame = 3960` 保持恒定饱满音量 `0.78`（仅首尾自然淡入淡出，**中途严禁任何音量闪避 Ducking 或循环拼接**）。
-- **前 4 秒双脉冲铁律（`S01`）**：
-  1. **`t = 0.00s` (`Frame 0`)**：严禁黑屏缓入（`opacity` 必须为 `1`）！第 1 帧直接亮出暗胡桃木工作台上的高对比几何奇观（中央黄金个人徽章 + 10 支放射状黄铜机械臂 + 左右核心数字反差）；
-  2. **`t = 0.45s` (`Frame 14` · 第一重物理脉冲)**：10 支黄铜机械臂同步向内咔哒咬合锁死（触发 `lock_click.mp3`），报错计数器飞速跳动；
-  3. **`t = 3.80s` (`Frame 114` · 第二重 Drop 爆发脉冲)**：精准踩中《精卫》首个重拍鼓点 Drop，10 支黄铜机械臂瞬间崩裂反转为 10 根朱砂红电话催命工单线（触发 `slam_impact.mp3`），将中心剪影死死缠绕在凌晨 `03:00` 接线台上！
+## 2. NON-NEGOTIABLE VISUAL & TYPOGRAPHY RULES (Q11 CLEAN-STAGE GATE)
 
-### 铁律 4：连续物理运镜（`<CameraRig />`）与跨镜无缝几何变形（`Seam & Carry`）
-- 按六幕结构组织模块化组件（`src/remotion/scenes/ActOne.tsx` 至 `ActSix.tsx`），每镜交接处必须实现真实的几何继承与物理过渡（例如 `S01` 徽章 $\to$ `S02` 天平支点 $\to$ `S03` 流水线导轨与 3 道闸门 $\to$ `S04` 50 齿轮科斯防波堤 $\to$ `S05` 50 颗悬浮算力舱 $\to$ `S06` 10 倍剪刀差高墙 $\to$ `S07` 6,505 人点阵 $\to$ `S08` 01 号舱 24h 沙漏 $\to$ `S09` +42% 耗竭长鞭 $\to$ `S10` 地底 70% 抽水漏斗 $\to$ `S11` 70 舱熄灭 66 颗 $\to$ `S12` 83% 金字塔与卖铲亭 $\to$ `S13` 5 臂撞 60 分顶棚 $\to$ `S14` 双向蒸馏压机与三脚插头 $\to$ `S15` 插头竞价归零 $\to$ `S16` 全景铁笼合流 $\to$ `S17` 4,172 赞追问卡 $\to$ `S18` 60 分底座与 95 分黄铜尖峰 $\to$ `S19` 14 天验真探针 $\to$ `S20` 凌晨 3 点熔铸主权黄铜印章）。
-- 所有 SVG 发光滤镜必须显式声明 `filterUnits="userSpaceOnUse" x="-400" y="-400" width="2720" height="1880"`，防止水平或垂直直线应用滤镜时因 boundingBox 高度为 0 而消失。
+1. **NO Twin Top-Left / Top-Right Header Boxes & NO Top-Right HUD Badges**:
+   - Never place two rounded-rectangle title cards at the top-left and top-right of every shot, and never render persistent top-right citation/HUD boxes.
+   - The upper `85%` of the `1920x1080` canvas (`y = 60..860`) is a **single, unfragmented 2.5D physical stage**. All `L1` anchors (`44px–76px`, `fontWeight: 800/900`) and `<Leader />` callouts (`32px–38px`, `fontWeight: 800`) live directly inside the scene geometry.
+2. **Strict Language Separation (`L1 = 100% Pure Chinese + Core Numbers`, `L2 = Bilingual Subtitle`)**:
+   - **On-Canvas Stage (`L1` & all diagram labels)**: **100% pure Simplified Chinese characters + core numbers** (`%`, `倍`, `万`, `亿`, `03:00`, `1937`, `2026`, `6505`, `70`, `66`, `5.7%`, `83%`, `500`, `60`, `95`, `4172`, `2831`, `14`). **Zero English words** (`NO` `OpenClaw`, `NO` `Coase`, `NO` `Autonomy`, `NO` `API`, `NO` `MVP`) and **zero ASCII arrows (`->`)** anywhere on the stage!
+   - **Minimum Font Size**: Every single text element on the canvas must have `fontSize >= 28px` (key callouts `32px–44px`, main `L1` anchors `46px–76px`). Zero tiny `<24px` text anywhere.
+   - **Bottom `L2` Subtitle Zone (`y = 880..1050`)**: Borderless, two-beat Chinese primary line (`47px`, `Noto Serif SC`, `fontWeight: 700`, `【...】` keywords highlighted in `#E5B85B` or `#C83E2B` with downbeat scale pop) + `23px` `EB Garamond Italic` English line below.
+3. **Dual-Pulse First 4 Seconds in `S01` (`t = 0.00s` Zero Fade-In + `t = 0.45s` Pulse 1 + `t = 3.80s` Drop Pulse 2)**:
+   - **`t = 0.00s` (Frame 0)**: Zero black fade-in (`opacity: 1` at Frame 0, and `S01` Beat A subtitle `op = 1` at Frame 0). Left side shows the gleaming brass monument **`单兵估值 10 亿`**, center shows the solo operator wearing a golden badge with 10 brass mechanical arms ready, right side shows the crimson alarm panel **`03:00 · 10 路报错工单`**.
+   - **`t = 0.45s` (Frame 13, Pulse 1 + `lock_click.mp3`)**: All 10 brass mechanical arms (`写代码 / 画海报 / 剪视频 / 写文案 / 做客服 / 管账单 / 跑投流 / 抓数据 / 修接口 / 盯运维`) snap outward and lock into place with a damped spring impulse.
+   - **`t = 3.80s` (Frame 114, Pulse 2 on《精卫》First Heavy Drop + `slam_impact.mp3`)**: The left `单兵估值 10 亿` brass monument cracks and dims; the 10 golden mechanical arms violently shatter and invert into **10 tangled crimson telephone cords & error tickets** (`接口崩了 / 模型幻觉 / 客户拒付 / 账号限流 / 账单超支 / 合规警告 / 差评投诉 / 服务宕机 / 数据丢失 / 并发死锁`) that chain the operator to the `03:00` switchboard desk!
 
-### 铁律 5：导演审片放映室（Director's Screening Room）与多模态抽帧自检
-- 在 `src/App.tsx` 构建优雅的 Apple / Linear 级交互式导演审片工作台：内嵌 `<Player />` (`1920×1080`, `30fps`, `3960 frames`)、六幕 20 镜分镜跳转矩阵、实时小节/鼓点能量声波条（读取 `beat_maps.json`）与纯净全屏放映模式。
-- 同时配置完整的 Remotion CLI 入口（`src/remotion/index.ts` 与 `src/remotion/Root.tsx`，Composition ID 为 `SuperIndividualPromo`）。
-- **强制多模态抽帧自检（Visual Self-Check）**：代码编写完成后，必须使用 `npx remotion still` 在关键帧（如 `frame 0`, `frame 125`, `frame 290`, `frame 690`, `frame 1085`, `frame 1660`, `frame 1870`, `frame 2080`, `frame 2670`, `frame 3255`, `frame 3450`, `frame 3860`）渲染出 PNG 静态帧，并**亲自调用你的 `Read` 工具逐张检视画面**，确认没有任何顶部双框卡片、没有任何文字重叠或豆腐块乱码、且每一镜的物理装置清晰震撼！
+---
 
-请现在立即在终端执行 `git clone -b ep02-super-individual --depth 1 https://github.com/Evan-Joseph/info-cocoon-promo.git /tmp/ep02-promo`，阅读 `/tmp/ep02-promo/docs/SPEC.md` 与 `/tmp/ep02-promo/docs/SCRIPT_AND_DIRECTOR_TABLE.md`，开始执导并构建这部震撼人心的《超级个体：一人成军的幻觉与科斯暗箱》程序化纪录片工程！
+## 3. EXACT TIMING (`SHOT_BOUNDS`), FOLEY (`CUES`), AND 20-SHOT CONTINUOUS ACT SPECIFICATION
+
+### 3.1 Master Audio & Exact `SHOT_BOUNDS` (`132.0s`, `3,960 frames @ 30fps`)
+Copy `/tmp/ep02-promo/assets/audio/*.mp3` into `public/audio/`.
+- **Master BGM**: `public/audio/jingwei_master_132s.mp3` (`痛劣 - 精卫 (DJ 0.88x 纯音乐)`, `115.0 BPM`, `F Minor`, starts from original track `13.61s` so the first heavy 4/4 Drop lands at **`t = 3.80s`**, running uncut to `132.0s` at constant `volume = 0.78`).
+- **Exact `SHOT_BOUNDS` (`[startSec, endSec, beatBSec]`)**:
+```ts
+export const SHOT_BOUNDS: readonly [number, number, number][] = [
+  [0.0,   6.2,   3.80],  // S01 (6.2s) — Act I (walnut) · 0.0s Zero Fade + 0.45s Arm Lock + 3.80s Drop Red Chains
+  [6.2,   13.0,  9.33],  // S02 (6.8s) — Act I (walnut) · Badge flips to Asymmetric Scale (14万星 vs 赤字巨石)
+  [13.0,  19.4,  15.94], // S03 (6.4s) — Act I (walnut) · Boulder splits into 520-Clip Waterfall vs 3 Brass Gates
+  [19.4,  26.2,  22.53], // S04 (6.8s) — Act II (paper) · 3 Gates rise into 1937 Coase Building (50 Meshing Gears)
+  [26.2,  32.4,  29.05], // S05 (6.2s) — Act II (paper) · Steelmanning: AI cuts 90% friction, 50 Pods lift off (10x)
+  [32.4,  39.4,  35.62], // S06 (7.0s) — Act II (paper) · 100x Supply Swarm & Coase Scissors Curve (10x Trust Wall)
+  [39.4,  45.8,  42.34], // S07 (6.4s) — Act III (obsidian) · Camera dives into 6,505-Worker Pulse Matrix (2026顶刊)
+  [45.8,  51.8,  48.56], // S08 (6.0s) — Act III (obsidian) · Zoom 5x into Pod #01: Broken Clock vs 24h Zeroing Hourglass
+  [51.8,  58.6,  54.93], // S09 (6.8s) — Act III (obsidian) · Hourglass morphs to Whip + +42% Burnout ECG Spike
+  [58.6,  65.8,  61.91], // S10 (7.2s) — Act III (obsidian) · Plunge underground: Giant 70% Platform Toll Funnel (@2831赞)
+  [65.8,  72.4,  68.84], // S11 (6.6s) — Act IV (paper) · 70-Project Matrix: 66 Crossed Out & Fall, 4 Survive (5.7%)
+  [72.4,  78.6,  75.25], // S12 (6.2s) — Act IV (paper) · 66 Fallen Pods form 83% <500 Base vs Golden Shovel Booth
+  [78.6,  85.6,  81.82], // S13 (7.0s) — Act IV (paper) · 5-Arm Solo Pod Slams into 60-Point Glass Ceiling
+  [85.6,  92.0,  88.54], // S14 (6.4s) — Act IV (paper) · Ceiling morphs to Double Distillation Press -> 3-Prong Plug
+  [92.0,  98.2,  94.85], // S15 (6.2s) — Act V (obsidian) · 12-Plug Bidding Matrix & Zero-Margin Waterfall Collapse
+  [98.2,  105.0, 101.33],// S16 (6.8s) — Act V (obsidian) · 3-Layer Cage Synthesis (Broken Seawall + 10x Wall + 70% Funnel)
+  [105.0, 111.6, 108.04],// S17 (6.6s) — Act V (obsidian) · Underwater Pupil Contraction -> 4,172-Upvote Parchment Card
+  [111.6, 118.0, 114.54],// S18 (6.4s) — Act VI (dawn) · Card folds 3D into 60-Pt Base -> 95-Pt Golden Obelisk Pierces Ceiling
+  [118.0, 125.2, 121.31],// S19 (7.2s) — Act VI (dawn) · Obelisk morphs to 14-Day Probe Needle (Pops 3 Bubbles, Hits 4th Coin)
+  [125.2, 132.0, 128.33],// S20 (6.8s) — Act VI (walnut) · Callback to 03:00 Desk: Unplug 70% Hose & Forge Brass Sovereign Seal
+];
+```
+
+- **9 Beat-Locked Foley `CUES`**:
+```ts
+const CUES: { frame: number; src: string; volume: number }[] = [
+  { frame: Math.round(0.45 * 30),   src: 'audio/lock_click.mp3',          volume: 0.42 }, // S01 Pulse 1: 10 brass arms lock
+  { frame: Math.round(3.82 * 30),   src: 'audio/slam_impact.mp3',         volume: 0.48 }, // S01 Pulse 2: 3.80s Drop chains slam
+  { frame: Math.round(9.36 * 30),   src: 'audio/lock_click.mp3',          volume: 0.36 }, // S02 Right pan deficit boulder crash
+  { frame: Math.round(19.43 * 30),  src: 'audio/whoosh_deep.mp3',         volume: 0.34 }, // Act I -> Act II media wipe
+  { frame: Math.round(35.65 * 30),  src: 'audio/glass_shatter.mp3',       volume: 0.38 }, // S06 Coase 10x wall tear
+  { frame: Math.round(54.96 * 30),  src: 'audio/heartbeat_lub_dub.mp3',   volume: 0.42 }, // S09 +42% burnout ECG spike
+  { frame: Math.round(61.94 * 30),  src: 'audio/reverse_suck.mp3',        volume: 0.40 }, // S10 70% underground funnel valve
+  { frame: Math.round(88.57 * 30),  src: 'audio/glitch_tear.mp3',         volume: 0.36 }, // S14 Double distillation press
+  { frame: Math.round(105.03 * 30), src: 'audio/singing_bowl_strike.mp3', volume: 0.40 }, // S17 Fourth-wall 4,172 card
+  { frame: Math.round(128.36 * 30), src: 'audio/slam_impact.mp3',         volume: 0.44 }, // S20 Sovereign brass seal stamp
+];
+```
+
+### 3.2 Complete 20-Shot Subtitle & Continuous Visual Morphing Table
+
+Every Act component (`ActOne.tsx`–`ActSix.tsx`) must implement continuous within-Act `Seam Carry` transitions where the primary geometry physically transforms from shot to shot:
+
+| Shot | Act & Media | Window (`beatB`) | `L1` Stage Anchors (Pure Chinese + Numbers, Integrated Into Scene) | `l2: [beatA, beatB]` (`47px Noto Serif SC`) & `en: [enA, enB]` (`23px EB Garamond Italic`) | Continuous Within-Act Physical Apparatus & Seam Carry |
+| :--- | :--- | :---: | :--- | :--- | :--- |
+| **S01** | Act I<br>`walnut` | `0.0–6.2s`<br>(`3.80s`) | Left plaque: `单兵估值 10 亿`<br>Right alarm: `03:00 · 10 路报错工单` | `A`: `一人配【10个AI】像家公司`<br>`B`: `【凌晨3点】沦为算法接线员`<br>*Ten engines crown a solo founder;*<br>*at 3 a.m., ten alarms chain the operator.* | **`t=0.00s` Zero Fade-In**: Left brass monument `单兵估值 10 亿`, center solo operator + golden badge `超级个体 · 01` + 10 brass mechanical arms (`写代码/画海报/剪视频/写文案/做客服/管账单/跑投流/抓数据/修接口/盯运维`), right alarm `03:00 · 10 路报错工单`. **`t=0.45s`**: 10 arms snap & lock. **`t=3.80s` Drop**: 10 arms shatter into 10 crimson phone cords with error tickets (`接口崩了/模型幻觉/客户拒付/账号限流/账单超支/合规警告/差评投诉/服务宕机/数据丢失/并发死锁`) binding the operator! |
+| **S02** | Act I<br>`walnut` | `6.2–13.0s`<br>(`9.33s`) | Left pillar: `周访客 200 万`<br>Right boulder: `营收账面赤字` | `A`: `头号一人项目揽【14万星】`<br>`B`: `月入1万刀倒贴【算力费】`<br>*140,000 stars on OpenClaw,*<br>*yet monthly revenue drowns beneath token bills.* | **Seam Carry from S01**: The central golden badge stays on stage, rotates horizontal, and stretches into a brass balance beam (`820px` wide). Left pan rises with a radiant golden star pillar (`开源星标 140,000` + `<Leader>` `周访客 200 万`); at `9.33s`, a massive crimson API token bill boulder (`月入 1 万 · 算力账单赤字`) slams onto the right pan, tilting the beam $+19^\circ$ and crushing the right pan to the floor (`营收账面赤字`)! |
+| **S03** | Act I<br>`walnut` | `13.0–19.4s`<br>(`15.94s`) | Left stream: `社区实录 14 天`<br>Right gates: `连续 3 轮零通过` | `A`: `两周狂造【520条】AI视频`<br>`B`: `全栈3次评审【转化归零】`<br>*Five hundred generated clips in two weeks;*<br>*zero survivors across three user audits.* | **Seam Carry from S02**: The right pan's crimson boulder splits into a dual-track audit rig: on the left, a clipped `<Stream>` waterfall of `520` scrolling AI video thumbnails (`社区实录 14 天 · 520 条`); at `15.94s` on the right, 3 heavy brass inspection gates (`第 1 轮 · 完播拦截`, `第 2 轮 · 信任拦截`, `第 3 轮 · 付费拦截`) slam shut (`连续 3 轮零通过`), bouncing thumbnails back and locking `真实转化 0`! |
+| **S04** | Act II<br>`paper` | `19.4–26.2s`<br>(`22.53s`) | Roof pediment: `1937 企业的性质`<br>Interior core: `50 枚齿轮防波堤` | `A`: `【1937】科斯追问公司起源`<br>`B`: `【50人】同楼只为挡摩擦`<br>*Coase asked in 1937 why firms exist:*<br>*fifty gears under one roof shield against market friction.* | **Act Wipe (`paper` `#F3EFE6`)**: `S03`'s 3 brass gates rotate $90^\circ$ upright to form the monumental **1937 Coase Building** cross-section (`1937 企业的性质 · 罗纳德·科斯` + tilted stamp `科斯定理 · 1937`). Inside the thick brass seawall (`50 枚齿轮防波堤`), 50 brass gears mesh smoothly while external crimson storm waves (`寻客摩擦 / 合同博弈 / 坏账风险`) are deflected outside! |
+| **S05** | Act II<br>`paper` | `26.2–32.4s`<br>(`29.05s`) | Left springs: `组织协调减 9 成`<br>Right pods: `生产吞吐涨 10 倍` | `A`: `AI把内部沟通砍【90%】`<br>`B`: `单兵【10倍产能】拆旧楼`<br>*Permissionless leverage slashes internal coordination by 90%*<br>*and multiplies solo output tenfold.* | **Seam Carry from S04 (Steelmanning)**: A golden beam sweeps across the 1937 Coase Building, dissolving the internal red damping springs (`层级审批 / 部门开会 / 流程内耗`, labeled `组织协调减 9 成`); at `29.05s`, the building walls unbolt and the 50 brass gears lift off into 50 radiant, freely floating golden diamond compute pods (`生产吞吐涨 10 倍`)! |
+| **S06** | Act II<br>`paper` | `32.4–39.4s`<br>(`35.62s`) | Left swarm: `供给通胀 100 倍`<br>Right wall: `交易壁垒高 10 倍` | `A`: `生产归零【同质品】暴涨`<br>`B`: `获客与信任反贵【10倍】`<br>*When production cost hits zero,*<br>*supply inflates a hundredfold and trust becomes ten times pricier.* | **Seam Carry from S05 (Coase Scissors Twist)**: The 50 floating pods multiply into a dense 120-pod supply swarm on the left (`供给通胀 100 倍`); at `35.62s`, two giant hyperbola curves slice across the right coordinate stage — the golden `生产边际成本` curve drops flat to zero, while the 9px vermilion `外部获客与信任摩擦` wall rockets vertically to the ceiling (`交易壁垒高 10 倍`) with stamp `科斯剪刀差`! |
+| **S07** | Act III<br>`obsidian` | `39.4–45.8s`<br>(`42.34s`) | Left dossier: `2026 心理学顶刊`<br>Right grid: `实测样本 6505 人` | `A`: `拆掉公司围墙【真自由】？`<br>`B`: `追踪【6505名】独立个体`<br>*Does tearing down corporate walls grant freedom?*<br>*A 2026 study tracked 6,505 solo workers.* | **Act Iris (`obsidian` `#0B0D13`)**: Camera dives down the vermilion wall into the obsidian lab, aligning the floating pods into a `15 × 6` pulsing survey matrix (`实测样本 6505 人`) with a detailed dossier plaque on the left (`2026 心理学顶刊 · 6505 人追踪`) and scanning telemetry wave! |
+| **S08** | Act III<br>`obsidian` | `45.8–51.8s`<br>(`48.56s`) | Left clock: `零行政考勤约束`<br>Right hourglass: `断更 24 小时清零` | `A`: `没老板打卡【按件计酬】`<br>`B`: `停工1天流量【即刻归零】`<br>*No manager clocks your hours,*<br>*yet pausing for twenty-four hours resets algorithmic weight to zero.* | **Seam Carry from S07**: Camera zooms `5x` into Pod `#01` from the 6,505 grid: on the left, a traditional `09:00–17:00` punch-clock shatters (`零行政考勤约束`); at `48.56s` on the right, a giant brass-and-crimson hourglass drains `24:00 -> 00:00`, extinguishing the pod's outer traffic halo ring to `曝光权重 0%` (`断更 24 小时清零`)! |
+| **S09** | Act III<br>`obsidian` | `51.8–58.6s`<br>(`54.93s`) | Lower dashed: `预期排班松弛`<br>Upper red spike: `精神倦怠激增 42%` | `A`: `自由越高耗竭增【42%】`<br>`B`: `炒掉老板请回【算法鞭】`<br>*The autonomy paradox: higher scheduling freedom*<br>*drives a 42% surge in emotional exhaustion.* | **Seam Carry from S08**: The hourglass twists into a cracking vermilion algorithmic whip striking Pod `#01`; on the right chart, the green dashed `预期排班松弛` line slopes gently down while at `54.93s` the 8px crimson ECG burnout polyline spikes violently upward to `+42%` (`精神倦怠激增 42%`) with stamp `自主权悖论 +42%`! |
+| **S10** | Act III<br>`obsidian` | `58.6–65.8s`<br>(`61.91s`) | Left card: `热评 2831 赞`<br>Bottom valve: `平台抽水阀门 70%` | `A`: `8人工坊升专业号【断流】`<br>`B`: `省下房租全交【买路钱】`<br>*Organic reach shuts overnight;*<br>*every dollar saved on office rent feeds a 70% platform toll.* | **Seam Carry from S09 (Underground 70% Toll Funnel)**: Camera plunges beneath the floor of the 9 floating pods to reveal that every pod's bottom pipe is locked into a single **giant underground vermilion platform toll funnel**! Left shows `@海辛 · 热评 2831 赞` (`8人工坊升专业号断流，被迫买10万投流包`); at `61.91s`, the bottom rotary valve opens (`平台抽水阀门 70%`), sucking `70%` of the gold coins down into the platform vault! |
+| **S11** | Act IV<br>`paper` | `65.8–72.4s`<br>(`68.84s`) | Left header: `公开底表 70 项`<br>Right callout: `66 折戟 · 存活率 5.7%` | `A`: `鼻祖试水【70个】独立项`<br>`B`: `【66个】阵亡仅4个跑通`<br>*Even solo pioneer Pieter Levels watched 66 of 70 projects fail—*<br>*a 5.7% survival rate.* | **Act Wipe (`paper` `#F3EFE6`)**: A `10 × 7` matrix of `70` indie project badges (`公开底表 70 项`) is laid out on archival paper; at `68.84s`, `66` badges are struck through with vermilion crosses and drop downward in dark grey, leaving only `4` glowing golden badges at the top-right (`66 折戟 · 存活率 5.7%`)! |
+| **S12** | Act IV<br>`paper` | `72.4–78.6s`<br>(`75.25s`) | Pyramid base: `月净利低于 500`<br>Top booth: `淘金热真赢家卖铲` | `A`: `【83%】开发月赚不足500刀`<br>`B`: `多数神话靠【卖课】割同行`<br>*83% of indie builders net under $500 a month*<br>*while gold-rush gurus profit from selling shovels.* | **Seam Carry from S11**: The 66 fallen dark badges stack into a massive pyramid base (`83% 占比`, labeled `月净利低于 500`); at `75.25s`, a gilded ticket booth (`淘金热真赢家卖铲`) rises at the pyramid apex, lowering golden shovels (`¥1999 搞钱速成课`) while vacuuming coins upward from the base! |
+| **S13** | Act IV<br>`paper` | `78.6–85.6s`<br>(`81.82s`) | Center hub: `单兵跨界 5 工种`<br>Glass ceiling: `困于 60 分均值顶棚` | `A`: `包揽5岗只用AI的【60分】`<br>`B`: `缺同伴纠偏【盲区】狂奔`<br>*Wearing five hats traps solo builders beneath a 60-point ceiling*<br>*with zero peer calibration.* | **Seam Carry from S12**: A solo pod rises from the pyramid base and extends 5 mechanical arms (`写码 / 设计 / 剪辑 / 投流 / 客服`, labeled `单兵跨界 5 工种`); at `81.82s`, all 5 arms slam into a thick horizontal `60 分` glass ceiling (`困于 60 分均值顶棚`), sparking far below the `95 分` mastery line! |
+| **S14** | Act IV<br>`paper` | `85.6–92.0s`<br>(`88.54s`) | Lower press: `向下裁撤外包层`<br>Upper ram: `向上沦为标准插头` | `A`: `以为把员工【蒸馏】成代码`<br>`B`: `平台反手把你蒸成【零工】`<br>*You think you distilled staff into prompts;*<br>*upstream platforms distill you into a replaceable plug.* | **Seam Carry from S13**: The `60 分` glass ceiling morphs into a two-stage industrial distillation press: in the lower chamber, the solo pod crushes junior outsourcing cards into code (`向下裁撤外包层`); at `88.54s`, a giant upstream platform hydraulic ram slams down from above, stamping the solo builder into a standardized 3-prong electrical plug (`向上沦为标准插头`)! |
+| **S15** | Act V<br>`obsidian` | `92.0–98.2s`<br>(`94.85s`) | Left slots: `2026 博弈矩阵`<br>Right bars: `同质接口溢价清零` | `A`: `仿真测算【纯执行】归零`<br>`B`: `越标准手艺越快成【耗材】`<br>*Game-theoretic modeling proves standardized execution*<br>*collapses toward zero pricing power.* | **Act Iris (`obsidian` `#0B0D13`)**: `S14`'s 3-prong plug replicates into a `4 × 3` bidding matrix of 12 identical plugs (`2026 博弈矩阵`) on the left; at `94.85s` on the right, a 7-bar pricing power waterfall chart collapses step-by-step from `100%` down to `0.0%` (`同质接口溢价清零`)! |
+| **S16** | Act V<br>`obsidian` | `98.2–105.0s`<br>(`101.33s`) | Top ring: `防波堤解体`<br>Bottom/Sides: `10 倍高墙与 7 成漏斗` | `A`: `生产越便宜【信任】越昂贵`<br>`B`: `算力孤岛锁死沦为【佃农】`<br>*Stripped of corporate walls, isolated nodes are squeezed*<br>*between tenfold trust walls and platform tolls.* | **Seam Carry from S15 (3-Layer Synthesis)**: Camera pulls back to assemble the complete black box: shattered Coase seawall at the top (`防波堤解体`), two towering `10 倍` transaction & trust walls closing in from left and right, and the `70%` platform toll funnel sucking from below (`10 倍高墙与 7 成漏斗`) — locking the `03:00` operator in the center! |
+| **S17** | Act V<br>`obsidian` | `105.0–111.6s`<br>(`108.04s`) | Card header: `高赞 4172 追问`<br>Card body: `背后 10 路模型凭何选你` | `A`: `【四千赞】热评刺破幻象`<br>`B`: `算力平权后谁为你【买单】`<br>*When everyone commands ten AI models behind the screen,*<br>*why should anyone choose you?* | **Seam Carry from S16 (Fourth-Wall Meta Moment)**: The 3-layer cage contracts like a pupil into deep underwater wave caustics (`#050C16`), and a warm archival parchment card (`高赞 4172 追问 · 知乎 @Titus`) rises to face the viewer; at `108.04s`, crimson characters stamp across the center: `背后 10 路模型凭何选你`! |
+| **S18** | Act VI<br>`dawn` | `111.6–118.0s`<br>(`114.54s`) | Base platform: `60 分机械底座`<br>Golden peak: `95 分审美与赔付尖峰` | `A`: `【平庸杂活】交代码托管`<br>`B`: `留【90%心力】死磕极致`<br>*Delegate 60-point routine work to code;*<br>*pour 90% of human focus into 95-point taste and liability.* | **Act Iris (`dawn` warm gold)**: `S17`'s parchment card performs a 3D fold into a horizontal `60 分机械底座` platform (`写码 / 排版 / 剪辑 / 报表 / 检索`); at `114.54s`, `90%` golden human energy converges into a razor-sharp golden obelisk that shatters the `60 分` ceiling and rockets to `95 分` (`95 分审美与赔付尖峰`)! |
+| **S19** | Act VI<br>`dawn` | `118.0–125.2s`<br>(`121.31s`) | Left rail: `敬畏 4 比 70 底表`<br>Right target: `最小样本收费验真` | `A`: `牢记【70死66】真实概率`<br>`B`: `【14天】小原型先验付款`<br>*Respect the 4-in-70 odds:*<br>*validate real willingness to pay with a 14-day prototype before going all in.* | **Seam Carry from S18**: The golden obelisk rotates $90^\circ$ into a precision `14 天试错探针` (`敬畏 4 比 70 底表`), sweeping across a 14-day rail, popping 3 grey `伪需求` bubbles (`第 3 天 / 第 7 天 / 第 10 天 · 止损`), and at `121.31s` striking the 4th golden `真实付费 · 最小闭环` coin node (`最小样本收费验真`)! |
+| **S20** | Act VI<br>`walnut` | `125.2–132.0s`<br>(`128.33s`) | Left desk: `凌晨 3 点接线台`<br>Right seal: `熔铸主权黄铜印章` | `A`: `拔【70%漏斗】重铸信誉`<br>`B`: `告别零工做【时代支点】`<br>*Unplug the 70% toll funnel*<br>*and forge an un-distillable brass seal of personal reputation.* | **Seam Carry from S19 (100% Callback to S01 Desk)**: Camera returns to `S01`'s `凌晨 3 点接线台` bathed in warm amber lamp light: the underground `70%` toll hose is unplugged and severed at the bottom, while `S01`'s 10 cords and golden badge fuse at the center into a heavy 3D brass sovereign seal (`个人真名 · 审美与兜底印章`); at `128.33s`, the seal stamps (`slam_impact.mp3`) onto a warm parchment contract (`熔铸主权黄铜印章`)! |
+
+---
+
+## 4. VERIFICATION & VISUAL QA WORKFLOW
+
+1. Ensure CJK fonts (`Noto Serif SC` / `Noto Sans CJK SC`) are available or installed (`apt-get install -y fonts-noto-cjk` if needed) so headless Chromium renders crisp Chinese typography instead of tofu boxes.
+2. Render at least 10–20 representative stills across the 20 shots (`npx remotion still ...`) and inspect them with `Read` to verify:
+   - Frame `0` (`t = 0.00s`) has zero fade-in and full contrast;
+   - Every shot has rich, tangible editorial SVG mechanisms (`2,600+` lines across `src/film/*`), continuous within-Act `Seam Carry`, zero `<24px` text, zero English words on the upper stage, and zero visual overlap.
+3. Render the final video or ensure `src/index.ts` and `src/Root.tsx` register the `3,960`-frame (`132.0s @ 30fps`) main composition cleanly.
