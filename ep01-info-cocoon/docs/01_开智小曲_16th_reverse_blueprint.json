@@ -1,0 +1,7249 @@
+{
+  "bpm": 75.0,
+  "sixteenth_sec": 0.2,
+  "median_micro_offset_ms": -8.1,
+  "measured_harmonic_profile_H1_to_H8": [
+    1.0,
+    0.2975,
+    0.1953,
+    0.0674,
+    0.033,
+    0.033,
+    0.0115,
+    0.011
+  ],
+  "total_drum_hits_transcribed": 424,
+  "bars": [
+    {
+      "bar": 1,
+      "start_s": 0.0,
+      "end_s": 3.2,
+      "drum_grid_16th": {
+        "kick": "Kk..|K...|k..K|KK.k",
+        "snare": "SS.S|SS..|sS.S|SS.s",
+        "hat": "HH.H|HH.H|HH.H|HH.H"
+      },
+      "polyphonic_voicing": [
+        "G4",
+        "F3",
+        "C3",
+        "F5"
+      ],
+      "bass_8th": [
+        "G1",
+        "F2",
+        "G1",
+        "F2",
+        "F2",
+        "F3",
+        "G1",
+        "G1"
+      ],
+      "melody_8th": [
+        "F4",
+        "G4",
+        "G4",
+        "Ab4",
+        "Ab4",
+        "F4",
+        "F4",
+        "G4"
+      ],
+      "melody_jianpu_8th": [
+        "6.",
+        "7.",
+        "7.",
+        "1",
+        "1",
+        "6.",
+        "6.",
+        "7."
+      ],
+      "slots_16": [
+        {
+          "slot": 0,
+          "kick_vel": 0.22,
+          "snare_vel": 0.429,
+          "hat_vel": 0.687,
+          "snare_offset_ms": 8.7
+        },
+        {
+          "slot": 1,
+          "kick_vel": 0.128,
+          "snare_vel": 0.221,
+          "hat_vel": 0.731,
+          "snare_offset_ms": 64.1
+        },
+        {
+          "slot": 2,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 3,
+          "kick_vel": 0.0,
+          "snare_vel": 0.244,
+          "hat_vel": 0.478,
+          "snare_offset_ms": -63.0
+        },
+        {
+          "slot": 4,
+          "kick_vel": 0.773,
+          "snare_vel": 0.566,
+          "hat_vel": 0.446,
+          "snare_offset_ms": 4.0
+        },
+        {
+          "slot": 5,
+          "kick_vel": 0.0,
+          "snare_vel": 0.635,
+          "hat_vel": 0.583,
+          "snare_offset_ms": 71.0
+        },
+        {
+          "slot": 6,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 7,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.458,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 8,
+          "kick_vel": 0.18,
+          "snare_vel": 0.122,
+          "hat_vel": 0.693,
+          "snare_offset_ms": 5.1
+        },
+        {
+          "slot": 9,
+          "kick_vel": 0.0,
+          "snare_vel": 0.415,
+          "hat_vel": 0.911,
+          "snare_offset_ms": 77.9
+        },
+        {
+          "slot": 10,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 11,
+          "kick_vel": 0.365,
+          "snare_vel": 0.459,
+          "hat_vel": 0.633,
+          "snare_offset_ms": -55.1
+        },
+        {
+          "slot": 12,
+          "kick_vel": 0.421,
+          "snare_vel": 0.475,
+          "hat_vel": 0.555,
+          "snare_offset_ms": 12.0
+        },
+        {
+          "slot": 13,
+          "kick_vel": 0.543,
+          "snare_vel": 0.421,
+          "hat_vel": 0.715,
+          "snare_offset_ms": 84.8
+        },
+        {
+          "slot": 14,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 15,
+          "kick_vel": 0.146,
+          "snare_vel": 0.122,
+          "hat_vel": 0.731,
+          "snare_offset_ms": -42.4
+        }
+      ]
+    },
+    {
+      "bar": 2,
+      "start_s": 3.2,
+      "end_s": 6.4,
+      "drum_grid_16th": {
+        "kick": "...K|kK..|..k.|..K.",
+        "snare": "S..S|s..s|S.SS|..SS",
+        "hat": "HH.H|H..H|H.HH|H.HH"
+      },
+      "polyphonic_voicing": [
+        "Eb4",
+        "C3",
+        "F4",
+        "F3"
+      ],
+      "bass_8th": [
+        "F2",
+        "G1",
+        "G1",
+        "C#2",
+        "C#2",
+        "C#3",
+        "C#2",
+        "C#2"
+      ],
+      "melody_8th": [
+        "Ab4",
+        "G4",
+        "G4",
+        "C#4",
+        "Eb4",
+        "Eb4",
+        "Eb4",
+        "G4"
+      ],
+      "melody_jianpu_8th": [
+        "1",
+        "7.",
+        "7.",
+        "4.",
+        "5.",
+        "5.",
+        "5.",
+        "7."
+      ],
+      "slots_16": [
+        {
+          "slot": 0,
+          "kick_vel": 0.0,
+          "snare_vel": 0.404,
+          "hat_vel": 0.633,
+          "snare_offset_ms": 24.7
+        },
+        {
+          "slot": 1,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.665,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 2,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 3,
+          "kick_vel": 0.461,
+          "snare_vel": 0.989,
+          "hat_vel": 0.609,
+          "snare_offset_ms": -41.3
+        },
+        {
+          "slot": 4,
+          "kick_vel": 0.115,
+          "snare_vel": 0.11,
+          "hat_vel": 0.686,
+          "snare_offset_ms": 31.6
+        },
+        {
+          "slot": 5,
+          "kick_vel": 0.732,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 6,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 7,
+          "kick_vel": 0.0,
+          "snare_vel": 0.101,
+          "hat_vel": 0.739,
+          "snare_offset_ms": -28.6
+        },
+        {
+          "slot": 8,
+          "kick_vel": 0.0,
+          "snare_vel": 0.365,
+          "hat_vel": 0.608,
+          "snare_offset_ms": 38.5
+        },
+        {
+          "slot": 9,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 10,
+          "kick_vel": 0.167,
+          "snare_vel": 0.397,
+          "hat_vel": 0.506,
+          "snare_offset_ms": -94.5
+        },
+        {
+          "slot": 11,
+          "kick_vel": 0.0,
+          "snare_vel": 0.795,
+          "hat_vel": 0.72,
+          "snare_offset_ms": -27.5
+        },
+        {
+          "slot": 12,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.618,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 13,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 14,
+          "kick_vel": 0.378,
+          "snare_vel": 0.709,
+          "hat_vel": 0.62,
+          "snare_offset_ms": -93.4
+        },
+        {
+          "slot": 15,
+          "kick_vel": 0.0,
+          "snare_vel": 0.353,
+          "hat_vel": 0.802,
+          "snare_offset_ms": -20.6
+        }
+      ]
+    },
+    {
+      "bar": 3,
+      "start_s": 6.4,
+      "end_s": 9.6,
+      "drum_grid_16th": {
+        "kick": "K.KK|k.kK|K.kK|k.kK",
+        "snare": "S.SS|s.SS|Ss.S|s.SS",
+        "hat": "H.HH|H.HH|H.HH|H.HH"
+      },
+      "polyphonic_voicing": [
+        "G4",
+        "Eb3",
+        "G3",
+        "Bb3"
+      ],
+      "bass_8th": [
+        "E2",
+        "G1",
+        "G3",
+        "G1",
+        "G1",
+        "G1",
+        "F2",
+        "G1"
+      ],
+      "melody_8th": [
+        "G4",
+        "F4",
+        "G4",
+        "Ab4",
+        "Eb4",
+        "F4",
+        "G4",
+        "F4"
+      ],
+      "melody_jianpu_8th": [
+        "7.",
+        "6.",
+        "7.",
+        "1",
+        "5.",
+        "6.",
+        "7.",
+        "6."
+      ],
+      "slots_16": [
+        {
+          "slot": 0,
+          "kick_vel": 0.304,
+          "snare_vel": 0.443,
+          "hat_vel": 0.463,
+          "snare_offset_ms": 46.4
+        },
+        {
+          "slot": 1,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 2,
+          "kick_vel": 0.469,
+          "snare_vel": 0.423,
+          "hat_vel": 0.553,
+          "snare_offset_ms": -80.7
+        },
+        {
+          "slot": 3,
+          "kick_vel": 0.485,
+          "snare_vel": 0.399,
+          "hat_vel": 0.752,
+          "snare_offset_ms": -13.7
+        },
+        {
+          "slot": 4,
+          "kick_vel": 0.127,
+          "snare_vel": 0.184,
+          "hat_vel": 0.782,
+          "snare_offset_ms": 59.1
+        },
+        {
+          "slot": 5,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 6,
+          "kick_vel": 0.156,
+          "snare_vel": 0.68,
+          "hat_vel": 0.596,
+          "snare_offset_ms": -79.6
+        },
+        {
+          "slot": 7,
+          "kick_vel": 0.559,
+          "snare_vel": 0.434,
+          "hat_vel": 0.529,
+          "snare_offset_ms": -6.8
+        },
+        {
+          "slot": 8,
+          "kick_vel": 0.342,
+          "snare_vel": 0.717,
+          "hat_vel": 0.717,
+          "snare_offset_ms": 54.4
+        },
+        {
+          "slot": 9,
+          "kick_vel": 0.0,
+          "snare_vel": 0.124,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 63.4
+        },
+        {
+          "slot": 10,
+          "kick_vel": 0.155,
+          "snare_vel": 0.0,
+          "hat_vel": 0.529,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 11,
+          "kick_vel": 0.724,
+          "snare_vel": 0.519,
+          "hat_vel": 0.703,
+          "snare_offset_ms": -5.7
+        },
+        {
+          "slot": 12,
+          "kick_vel": 0.21,
+          "snare_vel": 0.168,
+          "hat_vel": 0.547,
+          "snare_offset_ms": 67.1
+        },
+        {
+          "slot": 13,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 14,
+          "kick_vel": 0.159,
+          "snare_vel": 0.305,
+          "hat_vel": 0.742,
+          "snare_offset_ms": -60.0
+        },
+        {
+          "slot": 15,
+          "kick_vel": 1.0,
+          "snare_vel": 0.855,
+          "hat_vel": 0.494,
+          "snare_offset_ms": 1.2
+        }
+      ]
+    },
+    {
+      "bar": 4,
+      "start_s": 9.6,
+      "end_s": 12.8,
+      "drum_grid_16th": {
+        "kick": "...k|..KK|....|..k.",
+        "snare": "S..S|..SS|..S.|..S.",
+        "hat": "H.HH|H.Hh|..h.|..h."
+      },
+      "polyphonic_voicing": [
+        "F3",
+        "C4",
+        "F5",
+        "Eb4"
+      ],
+      "bass_8th": [
+        "F3",
+        "F2",
+        "F3",
+        "F1",
+        "F2",
+        "F2",
+        "F2",
+        "F2"
+      ],
+      "melody_8th": [
+        "F4",
+        "F5",
+        "C4",
+        "F4",
+        "Eb4",
+        "C4",
+        "Ab4",
+        "F4"
+      ],
+      "melody_jianpu_8th": [
+        "6.",
+        "6",
+        "3.",
+        "6.",
+        "5.",
+        "3.",
+        "1",
+        "6."
+      ],
+      "slots_16": [
+        {
+          "slot": 0,
+          "kick_vel": 0.0,
+          "snare_vel": 0.532,
+          "hat_vel": 0.648,
+          "snare_offset_ms": 74.0
+        },
+        {
+          "slot": 1,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 2,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.637,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 3,
+          "kick_vel": 0.145,
+          "snare_vel": 0.325,
+          "hat_vel": 0.638,
+          "snare_offset_ms": 19.7
+        },
+        {
+          "slot": 4,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.898,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 5,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 6,
+          "kick_vel": 0.35,
+          "snare_vel": 0.507,
+          "hat_vel": 0.279,
+          "snare_offset_ms": -46.3
+        },
+        {
+          "slot": 7,
+          "kick_vel": 0.223,
+          "snare_vel": 0.257,
+          "hat_vel": 0.15,
+          "snare_offset_ms": 26.6
+        },
+        {
+          "slot": 8,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 9,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 10,
+          "kick_vel": 0.0,
+          "snare_vel": 0.325,
+          "hat_vel": 0.107,
+          "snare_offset_ms": -39.4
+        },
+        {
+          "slot": 11,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 12,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 13,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 14,
+          "kick_vel": 0.148,
+          "snare_vel": 0.244,
+          "hat_vel": 0.194,
+          "snare_offset_ms": -26.7
+        },
+        {
+          "slot": 15,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        }
+      ]
+    },
+    {
+      "bar": 5,
+      "start_s": 12.8,
+      "end_s": 16.0,
+      "drum_grid_16th": {
+        "kick": ".K.k|.k..|....|kk..",
+        "snare": "..sS|.Ss.|..SS|.Sss",
+        "hat": ".Hhh|.H..|..HH|.HHh"
+      },
+      "polyphonic_voicing": [
+        "F4",
+        "C#3",
+        "Eb4",
+        "Bb3"
+      ],
+      "bass_8th": [
+        "C#2",
+        "C#2",
+        "C#3",
+        "C#2",
+        "C#2",
+        "Eb3",
+        "A2",
+        "A2"
+      ],
+      "melody_8th": [
+        "F4",
+        "Eb4",
+        "F4",
+        "F4",
+        "F4",
+        "G4",
+        "Eb4",
+        "F4"
+      ],
+      "melody_jianpu_8th": [
+        "6.",
+        "5.",
+        "6.",
+        "6.",
+        "6.",
+        "7.",
+        "5.",
+        "6."
+      ],
+      "slots_16": [
+        {
+          "slot": 0,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 1,
+          "kick_vel": 0.264,
+          "snare_vel": 0.0,
+          "hat_vel": 0.271,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 2,
+          "kick_vel": 0.0,
+          "snare_vel": 0.152,
+          "hat_vel": 0.204,
+          "snare_offset_ms": -25.6
+        },
+        {
+          "slot": 3,
+          "kick_vel": 0.217,
+          "snare_vel": 0.228,
+          "hat_vel": 0.117,
+          "snare_offset_ms": 47.3
+        },
+        {
+          "slot": 4,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 5,
+          "kick_vel": 0.217,
+          "snare_vel": 0.284,
+          "hat_vel": 0.268,
+          "snare_offset_ms": -79.9
+        },
+        {
+          "slot": 6,
+          "kick_vel": 0.0,
+          "snare_vel": 0.117,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 4.5
+        },
+        {
+          "slot": 7,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 8,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 9,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 10,
+          "kick_vel": 0.0,
+          "snare_vel": 0.416,
+          "hat_vel": 0.245,
+          "snare_offset_ms": -17.6
+        },
+        {
+          "slot": 11,
+          "kick_vel": 0.0,
+          "snare_vel": 0.53,
+          "hat_vel": 0.25,
+          "snare_offset_ms": 49.4
+        },
+        {
+          "slot": 12,
+          "kick_vel": 0.114,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 13,
+          "kick_vel": 0.16,
+          "snare_vel": 0.2,
+          "hat_vel": 0.233,
+          "snare_offset_ms": -77.7
+        },
+        {
+          "slot": 14,
+          "kick_vel": 0.0,
+          "snare_vel": 0.175,
+          "hat_vel": 0.225,
+          "snare_offset_ms": 0.9
+        },
+        {
+          "slot": 15,
+          "kick_vel": 0.0,
+          "snare_vel": 0.133,
+          "hat_vel": 0.204,
+          "snare_offset_ms": 62.1
+        }
+      ]
+    },
+    {
+      "bar": 6,
+      "start_s": 16.0,
+      "end_s": 19.2,
+      "drum_grid_16th": {
+        "kick": ".k..|..K.|..K.|....",
+        "snare": ".s.s|s.Ss|.SSS|..Ss",
+        "hat": ".h..|..HH|.HHH|.HHH"
+      },
+      "polyphonic_voicing": [
+        "F4",
+        "C3",
+        "G3",
+        "Bb3"
+      ],
+      "bass_8th": [
+        "Bb2",
+        "G3",
+        "E2",
+        "F1",
+        "F1",
+        "F1",
+        "F1",
+        "F1"
+      ],
+      "melody_8th": [
+        "F4",
+        "F4",
+        "F4",
+        "F4",
+        "F4",
+        "Bb4",
+        "F4",
+        "C5"
+      ],
+      "melody_jianpu_8th": [
+        "6.",
+        "6.",
+        "6.",
+        "6.",
+        "6.",
+        "2",
+        "6.",
+        "3"
+      ],
+      "slots_16": [
+        {
+          "slot": 0,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 1,
+          "kick_vel": 0.15,
+          "snare_vel": 0.115,
+          "hat_vel": 0.18,
+          "snare_offset_ms": -59.2
+        },
+        {
+          "slot": 2,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 3,
+          "kick_vel": 0.0,
+          "snare_vel": 0.127,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 16.8
+        },
+        {
+          "slot": 4,
+          "kick_vel": 0.0,
+          "snare_vel": 0.104,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 95.4
+        },
+        {
+          "slot": 5,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 6,
+          "kick_vel": 0.811,
+          "snare_vel": 1.0,
+          "hat_vel": 0.398,
+          "snare_offset_ms": -2.7
+        },
+        {
+          "slot": 7,
+          "kick_vel": 0.0,
+          "snare_vel": 0.168,
+          "hat_vel": 0.691,
+          "snare_offset_ms": 64.3
+        },
+        {
+          "slot": 8,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 9,
+          "kick_vel": 0.0,
+          "snare_vel": 0.278,
+          "hat_vel": 0.906,
+          "snare_offset_ms": -57.1
+        },
+        {
+          "slot": 10,
+          "kick_vel": 0.452,
+          "snare_vel": 0.712,
+          "hat_vel": 0.465,
+          "snare_offset_ms": 4.2
+        },
+        {
+          "slot": 11,
+          "kick_vel": 0.0,
+          "snare_vel": 0.305,
+          "hat_vel": 0.344,
+          "snare_offset_ms": 82.8
+        },
+        {
+          "slot": 12,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 13,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.818,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 14,
+          "kick_vel": 0.0,
+          "snare_vel": 0.249,
+          "hat_vel": 0.591,
+          "snare_offset_ms": 11.1
+        },
+        {
+          "slot": 15,
+          "kick_vel": 0.0,
+          "snare_vel": 0.104,
+          "hat_vel": 0.721,
+          "snare_offset_ms": 83.9
+        }
+      ]
+    },
+    {
+      "bar": 7,
+      "start_s": 19.2,
+      "end_s": 22.4,
+      "drum_grid_16th": {
+        "kick": ".kKK|.k..|....|....",
+        "snare": ".SSS|.sS.|.Ss.|..S.",
+        "hat": ".HHH|.HHH|..hh|.HH."
+      },
+      "polyphonic_voicing": [
+        "F4",
+        "C3",
+        "F3",
+        "Eb5"
+      ],
+      "bass_8th": [
+        "F1",
+        "G1",
+        "F1",
+        "F1",
+        "F1",
+        "F1",
+        "F1",
+        "F1"
+      ],
+      "melody_8th": [
+        "F4",
+        "F4",
+        "F4",
+        "F4",
+        "F4",
+        "Bb5",
+        "C#4",
+        "Eb5"
+      ],
+      "melody_jianpu_8th": [
+        "6.",
+        "6.",
+        "6.",
+        "6.",
+        "6.",
+        "2'",
+        "4.",
+        "5"
+      ],
+      "slots_16": [
+        {
+          "slot": 0,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 1,
+          "kick_vel": 0.14,
+          "snare_vel": 0.282,
+          "hat_vel": 0.868,
+          "snare_offset_ms": -43.3
+        },
+        {
+          "slot": 2,
+          "kick_vel": 0.424,
+          "snare_vel": 0.523,
+          "hat_vel": 0.652,
+          "snare_offset_ms": 18.0
+        },
+        {
+          "slot": 3,
+          "kick_vel": 0.631,
+          "snare_vel": 0.537,
+          "hat_vel": 0.808,
+          "snare_offset_ms": 85.0
+        },
+        {
+          "slot": 4,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 5,
+          "kick_vel": 0.121,
+          "snare_vel": 0.107,
+          "hat_vel": 0.421,
+          "snare_offset_ms": -42.2
+        },
+        {
+          "slot": 6,
+          "kick_vel": 0.0,
+          "snare_vel": 0.334,
+          "hat_vel": 0.901,
+          "snare_offset_ms": 30.7
+        },
+        {
+          "slot": 7,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.486,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 8,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 9,
+          "kick_vel": 0.0,
+          "snare_vel": 0.263,
+          "hat_vel": 0.0,
+          "snare_offset_ms": -35.3
+        },
+        {
+          "slot": 10,
+          "kick_vel": 0.0,
+          "snare_vel": 0.175,
+          "hat_vel": 0.178,
+          "snare_offset_ms": 55.0
+        },
+        {
+          "slot": 11,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.189,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 12,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 13,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.726,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 14,
+          "kick_vel": 0.0,
+          "snare_vel": 0.217,
+          "hat_vel": 0.614,
+          "snare_offset_ms": 44.4
+        },
+        {
+          "slot": 15,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        }
+      ]
+    },
+    {
+      "bar": 8,
+      "start_s": 22.4,
+      "end_s": 25.6,
+      "drum_grid_16th": {
+        "kick": "K...|....|.K..|..k.",
+        "snare": "SSS.|SsS.|SSs.|SSS.",
+        "hat": "hHH.|HHHH|HHH.|HHHh"
+      },
+      "polyphonic_voicing": [
+        "D3",
+        "F4",
+        "Bb5",
+        "Eb5"
+      ],
+      "bass_8th": [
+        "F1",
+        "F1",
+        "Ab2",
+        "F1",
+        "F1",
+        "F1",
+        "F1",
+        "A1"
+      ],
+      "melody_8th": [
+        "Eb5",
+        "F4",
+        "F4",
+        "Bb4",
+        "Bb4",
+        "F4",
+        "Eb4",
+        "F4"
+      ],
+      "melody_jianpu_8th": [
+        "5",
+        "6.",
+        "6.",
+        "2",
+        "2",
+        "6.",
+        "5.",
+        "6."
+      ],
+      "slots_16": [
+        {
+          "slot": 0,
+          "kick_vel": 0.504,
+          "snare_vel": 0.824,
+          "hat_vel": 0.105,
+          "snare_offset_ms": -94.3
+        },
+        {
+          "slot": 1,
+          "kick_vel": 0.0,
+          "snare_vel": 0.357,
+          "hat_vel": 0.391,
+          "snare_offset_ms": -21.5
+        },
+        {
+          "slot": 2,
+          "kick_vel": 0.0,
+          "snare_vel": 0.363,
+          "hat_vel": 0.783,
+          "snare_offset_ms": 51.3
+        },
+        {
+          "slot": 3,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 4,
+          "kick_vel": 0.0,
+          "snare_vel": 0.211,
+          "hat_vel": 0.803,
+          "snare_offset_ms": -87.4
+        },
+        {
+          "slot": 5,
+          "kick_vel": 0.0,
+          "snare_vel": 0.111,
+          "hat_vel": 0.835,
+          "snare_offset_ms": -14.6
+        },
+        {
+          "slot": 6,
+          "kick_vel": 0.0,
+          "snare_vel": 0.349,
+          "hat_vel": 0.814,
+          "snare_offset_ms": 52.4
+        },
+        {
+          "slot": 7,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.746,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 8,
+          "kick_vel": 0.0,
+          "snare_vel": 0.264,
+          "hat_vel": 0.724,
+          "snare_offset_ms": -74.7
+        },
+        {
+          "slot": 9,
+          "kick_vel": 0.394,
+          "snare_vel": 0.631,
+          "hat_vel": 0.444,
+          "snare_offset_ms": -13.5
+        },
+        {
+          "slot": 10,
+          "kick_vel": 0.0,
+          "snare_vel": 0.146,
+          "hat_vel": 0.53,
+          "snare_offset_ms": 70.9
+        },
+        {
+          "slot": 11,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 12,
+          "kick_vel": 0.0,
+          "snare_vel": 0.437,
+          "hat_vel": 0.732,
+          "snare_offset_ms": -73.7
+        },
+        {
+          "slot": 13,
+          "kick_vel": 0.0,
+          "snare_vel": 0.249,
+          "hat_vel": 0.372,
+          "snare_offset_ms": 10.8
+        },
+        {
+          "slot": 14,
+          "kick_vel": 0.168,
+          "snare_vel": 0.262,
+          "hat_vel": 0.272,
+          "snare_offset_ms": 72.0
+        },
+        {
+          "slot": 15,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.097,
+          "snare_offset_ms": 0.0
+        }
+      ]
+    },
+    {
+      "bar": 9,
+      "start_s": 25.6,
+      "end_s": 28.8,
+      "drum_grid_16th": {
+        "kick": ".K..|.K..|.k..|kKK.",
+        "snare": "sSs.|SSS.|.S.s|SSS.",
+        "hat": "hHH.|HHh.|HHH.|HHH."
+      },
+      "polyphonic_voicing": [
+        "F4",
+        "C3",
+        "F3",
+        "Bb5"
+      ],
+      "bass_8th": [
+        "F1",
+        "F1",
+        "G1",
+        "F1",
+        "F1",
+        "F1",
+        "G1",
+        "F1"
+      ],
+      "melody_8th": [
+        "F4",
+        "F4",
+        "F4",
+        "Bb4",
+        "Bb5",
+        "C6",
+        "F4",
+        "Ab4"
+      ],
+      "melody_jianpu_8th": [
+        "6.",
+        "6.",
+        "6.",
+        "2",
+        "2'",
+        "3'",
+        "6.",
+        "1"
+      ],
+      "slots_16": [
+        {
+          "slot": 0,
+          "kick_vel": 0.0,
+          "snare_vel": 0.122,
+          "hat_vel": 0.146,
+          "snare_offset_ms": -78.4
+        },
+        {
+          "slot": 1,
+          "kick_vel": 0.536,
+          "snare_vel": 0.599,
+          "hat_vel": 0.243,
+          "snare_offset_ms": 0.3
+        },
+        {
+          "slot": 2,
+          "kick_vel": 0.0,
+          "snare_vel": 0.189,
+          "hat_vel": 0.492,
+          "snare_offset_ms": 67.3
+        },
+        {
+          "slot": 3,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 4,
+          "kick_vel": 0.0,
+          "snare_vel": 0.242,
+          "hat_vel": 0.758,
+          "snare_offset_ms": -59.9
+        },
+        {
+          "slot": 5,
+          "kick_vel": 0.413,
+          "snare_vel": 0.672,
+          "hat_vel": 0.617,
+          "snare_offset_ms": 7.2
+        },
+        {
+          "slot": 6,
+          "kick_vel": 0.0,
+          "snare_vel": 0.313,
+          "hat_vel": 0.134,
+          "snare_offset_ms": 85.8
+        },
+        {
+          "slot": 7,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 8,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.975,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 9,
+          "kick_vel": 0.112,
+          "snare_vel": 0.314,
+          "hat_vel": 0.435,
+          "snare_offset_ms": 14.1
+        },
+        {
+          "slot": 10,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.72,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 11,
+          "kick_vel": 0.0,
+          "snare_vel": 0.181,
+          "hat_vel": 0.0,
+          "snare_offset_ms": -8.6
+        },
+        {
+          "slot": 12,
+          "kick_vel": 0.111,
+          "snare_vel": 0.297,
+          "hat_vel": 0.564,
+          "snare_offset_ms": -40.3
+        },
+        {
+          "slot": 13,
+          "kick_vel": 0.374,
+          "snare_vel": 0.509,
+          "hat_vel": 0.668,
+          "snare_offset_ms": 21.0
+        },
+        {
+          "slot": 14,
+          "kick_vel": 0.588,
+          "snare_vel": 0.486,
+          "hat_vel": 0.456,
+          "snare_offset_ms": 88.0
+        },
+        {
+          "slot": 15,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        }
+      ]
+    },
+    {
+      "bar": 10,
+      "start_s": 28.8,
+      "end_s": 32.0,
+      "drum_grid_16th": {
+        "kick": "....|....|....|k...",
+        "snare": "sS..|S...|sS.S|SS.S",
+        "hat": "HHHH|hhh.|HH.H|hH.H"
+      },
+      "polyphonic_voicing": [
+        "F4",
+        "C3",
+        "F3",
+        "Eb5"
+      ],
+      "bass_8th": [
+        "F1",
+        "F1",
+        "F1",
+        "F1",
+        "F1",
+        "F1",
+        "Ab2",
+        "F1"
+      ],
+      "melody_8th": [
+        "Ab4",
+        "D4",
+        "C6",
+        "C#4",
+        "Ab4",
+        "Ab4",
+        "Eb5",
+        "F4"
+      ],
+      "melody_jianpu_8th": [
+        "1",
+        "#4.",
+        "3'",
+        "4.",
+        "1",
+        "1",
+        "5",
+        "6."
+      ],
+      "slots_16": [
+        {
+          "slot": 0,
+          "kick_vel": 0.0,
+          "snare_vel": 0.176,
+          "hat_vel": 0.435,
+          "snare_offset_ms": -33.4
+        },
+        {
+          "slot": 1,
+          "kick_vel": 0.0,
+          "snare_vel": 0.313,
+          "hat_vel": 0.809,
+          "snare_offset_ms": 27.8
+        },
+        {
+          "slot": 2,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.502,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 3,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.368,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 4,
+          "kick_vel": 0.0,
+          "snare_vel": 0.279,
+          "hat_vel": 0.213,
+          "snare_offset_ms": -32.3
+        },
+        {
+          "slot": 5,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.145,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 6,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.162,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 7,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 8,
+          "kick_vel": 0.0,
+          "snare_vel": 0.108,
+          "hat_vel": 0.586,
+          "snare_offset_ms": -19.6
+        },
+        {
+          "slot": 9,
+          "kick_vel": 0.0,
+          "snare_vel": 0.256,
+          "hat_vel": 0.75,
+          "snare_offset_ms": 47.4
+        },
+        {
+          "slot": 10,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 11,
+          "kick_vel": 0.0,
+          "snare_vel": 0.229,
+          "hat_vel": 0.665,
+          "snare_offset_ms": -85.5
+        },
+        {
+          "slot": 12,
+          "kick_vel": 0.116,
+          "snare_vel": 0.273,
+          "hat_vel": 0.184,
+          "snare_offset_ms": -24.3
+        },
+        {
+          "slot": 13,
+          "kick_vel": 0.0,
+          "snare_vel": 0.419,
+          "hat_vel": 0.348,
+          "snare_offset_ms": 54.3
+        },
+        {
+          "slot": 14,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 15,
+          "kick_vel": 0.0,
+          "snare_vel": 0.231,
+          "hat_vel": 0.306,
+          "snare_offset_ms": -84.4
+        }
+      ]
+    },
+    {
+      "bar": 11,
+      "start_s": 32.0,
+      "end_s": 35.2,
+      "drum_grid_16th": {
+        "kick": "....|....|....|K...",
+        "snare": "SS.S|SS.S|SS.S|Ss.S",
+        "hat": "HHHH|HHhH|HHHH|HH.H"
+      },
+      "polyphonic_voicing": [
+        "F4",
+        "Eb4",
+        "Bb4",
+        "Bb3"
+      ],
+      "bass_8th": [
+        "F1",
+        "F1",
+        "F1",
+        "F1",
+        "A1",
+        "F1",
+        "F1",
+        "F1"
+      ],
+      "melody_8th": [
+        "Ab4",
+        "Bb4",
+        "Bb4",
+        "Bb4",
+        "Eb4",
+        "Eb4",
+        "F4",
+        "F4"
+      ],
+      "melody_jianpu_8th": [
+        "1",
+        "2",
+        "2",
+        "2",
+        "5.",
+        "5.",
+        "6.",
+        "6."
+      ],
+      "slots_16": [
+        {
+          "slot": 0,
+          "kick_vel": 0.0,
+          "snare_vel": 0.574,
+          "hat_vel": 0.714,
+          "snare_offset_ms": -17.4
+        },
+        {
+          "slot": 1,
+          "kick_vel": 0.0,
+          "snare_vel": 0.551,
+          "hat_vel": 1.0,
+          "snare_offset_ms": 49.6
+        },
+        {
+          "slot": 2,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.873,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 3,
+          "kick_vel": 0.0,
+          "snare_vel": 0.352,
+          "hat_vel": 0.733,
+          "snare_offset_ms": -77.6
+        },
+        {
+          "slot": 4,
+          "kick_vel": 0.0,
+          "snare_vel": 0.442,
+          "hat_vel": 0.861,
+          "snare_offset_ms": -10.5
+        },
+        {
+          "slot": 5,
+          "kick_vel": 0.0,
+          "snare_vel": 0.419,
+          "hat_vel": 0.8,
+          "snare_offset_ms": 62.3
+        },
+        {
+          "slot": 6,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.174,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 7,
+          "kick_vel": 0.0,
+          "snare_vel": 0.426,
+          "hat_vel": 0.791,
+          "snare_offset_ms": -70.7
+        },
+        {
+          "slot": 8,
+          "kick_vel": 0.0,
+          "snare_vel": 0.575,
+          "hat_vel": 0.824,
+          "snare_offset_ms": -3.6
+        },
+        {
+          "slot": 9,
+          "kick_vel": 0.0,
+          "snare_vel": 0.661,
+          "hat_vel": 0.858,
+          "snare_offset_ms": 63.4
+        },
+        {
+          "slot": 10,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.924,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 11,
+          "kick_vel": 0.0,
+          "snare_vel": 0.598,
+          "hat_vel": 0.756,
+          "snare_offset_ms": -63.8
+        },
+        {
+          "slot": 12,
+          "kick_vel": 0.473,
+          "snare_vel": 0.79,
+          "hat_vel": 0.465,
+          "snare_offset_ms": 3.3
+        },
+        {
+          "slot": 13,
+          "kick_vel": 0.0,
+          "snare_vel": 0.171,
+          "hat_vel": 0.493,
+          "snare_offset_ms": 70.3
+        },
+        {
+          "slot": 14,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 15,
+          "kick_vel": 0.0,
+          "snare_vel": 0.249,
+          "hat_vel": 0.604,
+          "snare_offset_ms": -51.1
+        }
+      ]
+    },
+    {
+      "bar": 12,
+      "start_s": 35.2,
+      "end_s": 38.4,
+      "drum_grid_16th": {
+        "kick": "K...|k..k|KK..|....",
+        "snare": "SS.s|S..S|SS.s|S..S",
+        "hat": "HH.H|HH.H|HH.H|HHHh"
+      },
+      "polyphonic_voicing": [
+        "F4",
+        "C3",
+        "F3",
+        "Bb5"
+      ],
+      "bass_8th": [
+        "G1",
+        "F1",
+        "F1",
+        "F1",
+        "G1",
+        "F1",
+        "F1",
+        "F1"
+      ],
+      "melody_8th": [
+        "G4",
+        "Bb5",
+        "F4",
+        "F4",
+        "F4",
+        "F4",
+        "D4",
+        "F4"
+      ],
+      "melody_jianpu_8th": [
+        "7.",
+        "2'",
+        "6.",
+        "6.",
+        "6.",
+        "6.",
+        "#4.",
+        "6."
+      ],
+      "slots_16": [
+        {
+          "slot": 0,
+          "kick_vel": 0.399,
+          "snare_vel": 0.807,
+          "hat_vel": 0.522,
+          "snare_offset_ms": 4.4
+        },
+        {
+          "slot": 1,
+          "kick_vel": 0.0,
+          "snare_vel": 0.33,
+          "hat_vel": 0.294,
+          "snare_offset_ms": 83.0
+        },
+        {
+          "slot": 2,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 3,
+          "kick_vel": 0.0,
+          "snare_vel": 0.155,
+          "hat_vel": 0.886,
+          "snare_offset_ms": -50.0
+        },
+        {
+          "slot": 4,
+          "kick_vel": 0.118,
+          "snare_vel": 0.309,
+          "hat_vel": 0.619,
+          "snare_offset_ms": 17.1
+        },
+        {
+          "slot": 5,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.714,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 6,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 7,
+          "kick_vel": 0.111,
+          "snare_vel": 0.303,
+          "hat_vel": 0.752,
+          "snare_offset_ms": -37.3
+        },
+        {
+          "slot": 8,
+          "kick_vel": 0.384,
+          "snare_vel": 0.519,
+          "hat_vel": 0.412,
+          "snare_offset_ms": 23.9
+        },
+        {
+          "slot": 9,
+          "kick_vel": 0.666,
+          "snare_vel": 0.641,
+          "hat_vel": 0.506,
+          "snare_offset_ms": 91.0
+        },
+        {
+          "slot": 10,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 11,
+          "kick_vel": 0.0,
+          "snare_vel": 0.156,
+          "hat_vel": 0.494,
+          "snare_offset_ms": -24.6
+        },
+        {
+          "slot": 12,
+          "kick_vel": 0.0,
+          "snare_vel": 0.367,
+          "hat_vel": 0.823,
+          "snare_offset_ms": 30.8
+        },
+        {
+          "slot": 13,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.559,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 14,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.364,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 15,
+          "kick_vel": 0.0,
+          "snare_vel": 0.242,
+          "hat_vel": 0.183,
+          "snare_offset_ms": -29.3
+        }
+      ]
+    },
+    {
+      "bar": 13,
+      "start_s": 38.4,
+      "end_s": 41.6,
+      "drum_grid_16th": {
+        "kick": "....|..K.|....|...K",
+        "snare": "S.Ss|S.SS|S.S.|S.SS",
+        "hat": "hh.H|H.HH|H.HH|HHHH"
+      },
+      "polyphonic_voicing": [
+        "F4",
+        "Eb5",
+        "Ab4",
+        "C3"
+      ],
+      "bass_8th": [
+        "F1",
+        "F1",
+        "F1",
+        "F1",
+        "F1",
+        "Ab2",
+        "F1",
+        "F1"
+      ],
+      "melody_8th": [
+        "C6",
+        "C#4",
+        "Eb5",
+        "Ab4",
+        "F4",
+        "F4",
+        "Bb4",
+        "Bb4"
+      ],
+      "melody_jianpu_8th": [
+        "3'",
+        "4.",
+        "5",
+        "1",
+        "6.",
+        "6.",
+        "2",
+        "2"
+      ],
+      "slots_16": [
+        {
+          "slot": 0,
+          "kick_vel": 0.0,
+          "snare_vel": 0.202,
+          "hat_vel": 0.151,
+          "snare_offset_ms": 43.5
+        },
+        {
+          "slot": 1,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.188,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 2,
+          "kick_vel": 0.0,
+          "snare_vel": 0.779,
+          "hat_vel": 0.0,
+          "snare_offset_ms": -95.2
+        },
+        {
+          "slot": 3,
+          "kick_vel": 0.0,
+          "snare_vel": 0.14,
+          "hat_vel": 0.616,
+          "snare_offset_ms": -22.4
+        },
+        {
+          "slot": 4,
+          "kick_vel": 0.0,
+          "snare_vel": 0.211,
+          "hat_vel": 0.799,
+          "snare_offset_ms": 44.6
+        },
+        {
+          "slot": 5,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 6,
+          "kick_vel": 0.442,
+          "snare_vel": 0.831,
+          "hat_vel": 0.556,
+          "snare_offset_ms": -94.1
+        },
+        {
+          "slot": 7,
+          "kick_vel": 0.0,
+          "snare_vel": 0.384,
+          "hat_vel": 0.354,
+          "snare_offset_ms": -15.5
+        },
+        {
+          "slot": 8,
+          "kick_vel": 0.0,
+          "snare_vel": 0.26,
+          "hat_vel": 0.942,
+          "snare_offset_ms": 57.3
+        },
+        {
+          "slot": 9,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 10,
+          "kick_vel": 0.0,
+          "snare_vel": 0.248,
+          "hat_vel": 0.609,
+          "snare_offset_ms": -81.5
+        },
+        {
+          "slot": 11,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.722,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 12,
+          "kick_vel": 0.0,
+          "snare_vel": 0.318,
+          "hat_vel": 0.65,
+          "snare_offset_ms": 58.4
+        },
+        {
+          "slot": 13,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.747,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 14,
+          "kick_vel": 0.0,
+          "snare_vel": 0.221,
+          "hat_vel": 0.826,
+          "snare_offset_ms": -74.6
+        },
+        {
+          "slot": 15,
+          "kick_vel": 0.425,
+          "snare_vel": 0.47,
+          "hat_vel": 0.486,
+          "snare_offset_ms": -7.5
+        }
+      ]
+    },
+    {
+      "bar": 14,
+      "start_s": 41.6,
+      "end_s": 44.8,
+      "drum_grid_16th": {
+        "kick": "....|k..K|...K|..k.",
+        "snare": "s.SS|SssS|s.SS|S.sS",
+        "hat": "H.HH|Hhhh|H.HH|H.HH"
+      },
+      "polyphonic_voicing": [
+        "F4",
+        "Bb5",
+        "C3",
+        "Eb4"
+      ],
+      "bass_8th": [
+        "F1",
+        "F1",
+        "A1",
+        "F1",
+        "F1",
+        "G1",
+        "F1",
+        "F1"
+      ],
+      "melody_8th": [
+        "F4",
+        "Eb4",
+        "Eb4",
+        "F4",
+        "F4",
+        "F4",
+        "G4",
+        "F4"
+      ],
+      "melody_jianpu_8th": [
+        "6.",
+        "5.",
+        "5.",
+        "6.",
+        "6.",
+        "6.",
+        "7.",
+        "6."
+      ],
+      "slots_16": [
+        {
+          "slot": 0,
+          "kick_vel": 0.0,
+          "snare_vel": 0.148,
+          "hat_vel": 0.611,
+          "snare_offset_ms": 71.1
+        },
+        {
+          "slot": 1,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 2,
+          "kick_vel": 0.0,
+          "snare_vel": 0.335,
+          "hat_vel": 0.63,
+          "snare_offset_ms": -67.7
+        },
+        {
+          "slot": 3,
+          "kick_vel": 0.0,
+          "snare_vel": 0.249,
+          "hat_vel": 0.362,
+          "snare_offset_ms": 11.0
+        },
+        {
+          "slot": 4,
+          "kick_vel": 0.15,
+          "snare_vel": 0.329,
+          "hat_vel": 0.267,
+          "snare_offset_ms": 72.2
+        },
+        {
+          "slot": 5,
+          "kick_vel": 0.0,
+          "snare_vel": 0.112,
+          "hat_vel": 0.128,
+          "snare_offset_ms": 23.1
+        },
+        {
+          "slot": 6,
+          "kick_vel": 0.0,
+          "snare_vel": 0.108,
+          "hat_vel": 0.163,
+          "snare_offset_ms": 61.1
+        },
+        {
+          "slot": 7,
+          "kick_vel": 0.494,
+          "snare_vel": 0.542,
+          "hat_vel": 0.187,
+          "snare_offset_ms": 6.3
+        },
+        {
+          "slot": 8,
+          "kick_vel": 0.0,
+          "snare_vel": 0.174,
+          "hat_vel": 0.412,
+          "snare_offset_ms": 73.3
+        },
+        {
+          "slot": 9,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 10,
+          "kick_vel": 0.0,
+          "snare_vel": 0.209,
+          "hat_vel": 0.8,
+          "snare_offset_ms": -53.9
+        },
+        {
+          "slot": 11,
+          "kick_vel": 0.457,
+          "snare_vel": 0.694,
+          "hat_vel": 0.416,
+          "snare_offset_ms": 7.3
+        },
+        {
+          "slot": 12,
+          "kick_vel": 0.0,
+          "snare_vel": 0.353,
+          "hat_vel": 0.318,
+          "snare_offset_ms": 86.0
+        },
+        {
+          "slot": 13,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 14,
+          "kick_vel": 0.121,
+          "snare_vel": 0.153,
+          "hat_vel": 0.611,
+          "snare_offset_ms": -52.8
+        },
+        {
+          "slot": 15,
+          "kick_vel": 0.0,
+          "snare_vel": 0.329,
+          "hat_vel": 0.831,
+          "snare_offset_ms": 20.0
+        }
+      ]
+    },
+    {
+      "bar": 15,
+      "start_s": 44.8,
+      "end_s": 48.0,
+      "drum_grid_16th": {
+        "kick": "..kK|K...|....|....",
+        "snare": ".sSS|S.SS|..Ss|.Sss",
+        "hat": "H.HH|..HH|HHHh|h.HH"
+      },
+      "polyphonic_voicing": [
+        "F4",
+        "C3",
+        "F3",
+        "Eb4"
+      ],
+      "bass_8th": [
+        "F1",
+        "G1",
+        "F1",
+        "F1",
+        "F1",
+        "F1",
+        "F1",
+        "F1"
+      ],
+      "melody_8th": [
+        "C6",
+        "F4",
+        "F4",
+        "Eb4",
+        "Eb4",
+        "C6",
+        "C#4",
+        "Ab4"
+      ],
+      "melody_jianpu_8th": [
+        "3'",
+        "6.",
+        "6.",
+        "5.",
+        "5.",
+        "3'",
+        "4.",
+        "1"
+      ],
+      "slots_16": [
+        {
+          "slot": 0,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.68,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 1,
+          "kick_vel": 0.0,
+          "snare_vel": 0.101,
+          "hat_vel": 0.0,
+          "snare_offset_ms": -2.6
+        },
+        {
+          "slot": 2,
+          "kick_vel": 0.132,
+          "snare_vel": 0.267,
+          "hat_vel": 0.667,
+          "snare_offset_ms": -34.3
+        },
+        {
+          "slot": 3,
+          "kick_vel": 0.398,
+          "snare_vel": 0.525,
+          "hat_vel": 0.651,
+          "snare_offset_ms": 21.1
+        },
+        {
+          "slot": 4,
+          "kick_vel": 0.706,
+          "snare_vel": 0.567,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 94.0
+        },
+        {
+          "slot": 5,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 6,
+          "kick_vel": 0.0,
+          "snare_vel": 0.243,
+          "hat_vel": 0.514,
+          "snare_offset_ms": -33.2
+        },
+        {
+          "slot": 7,
+          "kick_vel": 0.0,
+          "snare_vel": 0.46,
+          "hat_vel": 0.979,
+          "snare_offset_ms": 33.8
+        },
+        {
+          "slot": 8,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.517,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 9,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.39,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 10,
+          "kick_vel": 0.0,
+          "snare_vel": 0.332,
+          "hat_vel": 0.369,
+          "snare_offset_ms": -26.3
+        },
+        {
+          "slot": 11,
+          "kick_vel": 0.0,
+          "snare_vel": 0.109,
+          "hat_vel": 0.14,
+          "snare_offset_ms": 34.9
+        },
+        {
+          "slot": 12,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.197,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 13,
+          "kick_vel": 0.0,
+          "snare_vel": 0.573,
+          "hat_vel": 0.0,
+          "snare_offset_ms": -92.2
+        },
+        {
+          "slot": 14,
+          "kick_vel": 0.0,
+          "snare_vel": 0.119,
+          "hat_vel": 0.74,
+          "snare_offset_ms": -19.4
+        },
+        {
+          "slot": 15,
+          "kick_vel": 0.0,
+          "snare_vel": 0.195,
+          "hat_vel": 0.76,
+          "snare_offset_ms": 47.6
+        }
+      ]
+    },
+    {
+      "bar": 16,
+      "start_s": 48.0,
+      "end_s": 51.2,
+      "drum_grid_16th": {
+        "kick": "....|....|k...|...k",
+        "snare": ".SSS|.SSS|.SSS|.SSS",
+        "hat": ".HhH|.HHH|HHHH|hHHH"
+      },
+      "polyphonic_voicing": [
+        "F4",
+        "Ab4",
+        "Eb5",
+        "Bb4"
+      ],
+      "bass_8th": [
+        "F1",
+        "Ab2",
+        "F1",
+        "F1",
+        "F1",
+        "F1",
+        "F1",
+        "A1"
+      ],
+      "melody_8th": [
+        "Ab4",
+        "F4",
+        "F4",
+        "Ab4",
+        "Bb4",
+        "Bb4",
+        "Bb4",
+        "Eb4"
+      ],
+      "melody_jianpu_8th": [
+        "1",
+        "6.",
+        "6.",
+        "1",
+        "2",
+        "2",
+        "2",
+        "5."
+      ],
+      "slots_16": [
+        {
+          "slot": 0,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 1,
+          "kick_vel": 0.0,
+          "snare_vel": 0.235,
+          "hat_vel": 0.549,
+          "snare_offset_ms": -79.5
+        },
+        {
+          "slot": 2,
+          "kick_vel": 0.0,
+          "snare_vel": 0.23,
+          "hat_vel": 0.16,
+          "snare_offset_ms": -18.3
+        },
+        {
+          "slot": 3,
+          "kick_vel": 0.0,
+          "snare_vel": 0.441,
+          "hat_vel": 0.309,
+          "snare_offset_ms": 60.3
+        },
+        {
+          "slot": 4,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.0,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 5,
+          "kick_vel": 0.0,
+          "snare_vel": 0.266,
+          "hat_vel": 0.317,
+          "snare_offset_ms": -78.5
+        },
+        {
+          "slot": 6,
+          "kick_vel": 0.0,
+          "snare_vel": 0.476,
+          "hat_vel": 0.691,
+          "snare_offset_ms": -17.2
+        },
+        {
+          "slot": 7,
+          "kick_vel": 0.0,
+          "snare_vel": 0.429,
+          "hat_vel": 0.461,
+          "snare_offset_ms": 49.8
+        },
+        {
+          "slot": 8,
+          "kick_vel": 0.111,
+          "snare_vel": 0.0,
+          "hat_vel": 0.627,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 9,
+          "kick_vel": 0.0,
+          "snare_vel": 0.423,
+          "hat_vel": 0.744,
+          "snare_offset_ms": -83.2
+        },
+        {
+          "slot": 10,
+          "kick_vel": 0.0,
+          "snare_vel": 0.458,
+          "hat_vel": 0.789,
+          "snare_offset_ms": -10.3
+        },
+        {
+          "slot": 11,
+          "kick_vel": 0.0,
+          "snare_vel": 0.412,
+          "hat_vel": 0.841,
+          "snare_offset_ms": 56.7
+        },
+        {
+          "slot": 12,
+          "kick_vel": 0.0,
+          "snare_vel": 0.0,
+          "hat_vel": 0.129,
+          "snare_offset_ms": 0.0
+        },
+        {
+          "slot": 13,
+          "kick_vel": 0.0,
+          "snare_vel": 0.466,
+          "hat_vel": 0.976,
+          "snare_offset_ms": -70.5
+        },
+        {
+          "slot": 14,
+          "kick_vel": 0.0,
+          "snare_vel": 0.596,
+          "hat_vel": 0.978,
+          "snare_offset_ms": -9.3
+        },
+        {
+          "slot": 15,
+          "kick_vel": 0.128,
+          "snare_vel": 0.56,
+          "hat_vel": 0.84,
+          "snare_offset_ms": 63.6
+        }
+      ]
+    }
+  ],
+  "drum_events": [
+    {
+      "bar": 1,
+      "slot": 0,
+      "slot_label": "1",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 0.0087,
+      "grid_t": 0.0,
+      "micro_offset_ms": 8.7,
+      "velocity": 0.253
+    },
+    {
+      "bar": 1,
+      "slot": 0,
+      "slot_label": "1",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 0.0087,
+      "grid_t": 0.0,
+      "micro_offset_ms": 8.7,
+      "velocity": 0.494
+    },
+    {
+      "bar": 1,
+      "slot": 0,
+      "slot_label": "1",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 0.0087,
+      "grid_t": 0.0,
+      "micro_offset_ms": 8.7,
+      "velocity": 0.79
+    },
+    {
+      "bar": 1,
+      "slot": 1,
+      "slot_label": "e",
+      "type": "kick",
+      "is_ghost": true,
+      "t": 0.2641,
+      "grid_t": 0.2,
+      "micro_offset_ms": 64.1,
+      "velocity": 0.148
+    },
+    {
+      "bar": 1,
+      "slot": 1,
+      "slot_label": "e",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 0.2641,
+      "grid_t": 0.2,
+      "micro_offset_ms": 64.1,
+      "velocity": 0.254
+    },
+    {
+      "bar": 1,
+      "slot": 1,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 0.2641,
+      "grid_t": 0.2,
+      "micro_offset_ms": 64.1,
+      "velocity": 0.84
+    },
+    {
+      "bar": 1,
+      "slot": 3,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 0.537,
+      "grid_t": 0.6,
+      "micro_offset_ms": -63.0,
+      "velocity": 0.281
+    },
+    {
+      "bar": 1,
+      "slot": 3,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 0.537,
+      "grid_t": 0.6,
+      "micro_offset_ms": -63.0,
+      "velocity": 0.55
+    },
+    {
+      "bar": 1,
+      "slot": 4,
+      "slot_label": "2",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 0.7982,
+      "grid_t": 0.8,
+      "micro_offset_ms": -1.8,
+      "velocity": 0.889
+    },
+    {
+      "bar": 1,
+      "slot": 4,
+      "slot_label": "2",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 0.804,
+      "grid_t": 0.8,
+      "micro_offset_ms": 4.0,
+      "velocity": 0.651
+    },
+    {
+      "bar": 1,
+      "slot": 4,
+      "slot_label": "2",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 0.7982,
+      "grid_t": 0.8,
+      "micro_offset_ms": -1.8,
+      "velocity": 0.513
+    },
+    {
+      "bar": 1,
+      "slot": 5,
+      "slot_label": "e",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 1.071,
+      "grid_t": 1.0,
+      "micro_offset_ms": 71.0,
+      "velocity": 0.73
+    },
+    {
+      "bar": 1,
+      "slot": 5,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 1.071,
+      "grid_t": 1.0,
+      "micro_offset_ms": 71.0,
+      "velocity": 0.671
+    },
+    {
+      "bar": 1,
+      "slot": 7,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 1.338,
+      "grid_t": 1.4,
+      "micro_offset_ms": -62.0,
+      "velocity": 0.527
+    },
+    {
+      "bar": 1,
+      "slot": 8,
+      "slot_label": "3",
+      "type": "kick",
+      "is_ghost": true,
+      "t": 1.6109,
+      "grid_t": 1.6,
+      "micro_offset_ms": 10.9,
+      "velocity": 0.207
+    },
+    {
+      "bar": 1,
+      "slot": 8,
+      "slot_label": "3",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 1.6051,
+      "grid_t": 1.6,
+      "micro_offset_ms": 5.1,
+      "velocity": 0.14
+    },
+    {
+      "bar": 1,
+      "slot": 8,
+      "slot_label": "3",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 1.6109,
+      "grid_t": 1.6,
+      "micro_offset_ms": 10.9,
+      "velocity": 0.797
+    },
+    {
+      "bar": 1,
+      "slot": 9,
+      "slot_label": "e",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 1.8779,
+      "grid_t": 1.8,
+      "micro_offset_ms": 77.9,
+      "velocity": 0.477
+    },
+    {
+      "bar": 1,
+      "slot": 9,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 1.7444,
+      "grid_t": 1.8,
+      "micro_offset_ms": -55.6,
+      "velocity": 1.0
+    },
+    {
+      "bar": 1,
+      "slot": 11,
+      "slot_label": "a",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 2.1449,
+      "grid_t": 2.2,
+      "micro_offset_ms": -55.1,
+      "velocity": 0.419
+    },
+    {
+      "bar": 1,
+      "slot": 11,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 2.1449,
+      "grid_t": 2.2,
+      "micro_offset_ms": -55.1,
+      "velocity": 0.528
+    },
+    {
+      "bar": 1,
+      "slot": 11,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 2.1449,
+      "grid_t": 2.2,
+      "micro_offset_ms": -55.1,
+      "velocity": 0.728
+    },
+    {
+      "bar": 1,
+      "slot": 12,
+      "slot_label": "4",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 2.4178,
+      "grid_t": 2.4,
+      "micro_offset_ms": 17.8,
+      "velocity": 0.484
+    },
+    {
+      "bar": 1,
+      "slot": 12,
+      "slot_label": "4",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 2.412,
+      "grid_t": 2.4,
+      "micro_offset_ms": 12.0,
+      "velocity": 0.547
+    },
+    {
+      "bar": 1,
+      "slot": 12,
+      "slot_label": "4",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 2.4178,
+      "grid_t": 2.4,
+      "micro_offset_ms": 17.8,
+      "velocity": 0.638
+    },
+    {
+      "bar": 1,
+      "slot": 13,
+      "slot_label": "e",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 2.6848,
+      "grid_t": 2.6,
+      "micro_offset_ms": 84.8,
+      "velocity": 0.625
+    },
+    {
+      "bar": 1,
+      "slot": 13,
+      "slot_label": "e",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 2.6848,
+      "grid_t": 2.6,
+      "micro_offset_ms": 84.8,
+      "velocity": 0.484
+    },
+    {
+      "bar": 1,
+      "slot": 13,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 2.6848,
+      "grid_t": 2.6,
+      "micro_offset_ms": 84.8,
+      "velocity": 0.823
+    },
+    {
+      "bar": 1,
+      "slot": 15,
+      "slot_label": "a",
+      "type": "kick",
+      "is_ghost": true,
+      "t": 2.9576,
+      "grid_t": 3.0,
+      "micro_offset_ms": -42.4,
+      "velocity": 0.168
+    },
+    {
+      "bar": 1,
+      "slot": 15,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 2.9576,
+      "grid_t": 3.0,
+      "micro_offset_ms": -42.4,
+      "velocity": 0.14
+    },
+    {
+      "bar": 1,
+      "slot": 15,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 2.9518,
+      "grid_t": 3.0,
+      "micro_offset_ms": -48.2,
+      "velocity": 0.841
+    },
+    {
+      "bar": 2,
+      "slot": 0,
+      "slot_label": "1",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 3.2247,
+      "grid_t": 3.2,
+      "micro_offset_ms": 24.7,
+      "velocity": 0.465
+    },
+    {
+      "bar": 2,
+      "slot": 0,
+      "slot_label": "1",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 3.2247,
+      "grid_t": 3.2,
+      "micro_offset_ms": 24.7,
+      "velocity": 0.727
+    },
+    {
+      "bar": 2,
+      "slot": 1,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 3.4917,
+      "grid_t": 3.4,
+      "micro_offset_ms": 91.7,
+      "velocity": 0.764
+    },
+    {
+      "bar": 2,
+      "slot": 3,
+      "slot_label": "a",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 3.7645,
+      "grid_t": 3.8,
+      "micro_offset_ms": -35.5,
+      "velocity": 0.53
+    },
+    {
+      "bar": 2,
+      "slot": 3,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 3.7587,
+      "grid_t": 3.8,
+      "micro_offset_ms": -41.3,
+      "velocity": 1.0
+    },
+    {
+      "bar": 2,
+      "slot": 3,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 3.7645,
+      "grid_t": 3.8,
+      "micro_offset_ms": -35.5,
+      "velocity": 0.7
+    },
+    {
+      "bar": 2,
+      "slot": 4,
+      "slot_label": "2",
+      "type": "kick",
+      "is_ghost": true,
+      "t": 4.0374,
+      "grid_t": 4.0,
+      "micro_offset_ms": 37.4,
+      "velocity": 0.132
+    },
+    {
+      "bar": 2,
+      "slot": 4,
+      "slot_label": "2",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 4.0316,
+      "grid_t": 4.0,
+      "micro_offset_ms": 31.6,
+      "velocity": 0.126
+    },
+    {
+      "bar": 2,
+      "slot": 4,
+      "slot_label": "2",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 4.0316,
+      "grid_t": 4.0,
+      "micro_offset_ms": 31.6,
+      "velocity": 0.789
+    },
+    {
+      "bar": 2,
+      "slot": 5,
+      "slot_label": "e",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 4.2928,
+      "grid_t": 4.2,
+      "micro_offset_ms": 92.8,
+      "velocity": 0.842
+    },
+    {
+      "bar": 2,
+      "slot": 7,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 4.5714,
+      "grid_t": 4.6,
+      "micro_offset_ms": -28.6,
+      "velocity": 0.116
+    },
+    {
+      "bar": 2,
+      "slot": 7,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 4.5656,
+      "grid_t": 4.6,
+      "micro_offset_ms": -34.4,
+      "velocity": 0.85
+    },
+    {
+      "bar": 2,
+      "slot": 8,
+      "slot_label": "3",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 4.8385,
+      "grid_t": 4.8,
+      "micro_offset_ms": 38.5,
+      "velocity": 0.42
+    },
+    {
+      "bar": 2,
+      "slot": 8,
+      "slot_label": "3",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 4.8385,
+      "grid_t": 4.8,
+      "micro_offset_ms": 38.5,
+      "velocity": 0.7
+    },
+    {
+      "bar": 2,
+      "slot": 10,
+      "slot_label": "&",
+      "type": "kick",
+      "is_ghost": true,
+      "t": 5.1055,
+      "grid_t": 5.2,
+      "micro_offset_ms": -94.5,
+      "velocity": 0.192
+    },
+    {
+      "bar": 2,
+      "slot": 10,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 5.1055,
+      "grid_t": 5.2,
+      "micro_offset_ms": -94.5,
+      "velocity": 0.456
+    },
+    {
+      "bar": 2,
+      "slot": 10,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 5.1055,
+      "grid_t": 5.2,
+      "micro_offset_ms": -94.5,
+      "velocity": 0.582
+    },
+    {
+      "bar": 2,
+      "slot": 11,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 5.3725,
+      "grid_t": 5.4,
+      "micro_offset_ms": -27.5,
+      "velocity": 0.914
+    },
+    {
+      "bar": 2,
+      "slot": 11,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 5.3783,
+      "grid_t": 5.4,
+      "micro_offset_ms": -21.7,
+      "velocity": 0.828
+    },
+    {
+      "bar": 2,
+      "slot": 12,
+      "slot_label": "4",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 5.6454,
+      "grid_t": 5.6,
+      "micro_offset_ms": 45.4,
+      "velocity": 0.711
+    },
+    {
+      "bar": 2,
+      "slot": 14,
+      "slot_label": "&",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 5.924,
+      "grid_t": 6.0,
+      "micro_offset_ms": -76.0,
+      "velocity": 0.435
+    },
+    {
+      "bar": 2,
+      "slot": 14,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 5.9066,
+      "grid_t": 6.0,
+      "micro_offset_ms": -93.4,
+      "velocity": 0.815
+    },
+    {
+      "bar": 2,
+      "slot": 14,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 6.0459,
+      "grid_t": 6.0,
+      "micro_offset_ms": 45.9,
+      "velocity": 0.713
+    },
+    {
+      "bar": 2,
+      "slot": 15,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 6.1794,
+      "grid_t": 6.2,
+      "micro_offset_ms": -20.6,
+      "velocity": 0.406
+    },
+    {
+      "bar": 2,
+      "slot": 15,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 6.1794,
+      "grid_t": 6.2,
+      "micro_offset_ms": -20.6,
+      "velocity": 0.922
+    },
+    {
+      "bar": 3,
+      "slot": 0,
+      "slot_label": "1",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 6.4522,
+      "grid_t": 6.4,
+      "micro_offset_ms": 52.2,
+      "velocity": 0.349
+    },
+    {
+      "bar": 3,
+      "slot": 0,
+      "slot_label": "1",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 6.4464,
+      "grid_t": 6.4,
+      "micro_offset_ms": 46.4,
+      "velocity": 0.51
+    },
+    {
+      "bar": 3,
+      "slot": 0,
+      "slot_label": "1",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 6.4522,
+      "grid_t": 6.4,
+      "micro_offset_ms": 52.2,
+      "velocity": 0.533
+    },
+    {
+      "bar": 3,
+      "slot": 2,
+      "slot_label": "&",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 6.7193,
+      "grid_t": 6.8,
+      "micro_offset_ms": -80.7,
+      "velocity": 0.539
+    },
+    {
+      "bar": 3,
+      "slot": 2,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 6.7193,
+      "grid_t": 6.8,
+      "micro_offset_ms": -80.7,
+      "velocity": 0.486
+    },
+    {
+      "bar": 3,
+      "slot": 2,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 6.7193,
+      "grid_t": 6.8,
+      "micro_offset_ms": -80.7,
+      "velocity": 0.636
+    },
+    {
+      "bar": 3,
+      "slot": 3,
+      "slot_label": "a",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 6.9921,
+      "grid_t": 7.0,
+      "micro_offset_ms": -7.9,
+      "velocity": 0.558
+    },
+    {
+      "bar": 3,
+      "slot": 3,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 6.9863,
+      "grid_t": 7.0,
+      "micro_offset_ms": -13.7,
+      "velocity": 0.458
+    },
+    {
+      "bar": 3,
+      "slot": 3,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 6.9863,
+      "grid_t": 7.0,
+      "micro_offset_ms": -13.7,
+      "velocity": 0.865
+    },
+    {
+      "bar": 3,
+      "slot": 4,
+      "slot_label": "2",
+      "type": "kick",
+      "is_ghost": true,
+      "t": 7.2649,
+      "grid_t": 7.2,
+      "micro_offset_ms": 64.9,
+      "velocity": 0.146
+    },
+    {
+      "bar": 3,
+      "slot": 4,
+      "slot_label": "2",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 7.2591,
+      "grid_t": 7.2,
+      "micro_offset_ms": 59.1,
+      "velocity": 0.212
+    },
+    {
+      "bar": 3,
+      "slot": 4,
+      "slot_label": "2",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 7.2591,
+      "grid_t": 7.2,
+      "micro_offset_ms": 59.1,
+      "velocity": 0.899
+    },
+    {
+      "bar": 3,
+      "slot": 6,
+      "slot_label": "&",
+      "type": "kick",
+      "is_ghost": true,
+      "t": 7.532,
+      "grid_t": 7.6,
+      "micro_offset_ms": -68.0,
+      "velocity": 0.18
+    },
+    {
+      "bar": 3,
+      "slot": 6,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 7.5204,
+      "grid_t": 7.6,
+      "micro_offset_ms": -79.6,
+      "velocity": 0.782
+    },
+    {
+      "bar": 3,
+      "slot": 6,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 7.5204,
+      "grid_t": 7.6,
+      "micro_offset_ms": -79.6,
+      "velocity": 0.685
+    },
+    {
+      "bar": 3,
+      "slot": 7,
+      "slot_label": "a",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 7.799,
+      "grid_t": 7.8,
+      "micro_offset_ms": -1.0,
+      "velocity": 0.643
+    },
+    {
+      "bar": 3,
+      "slot": 7,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 7.7932,
+      "grid_t": 7.8,
+      "micro_offset_ms": -6.8,
+      "velocity": 0.499
+    },
+    {
+      "bar": 3,
+      "slot": 7,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 7.7932,
+      "grid_t": 7.8,
+      "micro_offset_ms": -6.8,
+      "velocity": 0.609
+    },
+    {
+      "bar": 3,
+      "slot": 8,
+      "slot_label": "3",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 8.0776,
+      "grid_t": 8.0,
+      "micro_offset_ms": 77.6,
+      "velocity": 0.393
+    },
+    {
+      "bar": 3,
+      "slot": 8,
+      "slot_label": "3",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 8.0544,
+      "grid_t": 8.0,
+      "micro_offset_ms": 54.4,
+      "velocity": 0.825
+    },
+    {
+      "bar": 3,
+      "slot": 8,
+      "slot_label": "3",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 8.0602,
+      "grid_t": 8.0,
+      "micro_offset_ms": 60.2,
+      "velocity": 0.824
+    },
+    {
+      "bar": 3,
+      "slot": 9,
+      "slot_label": "e",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 8.2634,
+      "grid_t": 8.2,
+      "micro_offset_ms": 63.4,
+      "velocity": 0.143
+    },
+    {
+      "bar": 3,
+      "slot": 10,
+      "slot_label": "&",
+      "type": "kick",
+      "is_ghost": true,
+      "t": 8.3331,
+      "grid_t": 8.4,
+      "micro_offset_ms": -66.9,
+      "velocity": 0.178
+    },
+    {
+      "bar": 3,
+      "slot": 10,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 8.3331,
+      "grid_t": 8.4,
+      "micro_offset_ms": -66.9,
+      "velocity": 0.608
+    },
+    {
+      "bar": 3,
+      "slot": 11,
+      "slot_label": "a",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 8.5943,
+      "grid_t": 8.6,
+      "micro_offset_ms": -5.7,
+      "velocity": 0.832
+    },
+    {
+      "bar": 3,
+      "slot": 11,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 8.5943,
+      "grid_t": 8.6,
+      "micro_offset_ms": -5.7,
+      "velocity": 0.597
+    },
+    {
+      "bar": 3,
+      "slot": 11,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 8.6001,
+      "grid_t": 8.6,
+      "micro_offset_ms": 0.1,
+      "velocity": 0.809
+    },
+    {
+      "bar": 3,
+      "slot": 12,
+      "slot_label": "4",
+      "type": "kick",
+      "is_ghost": true,
+      "t": 8.8729,
+      "grid_t": 8.8,
+      "micro_offset_ms": 72.9,
+      "velocity": 0.241
+    },
+    {
+      "bar": 3,
+      "slot": 12,
+      "slot_label": "4",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 8.8671,
+      "grid_t": 8.8,
+      "micro_offset_ms": 67.1,
+      "velocity": 0.193
+    },
+    {
+      "bar": 3,
+      "slot": 12,
+      "slot_label": "4",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 8.8671,
+      "grid_t": 8.8,
+      "micro_offset_ms": 67.1,
+      "velocity": 0.629
+    },
+    {
+      "bar": 3,
+      "slot": 14,
+      "slot_label": "&",
+      "type": "kick",
+      "is_ghost": true,
+      "t": 9.1341,
+      "grid_t": 9.2,
+      "micro_offset_ms": -65.9,
+      "velocity": 0.183
+    },
+    {
+      "bar": 3,
+      "slot": 14,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 9.14,
+      "grid_t": 9.2,
+      "micro_offset_ms": -60.0,
+      "velocity": 0.351
+    },
+    {
+      "bar": 3,
+      "slot": 14,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 9.1341,
+      "grid_t": 9.2,
+      "micro_offset_ms": -65.9,
+      "velocity": 0.853
+    },
+    {
+      "bar": 3,
+      "slot": 15,
+      "slot_label": "a",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 9.4012,
+      "grid_t": 9.4,
+      "micro_offset_ms": 1.2,
+      "velocity": 1.0
+    },
+    {
+      "bar": 3,
+      "slot": 15,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 9.4012,
+      "grid_t": 9.4,
+      "micro_offset_ms": 1.2,
+      "velocity": 0.983
+    },
+    {
+      "bar": 3,
+      "slot": 15,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 9.407,
+      "grid_t": 9.4,
+      "micro_offset_ms": 7.0,
+      "velocity": 0.568
+    },
+    {
+      "bar": 4,
+      "slot": 0,
+      "slot_label": "1",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 9.674,
+      "grid_t": 9.6,
+      "micro_offset_ms": 74.0,
+      "velocity": 0.612
+    },
+    {
+      "bar": 4,
+      "slot": 0,
+      "slot_label": "1",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 9.674,
+      "grid_t": 9.6,
+      "micro_offset_ms": 74.0,
+      "velocity": 0.745
+    },
+    {
+      "bar": 4,
+      "slot": 2,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 9.941,
+      "grid_t": 10.0,
+      "micro_offset_ms": -59.0,
+      "velocity": 0.732
+    },
+    {
+      "bar": 4,
+      "slot": 3,
+      "slot_label": "a",
+      "type": "kick",
+      "is_ghost": true,
+      "t": 10.2081,
+      "grid_t": 10.2,
+      "micro_offset_ms": 8.1,
+      "velocity": 0.166
+    },
+    {
+      "bar": 4,
+      "slot": 3,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 10.2197,
+      "grid_t": 10.2,
+      "micro_offset_ms": 19.7,
+      "velocity": 0.374
+    },
+    {
+      "bar": 4,
+      "slot": 3,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 10.2139,
+      "grid_t": 10.2,
+      "micro_offset_ms": 13.9,
+      "velocity": 0.734
+    },
+    {
+      "bar": 4,
+      "slot": 4,
+      "slot_label": "2",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 10.3474,
+      "grid_t": 10.4,
+      "micro_offset_ms": -52.6,
+      "velocity": 1.0
+    },
+    {
+      "bar": 4,
+      "slot": 6,
+      "slot_label": "&",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 10.7537,
+      "grid_t": 10.8,
+      "micro_offset_ms": -46.3,
+      "velocity": 0.402
+    },
+    {
+      "bar": 4,
+      "slot": 6,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 10.7537,
+      "grid_t": 10.8,
+      "micro_offset_ms": -46.3,
+      "velocity": 0.583
+    },
+    {
+      "bar": 4,
+      "slot": 6,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 10.7537,
+      "grid_t": 10.8,
+      "micro_offset_ms": -46.3,
+      "velocity": 0.321
+    },
+    {
+      "bar": 4,
+      "slot": 7,
+      "slot_label": "a",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 11.0266,
+      "grid_t": 11.0,
+      "micro_offset_ms": 26.6,
+      "velocity": 0.256
+    },
+    {
+      "bar": 4,
+      "slot": 7,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 11.0266,
+      "grid_t": 11.0,
+      "micro_offset_ms": 26.6,
+      "velocity": 0.295
+    },
+    {
+      "bar": 4,
+      "slot": 7,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": true,
+      "t": 11.0266,
+      "grid_t": 11.0,
+      "micro_offset_ms": 26.6,
+      "velocity": 0.172
+    },
+    {
+      "bar": 4,
+      "slot": 10,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 11.5606,
+      "grid_t": 11.6,
+      "micro_offset_ms": -39.4,
+      "velocity": 0.374
+    },
+    {
+      "bar": 4,
+      "slot": 10,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": true,
+      "t": 11.5606,
+      "grid_t": 11.6,
+      "micro_offset_ms": -39.4,
+      "velocity": 0.123
+    },
+    {
+      "bar": 4,
+      "slot": 14,
+      "slot_label": "&",
+      "type": "kick",
+      "is_ghost": true,
+      "t": 12.3675,
+      "grid_t": 12.4,
+      "micro_offset_ms": -32.5,
+      "velocity": 0.17
+    },
+    {
+      "bar": 4,
+      "slot": 14,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 12.3733,
+      "grid_t": 12.4,
+      "micro_offset_ms": -26.7,
+      "velocity": 0.281
+    },
+    {
+      "bar": 4,
+      "slot": 14,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": true,
+      "t": 12.3675,
+      "grid_t": 12.4,
+      "micro_offset_ms": -32.5,
+      "velocity": 0.223
+    },
+    {
+      "bar": 5,
+      "slot": 1,
+      "slot_label": "e",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 12.9074,
+      "grid_t": 13.0,
+      "micro_offset_ms": -92.6,
+      "velocity": 0.304
+    },
+    {
+      "bar": 5,
+      "slot": 1,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 12.9074,
+      "grid_t": 13.0,
+      "micro_offset_ms": -92.6,
+      "velocity": 0.312
+    },
+    {
+      "bar": 5,
+      "slot": 2,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 13.1744,
+      "grid_t": 13.2,
+      "micro_offset_ms": -25.6,
+      "velocity": 0.174
+    },
+    {
+      "bar": 5,
+      "slot": 2,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": true,
+      "t": 13.1744,
+      "grid_t": 13.2,
+      "micro_offset_ms": -25.6,
+      "velocity": 0.235
+    },
+    {
+      "bar": 5,
+      "slot": 3,
+      "slot_label": "a",
+      "type": "kick",
+      "is_ghost": true,
+      "t": 13.4473,
+      "grid_t": 13.4,
+      "micro_offset_ms": 47.3,
+      "velocity": 0.249
+    },
+    {
+      "bar": 5,
+      "slot": 3,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 13.4473,
+      "grid_t": 13.4,
+      "micro_offset_ms": 47.3,
+      "velocity": 0.262
+    },
+    {
+      "bar": 5,
+      "slot": 3,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": true,
+      "t": 13.4473,
+      "grid_t": 13.4,
+      "micro_offset_ms": 47.3,
+      "velocity": 0.134
+    },
+    {
+      "bar": 5,
+      "slot": 5,
+      "slot_label": "e",
+      "type": "kick",
+      "is_ghost": true,
+      "t": 13.7085,
+      "grid_t": 13.8,
+      "micro_offset_ms": -91.5,
+      "velocity": 0.25
+    },
+    {
+      "bar": 5,
+      "slot": 5,
+      "slot_label": "e",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 13.7201,
+      "grid_t": 13.8,
+      "micro_offset_ms": -79.9,
+      "velocity": 0.327
+    },
+    {
+      "bar": 5,
+      "slot": 5,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 13.7143,
+      "grid_t": 13.8,
+      "micro_offset_ms": -85.7,
+      "velocity": 0.308
+    },
+    {
+      "bar": 5,
+      "slot": 6,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 14.0045,
+      "grid_t": 14.0,
+      "micro_offset_ms": 4.5,
+      "velocity": 0.135
+    },
+    {
+      "bar": 5,
+      "slot": 10,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 14.7824,
+      "grid_t": 14.8,
+      "micro_offset_ms": -17.6,
+      "velocity": 0.478
+    },
+    {
+      "bar": 5,
+      "slot": 10,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 14.794,
+      "grid_t": 14.8,
+      "micro_offset_ms": -6.0,
+      "velocity": 0.282
+    },
+    {
+      "bar": 5,
+      "slot": 11,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 15.0494,
+      "grid_t": 15.0,
+      "micro_offset_ms": 49.4,
+      "velocity": 0.61
+    },
+    {
+      "bar": 5,
+      "slot": 11,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 15.0552,
+      "grid_t": 15.0,
+      "micro_offset_ms": 55.2,
+      "velocity": 0.287
+    },
+    {
+      "bar": 5,
+      "slot": 12,
+      "slot_label": "4",
+      "type": "kick",
+      "is_ghost": true,
+      "t": 15.1307,
+      "grid_t": 15.2,
+      "micro_offset_ms": -69.3,
+      "velocity": 0.131
+    },
+    {
+      "bar": 5,
+      "slot": 13,
+      "slot_label": "e",
+      "type": "kick",
+      "is_ghost": true,
+      "t": 15.3339,
+      "grid_t": 15.4,
+      "micro_offset_ms": -66.1,
+      "velocity": 0.184
+    },
+    {
+      "bar": 5,
+      "slot": 13,
+      "slot_label": "e",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 15.3223,
+      "grid_t": 15.4,
+      "micro_offset_ms": -77.7,
+      "velocity": 0.23
+    },
+    {
+      "bar": 5,
+      "slot": 13,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 15.3223,
+      "grid_t": 15.4,
+      "micro_offset_ms": -77.7,
+      "velocity": 0.268
+    },
+    {
+      "bar": 5,
+      "slot": 14,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 15.6009,
+      "grid_t": 15.6,
+      "micro_offset_ms": 0.9,
+      "velocity": 0.201
+    },
+    {
+      "bar": 5,
+      "slot": 14,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 15.5951,
+      "grid_t": 15.6,
+      "micro_offset_ms": -4.9,
+      "velocity": 0.258
+    },
+    {
+      "bar": 5,
+      "slot": 15,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 15.8621,
+      "grid_t": 15.8,
+      "micro_offset_ms": 62.1,
+      "velocity": 0.153
+    },
+    {
+      "bar": 5,
+      "slot": 15,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": true,
+      "t": 15.8621,
+      "grid_t": 15.8,
+      "micro_offset_ms": 62.1,
+      "velocity": 0.235
+    },
+    {
+      "bar": 6,
+      "slot": 1,
+      "slot_label": "e",
+      "type": "kick",
+      "is_ghost": true,
+      "t": 16.2278,
+      "grid_t": 16.2,
+      "micro_offset_ms": 27.8,
+      "velocity": 0.172
+    },
+    {
+      "bar": 6,
+      "slot": 1,
+      "slot_label": "e",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 16.1408,
+      "grid_t": 16.2,
+      "micro_offset_ms": -59.2,
+      "velocity": 0.133
+    },
+    {
+      "bar": 6,
+      "slot": 1,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": true,
+      "t": 16.135,
+      "grid_t": 16.2,
+      "micro_offset_ms": -65.0,
+      "velocity": 0.208
+    },
+    {
+      "bar": 6,
+      "slot": 3,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 16.6168,
+      "grid_t": 16.6,
+      "micro_offset_ms": 16.8,
+      "velocity": 0.146
+    },
+    {
+      "bar": 6,
+      "slot": 4,
+      "slot_label": "2",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 16.8954,
+      "grid_t": 16.8,
+      "micro_offset_ms": 95.4,
+      "velocity": 0.119
+    },
+    {
+      "bar": 6,
+      "slot": 6,
+      "slot_label": "&",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 17.1973,
+      "grid_t": 17.2,
+      "micro_offset_ms": -2.7,
+      "velocity": 0.932
+    },
+    {
+      "bar": 6,
+      "slot": 6,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 17.1973,
+      "grid_t": 17.2,
+      "micro_offset_ms": -2.7,
+      "velocity": 1.0
+    },
+    {
+      "bar": 6,
+      "slot": 6,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 17.1973,
+      "grid_t": 17.2,
+      "micro_offset_ms": -2.7,
+      "velocity": 0.457
+    },
+    {
+      "bar": 6,
+      "slot": 7,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 17.4643,
+      "grid_t": 17.4,
+      "micro_offset_ms": 64.3,
+      "velocity": 0.193
+    },
+    {
+      "bar": 6,
+      "slot": 7,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 17.4701,
+      "grid_t": 17.4,
+      "micro_offset_ms": 70.1,
+      "velocity": 0.795
+    },
+    {
+      "bar": 6,
+      "slot": 9,
+      "slot_label": "e",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 17.7429,
+      "grid_t": 17.8,
+      "micro_offset_ms": -57.1,
+      "velocity": 0.319
+    },
+    {
+      "bar": 6,
+      "slot": 9,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 17.7371,
+      "grid_t": 17.8,
+      "micro_offset_ms": -62.9,
+      "velocity": 1.0
+    },
+    {
+      "bar": 6,
+      "slot": 10,
+      "slot_label": "&",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 18.01,
+      "grid_t": 18.0,
+      "micro_offset_ms": 10.0,
+      "velocity": 0.52
+    },
+    {
+      "bar": 6,
+      "slot": 10,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 18.0042,
+      "grid_t": 18.0,
+      "micro_offset_ms": 4.2,
+      "velocity": 0.818
+    },
+    {
+      "bar": 6,
+      "slot": 10,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 18.01,
+      "grid_t": 18.0,
+      "micro_offset_ms": 10.0,
+      "velocity": 0.534
+    },
+    {
+      "bar": 6,
+      "slot": 11,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 18.2828,
+      "grid_t": 18.2,
+      "micro_offset_ms": 82.8,
+      "velocity": 0.351
+    },
+    {
+      "bar": 6,
+      "slot": 11,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 18.2828,
+      "grid_t": 18.2,
+      "micro_offset_ms": 82.8,
+      "velocity": 0.395
+    },
+    {
+      "bar": 6,
+      "slot": 13,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 18.544,
+      "grid_t": 18.6,
+      "micro_offset_ms": -56.0,
+      "velocity": 0.941
+    },
+    {
+      "bar": 6,
+      "slot": 14,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 18.8111,
+      "grid_t": 18.8,
+      "micro_offset_ms": 11.1,
+      "velocity": 0.286
+    },
+    {
+      "bar": 6,
+      "slot": 14,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 18.8169,
+      "grid_t": 18.8,
+      "micro_offset_ms": 16.9,
+      "velocity": 0.679
+    },
+    {
+      "bar": 6,
+      "slot": 15,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 19.0839,
+      "grid_t": 19.0,
+      "micro_offset_ms": 83.9,
+      "velocity": 0.12
+    },
+    {
+      "bar": 6,
+      "slot": 15,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 18.9504,
+      "grid_t": 19.0,
+      "micro_offset_ms": -49.6,
+      "velocity": 0.83
+    },
+    {
+      "bar": 7,
+      "slot": 1,
+      "slot_label": "e",
+      "type": "kick",
+      "is_ghost": true,
+      "t": 19.3741,
+      "grid_t": 19.4,
+      "micro_offset_ms": -25.9,
+      "velocity": 0.161
+    },
+    {
+      "bar": 7,
+      "slot": 1,
+      "slot_label": "e",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 19.3567,
+      "grid_t": 19.4,
+      "micro_offset_ms": -43.3,
+      "velocity": 0.325
+    },
+    {
+      "bar": 7,
+      "slot": 1,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 19.3509,
+      "grid_t": 19.4,
+      "micro_offset_ms": -49.1,
+      "velocity": 0.998
+    },
+    {
+      "bar": 7,
+      "slot": 2,
+      "slot_label": "&",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 19.6238,
+      "grid_t": 19.6,
+      "micro_offset_ms": 23.8,
+      "velocity": 0.487
+    },
+    {
+      "bar": 7,
+      "slot": 2,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 19.618,
+      "grid_t": 19.6,
+      "micro_offset_ms": 18.0,
+      "velocity": 0.601
+    },
+    {
+      "bar": 7,
+      "slot": 2,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 19.618,
+      "grid_t": 19.6,
+      "micro_offset_ms": 18.0,
+      "velocity": 0.75
+    },
+    {
+      "bar": 7,
+      "slot": 3,
+      "slot_label": "a",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 19.885,
+      "grid_t": 19.8,
+      "micro_offset_ms": 85.0,
+      "velocity": 0.726
+    },
+    {
+      "bar": 7,
+      "slot": 3,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 19.885,
+      "grid_t": 19.8,
+      "micro_offset_ms": 85.0,
+      "velocity": 0.618
+    },
+    {
+      "bar": 7,
+      "slot": 3,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 19.8908,
+      "grid_t": 19.8,
+      "micro_offset_ms": 90.8,
+      "velocity": 0.93
+    },
+    {
+      "bar": 7,
+      "slot": 5,
+      "slot_label": "e",
+      "type": "kick",
+      "is_ghost": true,
+      "t": 20.123,
+      "grid_t": 20.2,
+      "micro_offset_ms": -77.0,
+      "velocity": 0.139
+    },
+    {
+      "bar": 7,
+      "slot": 5,
+      "slot_label": "e",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 20.1578,
+      "grid_t": 20.2,
+      "micro_offset_ms": -42.2,
+      "velocity": 0.123
+    },
+    {
+      "bar": 7,
+      "slot": 5,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 20.1578,
+      "grid_t": 20.2,
+      "micro_offset_ms": -42.2,
+      "velocity": 0.485
+    },
+    {
+      "bar": 7,
+      "slot": 6,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 20.4307,
+      "grid_t": 20.4,
+      "micro_offset_ms": 30.7,
+      "velocity": 0.384
+    },
+    {
+      "bar": 7,
+      "slot": 6,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 20.4307,
+      "grid_t": 20.4,
+      "micro_offset_ms": 30.7,
+      "velocity": 1.0
+    },
+    {
+      "bar": 7,
+      "slot": 7,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 20.5642,
+      "grid_t": 20.6,
+      "micro_offset_ms": -35.8,
+      "velocity": 0.558
+    },
+    {
+      "bar": 7,
+      "slot": 9,
+      "slot_label": "e",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 20.9647,
+      "grid_t": 21.0,
+      "micro_offset_ms": -35.3,
+      "velocity": 0.302
+    },
+    {
+      "bar": 7,
+      "slot": 10,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 21.255,
+      "grid_t": 21.2,
+      "micro_offset_ms": 55.0,
+      "velocity": 0.201
+    },
+    {
+      "bar": 7,
+      "slot": 10,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": true,
+      "t": 21.1389,
+      "grid_t": 21.2,
+      "micro_offset_ms": -61.1,
+      "velocity": 0.205
+    },
+    {
+      "bar": 7,
+      "slot": 11,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": true,
+      "t": 21.342,
+      "grid_t": 21.4,
+      "micro_offset_ms": -58.0,
+      "velocity": 0.217
+    },
+    {
+      "bar": 7,
+      "slot": 13,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 21.7716,
+      "grid_t": 21.8,
+      "micro_offset_ms": -28.4,
+      "velocity": 0.835
+    },
+    {
+      "bar": 7,
+      "slot": 14,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 22.0444,
+      "grid_t": 22.0,
+      "micro_offset_ms": 44.4,
+      "velocity": 0.25
+    },
+    {
+      "bar": 7,
+      "slot": 14,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 22.0386,
+      "grid_t": 22.0,
+      "micro_offset_ms": 38.6,
+      "velocity": 0.706
+    },
+    {
+      "bar": 8,
+      "slot": 0,
+      "slot_label": "1",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 22.3115,
+      "grid_t": 22.4,
+      "micro_offset_ms": -88.5,
+      "velocity": 0.579
+    },
+    {
+      "bar": 8,
+      "slot": 0,
+      "slot_label": "1",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 22.3057,
+      "grid_t": 22.4,
+      "micro_offset_ms": -94.3,
+      "velocity": 0.947
+    },
+    {
+      "bar": 8,
+      "slot": 0,
+      "slot_label": "1",
+      "type": "hat",
+      "is_ghost": true,
+      "t": 22.4508,
+      "grid_t": 22.4,
+      "micro_offset_ms": 50.8,
+      "velocity": 0.121
+    },
+    {
+      "bar": 8,
+      "slot": 1,
+      "slot_label": "e",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 22.5785,
+      "grid_t": 22.6,
+      "micro_offset_ms": -21.5,
+      "velocity": 0.411
+    },
+    {
+      "bar": 8,
+      "slot": 1,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 22.5843,
+      "grid_t": 22.6,
+      "micro_offset_ms": -15.7,
+      "velocity": 0.45
+    },
+    {
+      "bar": 8,
+      "slot": 2,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 22.8513,
+      "grid_t": 22.8,
+      "micro_offset_ms": 51.3,
+      "velocity": 0.417
+    },
+    {
+      "bar": 8,
+      "slot": 2,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 22.8455,
+      "grid_t": 22.8,
+      "micro_offset_ms": 45.5,
+      "velocity": 0.9
+    },
+    {
+      "bar": 8,
+      "slot": 4,
+      "slot_label": "2",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 23.1126,
+      "grid_t": 23.2,
+      "micro_offset_ms": -87.4,
+      "velocity": 0.242
+    },
+    {
+      "bar": 8,
+      "slot": 4,
+      "slot_label": "2",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 23.2519,
+      "grid_t": 23.2,
+      "micro_offset_ms": 51.9,
+      "velocity": 0.924
+    },
+    {
+      "bar": 8,
+      "slot": 5,
+      "slot_label": "e",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 23.3854,
+      "grid_t": 23.4,
+      "micro_offset_ms": -14.6,
+      "velocity": 0.127
+    },
+    {
+      "bar": 8,
+      "slot": 5,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 23.3854,
+      "grid_t": 23.4,
+      "micro_offset_ms": -14.6,
+      "velocity": 0.96
+    },
+    {
+      "bar": 8,
+      "slot": 6,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 23.6524,
+      "grid_t": 23.6,
+      "micro_offset_ms": 52.4,
+      "velocity": 0.401
+    },
+    {
+      "bar": 8,
+      "slot": 6,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 23.6524,
+      "grid_t": 23.6,
+      "micro_offset_ms": 52.4,
+      "velocity": 0.936
+    },
+    {
+      "bar": 8,
+      "slot": 7,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 23.7859,
+      "grid_t": 23.8,
+      "micro_offset_ms": -14.1,
+      "velocity": 0.858
+    },
+    {
+      "bar": 8,
+      "slot": 8,
+      "slot_label": "3",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 23.9253,
+      "grid_t": 24.0,
+      "micro_offset_ms": -74.7,
+      "velocity": 0.304
+    },
+    {
+      "bar": 8,
+      "slot": 8,
+      "slot_label": "3",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 23.9195,
+      "grid_t": 24.0,
+      "micro_offset_ms": -80.5,
+      "velocity": 0.833
+    },
+    {
+      "bar": 8,
+      "slot": 9,
+      "slot_label": "e",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 24.1981,
+      "grid_t": 24.2,
+      "micro_offset_ms": -1.9,
+      "velocity": 0.453
+    },
+    {
+      "bar": 8,
+      "slot": 9,
+      "slot_label": "e",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 24.1865,
+      "grid_t": 24.2,
+      "micro_offset_ms": -13.5,
+      "velocity": 0.725
+    },
+    {
+      "bar": 8,
+      "slot": 9,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 24.1923,
+      "grid_t": 24.2,
+      "micro_offset_ms": -7.7,
+      "velocity": 0.511
+    },
+    {
+      "bar": 8,
+      "slot": 10,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 24.4709,
+      "grid_t": 24.4,
+      "micro_offset_ms": 70.9,
+      "velocity": 0.168
+    },
+    {
+      "bar": 8,
+      "slot": 10,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 24.4593,
+      "grid_t": 24.4,
+      "micro_offset_ms": 59.3,
+      "velocity": 0.609
+    },
+    {
+      "bar": 8,
+      "slot": 12,
+      "slot_label": "4",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 24.7263,
+      "grid_t": 24.8,
+      "micro_offset_ms": -73.7,
+      "velocity": 0.502
+    },
+    {
+      "bar": 8,
+      "slot": 12,
+      "slot_label": "4",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 24.7263,
+      "grid_t": 24.8,
+      "micro_offset_ms": -73.7,
+      "velocity": 0.842
+    },
+    {
+      "bar": 8,
+      "slot": 13,
+      "slot_label": "e",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 25.0108,
+      "grid_t": 25.0,
+      "micro_offset_ms": 10.8,
+      "velocity": 0.287
+    },
+    {
+      "bar": 8,
+      "slot": 13,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 24.9353,
+      "grid_t": 25.0,
+      "micro_offset_ms": -64.7,
+      "velocity": 0.428
+    },
+    {
+      "bar": 8,
+      "slot": 14,
+      "slot_label": "&",
+      "type": "kick",
+      "is_ghost": true,
+      "t": 25.1733,
+      "grid_t": 25.2,
+      "micro_offset_ms": -26.7,
+      "velocity": 0.194
+    },
+    {
+      "bar": 8,
+      "slot": 14,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 25.272,
+      "grid_t": 25.2,
+      "micro_offset_ms": 72.0,
+      "velocity": 0.301
+    },
+    {
+      "bar": 8,
+      "slot": 14,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 25.1327,
+      "grid_t": 25.2,
+      "micro_offset_ms": -67.3,
+      "velocity": 0.313
+    },
+    {
+      "bar": 8,
+      "slot": 15,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": true,
+      "t": 25.4113,
+      "grid_t": 25.4,
+      "micro_offset_ms": 11.3,
+      "velocity": 0.112
+    },
+    {
+      "bar": 9,
+      "slot": 0,
+      "slot_label": "1",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 25.5216,
+      "grid_t": 25.6,
+      "micro_offset_ms": -78.4,
+      "velocity": 0.14
+    },
+    {
+      "bar": 9,
+      "slot": 0,
+      "slot_label": "1",
+      "type": "hat",
+      "is_ghost": true,
+      "t": 25.5739,
+      "grid_t": 25.6,
+      "micro_offset_ms": -26.1,
+      "velocity": 0.168
+    },
+    {
+      "bar": 9,
+      "slot": 1,
+      "slot_label": "e",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 25.8003,
+      "grid_t": 25.8,
+      "micro_offset_ms": 0.3,
+      "velocity": 0.616
+    },
+    {
+      "bar": 9,
+      "slot": 1,
+      "slot_label": "e",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 25.8003,
+      "grid_t": 25.8,
+      "micro_offset_ms": 0.3,
+      "velocity": 0.689
+    },
+    {
+      "bar": 9,
+      "slot": 1,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 25.7422,
+      "grid_t": 25.8,
+      "micro_offset_ms": -57.8,
+      "velocity": 0.279
+    },
+    {
+      "bar": 9,
+      "slot": 2,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 26.0673,
+      "grid_t": 26.0,
+      "micro_offset_ms": 67.3,
+      "velocity": 0.217
+    },
+    {
+      "bar": 9,
+      "slot": 2,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 26.0731,
+      "grid_t": 26.0,
+      "micro_offset_ms": 73.1,
+      "velocity": 0.565
+    },
+    {
+      "bar": 9,
+      "slot": 4,
+      "slot_label": "2",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 26.3401,
+      "grid_t": 26.4,
+      "micro_offset_ms": -59.9,
+      "velocity": 0.278
+    },
+    {
+      "bar": 9,
+      "slot": 4,
+      "slot_label": "2",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 26.3401,
+      "grid_t": 26.4,
+      "micro_offset_ms": -59.9,
+      "velocity": 0.871
+    },
+    {
+      "bar": 9,
+      "slot": 5,
+      "slot_label": "e",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 26.613,
+      "grid_t": 26.6,
+      "micro_offset_ms": 13.0,
+      "velocity": 0.475
+    },
+    {
+      "bar": 9,
+      "slot": 5,
+      "slot_label": "e",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 26.6072,
+      "grid_t": 26.6,
+      "micro_offset_ms": 7.2,
+      "velocity": 0.773
+    },
+    {
+      "bar": 9,
+      "slot": 5,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 26.6072,
+      "grid_t": 26.6,
+      "micro_offset_ms": 7.2,
+      "velocity": 0.71
+    },
+    {
+      "bar": 9,
+      "slot": 6,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 26.8858,
+      "grid_t": 26.8,
+      "micro_offset_ms": 85.8,
+      "velocity": 0.36
+    },
+    {
+      "bar": 9,
+      "slot": 6,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": true,
+      "t": 26.7523,
+      "grid_t": 26.8,
+      "micro_offset_ms": -47.7,
+      "velocity": 0.154
+    },
+    {
+      "bar": 9,
+      "slot": 8,
+      "slot_label": "3",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 27.147,
+      "grid_t": 27.2,
+      "micro_offset_ms": -53.0,
+      "velocity": 1.0
+    },
+    {
+      "bar": 9,
+      "slot": 9,
+      "slot_label": "e",
+      "type": "kick",
+      "is_ghost": true,
+      "t": 27.385,
+      "grid_t": 27.4,
+      "micro_offset_ms": -15.0,
+      "velocity": 0.128
+    },
+    {
+      "bar": 9,
+      "slot": 9,
+      "slot_label": "e",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 27.4141,
+      "grid_t": 27.4,
+      "micro_offset_ms": 14.1,
+      "velocity": 0.361
+    },
+    {
+      "bar": 9,
+      "slot": 9,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 27.4141,
+      "grid_t": 27.4,
+      "micro_offset_ms": 14.1,
+      "velocity": 0.501
+    },
+    {
+      "bar": 9,
+      "slot": 10,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 27.5534,
+      "grid_t": 27.6,
+      "micro_offset_ms": -46.6,
+      "velocity": 0.828
+    },
+    {
+      "bar": 9,
+      "slot": 11,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 27.7914,
+      "grid_t": 27.8,
+      "micro_offset_ms": -8.6,
+      "velocity": 0.208
+    },
+    {
+      "bar": 9,
+      "slot": 12,
+      "slot_label": "4",
+      "type": "kick",
+      "is_ghost": true,
+      "t": 27.9771,
+      "grid_t": 28.0,
+      "micro_offset_ms": -22.9,
+      "velocity": 0.127
+    },
+    {
+      "bar": 9,
+      "slot": 12,
+      "slot_label": "4",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 27.9597,
+      "grid_t": 28.0,
+      "micro_offset_ms": -40.3,
+      "velocity": 0.342
+    },
+    {
+      "bar": 9,
+      "slot": 12,
+      "slot_label": "4",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 27.9539,
+      "grid_t": 28.0,
+      "micro_offset_ms": -46.1,
+      "velocity": 0.649
+    },
+    {
+      "bar": 9,
+      "slot": 13,
+      "slot_label": "e",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 28.2268,
+      "grid_t": 28.2,
+      "micro_offset_ms": 26.8,
+      "velocity": 0.43
+    },
+    {
+      "bar": 9,
+      "slot": 13,
+      "slot_label": "e",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 28.221,
+      "grid_t": 28.2,
+      "micro_offset_ms": 21.0,
+      "velocity": 0.585
+    },
+    {
+      "bar": 9,
+      "slot": 13,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 28.221,
+      "grid_t": 28.2,
+      "micro_offset_ms": 21.0,
+      "velocity": 0.768
+    },
+    {
+      "bar": 9,
+      "slot": 14,
+      "slot_label": "&",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 28.4938,
+      "grid_t": 28.4,
+      "micro_offset_ms": 93.8,
+      "velocity": 0.677
+    },
+    {
+      "bar": 9,
+      "slot": 14,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 28.488,
+      "grid_t": 28.4,
+      "micro_offset_ms": 88.0,
+      "velocity": 0.559
+    },
+    {
+      "bar": 9,
+      "slot": 14,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 28.4938,
+      "grid_t": 28.4,
+      "micro_offset_ms": 93.8,
+      "velocity": 0.524
+    },
+    {
+      "bar": 10,
+      "slot": 0,
+      "slot_label": "1",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 28.7666,
+      "grid_t": 28.8,
+      "micro_offset_ms": -33.4,
+      "velocity": 0.203
+    },
+    {
+      "bar": 10,
+      "slot": 0,
+      "slot_label": "1",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 28.7608,
+      "grid_t": 28.8,
+      "micro_offset_ms": -39.2,
+      "velocity": 0.5
+    },
+    {
+      "bar": 10,
+      "slot": 1,
+      "slot_label": "e",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 29.0278,
+      "grid_t": 29.0,
+      "micro_offset_ms": 27.8,
+      "velocity": 0.359
+    },
+    {
+      "bar": 10,
+      "slot": 1,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 29.0278,
+      "grid_t": 29.0,
+      "micro_offset_ms": 27.8,
+      "velocity": 0.931
+    },
+    {
+      "bar": 10,
+      "slot": 2,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 29.1672,
+      "grid_t": 29.2,
+      "micro_offset_ms": -32.8,
+      "velocity": 0.578
+    },
+    {
+      "bar": 10,
+      "slot": 3,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 29.4342,
+      "grid_t": 29.4,
+      "micro_offset_ms": 34.2,
+      "velocity": 0.424
+    },
+    {
+      "bar": 10,
+      "slot": 4,
+      "slot_label": "2",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 29.5677,
+      "grid_t": 29.6,
+      "micro_offset_ms": -32.3,
+      "velocity": 0.32
+    },
+    {
+      "bar": 10,
+      "slot": 4,
+      "slot_label": "2",
+      "type": "hat",
+      "is_ghost": true,
+      "t": 29.5735,
+      "grid_t": 29.6,
+      "micro_offset_ms": -26.5,
+      "velocity": 0.245
+    },
+    {
+      "bar": 10,
+      "slot": 5,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": true,
+      "t": 29.7419,
+      "grid_t": 29.8,
+      "micro_offset_ms": -58.1,
+      "velocity": 0.166
+    },
+    {
+      "bar": 10,
+      "slot": 6,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": true,
+      "t": 30.0089,
+      "grid_t": 30.0,
+      "micro_offset_ms": 8.9,
+      "velocity": 0.186
+    },
+    {
+      "bar": 10,
+      "slot": 8,
+      "slot_label": "3",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 30.3804,
+      "grid_t": 30.4,
+      "micro_offset_ms": -19.6,
+      "velocity": 0.124
+    },
+    {
+      "bar": 10,
+      "slot": 8,
+      "slot_label": "3",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 30.3746,
+      "grid_t": 30.4,
+      "micro_offset_ms": -25.4,
+      "velocity": 0.674
+    },
+    {
+      "bar": 10,
+      "slot": 9,
+      "slot_label": "e",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 30.6474,
+      "grid_t": 30.6,
+      "micro_offset_ms": 47.4,
+      "velocity": 0.295
+    },
+    {
+      "bar": 10,
+      "slot": 9,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 30.6416,
+      "grid_t": 30.6,
+      "micro_offset_ms": 41.6,
+      "velocity": 0.863
+    },
+    {
+      "bar": 10,
+      "slot": 11,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 30.9145,
+      "grid_t": 31.0,
+      "micro_offset_ms": -85.5,
+      "velocity": 0.263
+    },
+    {
+      "bar": 10,
+      "slot": 11,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 30.9087,
+      "grid_t": 31.0,
+      "micro_offset_ms": -91.3,
+      "velocity": 0.765
+    },
+    {
+      "bar": 10,
+      "slot": 12,
+      "slot_label": "4",
+      "type": "kick",
+      "is_ghost": true,
+      "t": 31.2279,
+      "grid_t": 31.2,
+      "micro_offset_ms": 27.9,
+      "velocity": 0.134
+    },
+    {
+      "bar": 10,
+      "slot": 12,
+      "slot_label": "4",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 31.1757,
+      "grid_t": 31.2,
+      "micro_offset_ms": -24.3,
+      "velocity": 0.313
+    },
+    {
+      "bar": 10,
+      "slot": 12,
+      "slot_label": "4",
+      "type": "hat",
+      "is_ghost": true,
+      "t": 31.1873,
+      "grid_t": 31.2,
+      "micro_offset_ms": -12.7,
+      "velocity": 0.212
+    },
+    {
+      "bar": 10,
+      "slot": 13,
+      "slot_label": "e",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 31.4543,
+      "grid_t": 31.4,
+      "micro_offset_ms": 54.3,
+      "velocity": 0.482
+    },
+    {
+      "bar": 10,
+      "slot": 13,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 31.4543,
+      "grid_t": 31.4,
+      "micro_offset_ms": 54.3,
+      "velocity": 0.4
+    },
+    {
+      "bar": 10,
+      "slot": 15,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 31.7156,
+      "grid_t": 31.8,
+      "micro_offset_ms": -84.4,
+      "velocity": 0.266
+    },
+    {
+      "bar": 10,
+      "slot": 15,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 31.7214,
+      "grid_t": 31.8,
+      "micro_offset_ms": -78.6,
+      "velocity": 0.352
+    },
+    {
+      "bar": 11,
+      "slot": 0,
+      "slot_label": "1",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 31.9826,
+      "grid_t": 32.0,
+      "micro_offset_ms": -17.4,
+      "velocity": 0.66
+    },
+    {
+      "bar": 11,
+      "slot": 0,
+      "slot_label": "1",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 31.9826,
+      "grid_t": 32.0,
+      "micro_offset_ms": -17.4,
+      "velocity": 0.821
+    },
+    {
+      "bar": 11,
+      "slot": 1,
+      "slot_label": "e",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 32.2496,
+      "grid_t": 32.2,
+      "micro_offset_ms": 49.6,
+      "velocity": 0.634
+    },
+    {
+      "bar": 11,
+      "slot": 1,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 32.2554,
+      "grid_t": 32.2,
+      "micro_offset_ms": 55.4,
+      "velocity": 1.0
+    },
+    {
+      "bar": 11,
+      "slot": 2,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 32.3889,
+      "grid_t": 32.4,
+      "micro_offset_ms": -11.1,
+      "velocity": 1.0
+    },
+    {
+      "bar": 11,
+      "slot": 3,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 32.5224,
+      "grid_t": 32.6,
+      "micro_offset_ms": -77.6,
+      "velocity": 0.405
+    },
+    {
+      "bar": 11,
+      "slot": 3,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 32.5224,
+      "grid_t": 32.6,
+      "micro_offset_ms": -77.6,
+      "velocity": 0.843
+    },
+    {
+      "bar": 11,
+      "slot": 4,
+      "slot_label": "2",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 32.7895,
+      "grid_t": 32.8,
+      "micro_offset_ms": -10.5,
+      "velocity": 0.509
+    },
+    {
+      "bar": 11,
+      "slot": 4,
+      "slot_label": "2",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 32.7953,
+      "grid_t": 32.8,
+      "micro_offset_ms": -4.7,
+      "velocity": 0.991
+    },
+    {
+      "bar": 11,
+      "slot": 5,
+      "slot_label": "e",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 33.0623,
+      "grid_t": 33.0,
+      "micro_offset_ms": 62.3,
+      "velocity": 0.481
+    },
+    {
+      "bar": 11,
+      "slot": 5,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 33.0623,
+      "grid_t": 33.0,
+      "micro_offset_ms": 62.3,
+      "velocity": 0.92
+    },
+    {
+      "bar": 11,
+      "slot": 6,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": true,
+      "t": 33.2016,
+      "grid_t": 33.2,
+      "micro_offset_ms": 1.6,
+      "velocity": 0.2
+    },
+    {
+      "bar": 11,
+      "slot": 7,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 33.3293,
+      "grid_t": 33.4,
+      "micro_offset_ms": -70.7,
+      "velocity": 0.49
+    },
+    {
+      "bar": 11,
+      "slot": 7,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 33.3293,
+      "grid_t": 33.4,
+      "micro_offset_ms": -70.7,
+      "velocity": 0.909
+    },
+    {
+      "bar": 11,
+      "slot": 8,
+      "slot_label": "3",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 33.5964,
+      "grid_t": 33.6,
+      "micro_offset_ms": -3.6,
+      "velocity": 0.661
+    },
+    {
+      "bar": 11,
+      "slot": 8,
+      "slot_label": "3",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 33.6022,
+      "grid_t": 33.6,
+      "micro_offset_ms": 2.2,
+      "velocity": 0.947
+    },
+    {
+      "bar": 11,
+      "slot": 9,
+      "slot_label": "e",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 33.8634,
+      "grid_t": 33.8,
+      "micro_offset_ms": 63.4,
+      "velocity": 0.761
+    },
+    {
+      "bar": 11,
+      "slot": 9,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 33.8692,
+      "grid_t": 33.8,
+      "micro_offset_ms": 69.2,
+      "velocity": 0.987
+    },
+    {
+      "bar": 11,
+      "slot": 10,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 34.0027,
+      "grid_t": 34.0,
+      "micro_offset_ms": 2.7,
+      "velocity": 1.0
+    },
+    {
+      "bar": 11,
+      "slot": 11,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 34.1362,
+      "grid_t": 34.2,
+      "micro_offset_ms": -63.8,
+      "velocity": 0.688
+    },
+    {
+      "bar": 11,
+      "slot": 11,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 34.1362,
+      "grid_t": 34.2,
+      "micro_offset_ms": -63.8,
+      "velocity": 0.869
+    },
+    {
+      "bar": 11,
+      "slot": 12,
+      "slot_label": "4",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 34.4091,
+      "grid_t": 34.4,
+      "micro_offset_ms": 9.1,
+      "velocity": 0.543
+    },
+    {
+      "bar": 11,
+      "slot": 12,
+      "slot_label": "4",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 34.4033,
+      "grid_t": 34.4,
+      "micro_offset_ms": 3.3,
+      "velocity": 0.909
+    },
+    {
+      "bar": 11,
+      "slot": 12,
+      "slot_label": "4",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 34.4033,
+      "grid_t": 34.4,
+      "micro_offset_ms": 3.3,
+      "velocity": 0.534
+    },
+    {
+      "bar": 11,
+      "slot": 13,
+      "slot_label": "e",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 34.6703,
+      "grid_t": 34.6,
+      "micro_offset_ms": 70.3,
+      "velocity": 0.197
+    },
+    {
+      "bar": 11,
+      "slot": 13,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 34.6761,
+      "grid_t": 34.6,
+      "micro_offset_ms": 76.1,
+      "velocity": 0.568
+    },
+    {
+      "bar": 11,
+      "slot": 15,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 34.9489,
+      "grid_t": 35.0,
+      "micro_offset_ms": -51.1,
+      "velocity": 0.286
+    },
+    {
+      "bar": 11,
+      "slot": 15,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 34.9431,
+      "grid_t": 35.0,
+      "micro_offset_ms": -56.9,
+      "velocity": 0.694
+    },
+    {
+      "bar": 12,
+      "slot": 0,
+      "slot_label": "1",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 35.216,
+      "grid_t": 35.2,
+      "micro_offset_ms": 16.0,
+      "velocity": 0.459
+    },
+    {
+      "bar": 12,
+      "slot": 0,
+      "slot_label": "1",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 35.2044,
+      "grid_t": 35.2,
+      "micro_offset_ms": 4.4,
+      "velocity": 0.929
+    },
+    {
+      "bar": 12,
+      "slot": 0,
+      "slot_label": "1",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 35.2102,
+      "grid_t": 35.2,
+      "micro_offset_ms": 10.2,
+      "velocity": 0.601
+    },
+    {
+      "bar": 12,
+      "slot": 1,
+      "slot_label": "e",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 35.483,
+      "grid_t": 35.4,
+      "micro_offset_ms": 83.0,
+      "velocity": 0.38
+    },
+    {
+      "bar": 12,
+      "slot": 1,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 35.4888,
+      "grid_t": 35.4,
+      "micro_offset_ms": 88.8,
+      "velocity": 0.338
+    },
+    {
+      "bar": 12,
+      "slot": 3,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 35.75,
+      "grid_t": 35.8,
+      "micro_offset_ms": -50.0,
+      "velocity": 0.178
+    },
+    {
+      "bar": 12,
+      "slot": 3,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 35.75,
+      "grid_t": 35.8,
+      "micro_offset_ms": -50.0,
+      "velocity": 1.0
+    },
+    {
+      "bar": 12,
+      "slot": 4,
+      "slot_label": "2",
+      "type": "kick",
+      "is_ghost": true,
+      "t": 35.988,
+      "grid_t": 36.0,
+      "micro_offset_ms": -12.0,
+      "velocity": 0.136
+    },
+    {
+      "bar": 12,
+      "slot": 4,
+      "slot_label": "2",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 36.0171,
+      "grid_t": 36.0,
+      "micro_offset_ms": 17.1,
+      "velocity": 0.356
+    },
+    {
+      "bar": 12,
+      "slot": 4,
+      "slot_label": "2",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 36.0171,
+      "grid_t": 36.0,
+      "micro_offset_ms": 17.1,
+      "velocity": 0.712
+    },
+    {
+      "bar": 12,
+      "slot": 5,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 36.1506,
+      "grid_t": 36.2,
+      "micro_offset_ms": -49.4,
+      "velocity": 0.821
+    },
+    {
+      "bar": 12,
+      "slot": 7,
+      "slot_label": "a",
+      "type": "kick",
+      "is_ghost": true,
+      "t": 36.5221,
+      "grid_t": 36.6,
+      "micro_offset_ms": -77.9,
+      "velocity": 0.128
+    },
+    {
+      "bar": 12,
+      "slot": 7,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 36.5627,
+      "grid_t": 36.6,
+      "micro_offset_ms": -37.3,
+      "velocity": 0.349
+    },
+    {
+      "bar": 12,
+      "slot": 7,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 36.5569,
+      "grid_t": 36.6,
+      "micro_offset_ms": -43.1,
+      "velocity": 0.864
+    },
+    {
+      "bar": 12,
+      "slot": 8,
+      "slot_label": "3",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 36.8298,
+      "grid_t": 36.8,
+      "micro_offset_ms": 29.8,
+      "velocity": 0.441
+    },
+    {
+      "bar": 12,
+      "slot": 8,
+      "slot_label": "3",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 36.8239,
+      "grid_t": 36.8,
+      "micro_offset_ms": 23.9,
+      "velocity": 0.596
+    },
+    {
+      "bar": 12,
+      "slot": 8,
+      "slot_label": "3",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 36.8298,
+      "grid_t": 36.8,
+      "micro_offset_ms": 29.8,
+      "velocity": 0.474
+    },
+    {
+      "bar": 12,
+      "slot": 9,
+      "slot_label": "e",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 37.091,
+      "grid_t": 37.0,
+      "micro_offset_ms": 91.0,
+      "velocity": 0.766
+    },
+    {
+      "bar": 12,
+      "slot": 9,
+      "slot_label": "e",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 37.091,
+      "grid_t": 37.0,
+      "micro_offset_ms": 91.0,
+      "velocity": 0.737
+    },
+    {
+      "bar": 12,
+      "slot": 9,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 37.091,
+      "grid_t": 37.0,
+      "micro_offset_ms": 91.0,
+      "velocity": 0.581
+    },
+    {
+      "bar": 12,
+      "slot": 11,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 37.3754,
+      "grid_t": 37.4,
+      "micro_offset_ms": -24.6,
+      "velocity": 0.18
+    },
+    {
+      "bar": 12,
+      "slot": 11,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 37.3638,
+      "grid_t": 37.4,
+      "micro_offset_ms": -36.2,
+      "velocity": 0.568
+    },
+    {
+      "bar": 12,
+      "slot": 12,
+      "slot_label": "4",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 37.6308,
+      "grid_t": 37.6,
+      "micro_offset_ms": 30.8,
+      "velocity": 0.422
+    },
+    {
+      "bar": 12,
+      "slot": 12,
+      "slot_label": "4",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 37.6308,
+      "grid_t": 37.6,
+      "micro_offset_ms": 30.8,
+      "velocity": 0.946
+    },
+    {
+      "bar": 12,
+      "slot": 13,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 37.7702,
+      "grid_t": 37.8,
+      "micro_offset_ms": -29.8,
+      "velocity": 0.643
+    },
+    {
+      "bar": 12,
+      "slot": 14,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 38.0372,
+      "grid_t": 38.0,
+      "micro_offset_ms": 37.2,
+      "velocity": 0.418
+    },
+    {
+      "bar": 12,
+      "slot": 15,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 38.1707,
+      "grid_t": 38.2,
+      "micro_offset_ms": -29.3,
+      "velocity": 0.278
+    },
+    {
+      "bar": 12,
+      "slot": 15,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": true,
+      "t": 38.1765,
+      "grid_t": 38.2,
+      "micro_offset_ms": -23.5,
+      "velocity": 0.21
+    },
+    {
+      "bar": 13,
+      "slot": 0,
+      "slot_label": "1",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 38.4435,
+      "grid_t": 38.4,
+      "micro_offset_ms": 43.5,
+      "velocity": 0.233
+    },
+    {
+      "bar": 13,
+      "slot": 0,
+      "slot_label": "1",
+      "type": "hat",
+      "is_ghost": true,
+      "t": 38.4435,
+      "grid_t": 38.4,
+      "micro_offset_ms": 43.5,
+      "velocity": 0.174
+    },
+    {
+      "bar": 13,
+      "slot": 1,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": true,
+      "t": 38.5771,
+      "grid_t": 38.6,
+      "micro_offset_ms": -22.9,
+      "velocity": 0.217
+    },
+    {
+      "bar": 13,
+      "slot": 2,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 38.7048,
+      "grid_t": 38.8,
+      "micro_offset_ms": -95.2,
+      "velocity": 0.895
+    },
+    {
+      "bar": 13,
+      "slot": 3,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 38.9776,
+      "grid_t": 39.0,
+      "micro_offset_ms": -22.4,
+      "velocity": 0.161
+    },
+    {
+      "bar": 13,
+      "slot": 3,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 38.9776,
+      "grid_t": 39.0,
+      "micro_offset_ms": -22.4,
+      "velocity": 0.709
+    },
+    {
+      "bar": 13,
+      "slot": 4,
+      "slot_label": "2",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 39.2446,
+      "grid_t": 39.2,
+      "micro_offset_ms": 44.6,
+      "velocity": 0.242
+    },
+    {
+      "bar": 13,
+      "slot": 4,
+      "slot_label": "2",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 39.2446,
+      "grid_t": 39.2,
+      "micro_offset_ms": 44.6,
+      "velocity": 0.919
+    },
+    {
+      "bar": 13,
+      "slot": 6,
+      "slot_label": "&",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 39.5117,
+      "grid_t": 39.6,
+      "micro_offset_ms": -88.3,
+      "velocity": 0.509
+    },
+    {
+      "bar": 13,
+      "slot": 6,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 39.5059,
+      "grid_t": 39.6,
+      "micro_offset_ms": -94.1,
+      "velocity": 0.956
+    },
+    {
+      "bar": 13,
+      "slot": 6,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 39.5117,
+      "grid_t": 39.6,
+      "micro_offset_ms": -88.3,
+      "velocity": 0.639
+    },
+    {
+      "bar": 13,
+      "slot": 7,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 39.7845,
+      "grid_t": 39.8,
+      "micro_offset_ms": -15.5,
+      "velocity": 0.441
+    },
+    {
+      "bar": 13,
+      "slot": 7,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 39.7903,
+      "grid_t": 39.8,
+      "micro_offset_ms": -9.7,
+      "velocity": 0.407
+    },
+    {
+      "bar": 13,
+      "slot": 8,
+      "slot_label": "3",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 40.0573,
+      "grid_t": 40.0,
+      "micro_offset_ms": 57.3,
+      "velocity": 0.299
+    },
+    {
+      "bar": 13,
+      "slot": 8,
+      "slot_label": "3",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 40.0515,
+      "grid_t": 40.0,
+      "micro_offset_ms": 51.5,
+      "velocity": 1.0
+    },
+    {
+      "bar": 13,
+      "slot": 10,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 40.3185,
+      "grid_t": 40.4,
+      "micro_offset_ms": -81.5,
+      "velocity": 0.286
+    },
+    {
+      "bar": 13,
+      "slot": 10,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 40.4521,
+      "grid_t": 40.4,
+      "micro_offset_ms": 52.1,
+      "velocity": 0.7
+    },
+    {
+      "bar": 13,
+      "slot": 11,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 40.5856,
+      "grid_t": 40.6,
+      "micro_offset_ms": -14.4,
+      "velocity": 0.83
+    },
+    {
+      "bar": 13,
+      "slot": 12,
+      "slot_label": "4",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 40.8584,
+      "grid_t": 40.8,
+      "micro_offset_ms": 58.4,
+      "velocity": 0.366
+    },
+    {
+      "bar": 13,
+      "slot": 12,
+      "slot_label": "4",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 40.8584,
+      "grid_t": 40.8,
+      "micro_offset_ms": 58.4,
+      "velocity": 0.747
+    },
+    {
+      "bar": 13,
+      "slot": 13,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 40.9919,
+      "grid_t": 41.0,
+      "micro_offset_ms": -8.1,
+      "velocity": 0.859
+    },
+    {
+      "bar": 13,
+      "slot": 14,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 41.1254,
+      "grid_t": 41.2,
+      "micro_offset_ms": -74.6,
+      "velocity": 0.254
+    },
+    {
+      "bar": 13,
+      "slot": 14,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 41.1254,
+      "grid_t": 41.2,
+      "micro_offset_ms": -74.6,
+      "velocity": 0.95
+    },
+    {
+      "bar": 13,
+      "slot": 15,
+      "slot_label": "a",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 41.3983,
+      "grid_t": 41.4,
+      "micro_offset_ms": -1.7,
+      "velocity": 0.489
+    },
+    {
+      "bar": 13,
+      "slot": 15,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 41.3925,
+      "grid_t": 41.4,
+      "micro_offset_ms": -7.5,
+      "velocity": 0.541
+    },
+    {
+      "bar": 13,
+      "slot": 15,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 41.3925,
+      "grid_t": 41.4,
+      "micro_offset_ms": -7.5,
+      "velocity": 0.559
+    },
+    {
+      "bar": 14,
+      "slot": 0,
+      "slot_label": "1",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 41.6711,
+      "grid_t": 41.6,
+      "micro_offset_ms": 71.1,
+      "velocity": 0.17
+    },
+    {
+      "bar": 14,
+      "slot": 0,
+      "slot_label": "1",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 41.6653,
+      "grid_t": 41.6,
+      "micro_offset_ms": 65.3,
+      "velocity": 0.702
+    },
+    {
+      "bar": 14,
+      "slot": 2,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 41.9323,
+      "grid_t": 42.0,
+      "micro_offset_ms": -67.7,
+      "velocity": 0.385
+    },
+    {
+      "bar": 14,
+      "slot": 2,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 41.9323,
+      "grid_t": 42.0,
+      "micro_offset_ms": -67.7,
+      "velocity": 0.724
+    },
+    {
+      "bar": 14,
+      "slot": 3,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 42.211,
+      "grid_t": 42.2,
+      "micro_offset_ms": 11.0,
+      "velocity": 0.287
+    },
+    {
+      "bar": 14,
+      "slot": 3,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 42.2052,
+      "grid_t": 42.2,
+      "micro_offset_ms": 5.2,
+      "velocity": 0.416
+    },
+    {
+      "bar": 14,
+      "slot": 4,
+      "slot_label": "2",
+      "type": "kick",
+      "is_ghost": true,
+      "t": 42.4664,
+      "grid_t": 42.4,
+      "micro_offset_ms": 66.4,
+      "velocity": 0.172
+    },
+    {
+      "bar": 14,
+      "slot": 4,
+      "slot_label": "2",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 42.4722,
+      "grid_t": 42.4,
+      "micro_offset_ms": 72.2,
+      "velocity": 0.378
+    },
+    {
+      "bar": 14,
+      "slot": 4,
+      "slot_label": "2",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 42.4083,
+      "grid_t": 42.4,
+      "micro_offset_ms": 8.3,
+      "velocity": 0.307
+    },
+    {
+      "bar": 14,
+      "slot": 5,
+      "slot_label": "e",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 42.6231,
+      "grid_t": 42.6,
+      "micro_offset_ms": 23.1,
+      "velocity": 0.129
+    },
+    {
+      "bar": 14,
+      "slot": 5,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": true,
+      "t": 42.6463,
+      "grid_t": 42.6,
+      "micro_offset_ms": 46.3,
+      "velocity": 0.147
+    },
+    {
+      "bar": 14,
+      "slot": 6,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 42.8611,
+      "grid_t": 42.8,
+      "micro_offset_ms": 61.1,
+      "velocity": 0.124
+    },
+    {
+      "bar": 14,
+      "slot": 6,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": true,
+      "t": 42.8147,
+      "grid_t": 42.8,
+      "micro_offset_ms": 14.7,
+      "velocity": 0.187
+    },
+    {
+      "bar": 14,
+      "slot": 7,
+      "slot_label": "a",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 43.0063,
+      "grid_t": 43.0,
+      "micro_offset_ms": 6.3,
+      "velocity": 0.568
+    },
+    {
+      "bar": 14,
+      "slot": 7,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 43.0063,
+      "grid_t": 43.0,
+      "micro_offset_ms": 6.3,
+      "velocity": 0.623
+    },
+    {
+      "bar": 14,
+      "slot": 7,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": true,
+      "t": 42.983,
+      "grid_t": 43.0,
+      "micro_offset_ms": -17.0,
+      "velocity": 0.215
+    },
+    {
+      "bar": 14,
+      "slot": 8,
+      "slot_label": "3",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 43.2733,
+      "grid_t": 43.2,
+      "micro_offset_ms": 73.3,
+      "velocity": 0.2
+    },
+    {
+      "bar": 14,
+      "slot": 8,
+      "slot_label": "3",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 43.2791,
+      "grid_t": 43.2,
+      "micro_offset_ms": 79.1,
+      "velocity": 0.474
+    },
+    {
+      "bar": 14,
+      "slot": 10,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 43.5461,
+      "grid_t": 43.6,
+      "micro_offset_ms": -53.9,
+      "velocity": 0.241
+    },
+    {
+      "bar": 14,
+      "slot": 10,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 43.5461,
+      "grid_t": 43.6,
+      "micro_offset_ms": -53.9,
+      "velocity": 0.92
+    },
+    {
+      "bar": 14,
+      "slot": 11,
+      "slot_label": "a",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 43.8132,
+      "grid_t": 43.8,
+      "micro_offset_ms": 13.2,
+      "velocity": 0.526
+    },
+    {
+      "bar": 14,
+      "slot": 11,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 43.8073,
+      "grid_t": 43.8,
+      "micro_offset_ms": 7.3,
+      "velocity": 0.798
+    },
+    {
+      "bar": 14,
+      "slot": 11,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 43.8132,
+      "grid_t": 43.8,
+      "micro_offset_ms": 13.2,
+      "velocity": 0.478
+    },
+    {
+      "bar": 14,
+      "slot": 12,
+      "slot_label": "4",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 44.086,
+      "grid_t": 44.0,
+      "micro_offset_ms": 86.0,
+      "velocity": 0.406
+    },
+    {
+      "bar": 14,
+      "slot": 12,
+      "slot_label": "4",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 44.0918,
+      "grid_t": 44.0,
+      "micro_offset_ms": 91.8,
+      "velocity": 0.366
+    },
+    {
+      "bar": 14,
+      "slot": 14,
+      "slot_label": "&",
+      "type": "kick",
+      "is_ghost": true,
+      "t": 44.3182,
+      "grid_t": 44.4,
+      "micro_offset_ms": -81.8,
+      "velocity": 0.139
+    },
+    {
+      "bar": 14,
+      "slot": 14,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 44.3472,
+      "grid_t": 44.4,
+      "micro_offset_ms": -52.8,
+      "velocity": 0.177
+    },
+    {
+      "bar": 14,
+      "slot": 14,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 44.353,
+      "grid_t": 44.4,
+      "micro_offset_ms": -47.0,
+      "velocity": 0.702
+    },
+    {
+      "bar": 14,
+      "slot": 15,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 44.62,
+      "grid_t": 44.6,
+      "micro_offset_ms": 20.0,
+      "velocity": 0.378
+    },
+    {
+      "bar": 14,
+      "slot": 15,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 44.62,
+      "grid_t": 44.6,
+      "micro_offset_ms": 20.0,
+      "velocity": 0.956
+    },
+    {
+      "bar": 15,
+      "slot": 0,
+      "slot_label": "1",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 44.7536,
+      "grid_t": 44.8,
+      "micro_offset_ms": -46.4,
+      "velocity": 0.782
+    },
+    {
+      "bar": 15,
+      "slot": 1,
+      "slot_label": "e",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 44.9974,
+      "grid_t": 45.0,
+      "micro_offset_ms": -2.6,
+      "velocity": 0.117
+    },
+    {
+      "bar": 15,
+      "slot": 2,
+      "slot_label": "&",
+      "type": "kick",
+      "is_ghost": true,
+      "t": 45.1831,
+      "grid_t": 45.2,
+      "micro_offset_ms": -16.9,
+      "velocity": 0.151
+    },
+    {
+      "bar": 15,
+      "slot": 2,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 45.1657,
+      "grid_t": 45.2,
+      "micro_offset_ms": -34.3,
+      "velocity": 0.307
+    },
+    {
+      "bar": 15,
+      "slot": 2,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 45.1599,
+      "grid_t": 45.2,
+      "micro_offset_ms": -40.1,
+      "velocity": 0.767
+    },
+    {
+      "bar": 15,
+      "slot": 3,
+      "slot_label": "a",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 45.4269,
+      "grid_t": 45.4,
+      "micro_offset_ms": 26.9,
+      "velocity": 0.458
+    },
+    {
+      "bar": 15,
+      "slot": 3,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 45.4211,
+      "grid_t": 45.4,
+      "micro_offset_ms": 21.1,
+      "velocity": 0.604
+    },
+    {
+      "bar": 15,
+      "slot": 3,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 45.4269,
+      "grid_t": 45.4,
+      "micro_offset_ms": 26.9,
+      "velocity": 0.748
+    },
+    {
+      "bar": 15,
+      "slot": 4,
+      "slot_label": "2",
+      "type": "kick",
+      "is_ghost": false,
+      "t": 45.694,
+      "grid_t": 45.6,
+      "micro_offset_ms": 94.0,
+      "velocity": 0.812
+    },
+    {
+      "bar": 15,
+      "slot": 4,
+      "slot_label": "2",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 45.694,
+      "grid_t": 45.6,
+      "micro_offset_ms": 94.0,
+      "velocity": 0.652
+    },
+    {
+      "bar": 15,
+      "slot": 6,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 45.9668,
+      "grid_t": 46.0,
+      "micro_offset_ms": -33.2,
+      "velocity": 0.279
+    },
+    {
+      "bar": 15,
+      "slot": 6,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 45.9668,
+      "grid_t": 46.0,
+      "micro_offset_ms": -33.2,
+      "velocity": 0.591
+    },
+    {
+      "bar": 15,
+      "slot": 7,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 46.2338,
+      "grid_t": 46.2,
+      "micro_offset_ms": 33.8,
+      "velocity": 0.528
+    },
+    {
+      "bar": 15,
+      "slot": 7,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 46.2338,
+      "grid_t": 46.2,
+      "micro_offset_ms": 33.8,
+      "velocity": 1.0
+    },
+    {
+      "bar": 15,
+      "slot": 8,
+      "slot_label": "3",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 46.437,
+      "grid_t": 46.4,
+      "micro_offset_ms": 37.0,
+      "velocity": 0.594
+    },
+    {
+      "bar": 15,
+      "slot": 9,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 46.5705,
+      "grid_t": 46.6,
+      "micro_offset_ms": -29.5,
+      "velocity": 0.448
+    },
+    {
+      "bar": 15,
+      "slot": 10,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 46.7737,
+      "grid_t": 46.8,
+      "micro_offset_ms": -26.3,
+      "velocity": 0.382
+    },
+    {
+      "bar": 15,
+      "slot": 10,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 46.7098,
+      "grid_t": 46.8,
+      "micro_offset_ms": -90.2,
+      "velocity": 0.425
+    },
+    {
+      "bar": 15,
+      "slot": 11,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 47.0349,
+      "grid_t": 47.0,
+      "micro_offset_ms": 34.9,
+      "velocity": 0.125
+    },
+    {
+      "bar": 15,
+      "slot": 11,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": true,
+      "t": 47.0465,
+      "grid_t": 47.0,
+      "micro_offset_ms": 46.5,
+      "velocity": 0.161
+    },
+    {
+      "bar": 15,
+      "slot": 12,
+      "slot_label": "4",
+      "type": "hat",
+      "is_ghost": true,
+      "t": 47.2149,
+      "grid_t": 47.2,
+      "micro_offset_ms": 14.9,
+      "velocity": 0.227
+    },
+    {
+      "bar": 15,
+      "slot": 13,
+      "slot_label": "e",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 47.3078,
+      "grid_t": 47.4,
+      "micro_offset_ms": -92.2,
+      "velocity": 0.659
+    },
+    {
+      "bar": 15,
+      "slot": 14,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 47.5806,
+      "grid_t": 47.6,
+      "micro_offset_ms": -19.4,
+      "velocity": 0.137
+    },
+    {
+      "bar": 15,
+      "slot": 14,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 47.5806,
+      "grid_t": 47.6,
+      "micro_offset_ms": -19.4,
+      "velocity": 0.851
+    },
+    {
+      "bar": 15,
+      "slot": 15,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": true,
+      "t": 47.8476,
+      "grid_t": 47.8,
+      "micro_offset_ms": 47.6,
+      "velocity": 0.224
+    },
+    {
+      "bar": 15,
+      "slot": 15,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 47.8476,
+      "grid_t": 47.8,
+      "micro_offset_ms": 47.6,
+      "velocity": 0.874
+    },
+    {
+      "bar": 16,
+      "slot": 1,
+      "slot_label": "e",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 48.1205,
+      "grid_t": 48.2,
+      "micro_offset_ms": -79.5,
+      "velocity": 0.271
+    },
+    {
+      "bar": 16,
+      "slot": 1,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 48.1146,
+      "grid_t": 48.2,
+      "micro_offset_ms": -85.4,
+      "velocity": 0.631
+    },
+    {
+      "bar": 16,
+      "slot": 2,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 48.3817,
+      "grid_t": 48.4,
+      "micro_offset_ms": -18.3,
+      "velocity": 0.265
+    },
+    {
+      "bar": 16,
+      "slot": 2,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": true,
+      "t": 48.3585,
+      "grid_t": 48.4,
+      "micro_offset_ms": -41.5,
+      "velocity": 0.184
+    },
+    {
+      "bar": 16,
+      "slot": 3,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 48.6603,
+      "grid_t": 48.6,
+      "micro_offset_ms": 60.3,
+      "velocity": 0.507
+    },
+    {
+      "bar": 16,
+      "slot": 3,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 48.6603,
+      "grid_t": 48.6,
+      "micro_offset_ms": 60.3,
+      "velocity": 0.355
+    },
+    {
+      "bar": 16,
+      "slot": 5,
+      "slot_label": "e",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 48.9215,
+      "grid_t": 49.0,
+      "micro_offset_ms": -78.5,
+      "velocity": 0.306
+    },
+    {
+      "bar": 16,
+      "slot": 5,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 48.9273,
+      "grid_t": 49.0,
+      "micro_offset_ms": -72.7,
+      "velocity": 0.365
+    },
+    {
+      "bar": 16,
+      "slot": 6,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 49.1828,
+      "grid_t": 49.2,
+      "micro_offset_ms": -17.2,
+      "velocity": 0.547
+    },
+    {
+      "bar": 16,
+      "slot": 6,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 49.1886,
+      "grid_t": 49.2,
+      "micro_offset_ms": -11.4,
+      "velocity": 0.795
+    },
+    {
+      "bar": 16,
+      "slot": 7,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 49.4498,
+      "grid_t": 49.4,
+      "micro_offset_ms": 49.8,
+      "velocity": 0.494
+    },
+    {
+      "bar": 16,
+      "slot": 7,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 49.4556,
+      "grid_t": 49.4,
+      "micro_offset_ms": 55.6,
+      "velocity": 0.53
+    },
+    {
+      "bar": 16,
+      "slot": 8,
+      "slot_label": "3",
+      "type": "kick",
+      "is_ghost": true,
+      "t": 49.5195,
+      "grid_t": 49.6,
+      "micro_offset_ms": -80.5,
+      "velocity": 0.128
+    },
+    {
+      "bar": 16,
+      "slot": 8,
+      "slot_label": "3",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 49.5833,
+      "grid_t": 49.6,
+      "micro_offset_ms": -16.7,
+      "velocity": 0.721
+    },
+    {
+      "bar": 16,
+      "slot": 9,
+      "slot_label": "e",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 49.7168,
+      "grid_t": 49.8,
+      "micro_offset_ms": -83.2,
+      "velocity": 0.487
+    },
+    {
+      "bar": 16,
+      "slot": 9,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 49.7226,
+      "grid_t": 49.8,
+      "micro_offset_ms": -77.4,
+      "velocity": 0.855
+    },
+    {
+      "bar": 16,
+      "slot": 10,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 49.9897,
+      "grid_t": 50.0,
+      "micro_offset_ms": -10.3,
+      "velocity": 0.526
+    },
+    {
+      "bar": 16,
+      "slot": 10,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 49.9897,
+      "grid_t": 50.0,
+      "micro_offset_ms": -10.3,
+      "velocity": 0.908
+    },
+    {
+      "bar": 16,
+      "slot": 11,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 50.2567,
+      "grid_t": 50.2,
+      "micro_offset_ms": 56.7,
+      "velocity": 0.474
+    },
+    {
+      "bar": 16,
+      "slot": 11,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 50.2625,
+      "grid_t": 50.2,
+      "micro_offset_ms": 62.5,
+      "velocity": 0.967
+    },
+    {
+      "bar": 16,
+      "slot": 12,
+      "slot_label": "4",
+      "type": "hat",
+      "is_ghost": true,
+      "t": 50.4018,
+      "grid_t": 50.4,
+      "micro_offset_ms": 1.8,
+      "velocity": 0.148
+    },
+    {
+      "bar": 16,
+      "slot": 13,
+      "slot_label": "e",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 50.5295,
+      "grid_t": 50.6,
+      "micro_offset_ms": -70.5,
+      "velocity": 0.536
+    },
+    {
+      "bar": 16,
+      "slot": 13,
+      "slot_label": "e",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 50.5295,
+      "grid_t": 50.6,
+      "micro_offset_ms": -70.5,
+      "velocity": 1.0
+    },
+    {
+      "bar": 16,
+      "slot": 14,
+      "slot_label": "&",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 50.7907,
+      "grid_t": 50.8,
+      "micro_offset_ms": -9.3,
+      "velocity": 0.685
+    },
+    {
+      "bar": 16,
+      "slot": 14,
+      "slot_label": "&",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 50.7966,
+      "grid_t": 50.8,
+      "micro_offset_ms": -3.4,
+      "velocity": 1.0
+    },
+    {
+      "bar": 16,
+      "slot": 15,
+      "slot_label": "a",
+      "type": "kick",
+      "is_ghost": true,
+      "t": 51.0229,
+      "grid_t": 51.0,
+      "micro_offset_ms": 22.9,
+      "velocity": 0.148
+    },
+    {
+      "bar": 16,
+      "slot": 15,
+      "slot_label": "a",
+      "type": "snare",
+      "is_ghost": false,
+      "t": 51.0636,
+      "grid_t": 51.0,
+      "micro_offset_ms": 63.6,
+      "velocity": 0.645
+    },
+    {
+      "bar": 16,
+      "slot": 15,
+      "slot_label": "a",
+      "type": "hat",
+      "is_ghost": false,
+      "t": 51.0636,
+      "grid_t": 51.0,
+      "micro_offset_ms": 63.6,
+      "velocity": 0.966
+    }
+  ],
+  "reconstruction_verification_metrics": {
+    "evaluated_duration_s": 38.4,
+    "rhythm_onset_envelope_correlation": 0.9585,
+    "six_band_spectral_cosine_similarity": 0.997
+  }
+}
