@@ -1,61 +1,336 @@
-# 《抽丝剥茧》EP02：《超级个体：一人成军的幻觉与科斯暗箱》导演视觉技术规格书 (SPEC.md · v5.1)
+# 《抽丝剥茧》(UNRAVEL STUDIO) · EP02《超级个体：一人成军的幻觉与科斯暗箱》工程与叙事规格书 (`SPEC.md` v6.0)
 
-> **单一真相源声明（SSOT）**：本规格书与 [`SCRIPT_AND_DIRECTOR_TABLE.md`](file:///Users/joseph/Desktop/【副业】视频创作/03_专题项目/02_超级个体/01_剧本与导演分镜表/SCRIPT_AND_DIRECTOR_TABLE.md) (v5.1)、[`beats.json`](file:///Users/joseph/Desktop/【副业】视频创作/03_专题项目/02_超级个体/01_剧本与导演分镜表/beats.json) (v5.1)、[`beat_maps.json`](file:///Users/joseph/Desktop/【副业】视频创作/03_专题项目/02_超级个体/03_配乐精析与卡点试听/beat_maps/beat_maps.json) (v5.1) 以及预置开源组件库 `reference_ep01_opus_v4/src/film/{ep02_core.ts,icons.tsx,ep02_kit.tsx}` 100% 字节级对齐。
-
----
-
-## 一、 核心架构与四大升级准则（对标 EP01 V4 标杆母带）
-
-1. **前 4–12 秒强钩子与秒懂立题（`0.00s` 首帧满对比直出 + `0.43s` 徽章脉冲 + `3.80s` Drop 账单反转）**：
-   - **`S01`（`0.000s – 6.600s`）**：第 `0` 帧（`0.00s`）严禁黑屏淡入，直接亮出顶部主视觉锚字 **`一人公司 $10亿`** 与左侧 **OpenAI CEO 奥特曼热搜引语卡（`“史上第一家 10 亿美元的一人公司即将诞生”`）**；`t = 0.43s` 底部 4 枚 Lucide 图标徽章（`写代码 · 做设计 · 剪视频 · 搞客服`）依次鎏金点亮；`t = 3.800s`（`Frame 114`）首个四四拍重低音 Drop 炸响瞬间，右侧视窗爆出 **凌晨 `03:00` 开发者真实后台**——`GitHub ★ 140,000 OpenClaw` 铭牌下，服务器账单 **`本月欠费 -¥23,800（收入不够交电费）`** 与 **`99+ 报错工单`** 剧烈震动，顶部右侧锚字锁定 **`14万星 · 倒贴电费`**。
-   - **`S02`（`6.600s – 11.867s`）**：创作者后台 **`两周 520 条视频`** 对撞微信/Stripe 商户结算单 **`¥0.00（0 真实转化）`**。
-   - **`S03`（`11.867s – 18.933s`）**：中央立起 **《独立工作室年度损益表》（`年度总流水 ¥1,000,000` $\to$ `平台买量抽成 -¥700,000` $\to$ `算力工具订阅 -¥180,000` $\to$ `到手净剩 ¥120,000`）**，并在 `t = 14.667s` 重拍砸下朱砂片名大印 **`《超级个体》暗箱`**。
-2. **零粗糙手搓 SVG 景物隐喻，100% 挪用/二改 EP01 V4 标杆组件与 Lucide 开源图标库**：
-   - **严禁手搓简陋波浪、水泥防波堤、淘金河床、卖铲子凉亭、十条黄棍机械臂、沙漏甩鞭子或五根黑柱撞玻璃**；
-   - 全片 20 镜强制直接导入并复用预置的 `reference_ep01_opus_v4/src/film/icons.tsx`（24 枚标准 Lucide 24×24 矢量图标）与 `reference_ep01_opus_v4/src/film/ep02_kit.tsx`（移植自 EP01 V4 的 `<Phone>`、`<BrowserWindow>`、`<PaperMonograph>`、`<SealStamp>`、`<ShieldCard>`、`<AlertModalCard>`、`<ZhihuQuestionCard>`、`<Leader>`、`<StageAnchorHeader>`、`<VibeChapterAndSubtitleOverlay>`）。
-3. **非消失上下叠显双语字幕（`<VibeChapterAndSubtitleOverlay>`）**：
-   - 每镜 `拍A` 在镜头起点（`s.start`）入场后**全镜常驻到底（驻留 `5.27s – 7.57s`）**，绝不在半截抽走；
-   - `拍B` 在镜内实测底鼓重拍（`s.beatB`）平滑叠显于 `拍A` 下方并常驻至镜末（驻留 **`2.80s – 4.50s`**），让观众无论先看图表还是先看字幕，都能从容读完完整句子；
-   - 40 个中文分句全部处于 **`17–22` 字** 黄金白话区间，每句严格仅含 **1 处** `【...】` 高亮。
-4. **实测 `112.30 BPM` 帧级真鼓点锁定 + 非等长呼吸网格**：
-   - 唯一配乐母带 `public/audio/jingwei_master_132s.mp3`（与 `01_JingWei_DJ0.88x_Offset3.8sDrop_132s_Master.mp3` 同源，`132.0s` 一刀不剪，恒定音量 `0.78`）经 `44.1kHz` 带通包络实测，真实 BPM 为 **`112.30 BPM`**（每拍 `0.5343s`，每小节 `2.1371s`）；
-   - 19 处切镜点（`shotBoundsSec`）与 20 处镜内 `Beat B` 爆发点（`shotBeatBSec`）**100% 落在实测底鼓峰值帧上（误差 `<= 16ms`）**，镜头时长在 `5.27s – 7.57s` 间有机起伏，零相邻两镜等长。
+> **版本状态**：`v6.0`（正交分工版：我方锁定文学剧本、真实数据、112.30 BPM 鼓点时间轴与 Q11 净空底线；视觉构图、排版、SVG 插画与连续运镜 100% 交由 Arena 顶配前端模型 `Claude Opus 5.5 High/Max` 自由创作）
+> **全片规格**：`132.0s`（`3,960 frames @ 30fps`，`1920×1080`）｜无配音纯视觉动态图景 + 双语衬线字幕（Zero-Voiceover Beat-Driven Visual Essay）
+> **唯一锁定母带**：`public/audio/jingwei_master_132s.mp3`（实测 `112.30 BPM`，首重拍 Drop 位于 `t = 3.800s / Frame 114`）
 
 ---
 
-## 二、 画面安全区、三层文字与 Q11 净空硬门禁
+## 一、 核心创作准则（对齐 EP01 成功范式与观众直觉体验）
 
-1. **三层文字物理隔离**：
-   - **`L0` 左上角篇章路标（`x = 48px, y = 24..80px`，字号 `26px`）**：由 `<VibeChapterAndSubtitleOverlay>` 统一渲染无歧义 6 字中文篇章胶囊（`第一幕 · 全能幻觉`、`第二幕 · 科斯暗箱`、`第三幕 · 买量重税`、`第四幕 · 同质内卷`、`第五幕 · 真名破局`），废除右上角冗余进度仪表。
-   - **`L1` 舞台顶部双拍锚字栏（`y = 24..88px`，字号 `38px`，字重 `900`）**：由 `<StageAnchorHeader>` 统一渲染，每镜 `拍A` 与 `拍B` 锚字均严格控制在 **`4–8` 个纯中文汉字 + 核心数字**（零英文单词、零 `->`/`→` 箭头）；当 `t >= beatB` 时，`拍A` 锚字保持 `opacity = 0.94` 同屏常亮，与右侧 `拍B` 锚字形成鲜明对照。
-   - **`L2` 底部无边框双拍叠显字幕带（`y = 860..1080px`）**：由 `<VibeChapterAndSubtitleOverlay>` 统一渲染，第一行 `拍A`（`40px Noto Serif SC`）全镜常驻，第二行 `拍B`（`43px Noto Serif SC`）在 `beatB` 叠显常驻，第三行英文副标（`22px EB Garamond Italic`）。
-2. **主舞台几何安全框（`x = 80..1840px, y = 110..845px`）与字号底线（`>= 24px`）**：
-   - 所有图表、卡片、档案纸、印章必须严格布局在 `y = 110..845px` 舞台安全区内，严禁侵入顶部 `y < 100px` 导航栏或底部 `y > 855px` 字幕带；
-   - 画布上任何 `<text>` 节点字号必须 **`>= 24px`**，严禁出现分镜编号（`S01`）、导演注记或 `<24px` 装饰小字。
+1. **正交职责边界（Literature vs. Frontend Visual Direction）**：
+   - 本文档只锁定**五幕二十镜文学台词、真实案例数据、帧级节拍网格（`SHOT_BOUNDS`）、20 处 `+1f` 物理拟音（`CUES`）、5 色材质令牌（`PAL`）与画面净空红线（Q11）**；
+   - **不预置死板的 UI 组件框或像素坐标枷锁**——请像构建首期《信息茧房》（参考 `/tmp/ep02-promo/reference_ep01_opus_v4/src/film/ActOne.tsx..ActSix.tsx`）一样，充分发挥顶配前端与视觉导演能力，自由设计每一幕的视觉舞台、信息图表、档案手稿与平滑转场。
+2. **一幕一连续视觉舞台（Act-Level Continuous Stage — 彻底解决「观众没看明白就切下一幕」）**：
+   - 严禁做成 20 张每 6 秒全屏刷新一次的孤立 PPT 或雷同的 `<BrowserWindow>` 弹窗堆砌！
+   - 全片共五幕（`ActOne.tsx`–`ActFive.tsx`），**每一幕内部（`3–6` 个镜头，持续 `18.7s–39.0s`）必须保持同一个连续演进的视觉舞台（`Seam & Carry`）**：
+     - 同一幕内第 1 镜建立核心视觉主体（如一张工作台账本、一座公司护盾、一条 `¥100` 分账管道、一面 `60分 vs 95分` 分水岭、一幅三条生存铁律蓝图）；
+     - 第 2、3 镜在**同一个舞台上**对该主体做局部展开、对比翻转或镜头推拉，绝不在同一幕内部突然清空画面换一套毫无关联的排版。
+   - **单镜视觉极简（1 秒扫视法则）**：每镜画面上半场只突出 **1 个视觉焦点**与 **`L1A / L1B` 两个核心中文短语+数字**，禁止在画布里塞入密密麻麻的多行小字列表。
+3. **底部双拍叠显不消失字幕（Non-Vanishing Stacked Subtitles）**：
+   - 每一镜的 `l2[0]`（拍 A 中文台词，`17–22` 字）在 `t = s.start` 入场后**保持全镜常驻（`5.27s–7.57s`）**，在 `t >= s.beatB` 时切勿抽走或隐藏；
+   - `l2[1]`（拍 B 中文台词，`17–22` 字）在 `t = s.beatB` 重拍鼓点处平滑叠显于 `l2[0]` 正下方，并常驻至本镜结束（`2.80s–4.50s`），下方配对应的英文斜体副标（`en[0]` / `en[1]`）。
+   - 台词中用 `【...】` 标记的核心词渲染为高对比度暖金/朱砂色强调。
+4. **画面净空门禁（Q11 Clean-Canvas Gate）**：
+   - **首帧零淡入 + 双脉冲黄金前 4 秒**：`Frame 0` (`t = 0.00s`) 满对比度直接呈现 `S01` 拍 A（严禁黑屏缓入），`t = 0.43s` 触发第一重视觉脉冲，`t = 3.800s` (`Frame 114`) 重拍 Drop 触发第二重反差翻转；
+   - **字号硬底线**：画布内所有 SVG `<text>` 字号必须 **`>= 24px`**，严禁渲染任何分镜编号（`S01`）、内部注记、英文术语（英文仅出现在底部字幕区）或重叠文字。
 
 ---
 
-## 三、 五幕二十镜完整规格总表 (`S01`–`S20` · `132.0s` / `3,960 Frames @ 30fps`)
+## 二、 五幕二十镜连续叙事导览（Act I – Act V）
 
-| 镜号 (`ID`) | 时间窗 & 帧区间 (`30fps`) | 实测重拍 (`beatB` / 留白) | 物理媒介 & `L0` 篇章 | 屏上 `L1` 锚字 (`l1A` / `l1B`) | 底部 `L2` 叠显白话字幕 (`l2[0]` 全镜常驻 + `l2[1]` 重拍叠显) & 英文副标 (`en`) | 画面具象构成（强制复用 `ep02_kit.tsx` 与 `icons.tsx` 组件） & 跨镜衔接 (`Seam Carry`) | 点睛拟音 (`+1f` Foley) |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **`S01`** | `0.000s – 6.600s`<br>(`0 – 198f`)<br>`6.60s` | 首脉冲：`0.43s`<br>Drop 拍B：**`3.800s`** (`114f`)<br>留白：`2.80s` | `walnut`<br>第一幕 · 全能幻觉 | `l1A`：`一人公司 $10亿`<br>`l1B`：`14万星 · 倒贴电费` | **拍A**：一句“十亿【一人公司】”，点燃了全网的造富梦；<br>**拍B**：可【14万星】开源作者，收入却不够交服务器电费。<br>*En: A viral promise of a billion-dollar one-person company ignited the Super-Individual craze; yet a 140k-star solo creator cannot even pay his own server electricity bill.* | • `t=0.00s` 首帧满对比直出：左半区 `<BrowserWindow>` 呈现 **奥特曼热搜引语卡**（`“史上第一家 10 亿美元的一人公司即将诞生”`），`t=0.43s` 底部 4 枚 Lucide 徽章（`<CodeIcon> 写代码`、`<PaletteIcon> 做设计`、`<VideoIcon> 剪视频`、`<HeadsetIcon> 搞客服`）依次鎏金点亮；<br>• `t=3.80s` 重拍 Drop：右半区 `<BrowserWindow>` 爆出 **凌晨 `03:00` 开发者后台**——`<StarIcon> 14万星开源项目` 铭牌下，`<AlertModalCard>` 显示 **`本月服务器欠费 -¥23,800（收入不够交电费）`** 与 **`99+ 待处理报错工单`**。<br>• **衔接**：右侧欠费视窗平滑展开为 `S02` 创作者数据中心。 | `whoosh_deep (0.46s)`<br>`slam_impact (3.83s)` |
-| **`S02`** | `6.600s – 11.867s`<br>(`198 – 356f`)<br>`5.27s` | 拍B：**`8.700s`** (`261f`)<br>留白：`3.17s` | `walnut`<br>第一幕 · 全能幻觉 | `l1A`：`两周 520 条视频`<br>`l1B`：`0 真实转化` | **拍A**：有人用AI两周狂发【520条】视频，播放看着很热闹；<br>**拍B**：可打开收款后台一看，真实商业转化却是【零进账】。<br>*En: One creator used AI to pump out 520 videos in two weeks with lively view counts; yet the merchant ledger shows a glaring zero in real commercial revenue.* | • 左面板 `<BrowserWindow>` 为 **创作者数据中心**：`<VideoIcon>` 批量计数器在 14 天周期内跳至 **`已发布 520 条视频`**；<br>• `t=8.70s` 拍B重拍：右面板 `<BrowserWindow>` 弹出 **商户收款结算单**，转化漏斗直落底部显示朱砂红 **`¥0.00（0 真实转化）`**。<br>• **衔接**：右侧结算单向上翻折展开为 `S03` 年度损益表。 | `lock_click (8.73s)` |
-| **`S03`** | `11.867s – 18.933s`<br>(`356 – 568f`)<br>`7.07s` | 拍B：**`14.667s`** (`440f`)<br>留白：`4.27s` | `walnut`<br>第一幕 · 全能幻觉 | `l1A`：`百万流水 · 净剩 12 万`<br>`l1B`：`《超级个体》暗箱` | **拍A**：明明不用给员工发工资，百万流水怎么只剩【12万】？<br>**拍B**：当我们拆开【超级个体】账本，才看清那座隐形暗箱。<br>*En: With zero employee payroll, how does a million in revenue shrink to just 120k? Opening the real ledger of the Super-Individual reveals an invisible black box.* | • 舞台中央 `<BrowserWindow>` 展开 **《独立工作室年度损益瀑布表》**：首行鎏金 `年度总流水 ¥1,000,000` $\to$ 红柱扣除 `平台买量抽成 -¥700,000` $\to$ 红柱扣除 `算力工具订阅 -¥180,000` $\to$ 底行定格 **`到手净剩 ¥120,000`**；<br>• `t=14.67s` 拍B重拍：右侧落下 `<SealStamp>` 朱砂大印 **`《超级个体》暗箱`**。<br>• **衔接**：损益表翻转铺展为 `S04` 的暖白学术档案纸。 | `slam_impact (14.70s)` |
-| **`S04`** | `18.933s – 25.333s`<br>(`568 – 760f`)<br>`6.40s` | 拍B：**`21.600s`** (`648f`)<br>留白：`3.73s` | `paper`<br>第二幕 · 科斯暗箱 | `l1A`：`1937 · 科斯《企业的性质》`<br>`l1B`：`公司挡下 90% 摩擦` | **拍A**：为什么世界需要公司？诺奖得主【科斯】早就给过答案：<br>**拍B**：公司像五面盾牌，替你挡下【90%】的法务、报税与杂事。<br>*En: Why do firms exist? Nobel laureate Ronald Coase did the math back in 1937: a company acts as a five-layer shield, absorbing 90% of legal, tax, and channel friction.* | • 左半部 `<PaperMonograph>` 展示 **1937 年罗纳德·科斯《企业的性质》诺奖档案卡**，荧光笔涂抹高亮核心句并盖下 `<SealStamp>` **`「交易成本」`**；<br>• `t=21.60s` 拍B重拍：右半部整齐立起 5 张 `<ShieldCard>`（`法务合规 · 财税报销 · 渠道商务 · 运维兜底 · 品牌背书`），将外部 **`90% 市场摩擦`** 牢牢拦截在上方，底部研发工位保持 `100% 专注`。<br>• **衔接**：5 张 `<ShieldCard>` 切换为熄灭态，直接暴露出 `S05` 的单人工位。 | `paper_crumple (18.97s)` |
-| **`S05`** | `25.333s – 31.633s`<br>(`760 – 949f`)<br>`6.30s` | 拍B：**`27.867s`** (`836f`)<br>留白：`3.77s` | `paper`<br>第二幕 · 科斯暗箱 | `l1A`：`撤掉公司护盾`<br>`l1B`：`杂务吞噬 82% 精力` | **拍A**：一旦辞职撤掉公司外壳，AI确实省下了【写代码】时间；<br>**拍B**：可发票、合同与售后纠纷，瞬间吞噬了你【82%】的精力。<br>*En: Once you leave the firm's shell, AI certainly saves you coding hours; yet tax filings, contracts, and refund disputes instantly swallow 82% of your energy.* | • 舞台左右对称排布 **10 张 `<AlertModalCard>` 真实杂务告警卡**（左 5 张：`税务红冲异常`、`合同违约催告函`、`渠道买量封户`、`恶意仅退款申诉`、`商标侵权投诉`；右 5 张：`发票抬头重开`、`服务器攻击告警`、`海外支付冻结`、`客户催改需求`、`社保公积金断缴`）围剿中央单人工位；<br>• `t=27.87s` 拍B重拍：底部工时分配条被朱砂红吞没——**`杂务内耗 82%`** 对 **`核心研发 18%`**。<br>• **衔接**：底部工时条向右拉伸为 `S06` 双曲线剪刀差图表的横轴。 | `lock_click (27.90s)` |
-| **`S06`** | `31.633s – 38.033s`<br>(`949 – 1141f`)<br>`6.40s` | 拍B：**`34.367s`** (`1031f`)<br>留白：`3.67s` | `obsidian`<br>第二幕 · 科斯暗箱 | `l1A`：`供给暴涨 100 倍`<br>`l1B`：`获客成本飙升 10 倍` | **拍A**：所有人都能用AI造出产品，市场供给暴涨【100倍】；<br>**拍B**：可买单客户没变多，抢流量的成本反倒贵了【10倍】。<br>*En: When anyone can ship an AI product overnight, market supply explodes 100-fold; yet buyer attention stays flat, driving customer acquisition costs up 10-fold.* | • 黑曜石精密坐标系（复用 EP01 `ActFour.tsx` `Chart` 引擎）：鎏金曲线（`新上架产品供给量`）陡峭拉升至 **`+100 倍`**，底部 `买单客户注意力基线` 保持水平；<br>• `t=34.37s` 拍B重拍：朱砂红实测曲线（`单客获客成本`）向上冲破顶框直达 **`10 倍`**，`<SealStamp>` 烙下 **`剪刀差破顶`**。<br>• **衔接**：图表外框翻转铺平为 `S07` 的 2026《管理心理学杂志》档案卡。 | `whoosh_deep (34.40s)` |
-| **`S07`** | `38.033s – 44.933s`<br>(`1141 – 1348f`)<br>`6.90s` | 拍B：**`40.667s`** (`1220f`)<br>留白：`4.27s` | `paper`<br>第二幕 · 科斯暗箱 | `l1A`：`2026 · 6,505 人追踪实证`<br>`l1B`：`绝对自由 = 幸福？` | **拍A**：不用坐班总该更轻松吧？【2026年】一项心理学研究，<br>**拍B**：连续半年追踪了【6505名】高自由度的独立工作者。<br>*En: Surely no commute and no boss means less stress? A landmark 2026 psychology study tracked 6,505 high-autonomy solo workers across six full months.* | • 左半部 `<PaperMonograph>` 呈现 **2026《管理心理学杂志》(`N = 6,505`) 实证研究卡** 与受试者样本点阵（复用 EP01 `ActFour.tsx` `Sample` 点阵）；<br>• `t=40.67s` 拍B重拍：右半部立起五维高自主权指标条（`时间自由 · 地点自由 · 决策自主 · 技能精进 · 全权负责`），荧光笔高亮核心追问：**`半年后，他们更幸福吗？`**<br>• **衔接**：右侧五维指标条卷合为 `S08` 的双钟盘热力图。 | `None` |
-| **`S08`** | `44.933s – 51.100s`<br>(`1348 – 1533f`)<br>`6.17s` | 拍B：**`47.433s`** (`1423f`)<br>留白：`3.67s` | `obsidian`<br>第二幕 · 科斯暗箱 | `l1A`：`24 小时全天候待命`<br>`l1B`：`自己成了最狠监工` | **拍A**：以前下班能合上电脑，单干后每分休息都像在【亏钱】；<br>**拍B**：明明没有老板盯着，你却把自己逼成了【全天候】监工。<br>*En: In an office you could close your laptop at six; solo, every minute of rest feels like losing money; with no boss watching, you turn into your own ruthless 24/7 taskmaster.* | • 左右双钟盘并排对比（复用 EP01 `ActThree.tsx` `Dial` 环形表盘引擎）：左盘为 `上班族 09:00–18:00`（翠绿工作扇区 + 18:00 后静谧深灰休息区）；<br>• `t=47.43s` 拍B重拍：右盘 `独立开发者 00:00–24:00` 全部 24 小时扇区瞬间染成朱砂红过载态，周围弹出 3 张 `<AlertModalCard>`（`23:30 客户催改`、`02:15 流量断崖`、`05:00 接口报错`），中心读数锁定 **`周工时 68 小时`**。<br>• **衔接**：右盘指针拉直展开为 `S09` 的 6 个月倦怠劈叉折线图。 | `lock_click (47.46s)` |
-| **`S09`** | `51.100s – 57.933s`<br>(`1533 – 1738f`)<br>`6.83s` | 拍B：**`53.900s`** (`1617f`)<br>留白：`4.03s` | `paper`<br>第二幕 · 科斯暗箱 | `l1A`：`认知倦怠暴涨 +42%`<br>`l1B`：`自主权悖论` | **拍A**：数据揭开了残酷的【自主权悖论】：自由度最高的人，<br>**拍B**：半年后的情绪耗竭与倦怠，反而比预期暴涨了【42%】。<br>*En: The data exposed a brutal Autonomy Paradox: those with the highest freedom suffered a 42% surge in emotional exhaustion and cognitive burnout after six months.* | • 暖白档案纸上的 `第 1 个月 → 第 6 个月` 实测双折线图（复用 EP01 `ActFour.tsx` `Chart`）：下方绿色虚线为 `预期轻松度`，上方朱砂红实线（`情绪耗竭与认知倦怠`）在 `t=53.90s` 拍B重拍陡峭冲顶至 **`+42%`**，并砸下 `<SealStamp>` **`「自主权悖论」`**。<br>• **衔接**：`+42%` 红色折线向右延伸化作 `S10` 的 `¥100` 营收桑基分流管道。 | `slam_impact (53.93s)` |
-| **`S10`** | `57.933s – 63.833s`<br>(`1738 – 1915f`)<br>`5.90s` | 拍B：**`60.500s`** (`1815f`)<br>留白：`3.33s` | `obsidian`<br>第三幕 · 买量重税 | `l1A`：`平台买量税 70%`<br>`l1B`：`¥100 营收只剩 ¥12` | **拍A**：省下来的员工工资去哪了？全交了平台的【买量过路费】。<br>**拍B**：每赚一百块，【70%】被渠道抽走，扣完算力只剩十二块。<br>*En: Where did the saved payroll go? Straight into platform traffic tolls: out of every 100 yuan earned, 70% goes to ad channels and 18% to compute, leaving 12.* | • 精密 **《¥100 独立营收桑基分流图》**：左侧鎏金总入口 `客户付款 ¥100`；<br>• `t=60.50s` 拍B重拍：主干现金流被第一条宽阔的朱砂红支流 **`平台投流与渠道抽成 -¥70 (70%)`** 截走大半，又被第二条支流 **`算力与工具订阅 -¥18 (18%)`** 分走一截，最右侧开发者账户仅接住纤细的 **`净剩 ¥12 (12%)`**。<br>• **衔接**：右侧 `¥12` 净利方格阵列化展开为 `S11` 的 `10 × 7` 项目矩阵。 | `coin_clatter (60.53s)` |
-| **`S11`** | `63.833s – 70.733s`<br>(`1915 – 2122f`)<br>`6.90s` | 拍B：**`66.467s`** (`1994f`)<br>留白：`4.27s` | `obsidian`<br>第三幕 · 买量重税 | `l1A`：`70 个项目 · 66 个归零`<br>`l1B`：`大神命中率仅 5.7%` | **拍A**：连全球头号独立开发者，十年间先后做了【70个】项目，<br>**拍B**：也有【66个】惨淡归零，真正跑通盈利的只有区区四个。<br>*En: Even the world's most profitable solo founder, Pieter Levels, shipped 70 projects; 66 of them failed outright, and only 4 ever became profitable hits (5.7%).* | • 左侧 `<BrowserWindow>` 为 **全球头号独立开发者实证档案卡**（`十年累计上线 70 个产品`）；右侧为 **`10 × 7 = 70` 格项目矩阵**（复用 EP01 `ActThree.tsx` `Grid` 矩阵引擎）；<br>• `t=66.47s` 拍B重拍：前 **`66 个项目格`** 瞬间熄灭并打上朱砂红叉号 `✕`（`66 个归零淘汰`），仅右下角 **4 格** 绽放鎏金光芒并点亮 `<StarIcon>`，底部铭牌锁定 **`真实命中率 5.7%`**。<br>• **衔接**：70 格矩阵向右收拢堆叠为 `S12` 的月收入分布条形图。 | `lock_click (66.50s)` |
-| **`S12`** | `70.733s – 76.600s`<br>(`2122 – 2298f`)<br>`5.87s` | 拍B：**`73.300s`** (`2199f`)<br>留白：`3.30s` | `obsidian`<br>第三幕 · 买量重税 | `l1A`：`83% 月入不足 $500`<br>`l1B`：`卖铲课狂收 ¥1,999` | **拍A**：社区统计显示，【83%】的独立开发者月入不足五百刀；<br>**拍B**：真正稳赚不赔的，是收【1999元】教人单干的卖铲课。<br>*En: Community surveys show 83% of indie makers earn under $500 a month; the only guaranteed fortune is charging ¥1,999 to teach the Super-Individual dream.* | • 左面板 `<BrowserWindow>` 为 **独立开发者真实月收入分布柱图**（复用 EP01 `ActTwo.tsx` `Bars` 引擎）：第一根朱砂红高柱占去 **`83%（月入不足 $500）`**，其余高收入柱极矮；<br>• `t=73.30s` 拍B重拍：右面板 `<BrowserWindow>` 弹出金光闪闪的 **《超级个体暴富训练营 · ¥1,999/人》收款爆单卡**（配 `<GraduationCapIcon>` 与 `<CoinsIcon>`，显示 **`已售 5,000+ 份 · 稳赚 ¥1,000 万`**）。<br>• **衔接**：左侧收入柱旋转立起为 `S13` 的 `0–100 分` 能力价值刻度墙。 | `coin_clatter (73.33s)` |
-| **`S13`** | `76.600s – 83.067s`<br>(`2298 – 2492f`)<br>`6.47s` | 拍B：**`79.267s`** (`2378f`)<br>留白：`3.80s` | `obsidian`<br>第四幕 · 同质内卷 | `l1A`：`机器秒达 60 分及格线`<br>`l1B`：`跨不过 95 分护城河` | **拍A**：为什么工具越强越难赚？只因AI帮你跨过【60分】线；<br>**拍B**：可市场真正稀缺的，恰恰是机器跨不过的【95分】壁垒。<br>*En: Why is money harder to make as tools improve? AI only gets everyone to a 60-point pass; what commands a premium is the 95-point moat of deep craft and edge-case mastery.* | • 舞台中央展开 **《商业交付价值刻度图（0–100 分）》**：`基础代码 · 模板设计 · 洗稿文案 · 自动剪辑 · 通用翻译` 5 根进度条在 0.8s 内齐刷刷冲到 **`60 分及格线`**；<br>• `t=79.27s` 拍B重拍：在 `60 分` 至 **`95 分专业壁垒`**（`极端边界排障 · 复杂系统架构 · 行业深水区品味 · 法律责任兜底`）之间升起一道厚重的拉丝黄铜高墙（配 `<LockVectorIcon>`），将 5 根 60 分进度条死死挡在门外。<br>• **衔接**：5 根 60 分进度条裂变为 `S14` 外包竞价大厅里的 500 份同质投标卡。 | `slam_impact (79.30s)` |
-| **`S14`** | `83.067s – 90.033s`<br>(`2492 – 2701f`)<br>`6.97s` | 拍B：**`85.700s`** (`2571f`)<br>留白：`4.33s` | `obsidian`<br>第四幕 · 同质内卷 | `l1A`：`500 份 60 分同质方案`<br>`l1B`：`报价 ¥5,000 砸到 ¥99` | **拍A**：当几百万人握着一模一样的【60分】方案冲进市场，<br>**拍B**：结局只能是惨烈压价，把五千块单子生生卷成【99块】。<br>*En: When millions flood the market holding identical 60-point AI outputs, the inevitable result is a brutal bidding war crashing ¥5,000 jobs down to ¥99.* | • 左面板 `<BrowserWindow>` 为 **外包需求竞价大厅**：同一订单下涌入 **`500 份 60 分同质投标方案`**；<br>• `t=85.70s` 拍B重拍：右面板 **《项目单价断崖阶梯图》** 沿阶梯暴跌——`¥5,000 → ¥800 → ¥99（源码包改）`，并盖下 `<SealStamp>` **`「零议价权」`**。<br>• **衔接**：竞价卡片翻转落于 `S15` 的暖白历史档案对照表上。 | `glass_shatter (85.73s)` |
-| **`S15`** | `90.033s – 96.233s`<br>(`2701 – 2887f`)<br>`6.20s` | 拍B：**`92.800s`** (`2784f`)<br>留白：`3.43s` | `paper`<br>第四幕 · 同质内卷 | `l1A`：`1780 织工 · 2026 零工`<br>`l1B`：`自备算力的计件工` | **拍A**：这幕场景并不新鲜：两百年前自备织机的【家庭织工】，<br>**拍B**：和今天自费买算力的你一样，都是风险自担的【计件工】。<br>*En: History rhymes: 18th-century cottage weavers who bought their own looms mirror today's solo creators paying for GPU subscriptions to do piecework at their own risk.* | • 左右双张 `<PaperMonograph>` 历史档案对照表：<br>  - **左卡（`1780 · 英国包买商家庭织工`）**：`自掏腰包买织布机 · 在家按件计酬 · 独自承担断单与跌价`；<br>  - **右卡（`2026 · 算法平台超级零工`）**：`自掏腰包买显卡与算力会员 · 在家按流量计酬 · 独自承担封号与断流`；<br>• `t=92.80s` 拍B重拍：中央盖下 `<SealStamp>` **`「生产资料自备 · 风险自担」`**。<br>• **衔接**：双栏档案纸向中心卷合为 `S16` 的三道同心死锁圆环。 | `paper_crumple (92.83s)` |
-| **`S16`** | `96.233s – 103.500s`<br>(`2887 – 3105f`)<br>`7.27s` | 拍B：**`99.333s`** (`2980f`)<br>留白：`4.17s` | `obsidian`<br>第五幕 · 真名破局 | `l1A`：`三重暗箱合拢`<br>`l1B`：`十倍市场摩擦` | **拍A**：买量重税、全天待命与同质内卷，【三道铁环】死死扣拢——<br>**拍B**：盲目脱下公司防弹衣，只会让你撞上【十倍的市场摩擦】。<br>*En: 70% traffic tax, 24/7 burnout, and 60-point commodity wars lock together; stripping off the firm's armor blindly leaves you facing tenfold market friction barehanded.* | • 复用 EP01 `ActFive.tsx` `Rings` 三重同心锁引擎：三大机制化作三道精密咬合的黄铜与朱砂同心圆环，右侧由 3 条 `<Leader>` 引线清晰标注：<br>  - **外环**：`70% 平台买量重税`<br>  - **中环**：`24 小时全天待命（+42% 倦怠）`<br>  - **内环**：`60 分同质化压价内卷`<br>• `t=99.33s` 拍B重拍：三道圆环卡扣锁死，核心亮出 **`十倍市场摩擦`**。<br>• **衔接**：三道圆环向背景虚化，中央浮现 `S17` 的知乎 4,172 赞提问卡。 | `lock_click (99.36s)` |
-| **`S17`** | `103.500s – 110.167s`<br>(`3105 – 3305f`)<br>`6.67s` | 拍B：**`106.133s`** (`3184f`)<br>留白：`4.03s` | `obsidian`<br>第五幕 · 真名破局 | `l1A`：`4,172 赞同 · 真实追问`<br>`l1B`：`看清幻觉 · 真正破局` | **拍A**：知乎【4172赞】问：“为什么每天干十四小时却更焦虑？”<br>**拍B**：只有戳破“一人全能”的泡沫，才能找到真正的【破局路】。<br>*En: A 4,172-upvote question asks: 'Why do I work 14 hours a day and feel more anxious than at work?' Piercing the omnipotence bubble is how we find the real path forward.* | • 直接调用 `<ZhihuQuestionCard>`（移植自 EP01 `ActFive.tsx` `CardFace` + `Underwater` 深海波纹背景）：展示 `@独立开发观察` 提问 **`“为什么满屏都在鼓吹一人公司，我每天工作 14 小时，却比上班时还要焦虑？”`** 与蓝色 **`▲ 4,172 赞同`** 徽章；<br>• `t=106.13s` 拍B重拍：卡片底部亮起温暖鎏金批注框 **`看清幻觉，是破局的第一步。`**<br>• **衔接**：提问卡沿 Y 轴 180° 翻转（复用 EP01 `ActSix.tsx` `Honeypot` 翻转动画）进入 `S18` 破局第一招工作台。 | `singing_bowl_strike (106.16s)` |
-| **`S18`** | `110.167s – 117.733s`<br>(`3305 – 3532f`)<br>`7.57s` | 拍B：**`113.500s`** (`3405f`)<br>留白：`4.23s` | `dawn`<br>第五幕 · 真名破局 | `l1A`：`破局 ①：砍掉 60 分杂活`<br>`l1B`：`90% 精力死磕 95 分` | **拍A**：第一招：放弃全能执念，用【一成精力】指挥AI干杂活；<br>**拍B**：把剩下九成心血，死磕在机器替代不了的【95分绝活】。<br>*En: Rule 1: Drop the jack-of-all-trades obsession; spend 10% of your energy directing AI on chores, and pour 90% into mastering one 95-point craft no machine can replicate.* | • 暖金晨曦画布（`dawn` 媒介）：左面板 `<BrowserWindow>` 将 `60 分基础代码 · 模板排版 · 机械报表` 一键折叠进 **`10% 精力 · 自动托管盒`**；<br>• `t=113.50s` 拍B重拍：右面板 **`90% 精力主能量槽`** 灌满鎏金光芒，冲破 60 分线直抵 **`95 分独门绝活（深水区认知 · 极端排障 · 审美决断）`**。<br>• **衔接**：右侧 95 分能量槽展开为 `S19` 的 14 天最小样品收款验真表。 | `whoosh_deep (113.53s)` |
-| **`S19`** | `117.733s – 124.700s`<br>(`3532 – 3741f`)<br>`6.97s` | 拍B：**`120.867s`** (`3626f`)<br>留白：`3.83s` | `dawn`<br>第五幕 · 真名破局 | `l1A`：`破局 ②：14 天最小验证`<br>`l1B`：`验证复购再单干` | **拍A**：第二招：别冲动裸辞，先用【14天】做最小样品去收钱；<br>**拍B**：只有陌生人愿意掏【真金白银】复购，才算跑通商业模型。<br>*En: Rule 2: Never quit blindly; take 14 days to ship a minimum viable sample and charge for it; only strangers paying real money repeatedly prove your business model works.* | • 复用 EP01 `ActSix.tsx` 三步实验卡架构：上方排列三步卡片（`01 最小可用样品` $\to$ `02 陌生人真实首单` $\to$ `03 副业收入覆盖生活费`）；<br>• `t=120.87s` 拍B重拍：下方弹出 `<BrowserWindow>` **真实收款校验卡**（配 `<CheckCircleIcon>` 与 `<CreditCardIcon>`，显示 **`+¥299.00 · 陌生客户第 3 次复购到账`**）。<br>• **衔接**：收款校验卡平滑推回 `S20` 的独立开发者胡桃木书桌。 | `coin_clatter (120.90s)` |
-| **`S20`** | `124.700s – 132.000s`<br>(`3741 – 3960f`)<br>`7.30s` | 拍B：**`127.500s`** (`3825f`)<br>留白：`4.50s` | `walnut`<br>第五幕 · 真名破局 | `l1A`：`破局 ③：以真名立信用`<br>`l1B`：`真名 · 终极护城河` | **拍A**：第三招：用你的【真名与专业信誉】兜底，积累长期信任。<br>**拍B**：AI只能放大你的规模，唯有【真名信誉】才是最深的护城河。<br>*En: Rule 3: Stake your real name and professional reputation on every delivery. AI can only amplify your scale; your real name is the ultimate moat.* | • 镜头回到 `S01` 的胡桃木桌面（首尾呼应）：开场的报错弹窗与造富神话卡全部合拢消失，桌面中央展开一张温润的 `<PaperMonograph>` **《长期专业信誉契约》**（列明 `真实姓名署名 · 极端问题兜底 · 长期复利声誉`）；<br>• `t=127.50s` 拍B重拍：`<SealStamp>` 稳稳盖下朱砂红方印 **`「真名兜底」`**，配乐在温暖和弦中静置定格 `4.50s` 收束。 | `slam_impact (127.53s)` |
+### Act I · 全能幻觉 (`ActOne.tsx`, `S01`–`S03`, `0.000s – 18.933s`, Medium: `walnut`)
+- **Act-Level Continuous Stage Concept**: The Solo Creator's Desk & Ledger — contrasting the viral "$1B One-Person Company" dream against the harsh financial reality on the very same desk.
+  - **`S01` (`0.000s – 6.600s`, `beatB = 3.800s` Heavy Bass Drop)**:
+    - **Beat A (`0.000s`)**: Instant high-contrast opening (zero fade-in at Frame 0). Show the viral Silicon Valley prophecy (`“史上第一家 10 亿美元一人公司即将诞生”`) with 4 gleaming AI capability badges lighting up at `t = 0.43s` (`写代码 · 做设计 · 剪视频 · 搞客服`). Top-stage `L1A`: `一人公司 $10亿`.
+    - **Beat B (`3.800s` Drop)**: Right on the `3.800s` bass Drop, the scene fractures/flips to reveal the solo developer's `03:00 AM` backend: a viral open-source repo (`140,000 星`) next to a glaring red server & API overdraft bill (`-¥23,800 · 收入不够交电费`). Top-stage `L1B`: `14万星 · 欠费 2.3万`.
+  - **`S02` (`6.600s – 11.867s`, `beatB = 8.700s`)**:
+    - **Beat A (`6.600s`)**: Smoothly transition on the same desk to the creator's content matrix: `14 天` pumping out `520 条` AI videos with rising view bars (`L1A: 两周狂发 520 条`).
+    - **Beat B (`8.700s`)**: Flip open the merchant settlement ledger beside it: `曝光 100% -> 真实到账 ¥0.00` (`L1B: 真实到账 ¥0.00`).
+  - **`S03` (`11.867s – 18.933s`, `beatB = 14.667s`)**:
+    - **Beat A (`11.867s`)**: The ledger expands into the Solo Studio Annual P&L Statement: `年度总流水 +¥1,000,000`, yet after platform traffic tolls (`-¥700,000`) and compute/SaaS bills (`-¥180,000`), net take-home is only `¥120,000` (`12%`) (`L1A: 100万流水只剩 12万`).
+    - **Beat B (`14.667s`)**: Highlight the vanished `¥880,000` gap and stamp the episode's central question (`L1B: 消失的 88万去哪了` / `《超级个体》暗箱`).
+
+### Act II · 隐形杂务 (`ActTwo.tsx`, `S04`–`S09`, `18.933s – 57.933s`, Mediums: `paper` & `obsidian`)
+- **Act-Level Continuous Stage Concept**: Sub-stage A (`S04`–`S06`) shows Ronald Coase's Firm Shield vs. Market Friction; Sub-stage B (`S07`–`S09`) shows the `N = 6,505` 6-month longitudinal study on 24/7 self-supervision and `+42%` cognitive burnout.
+  - **`S04` (`18.933s – 25.333s`, `beatB = 21.600s`, `paper`)**:
+    - **Beat A (`18.933s`)**: Archival 1937 monograph card (`科斯《企业的性质》`) — why do firms exist when employees feel the company takes a huge cut? (`L1A: 为什么世界需要公司`).
+    - **Beat B (`21.600s`)**: Reveal the 5 protective shields of a company (`法务合同 · 税务报账 · 渠道采买 · 客诉兜底 · 行政运维`) that quietly block `90%` of external friction for you (`L1B: 替你挡下 90% 杂事`).
+  - **`S05` (`25.333s – 31.633s`, `beatB = 27.867s`, `paper`)**:
+    - **Beat A (`25.333s`)**: On the same stage, dissolve the company shield: once solo, AI compresses core coding/design time down to `18%` (`L1A: AI 省下写代码时间`).
+    - **Beat B (`27.867s`)**: The unshielded external chores (`催尾款 · 开发票 · 改合同 · 扯皮售后`) crash in and devour `82%` of the solo worker's energy (`L1B: 催款报税吃掉 82%`).
+  - **`S06` (`31.633s – 38.033s`, `beatB = 34.367s`, `obsidian`)**:
+    - **Beat A (`31.633s`)**: Pull out to the market supply-demand scissors chart: AI lets anyone ship a product overnight, sending supply rocketing `100 倍` (`L1A: 同类竞品暴涨 100倍`).
+    - **Beat B (`34.367s`)**: Customer attention remains flat (`1x`), so the cost of finding a paying customer (CAC) spikes `10 倍` (`L1B: 找客户成本贵 10倍`).
+  - **`S07` (`38.033s – 44.933s`, `beatB = 40.667s`, `paper`)**:
+    - **Beat A (`38.033s`)**: Open the `2026` *Journal of Managerial Psychology* study examining whether working without a boss actually brings happiness (`L1A: 不用坐班会更幸福吗`).
+    - **Beat B (`40.667s`)**: Reveal the `N = 6,505` cohort of high-autonomy solo workers tracked across `6 个月` (`L1B: 6,505 人半年追踪`).
+  - **`S08` (`44.933s – 51.100s`, `beatB = 47.433s`, `obsidian`)**:
+    - **Beat A (`44.933s`)**: Side-by-side daily clock comparison — left clock (`上班族`): `09:00–18:00` work, closing the laptop at `18:00` for guilt-free rest (`L1A: 上班 18:00 到点下班`).
+    - **Beat B (`47.433s`)**: Right clock (`单干者`): all `24 小时` lit in anxious crimson (`凌晨回消息 · 周末改 Bug`), because every hour off feels like losing money (`L1B: 单干 24 小时不敢停`).
+  - **`S09` (`51.100s – 57.933s`, `beatB = 53.900s`, `paper`)**:
+    - **Beat A (`51.100s`)**: Plot the 6-month trajectory: the expected "freedom = happiness" baseline stays flat (`L1A: 越自由反而越焦虑`).
+    - **Beat B (`53.900s` Chorus Peak)**: The measured emotional exhaustion & insomnia curve surges `+42%`, stamping the `自主权悖论` (`L1B: 情绪耗竭暴涨 +42%`).
+
+### Act III · 买量重税 (`ActThree.tsx`, `S10`–`S12`, `57.933s – 76.600s`, Medium: `obsidian`)
+- **Act-Level Continuous Stage Concept**: Following the money & the survivor-bias funnel — where the `¥100` revenue actually goes, Pieter Levels' `70-project` matrix (`66` dead vs `4` hits), and the `83% < $500/mo` indie reality vs `¥1,999` course-sellers.
+  - **`S10` (`57.933s – 63.833s`, `beatB = 60.500s`)**:
+    - **Beat A (`57.933s`)**: Precision cashflow breakdown of every `¥100` earned: the largest stream (`-¥70` / `70%`) is siphoned off by platform traffic tolls & ad bidding (`L1A: 平台投流抽走 ¥70`).
+    - **Beat B (`60.500s`)**: A second stream (`-¥18` / `18%`) drains into AI API compute & SaaS subscriptions, leaving a thin `¥12` (`12%`) trickle for the creator (`L1B: 算力扣 ¥18 · 净剩 ¥12`).
+  - **`S11` (`63.833s – 70.733s`, `beatB = 66.467s`)**:
+    - **Beat A (`63.833s`)**: Transition to the `10 × 7 = 70` project archive grid of the world's #1 solo founder (Pieter Levels) over 10 years (`L1A: 头号大神做 70 个项目`).
+    - **Beat B (`66.467s`)**: `66` cells dim out as failed/abandoned (`66 个归零`), leaving only `4` golden profitable hits (`命中率仅 5.7%`) (`L1B: 66 个归零 · 仅 4 个成`).
+  - **`S12` (`70.733s – 76.600s`, `beatB = 73.300s`)**:
+    - **Beat A (`70.733s`)**: Zoom out to the industry-wide indie developer income distribution: `83%` earn under `$500/月` (`L1A: 83% 月入不足 $500`).
+    - **Beat B (`73.300s`)**: Contrast against the gleaming checkout card of "AI Solo-Unicorn Bootcamp" charging `¥1,999` per student (`L1B: 卖课导师稳赚 ¥1,999`).
+
+### Act IV · 同质内卷 (`ActFour.tsx`, `S13`–`S16`, `76.600s – 103.500s`, Mediums: `obsidian` & `paper`)
+- **Act-Level Continuous Stage Concept**: The `60-Point` Commodity Trap vs. the `95-Point` Craft Moat — showing why better AI tools trigger brutal price wars (`¥5,000 -> ¥99`), mirroring `1780` British cottage weavers, and culminating in the 3-mountain climax (`自负盈亏的全能牛马`).
+  - **`S13` (`76.600s – 83.067s`, `beatB = 79.267s`, `obsidian`)**:
+    - **Beat A (`76.600s`)**: Visual capability elevation chart: AI instantly fills the `0 -> 60 分` passable zone (`模板代码 · 套路海报 · 洗稿文案`), making 60-point work free and commodity-priced (`L1A: AI 一秒生成 60 分活`).
+    - **Beat B (`79.267s`)**: Above the 60-point floodline stands the steep `95 分` brass fortress (`独到审美 · 极端排障 · 商业兜底`) where real client budgets live (`L1B: 高价只买 95 分手艺`).
+  - **`S14` (`83.067s – 90.033s`, `beatB = 85.700s`, `obsidian`)**:
+    - **Beat A (`83.067s`)**: Inside the freelance bidding hall: `500 份` identical `60 分` AI proposals flood a single job posting (`L1A: 500 份雷同 AI 方案`).
+    - **Beat B (`85.700s`)**: With zero differentiation, bids crash in real time from `¥5,000` -> `¥800` -> `¥99 包月` (`L1B: 报价 ¥5,000 砸到 ¥99`).
+  - **`S15` (`90.033s – 96.233s`, `beatB = 92.800s`, `paper`)**:
+    - **Beat A (`90.033s`)**: Historical twin ledger (`1780 英国工业革命 ⇄ 2026 AI 时代`): in `1780`, cottage weavers took loans to buy faster spinning looms, multiplying cloth output `10 倍` (`L1A: 1780 织工买新机器`).
+    - **Beat B (`92.800s`)**: Merchants who controlled the sales channel slashed piece-rates by `-80%`, leaving weavers working 16-hour days in deeper poverty (`L1B: 产量翻十倍 · 工钱砍 80%`).
+  - **`S16` (`96.233s – 103.500s`, `beatB = 99.333s` Climax Drop, `obsidian`)**:
+    - **Beat A (`96.233s`)**: The three structural traps exposed in Acts II–IV (`82% 隐形杂务` + `70% 平台买量税` + `60分 恶性价格战`) converge and lock together (`L1A: 杂务 · 买量税 · 价格战`).
+    - **Beat B (`99.333s` Heavy Climax)**: Stamp the core diagnosis over the "one-person army" illusion: doing ten jobs alone without leverage just turns you into a **`自负盈亏的全能牛马`** (`L1B: 自负盈亏的全能牛马`).
+
+### Act V · 破局活法 (`ActFive.tsx`, `S17`–`S20`, `103.500s – 132.000s`, Mediums: `obsidian` -> `dawn`)
+- **Act-Level Continuous Stage Concept**: From the `103.50s` Acoustic Vacuum question (`普通人到底怎么破局？`) to the warm golden `dawn` blueprint of the **Three Concrete Survival Rules** (`甩掉60分死磕95分` · `14天最小作品收首款` · `攒下100个直接复购熟客`).
+  - **`S17` (`103.500s – 110.167s`, `beatB = 106.133s`, `obsidian`)**:
+    - **Beat A (`103.500s` Acoustic Vacuum)**: As the music strips back to a quiet breath, surface the viewer's deepest question: if doing everything yourself is a dead end, how can an ordinary person break through? (`L1A: 普通人到底怎么破局？`).
+    - **Beat B (`106.133s`)**: A warm brass beacon ignites, introducing the **Three Survival Rules (`三条生存铁律`)** of solo practitioners who actually thrive (`L1B: 真正高手的 3 条铁律`).
+  - **`S18` (`110.167s – 117.733s`, `beatB = 113.500s`, `dawn`)**:
+    - **Beat A (`110.167s`)**: **Rule 1 (Defeating the 60-Point Price War)** — Delegate `100%` of `60 分` repetitive template work to AI; never compete on cheap physical labor (`L1A: 铁律一 · 甩掉 60分杂活`).
+    - **Beat B (`113.500s`)**: Concentrate all human hours on the `95 分` craft that machines cannot fake: domain taste, gnarly edge-case debugging, and real accountability (`L1B: 死磕 95分审美与兜底`).
+  - **`S19` (`117.733s – 124.700s`, `beatB = 120.867s`, `dawn`)**:
+    - **Beat A (`117.733s`)**: **Rule 2 (Defeating the 5.7% Hit-Rate Trap)** — Cross out "quitting your job to code in isolation for 6 months"; ship a minimum viable work in **`14 天`** and verify that a real user pays the first dollar (`L1A: 铁律二 · 14天收第一笔钱`).
+    - **Beat B (`120.867s`)**: **Rule 3 (Defeating the 70% Traffic Tax)** — Bypass public ad-bidding funnels by building direct reputation and earning **`100 个` high-trust repeat clients** (`复购率 > 80%`) (`L1B: 铁律三 · 攒 100个复购熟客`).
+  - **`S20` (`124.700s – 132.000s`, `beatB = 127.500s` Final Singing Bowl Resonance, `dawn`)**:
+    - **Beat A (`124.700s`)**: The three survival pillars lock into a unified golden architecture on stage (`L1A: 机器跑完前 60 分量产`).
+    - **Beat B (`127.500s` – `132.000s`)**: On the `127.50s` singing-bowl strike, resolve into the final takeaway of Episode 02 (`L1B: 凭 95 分真手艺体面赢`): let machines run the first 60 points of mass production, and win with your 95-point human craft.
+
+---
+
+## 三、 精确时间轴、双语台词与拟音常量（`src/film/core.ts` 单一真相源）
+
+```ts
+export const FPS = 30;
+export const W = 1920;
+export const H = 1080;
+export const DURATION = 132.0; // 3,960 frames @ 30fps
+export const TOTAL_FRAMES = 3960;
+export const BPM = 112.3;
+
+export type Medium = "walnut" | "paper" | "obsidian" | "dawn";
+
+export const PAL = {
+  walnut:   { ground: "#141210", ink: "#F4EFE6", brass: "#D4AF37", vermilion: "#C83E2B", card: "#1B1815", dim: "#9A9184" },
+  paper:    { ground: "#F4EFE6", ink: "#141413", brass: "#9A6B16", vermilion: "#C83E2B", card: "#FBF8F1", soft: "#6E675C", marker: "#FACC15" },
+  obsidian: { ground: "#0B0D13", ink: "#F4EFE6", brass: "#D4AF37", vermilion: "#C83E2B", card: "#131722", dim: "#7D8797" },
+  dawn:     { ground: "#141210", ink: "#F4EFE6", brass: "#D4AF37", vermilion: "#C83E2B", card: "#1E1914", warm: "#FFE7B3", dim: "#B5A895" },
+} as const;
+
+export const FONT_SANS = "CocoonSans, 'Noto Sans SC', 'PingFang SC', sans-serif";
+export const FONT_SERIF = "CocoonSerif, 'Noto Serif SC', 'Source Han Serif SC', serif";
+export const FONT_MONO = "CocoonMono, CocoonSans, ui-monospace, Menlo, monospace";
+
+export interface ShotSpec {
+  id: string;
+  act: 1 | 2 | 3 | 4 | 5;
+  chapter: string;
+  medium: Medium;
+  start: number;
+  end: number;
+  beatB: number;
+  holdAfterB: number;
+  l1A: string;
+  l1B: string;
+  l2: [string, string];
+  en: [string, string];
+}
+
+export const SHOT_BOUNDS: readonly [number, number, number][] = [
+  [0.0, 6.6, 3.8], // S01 (6.60s, 0..198f)
+  [6.6, 11.867, 8.7], // S02 (5.27s, 198..356f)
+  [11.867, 18.933, 14.667], // S03 (7.07s, 356..568f)
+  [18.933, 25.333, 21.6], // S04 (6.40s, 568..760f)
+  [25.333, 31.633, 27.867], // S05 (6.30s, 760..949f)
+  [31.633, 38.033, 34.367], // S06 (6.40s, 949..1141f)
+  [38.033, 44.933, 40.667], // S07 (6.90s, 1141..1348f)
+  [44.933, 51.1, 47.433], // S08 (6.17s, 1348..1533f)
+  [51.1, 57.933, 53.9], // S09 (6.83s, 1533..1738f)
+  [57.933, 63.833, 60.5], // S10 (5.90s, 1738..1915f)
+  [63.833, 70.733, 66.467], // S11 (6.90s, 1915..2122f)
+  [70.733, 76.6, 73.3], // S12 (5.87s, 2122..2298f)
+  [76.6, 83.067, 79.267], // S13 (6.47s, 2298..2492f)
+  [83.067, 90.033, 85.7], // S14 (6.97s, 2492..2701f)
+  [90.033, 96.233, 92.8], // S15 (6.20s, 2701..2887f)
+  [96.233, 103.5, 99.333], // S16 (7.27s, 2887..3105f)
+  [103.5, 110.167, 106.133], // S17 (6.67s, 3105..3305f)
+  [110.167, 117.733, 113.5], // S18 (7.57s, 3305..3532f)
+  [117.733, 124.7, 120.867], // S19 (6.97s, 3532..3741f)
+  [124.7, 132.0, 127.5], // S20 (7.30s, 3741..3960f)
+];
+
+export const SHOTS: readonly ShotSpec[] = [
+  {
+    id: "S01", act: 1, chapter: "第一幕 · 全能幻觉", medium: "walnut",
+    start: 0.0, end: 6.6, beatB: 3.8, holdAfterB: 2.8,
+    l1A: "一人公司 $10亿", l1B: "14万星 · 欠费 2.3万",
+    l2: ["一句“十亿【一人公司】”，点燃全网单干造富梦；", "可【14万星】爆款作者，连服务器电费都交不起。"],
+    en: ["A viral promise of a billion-dollar one-person company ignited the solo-founder craze;", "yet a 140k-star open-source creator cannot even pay his own server electricity bill."],
+  },
+  {
+    id: "S02", act: 1, chapter: "第一幕 · 全能幻觉", medium: "walnut",
+    start: 6.6, end: 11.867, beatB: 8.7, holdAfterB: 3.17,
+    l1A: "两周狂发 520 条", l1B: "真实到账 ¥0.00",
+    l2: ["有人靠AI两周发【520条】视频，看着很热闹；", "可翻开收款后台一看，真实买单进账却是【零元】。"],
+    en: ["One creator used AI to pump out 520 videos in two weeks with lively view counts;", "yet opening the merchant ledger reveals a glaring zero in actual paid revenue."],
+  },
+  {
+    id: "S03", act: 1, chapter: "第一幕 · 全能幻觉", medium: "walnut",
+    start: 11.867, end: 18.933, beatB: 14.667, holdAfterB: 4.27,
+    l1A: "100万流水只剩 12万", l1B: "消失的 88万去哪了",
+    l2: ["明明没雇员工，一年【百万流水】怎只剩十二万？", "拆开【超级个体】真实账本，才看清背后的暗箱。"],
+    en: ["With zero employee payroll, how does a million in revenue shrink to just 120k?", "Opening the real ledger of the Super-Individual reveals the hidden black box behind the hype."],
+  },
+  {
+    id: "S04", act: 2, chapter: "第二幕 · 隐形杂务", medium: "paper",
+    start: 18.933, end: 25.333, beatB: 21.6, holdAfterB: 3.73,
+    l1A: "为什么世界需要公司", l1B: "替你挡下 90% 杂事",
+    l2: ["上班总嫌公司分走大头，诺奖得主【科斯】早算过：", "公司的法务财务与渠道，替你挡下【90%】杂事。"],
+    en: ["At a job we resent the firm taking a big cut, yet Nobel laureate Ronald Coase showed why:", "a company's legal, finance, and sales teams quietly absorb 90% of outside friction for you."],
+  },
+  {
+    id: "S05", act: 2, chapter: "第二幕 · 隐形杂务", medium: "paper",
+    start: 25.333, end: 31.633, beatB: 27.867, holdAfterB: 3.77,
+    l1A: "机器省下写代码时间", l1B: "催款报税吃掉 82%",
+    l2: ["辞职单干后，AI确实省下了【写代码】的时间；", "可催款、开票与扯皮售后，吞掉你【82%】精力。"],
+    en: ["Once you quit to go solo, AI certainly saves you hours on coding and design;", "yet chasing invoices, filing taxes, and handling refund disputes swallow 82% of your energy."],
+  },
+  {
+    id: "S06", act: 2, chapter: "第二幕 · 隐形杂务", medium: "obsidian",
+    start: 31.633, end: 38.033, beatB: 34.367, holdAfterB: 3.67,
+    l1A: "同类竞品暴涨 100倍", l1B: "找客户成本贵 10倍",
+    l2: ["人人都能用AI做产品，市面同类供给暴涨【百倍】；", "可买单的客户没变多，找客户成本反倒贵了【十倍】。"],
+    en: ["When anyone can ship an AI product overnight, market supply explodes 100-fold;", "yet the pool of paying customers stays flat, driving acquisition costs up 10-fold."],
+  },
+  {
+    id: "S07", act: 2, chapter: "第二幕 · 隐形杂务", medium: "paper",
+    start: 38.033, end: 44.933, beatB: 40.667, holdAfterB: 4.27,
+    l1A: "不用坐班会更幸福吗", l1B: "6,505 人半年追踪",
+    l2: ["不用坐班总该更轻松吧？【2026年】心理学研究，", "连续半年追踪了【6505名】单干者的真实作息。"],
+    en: ["Surely no commute and no boss means an easier life? A 2026 psychology study", "tracked the real daily routines of 6,505 solo workers across six full months."],
+  },
+  {
+    id: "S08", act: 2, chapter: "第二幕 · 隐形杂务", medium: "obsidian",
+    start: 44.933, end: 51.1, beatB: 47.433, holdAfterB: 3.67,
+    l1A: "上班 18:00 到点下班", l1B: "单干 24 小时不敢停",
+    l2: ["以前在公司上班，六点合上电脑就能【安心休息】；", "单干后停工一小时都像【亏钱】，自己成了狠监工。"],
+    en: ["In an office job, closing your laptop at 6 PM meant guilt-free rest;", "solo, every hour off feels like losing money, turning you into your own ruthless 24/7 boss."],
+  },
+  {
+    id: "S09", act: 2, chapter: "第二幕 · 隐形杂务", medium: "paper",
+    start: 51.1, end: 57.933, beatB: 53.9, holdAfterB: 4.03,
+    l1A: "越自由反而越焦虑", l1B: "情绪耗竭暴涨 +42%",
+    l2: ["数据揭开了残酷真相：看似【时间自由】的单干者，", "半年后的失眠与耗竭，反而比预期暴涨了【42%】。"],
+    en: ["The tracking data exposed a harsh truth: those with the highest apparent schedule freedom", "suffered a 42% surge in insomnia and emotional exhaustion after six months."],
+  },
+  {
+    id: "S10", act: 3, chapter: "第三幕 · 买量重税", medium: "obsidian",
+    start: 57.933, end: 63.833, beatB: 60.5, holdAfterB: 3.33,
+    l1A: "平台投流抽走 ¥70", l1B: "算力扣 ¥18 · 净剩 ¥12",
+    l2: ["省下的工资去哪了？每赚一百，【70元】交了投流，", "再扣掉【18元】算力订阅，落进口袋只剩十二块。"],
+    en: ["Where did the saved payroll go? Out of every 100 yuan earned, 70 goes to platform traffic tolls,", "and another 18 goes to AI compute and software subscriptions, leaving just 12 in pocket."],
+  },
+  {
+    id: "S11", act: 3, chapter: "第三幕 · 买量重税", medium: "obsidian",
+    start: 63.833, end: 70.733, beatB: 66.467, holdAfterB: 4.27,
+    l1A: "头号大神做 70 个项目", l1B: "66 个归零 · 仅 4 个成",
+    l2: ["连全球头号独立开发者，十年也做了【70个】产品；", "其中【66个】惨淡归零，真正赚钱的只有区区四个。"],
+    en: ["Even the world's most celebrated solo founder, Pieter Levels, built 70 products over a decade;", "66 of them failed outright, and only 4 ever became profitable hits (5.7%)."],
+  },
+  {
+    id: "S12", act: 3, chapter: "第三幕 · 买量重税", medium: "obsidian",
+    start: 70.733, end: 76.6, beatB: 73.3, holdAfterB: 3.3,
+    l1A: "83% 月入不足 $500", l1B: "卖课导师稳赚 ¥1,999",
+    l2: ["社区真实统计显示，【83%】单干者月入不足五百；", "唯一稳赚的，是收【1999元】教单干的卖课人。"],
+    en: ["Industry surveys show 83% of solo developers earn less than $500 a month;", "the only guaranteed winners are gurus charging ¥1,999 to teach the solo-unicorn dream."],
+  },
+  {
+    id: "S13", act: 4, chapter: "第四幕 · 同质内卷", medium: "obsidian",
+    start: 76.6, end: 83.067, beatB: 79.267, holdAfterB: 3.8,
+    l1A: "机器一秒交 60 分活", l1B: "高价只买 95 分手艺",
+    l2: ["为何工具越强越难赚？AI让人人能交【60分】活；", "可客户真正愿掏高价的，是机器够不着的【95分】。"],
+    en: ["Why is money harder to make as tools improve? Because AI lets anyone produce 60-point passable work;", "yet what clients pay a premium for is the 95-point craft that machines cannot reach."],
+  },
+  {
+    id: "S14", act: 4, chapter: "第四幕 · 同质内卷", medium: "obsidian",
+    start: 83.067, end: 90.033, beatB: 85.7, holdAfterB: 4.33,
+    l1A: "500 份雷同生成方案", l1B: "报价 ¥5,000 砸到 ¥99",
+    l2: ["当五百人拿雷同【60分】AI方案去抢同一外包单，", "唯一能拼的只剩压价，【五千元】的活砸到九十九。"],
+    en: ["When 500 freelancers bid on the same job with identical 60-point AI drafts,", "the only way to compete is a brutal price war, crashing a ¥5,000 project down to ¥99."],
+  },
+  {
+    id: "S15", act: 4, chapter: "第四幕 · 同质内卷", medium: "paper",
+    start: 90.033, end: 96.233, beatB: 92.8, holdAfterB: 3.43,
+    l1A: "1780 织工买新机器", l1B: "产量翻十倍 · 工钱砍 80%",
+    l2: ["两百年前【英国织工】贷款买新纺机，产量翻十倍；", "可布商反手把工价砍掉【80%】，织工越忙越贫穷。"],
+    en: ["In 1780, British cottage weavers borrowed money to buy new looms, multiplying output tenfold;", "merchants simply slashed piece-rates by 80%, leaving hardworking weavers poorer than before."],
+  },
+  {
+    id: "S16", act: 4, chapter: "第四幕 · 同质内卷", medium: "obsidian",
+    start: 96.233, end: 103.5, beatB: 99.333, holdAfterB: 4.17,
+    l1A: "杂务 · 买量税 · 价格战", l1B: "自负盈亏的全能牛马",
+    l2: ["八成杂务、七成流量税与内卷，【三座大山】压下；", "所谓“一人干十人活”，只是自负盈亏【全能牛马】。"],
+    en: ["Crushed simultaneously by 82% admin chores, 70% traffic tolls, and 60-point price wars,", "doing ten people's jobs alone just turns you into a self-funded beast of burden."],
+  },
+  {
+    id: "S17", act: 5, chapter: "第五幕 · 破局活法", medium: "obsidian",
+    start: 103.5, end: 110.167, beatB: 106.133, holdAfterB: 4.03,
+    l1A: "普通人到底怎么破局？", l1B: "真正高手的 3 条铁律",
+    l2: ["既然包揽全流程是死胡同，普通人该【怎么破局】？", "那些活得滋润的独立高手，都守住了【三条铁律】。"],
+    en: ["If doing everything yourself is a dead end, how can an ordinary person actually break through?", "The solo practitioners who truly thrive all follow three concrete survival rules."],
+  },
+  {
+    id: "S18", act: 5, chapter: "第五幕 · 破局活法", medium: "dawn",
+    start: 110.167, end: 117.733, beatB: 113.5, holdAfterB: 4.23,
+    l1A: "铁律一 · 甩掉 60分杂活", l1B: "死磕 95分审美与兜底",
+    l2: ["第一，把【60分】杂活甩给AI，绝不拿体力拼价；", "把全部精力死磕在机器做不到的【95分】真手艺上。"],
+    en: ["Rule 1: Offload all 60-point repetitive grunt work to AI instead of competing on cheap labor;", "pour 100% of your human energy into 95-point taste, edge-case mastery, and real accountability."],
+  },
+  {
+    id: "S19", act: 5, chapter: "第五幕 · 破局活法", medium: "dawn",
+    start: 117.733, end: 124.7, beatB: 120.867, holdAfterB: 3.83,
+    l1A: "铁律二 · 14天收第一笔钱", l1B: "铁律三 · 攒 100个复购熟客",
+    l2: ["第二，别裸辞闭门造车，用【14天】最小作品收款；", "第三，跳出竞价漏斗，靠口碑攒下【百名】复购熟客。"],
+    en: ["Rule 2: Never quit blindly—ship a 14-day minimum prototype to collect your very first payment;", "Rule 3: Escape platform bidding wars by earning 100 direct, high-trust repeat clients."],
+  },
+  {
+    id: "S20", act: 5, chapter: "第五幕 · 破局活法", medium: "dawn",
+    start: 124.7, end: 132.0, beatB: 127.5, holdAfterB: 4.5,
+    l1A: "机器跑完前 60 分量产", l1B: "凭 95 分真手艺体面赢",
+    l2: ["真正的【超级个体】，从不靠一人硬扛整家公司杂活；", "让机器替你跑完前【60分】，凭真手艺体面地赢。"],
+    en: ["A true Super-Individual never plays a beast of burden doing a whole company's chores alone;", "let machines run the first 60 points of mass production, and win with your 95-point craft."],
+  },
+];
+
+export const CUES: readonly { frame: number; sec: number; src: string; volume: number; shotId: string }[] = [
+  { frame: 14,   sec: 0.46,   src: "whoosh_deep.mp3",         volume: 0.42, shotId: "S01" },
+  { frame: 115,  sec: 3.83,   src: "slam_impact.mp3",         volume: 0.58, shotId: "S01" },
+  { frame: 262,  sec: 8.73,   src: "coin_clatter.mp3",        volume: 0.48, shotId: "S02" },
+  { frame: 441,  sec: 14.70,  src: "slam_impact.mp3",         volume: 0.56, shotId: "S03" },
+  { frame: 649,  sec: 21.63,  src: "paper_crumple.mp3",       volume: 0.44, shotId: "S04" },
+  { frame: 837,  sec: 27.90,  src: "glitch_tear.mp3",         volume: 0.48, shotId: "S05" },
+  { frame: 1032, sec: 34.40,  src: "whoosh_deep.mp3",         volume: 0.45, shotId: "S06" },
+  { frame: 1221, sec: 40.70,  src: "paper_crumple.mp3",       volume: 0.42, shotId: "S07" },
+  { frame: 1424, sec: 47.46,  src: "heartbeat_lub_dub.mp3",   volume: 0.52, shotId: "S08" },
+  { frame: 1618, sec: 53.93,  src: "glass_shatter.mp3",       volume: 0.52, shotId: "S09" },
+  { frame: 1816, sec: 60.53,  src: "reverse_suck.mp3",        volume: 0.50, shotId: "S10" },
+  { frame: 1995, sec: 66.50,  src: "lock_click.mp3",          volume: 0.46, shotId: "S11" },
+  { frame: 2200, sec: 73.33,  src: "coin_clatter.mp3",        volume: 0.50, shotId: "S12" },
+  { frame: 2379, sec: 79.30,  src: "slam_impact.mp3",         volume: 0.50, shotId: "S13" },
+  { frame: 2572, sec: 85.73,  src: "glitch_tear.mp3",         volume: 0.48, shotId: "S14" },
+  { frame: 2785, sec: 92.83,  src: "paper_crumple.mp3",       volume: 0.44, shotId: "S15" },
+  { frame: 2981, sec: 99.36,  src: "slam_impact.mp3",         volume: 0.60, shotId: "S16" },
+  { frame: 3185, sec: 106.16, src: "water_drop.mp3",          volume: 0.52, shotId: "S17" },
+  { frame: 3406, sec: 113.53, src: "lock_click.mp3",          volume: 0.48, shotId: "S18" },
+  { frame: 3627, sec: 120.90, src: "whoosh_deep.mp3",         volume: 0.45, shotId: "S19" },
+  { frame: 3826, sec: 127.53, src: "singing_bowl_strike.mp3", volume: 0.62, shotId: "S20" },
+];
+```
