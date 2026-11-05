@@ -199,7 +199,7 @@ export const SHOTS: readonly ShotSpec[] = [
   {
     id: "S05", act: 2, chapter: "第二幕 · 隐形杂务", medium: "paper",
     start: 25.333, end: 31.633, beatB: 27.867, holdAfterB: 3.77,
-    l1A: "AI 省下写代码时间", l1B: "催款报税吃掉 82%",
+    l1A: "机器省下写代码时间", l1B: "催款报税吃掉 82%",
     l2: ["辞职单干后，AI确实省下了【写代码】的时间；", "可催款、开票与扯皮售后，吞掉你【82%】精力。"],
     en: ["Once you quit to go solo, AI certainly saves you hours on coding and design;", "yet chasing invoices, filing taxes, and handling refund disputes swallow 82% of your energy."],
   },
@@ -255,14 +255,14 @@ export const SHOTS: readonly ShotSpec[] = [
   {
     id: "S13", act: 4, chapter: "第四幕 · 同质内卷", medium: "obsidian",
     start: 76.6, end: 83.067, beatB: 79.267, holdAfterB: 3.8,
-    l1A: "AI 一秒生成 60 分活", l1B: "高价只买 95 分手艺",
+    l1A: "机器一秒交 60 分活", l1B: "高价只买 95 分手艺",
     l2: ["为何工具越强越难赚？AI让人人能交【60分】活；", "可客户真正愿掏高价的，是机器够不着的【95分】。"],
     en: ["Why is money harder to make as tools improve? Because AI lets anyone produce 60-point passable work;", "yet what clients pay a premium for is the 95-point craft that machines cannot reach."],
   },
   {
     id: "S14", act: 4, chapter: "第四幕 · 同质内卷", medium: "obsidian",
     start: 83.067, end: 90.033, beatB: 85.7, holdAfterB: 4.33,
-    l1A: "500 份雷同 AI 方案", l1B: "报价 ¥5,000 砸到 ¥99",
+    l1A: "500 份雷同生成方案", l1B: "报价 ¥5,000 砸到 ¥99",
     l2: ["当五百人拿雷同【60分】AI方案去抢同一外包单，", "唯一能拼的只剩压价，【五千元】的活砸到九十九。"],
     en: ["When 500 freelancers bid on the same job with identical 60-point AI drafts,", "the only way to compete is a brutal price war, crashing a ¥5,000 project down to ¥99."],
   },
@@ -274,7 +274,7 @@ export const SHOTS: readonly ShotSpec[] = [
     en: ["In 1780, British cottage weavers borrowed money to buy new looms, multiplying output tenfold;", "merchants simply slashed piece-rates by 80%, leaving hardworking weavers poorer than before."],
   },
   {
-    id: "S16", act: 5, chapter: "第四幕 · 同质内卷", medium: "obsidian",
+    id: "S16", act: 4, chapter: "第四幕 · 同质内卷", medium: "obsidian",
     start: 96.233, end: 103.5, beatB: 99.333, holdAfterB: 4.17,
     l1A: "杂务 · 买量税 · 价格战", l1B: "自负盈亏的全能牛马",
     l2: ["八成杂务、七成流量税与内卷，【三座大山】压下；", "所谓“一人干十人活”，只是自负盈亏【全能牛马】。"],

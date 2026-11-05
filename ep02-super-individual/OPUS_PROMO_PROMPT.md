@@ -1,7 +1,7 @@
 **STEP 0 — MANDATORY PRE-FLIGHT LINE (OUTPUT THIS FIRST BEFORE CALLING ANY TOOLS)**:
-In the very first line of your response—before calling `Bash`, `Read`, `List`, or any other tool—output a single line in this exact format:
-`[PREFLIGHT: cutoff=<YYYY-MM> | stack=Remotion-4-SVG | acts=5 | shots=20]`
-(replacing `<YYYY-MM>` with your true training knowledge cutoff year-month, e.g., `2026-06`). Immediately after that single line, begin executing Step 1.
+In the very first line of your response—before calling `Bash`, `Read`, `List`, or any other tool—output a single line in this exact format (fill in your actual values without placeholders):
+`[PREFLIGHT: model=<your exact model family & version> | cutoff=<your true knowledge cutoff YYYY-MM> | coase1937=<exact journal name where Ronald Coase published "The Nature of the Firm" in 1937> | acts=5 | shots=20]`
+Immediately after that single line, begin executing Step 1.
 
 ---
 
@@ -12,15 +12,18 @@ Build a 132.0-second (`3,960 frames @ 30fps`, `1920x1080`) **zero-voiceover, bea
 Run this setup command to pull the 132.0s master audio track (`jingwei_master_132s.mp3`), the 12 physical Foley `.mp3` files, the offline CJK font subsetting tool (`subset-fonts.py` + `fontdata.ts` + `fonts.ts`), and inspect how Episode 01 (`reference_ep01_opus_v4/src/film/*`) was architected:
 
 ```bash
-git clone --branch ep02-super-individual https://github.com/Evan-Joseph/info-cocoon-promo.git /tmp/ep02-promo
+git clone --depth 1 --branch ep02-super-individual https://github.com/Evan-Joseph/info-cocoon-promo.git /tmp/ep02-promo
+rm -f /tmp/ep02-promo/reference_ep01_opus_v4/src/film/ep02_* /tmp/ep02-promo/reference_ep01_opus_v4/src/film/icons.tsx
 mkdir -p src/film public/audio scripts
-cp /tmp/ep02-promo/assets/audio/*.mp3 public/audio/
-cp /tmp/ep02-promo/reference_ep01_opus_v4/src/film/fontdata.ts src/film/fontdata.ts
-cp /tmp/ep02-promo/reference_ep01_opus_v4/src/film/fonts.ts src/film/fonts.ts
-cp /tmp/ep02-promo/reference_ep01_opus_v4/scripts/subset-fonts.py scripts/subset-fonts.py
+cp /tmp/ep02-promo/ep02-super-individual/assets/audio/*.mp3 public/audio/ 2>/dev/null || cp /tmp/ep02-promo/assets/audio/*.mp3 public/audio/
+REF_DIR="/tmp/ep02-promo/shared/reference_ep01_opus_v4"
+[ -d "$REF_DIR" ] || REF_DIR="/tmp/ep02-promo/reference_ep01_opus_v4"
+cp "$REF_DIR/src/film/fontdata.ts" src/film/fontdata.ts
+cp "$REF_DIR/src/film/fonts.ts" src/film/fonts.ts
+cp "$REF_DIR/scripts/subset-fonts.py" scripts/subset-fonts.py
 ```
 
-> **IMPORTANT SSOT RULE**: Do **NOT** read `/tmp/ep02-promo/docs/*` (those are older drafts). **This prompt is the 100% Single Source of Truth (v6.0)** for Episode 02's script, narrative arc, timings (`SHOT_BOUNDS`), bilingual copy (`SHOTS`), and Foley cues (`CUES`). Inspect `/tmp/ep02-promo/reference_ep01_opus_v4/src/film/{core.ts,kit.tsx,Film.tsx,ActOne.tsx,ActTwo.tsx,ActThree.tsx,ActFour.tsx,ActFive.tsx,ActSix.tsx}` to see how Episode 01 achieved continuous within-Act visual staging, spring physics, tactile archival monographs, and clean Remotion composition setup.
+> **IMPORTANT SSOT RULE**: Do **NOT** read `/tmp/ep02-promo/docs/*`, `/tmp/ep02-promo/SPEC.md`, or `/tmp/ep02-promo/ep02-super-individual/*` (those are older remote drafts). **This prompt is the 100% Single Source of Truth (v6.0)** for Episode 02's script, narrative arc, timings (`SHOT_BOUNDS`), bilingual copy (`SHOTS`), and Foley cues (`CUES`). Inspect `"$REF_DIR"/src/film/{core.ts,kit.tsx,Film.tsx,ActOne.tsx,ActTwo.tsx,ActThree.tsx,ActFour.tsx,ActFive.tsx,ActSix.tsx}` to see how Episode 01 achieved continuous within-Act visual staging, spring physics, tactile archival monographs, and clean Remotion composition setup.
 
 ---
 
@@ -221,7 +224,7 @@ export const SHOTS: readonly ShotSpec[] = [
   {
     id: "S05", act: 2, chapter: "第二幕 · 隐形杂务", medium: "paper",
     start: 25.333, end: 31.633, beatB: 27.867, holdAfterB: 3.77,
-    l1A: "AI 省下写代码时间", l1B: "催款报税吃掉 82%",
+    l1A: "机器省下写代码时间", l1B: "催款报税吃掉 82%",
     l2: ["辞职单干后，AI确实省下了【写代码】的时间；", "可催款、开票与扯皮售后，吞掉你【82%】精力。"],
     en: ["Once you quit to go solo, AI certainly saves you hours on coding and design;", "yet chasing invoices, filing taxes, and handling refund disputes swallow 82% of your energy."],
   },
@@ -277,14 +280,14 @@ export const SHOTS: readonly ShotSpec[] = [
   {
     id: "S13", act: 4, chapter: "第四幕 · 同质内卷", medium: "obsidian",
     start: 76.6, end: 83.067, beatB: 79.267, holdAfterB: 3.8,
-    l1A: "AI 一秒生成 60 分活", l1B: "高价只买 95 分手艺",
+    l1A: "机器一秒交 60 分活", l1B: "高价只买 95 分手艺",
     l2: ["为何工具越强越难赚？AI让人人能交【60分】活；", "可客户真正愿掏高价的，是机器够不着的【95分】。"],
     en: ["Why is money harder to make as tools improve? Because AI lets anyone produce 60-point passable work;", "yet what clients pay a premium for is the 95-point craft that machines cannot reach."],
   },
   {
     id: "S14", act: 4, chapter: "第四幕 · 同质内卷", medium: "obsidian",
     start: 83.067, end: 90.033, beatB: 85.7, holdAfterB: 4.33,
-    l1A: "500 份雷同 AI 方案", l1B: "报价 ¥5,000 砸到 ¥99",
+    l1A: "500 份雷同生成方案", l1B: "报价 ¥5,000 砸到 ¥99",
     l2: ["当五百人拿雷同【60分】AI方案去抢同一外包单，", "唯一能拼的只剩压价，【五千元】的活砸到九十九。"],
     en: ["When 500 freelancers bid on the same job with identical 60-point AI drafts,", "the only way to compete is a brutal price war, crashing a ¥5,000 project down to ¥99."],
   },
@@ -296,7 +299,7 @@ export const SHOTS: readonly ShotSpec[] = [
     en: ["In 1780, British cottage weavers borrowed money to buy new looms, multiplying output tenfold;", "merchants simply slashed piece-rates by 80%, leaving hardworking weavers poorer than before."],
   },
   {
-    id: "S16", act: 5, chapter: "第四幕 · 同质内卷", medium: "obsidian",
+    id: "S16", act: 4, chapter: "第四幕 · 同质内卷", medium: "obsidian",
     start: 96.233, end: 103.5, beatB: 99.333, holdAfterB: 4.17,
     l1A: "杂务 · 买量税 · 价格战", l1B: "自负盈亏的全能牛马",
     l2: ["八成杂务、七成流量税与内卷，【三座大山】压下；", "所谓“一人干十人活”，只是自负盈亏【全能牛马】。"],
