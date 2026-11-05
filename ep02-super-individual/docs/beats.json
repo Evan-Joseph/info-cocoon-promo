@@ -72,10 +72,9 @@
       "l2B": "可【14万星】爆款作者，连服务器电费都交不起。",
       "enA": "A viral promise of a billion-dollar one-person company ignited the solo-founder craze;",
       "enB": "yet a 140k-star open-source creator cannot even pay his own server electricity bill.",
-      "visual": "【拍A】硅谷创投热搜引语：OpenAI CEO 预言「史上第一家 10 亿美元一人公司即将诞生」，伴随写代码、做设计、剪视频、搞客服四项 AI 能力点亮。 【拍B】3.80s 重拍鼓点炸响，画面翻转为独立开发者凌晨 03:00 的真实后台：GitHub 140,000 星爆款项目旁，弹出 -¥23,800 服务器与算力欠费账单。",
       "foley": "whoosh_deep (0.46s) + slam_impact (3.83s)",
-      "narrativeA": "硅谷创投热搜引语：OpenAI CEO 预言「史上第一家 10 亿美元一人公司即将诞生」，伴随写代码、做设计、剪视频、搞客服四项 AI 能力点亮。",
-      "narrativeB": "3.80s 重拍鼓点炸响，画面翻转为独立开发者凌晨 03:00 的真实后台：GitHub 140,000 星爆款项目旁，弹出 -¥23,800 服务器与算力欠费账单。",
+      "narrativeA": "硅谷创投圈疯传「史上第一家 10 亿美元一人公司即将诞生」，宣称一个人配齐 AI 写代码、做设计、剪视频、搞客服就能顶一家公司。",
+      "narrativeB": "3.80s 重拍鼓点反转：GitHub 140,000 星开源爆款作者的真实处境——服务器与算力账单欠费 -¥23,800，收入连电费都交不起。",
       "start": 0.0,
       "end": 6.6,
       "beatB": 3.8,
@@ -87,7 +86,8 @@
       "en": [
         "A viral promise of a billion-dollar one-person company ignited the solo-founder craze;",
         "yet a 140k-star open-source creator cannot even pay his own server electricity bill."
-      ]
+      ],
+      "role": "黄金前4秒 · 神话与欠费反差"
     },
     {
       "id": "S02",
@@ -109,10 +109,9 @@
       "l2B": "可翻开收款后台一看，真实买单进账却是【零元】。",
       "enA": "One creator used AI to pump out 520 videos in two weeks with lively view counts;",
       "enB": "yet opening the merchant ledger reveals a glaring zero in actual paid revenue.",
-      "visual": "【拍A】同一张桌面连续推进至内容矩阵后台：14 天累计发布 520 条 AI 视频，播放量柱状图看似节节攀升。 【拍B】8.70s 重拍切至商户结算中心：曝光 100% → 点击 0.2% → 真实到账金额定格在刺眼的 ¥0.00。",
       "foley": "coin_clatter (8.73s)",
-      "narrativeA": "同一张桌面连续推进至内容矩阵后台：14 天累计发布 520 条 AI 视频，播放量柱状图看似节节攀升。",
-      "narrativeB": "8.70s 重拍切至商户结算中心：曝光 100% → 点击 0.2% → 真实到账金额定格在刺眼的 ¥0.00。",
+      "narrativeA": "创作者用 AI 在 14 天内批量产出 520 条视频，表面播放数据看似热闹。",
+      "narrativeB": "8.70s 重拍揭示收款实况：真实转化为买单进账的金额是 ¥0.00。",
       "start": 6.6,
       "end": 11.867,
       "beatB": 8.7,
@@ -124,7 +123,8 @@
       "en": [
         "One creator used AI to pump out 520 videos in two weeks with lively view counts;",
         "yet opening the merchant ledger reveals a glaring zero in actual paid revenue."
-      ]
+      ],
+      "role": "案例递进 · 产量暴涨与零进账"
     },
     {
       "id": "S03",
@@ -146,10 +146,9 @@
       "l2B": "拆开【超级个体】真实账本，才看清背后的暗箱。",
       "enA": "With zero employee payroll, how does a million in revenue shrink to just 120k?",
       "enB": "Opening the real ledger of the Super-Individual reveals the hidden black box behind the hype.",
-      "visual": "【拍A】桌面收款单拉远展开为《一人工作室年度损益总账》：年度总流水 +¥1,000,000，层层扣除后年底净剩仅 ¥120,000（12%）。 【拍B】14.67s 重拍定格在消失的 ¥880,000 缺口上，朱砂印章落下立题：《超级个体》暗箱。",
       "foley": "slam_impact (14.70s)",
-      "narrativeA": "桌面收款单拉远展开为《一人工作室年度损益总账》：年度总流水 +¥1,000,000，层层扣除后年底净剩仅 ¥120,000（12%）。",
-      "narrativeB": "14.67s 重拍定格在消失的 ¥880,000 缺口上，朱砂印章落下立题：《超级个体》暗箱。",
+      "narrativeA": "一人工作室全年做到 ¥1,000,000 流水、明明没有员工工资支出，年底净剩却只有 ¥120,000（12%）。",
+      "narrativeB": "14.67s 重拍立题：中间消失的 ¥880,000（88%）究竟被谁抽走了？",
       "start": 11.867,
       "end": 18.933,
       "beatB": 14.667,
@@ -161,7 +160,8 @@
       "en": [
         "With zero employee payroll, how does a million in revenue shrink to just 120k?",
         "Opening the real ledger of the Super-Individual reveals the hidden black box behind the hype."
-      ]
+      ],
+      "role": "全片立题 · 百万流水的88%缺口"
     },
     {
       "id": "S04",
@@ -183,10 +183,9 @@
       "l2B": "公司的法务财务与渠道，替你挡下【90%】杂事。",
       "enA": "At a job we resent the firm taking a big cut, yet Nobel laureate Ronald Coase showed why:",
       "enB": "a company's legal, finance, and sales teams quietly absorb 90% of outside friction for you.",
-      "visual": "【拍A】1937 年科斯《企业的性质》档案手稿展开：打工人只看见自己写代码做设计的核心产出，觉得公司抽走了大头。 【拍B】21.60s 重拍亮出公司外壳的五层保护盾（法务合同、税务报账、渠道采买、客诉兜底、行政运维），替员工挡下 90% 外部摩擦。",
       "foley": "paper_crumple (21.63s)",
-      "narrativeA": "1937 年科斯《企业的性质》档案手稿展开：打工人只看见自己写代码做设计的核心产出，觉得公司抽走了大头。",
-      "narrativeB": "21.60s 重拍亮出公司外壳的五层保护盾（法务合同、税务报账、渠道采买、客诉兜底、行政运维），替员工挡下 90% 外部摩擦。",
+      "narrativeA": "诺贝尔经济学奖得主罗纳德·科斯 1937 年在《企业的性质》中回答了核心问题：打工人总嫌公司分走大头，世界为什么还需要公司？",
+      "narrativeB": "21.60s 重拍揭示：公司的法务、税务、财务、销售与售后团队，替员工挡下了 90% 的外部交易摩擦。",
       "start": 18.933,
       "end": 25.333,
       "beatB": 21.6,
@@ -198,7 +197,8 @@
       "en": [
         "At a job we resent the firm taking a big cut, yet Nobel laureate Ronald Coase showed why:",
         "a company's legal, finance, and sales teams quietly absorb 90% of outside friction for you."
-      ]
+      ],
+      "role": "理论溯源 · 科斯定理大白话"
     },
     {
       "id": "S05",
@@ -220,10 +220,9 @@
       "l2B": "可催款、开票与扯皮售后，吞掉你【82%】精力。",
       "enA": "Once you quit to go solo, AI certainly saves you hours on coding and design;",
       "enB": "yet chasing invoices, filing taxes, and handling refund disputes swallow 82% of your energy.",
-      "visual": "【拍A】同一舞台上公司保护盾撤除：单干者的每日精力结构中，AI 将核心创作（写代码/画图）压缩到了 18%。 【拍B】27.87s 重拍：原本由公司承担的催尾款、开发票、改合同、防拒付、回工单五类杂务全面压下，吞噬 82% 精力。",
       "foley": "glitch_tear (27.90s)",
-      "narrativeA": "同一舞台上公司保护盾撤除：单干者的每日精力结构中，AI 将核心创作（写代码/画图）压缩到了 18%。",
-      "narrativeB": "27.87s 重拍：原本由公司承担的催尾款、开发票、改合同、防拒付、回工单五类杂务全面压下，吞噬 82% 精力。",
+      "narrativeA": "辞职单干后，AI 确实把写代码、画图等核心制作时间压缩到了 18%。",
+      "narrativeB": "27.87s 重拍：没了公司挡箭牌，催尾款、开发票、改合同、扯皮售后等杂务全砸在一人身上，吞掉 82% 精力。",
       "start": 25.333,
       "end": 31.633,
       "beatB": 27.867,
@@ -235,7 +234,8 @@
       "en": [
         "Once you quit to go solo, AI certainly saves you hours on coding and design;",
         "yet chasing invoices, filing taxes, and handling refund disputes swallow 82% of your energy."
-      ]
+      ],
+      "role": "现实反噬 · 82%精力被杂务吞噬"
     },
     {
       "id": "S06",
@@ -257,10 +257,9 @@
       "l2B": "可买单的客户没变多，找客户成本反倒贵了【十倍】。",
       "enA": "When anyone can ship an AI product overnight, market supply explodes 100-fold;",
       "enB": "yet the pool of paying customers stays flat, driving acquisition costs up 10-fold.",
-      "visual": "【拍A】视野从个人桌面拉向市场供需大盘：AI 降低了制作门槛，同类应用与内容供给曲线向上暴涨 100 倍。 【拍B】34.37s 重拍：买家注意力保持水平基线，供需剪刀差撕开，单客获客成本（CAC）飙升 10 倍。",
       "foley": "whoosh_deep (34.40s)",
-      "narrativeA": "视野从个人桌面拉向市场供需大盘：AI 降低了制作门槛，同类应用与内容供给曲线向上暴涨 100 倍。",
-      "narrativeB": "34.37s 重拍：买家注意力保持水平基线，供需剪刀差撕开，单客获客成本（CAC）飙升 10 倍。",
+      "narrativeA": "AI 让开发门槛骤降，市面上的同类产品与内容供给暴涨 100 倍。",
+      "narrativeB": "34.37s 重拍：买单客户的注意力与预算并未增加，导致找一个付费客户的获客成本（CAC）暴涨 10 倍。",
       "start": 31.633,
       "end": 38.033,
       "beatB": 34.367,
@@ -272,7 +271,8 @@
       "en": [
         "When anyone can ship an AI product overnight, market supply explodes 100-fold;",
         "yet the pool of paying customers stays flat, driving acquisition costs up 10-fold."
-      ]
+      ],
+      "role": "供需失衡 · 供给百倍与获客十倍"
     },
     {
       "id": "S07",
@@ -294,10 +294,9 @@
       "l2B": "连续半年追踪了【6505名】单干者的真实作息。",
       "enA": "Surely no commute and no boss means an easier life? A 2026 psychology study",
       "enB": "tracked the real daily routines of 6,505 solo workers across six full months.",
-      "visual": "【拍A】2026 年《管理心理学杂志》实证研究档案展开：人们普遍期待离开格子间后能获得轻松与自由。 【拍B】40.67s 重拍：亮出 N = 6,505 名高自主权独立工作者的 6 个月追踪样本库。",
       "foley": "paper_crumple (40.70s)",
-      "narrativeA": "2026 年《管理心理学杂志》实证研究档案展开：人们普遍期待离开格子间后能获得轻松与自由。",
-      "narrativeB": "40.67s 重拍：亮出 N = 6,505 名高自主权独立工作者的 6 个月追踪样本库。",
+      "narrativeA": "大众普遍以为“不用坐班、没有老板管”至少能活得更轻松。",
+      "narrativeB": "40.67s 重拍：2026 年《管理心理学杂志》对 N = 6,505 名高自主权独立工作者展开了为期 6 个月的追踪调查。",
       "start": 38.033,
       "end": 44.933,
       "beatB": 40.667,
@@ -309,7 +308,8 @@
       "en": [
         "Surely no commute and no boss means an easier life? A 2026 psychology study",
         "tracked the real daily routines of 6,505 solo workers across six full months."
-      ]
+      ],
+      "role": "实证引入 · 6505人半年追踪"
     },
     {
       "id": "S08",
@@ -331,10 +331,9 @@
       "l2B": "单干后停工一小时都像【亏钱】，自己成了狠监工。",
       "enA": "In an office job, closing your laptop at 6 PM meant guilt-free rest;",
       "enB": "solo, every hour off feels like losing money, turning you into your own ruthless 24/7 boss.",
-      "visual": "【拍A】作息对比：左侧公司上班节奏在 09:00–18:00 运转，18:00 后合上电脑进入深色休息区。 【拍B】47.43s 重拍：右侧单干者时钟全天 24 小时亮起红灯（凌晨回客户、周末改 Bug），停止工作即意味着零收入。",
       "foley": "heartbeat_lub_dub (47.46s)",
-      "narrativeA": "作息对比：左侧公司上班节奏在 09:00–18:00 运转，18:00 后合上电脑进入深色休息区。",
-      "narrativeB": "47.43s 重拍：右侧单干者时钟全天 24 小时亮起红灯（凌晨回客户、周末改 Bug），停止工作即意味着零收入。",
+      "narrativeA": "在公司上班有明确的 18:00 下班边界，合上电脑就能心安理得休息。",
+      "narrativeB": "47.43s 重拍：单干后没有底薪兜底，停工一小时都觉得在亏钱，自己成了 24 小时盯着自己的严苛监工。",
       "start": 44.933,
       "end": 51.1,
       "beatB": 47.433,
@@ -346,7 +345,8 @@
       "en": [
         "In an office job, closing your laptop at 6 PM meant guilt-free rest;",
         "solo, every hour off feels like losing money, turning you into your own ruthless 24/7 boss."
-      ]
+      ],
+      "role": "边界消失 · 24小时自我监工"
     },
     {
       "id": "S09",
@@ -368,10 +368,9 @@
       "l2B": "半年后的失眠与耗竭，反而比预期暴涨了【42%】。",
       "enA": "The tracking data exposed a harsh truth: those with the highest apparent schedule freedom",
       "enB": "suffered a 42% surge in insomnia and emotional exhaustion after six months.",
-      "visual": "【拍A】6 个月追踪曲线对比：大众以为的“自由幸福曲线”本该平稳向上。 【拍B】53.90s 副歌重拍：真实测得的认知耗竭与焦虑曲线陡峭冲顶 +42%，印证「自主权悖论」。",
       "foley": "glass_shatter (53.93s)",
-      "narrativeA": "6 个月追踪曲线对比：大众以为的“自由幸福曲线”本该平稳向上。",
-      "narrativeB": "53.90s 副歌重拍：真实测得的认知耗竭与焦虑曲线陡峭冲顶 +42%，印证「自主权悖论」。",
+      "narrativeA": "追踪数据打破了“时间自由等于幸福”的幻想。",
+      "narrativeB": "53.90s 副歌重拍：看似最自由的单干群体，半年后的失眠率与认知情绪耗竭反而暴涨了 +42%（自主权悖论）。",
       "start": 51.1,
       "end": 57.933,
       "beatB": 53.9,
@@ -383,7 +382,8 @@
       "en": [
         "The tracking data exposed a harsh truth: those with the highest apparent schedule freedom",
         "suffered a 42% surge in insomnia and emotional exhaustion after six months."
-      ]
+      ],
+      "role": "数据定论 · 情绪耗竭暴涨42%"
     },
     {
       "id": "S10",
@@ -405,10 +405,9 @@
       "l2B": "再扣掉【18元】算力订阅，落进口袋只剩十二块。",
       "enA": "Where did the saved payroll go? Out of every 100 yuan earned, 70 goes to platform traffic tolls,",
       "enB": "and another 18 goes to AI compute and software subscriptions, leaving just 12 in pocket.",
-      "visual": "【拍A】拆解 ¥100 营业额的真实去向：最大一股现金流（¥70 / 70%）直接流入公域平台的竞价投流与渠道抽成漏斗。 【拍B】60.50s 重拍：第二股现金流（¥18 / 18%）流入 API 算力账单与 SaaS 订阅，创作者最终净得仅 ¥12（12%）。",
       "foley": "reverse_suck (60.53s)",
-      "narrativeA": "拆解 ¥100 营业额的真实去向：最大一股现金流（¥70 / 70%）直接流入公域平台的竞价投流与渠道抽成漏斗。",
-      "narrativeB": "60.50s 重拍：第二股现金流（¥18 / 18%）流入 API 算力账单与 SaaS 订阅，创作者最终净得仅 ¥12（12%）。",
+      "narrativeA": "回答第一幕的悬念——省下的员工工资去哪了？每赚 ¥100，有 ¥70（70%）交给了公域平台的竞价投流与渠道抽成。",
+      "narrativeB": "60.50s 重拍：再扣掉 ¥18（18%）的 AI 算力账单与软件订阅费，真正落进自己口袋的只有 ¥12（12%）。",
       "start": 57.933,
       "end": 63.833,
       "beatB": 60.5,
@@ -420,7 +419,8 @@
       "en": [
         "Where did the saved payroll go? Out of every 100 yuan earned, 70 goes to platform traffic tolls,",
         "and another 18 goes to AI compute and software subscriptions, leaving just 12 in pocket."
-      ]
+      ],
+      "role": "分账拆解 · 70元买量与18元算力"
     },
     {
       "id": "S11",
@@ -442,10 +442,9 @@
       "l2B": "其中【66个】惨淡归零，真正赚钱的只有区区四个。",
       "enA": "Even the world's most celebrated solo founder, Pieter Levels, built 70 products over a decade;",
       "enB": "66 of them failed outright, and only 4 ever became profitable hits (5.7%).",
-      "visual": "【拍A】展开全球头号独立开发者 Pieter Levels 的 10×7（70 个项目）全量档案矩阵。 【拍B】66.47s 重拍：70 个项目中有 66 个彻底熄灭归零（灰色墓碑），仅 PhotoAI、NomadList 等 4 个亮金跑通，真实命中率仅 5.7%。",
       "foley": "lock_click (66.50s)",
-      "narrativeA": "展开全球头号独立开发者 Pieter Levels 的 10×7（70 个项目）全量档案矩阵。",
-      "narrativeB": "66.47s 重拍：70 个项目中有 66 个彻底熄灭归零（灰色墓碑），仅 PhotoAI、NomadList 等 4 个亮金跑通，真实命中率仅 5.7%。",
+      "narrativeA": "被全网奉为“一人公司教父”的全球头号独立开发者 Pieter Levels，十年间一共做了 70 个产品。",
+      "narrativeB": "66.47s 重拍：其中 66 个项目惨淡归零（失败率 94.3%），真正跑通赚钱的只有 4 个（命中率仅 5.7%）。",
       "start": 63.833,
       "end": 70.733,
       "beatB": 66.467,
@@ -457,7 +456,8 @@
       "en": [
         "Even the world's most celebrated solo founder, Pieter Levels, built 70 products over a decade;",
         "66 of them failed outright, and only 4 ever became profitable hits (5.7%)."
-      ]
+      ],
+      "role": "幸存偏差 · 70个项目66个归零"
     },
     {
       "id": "S12",
@@ -479,10 +479,9 @@
       "l2B": "唯一稳赚的，是收【1999元】教单干的卖课人。",
       "enA": "Industry surveys show 83% of solo developers earn less than $500 a month;",
       "enB": "the only guaranteed winners are gurus charging ¥1,999 to teach the solo-unicorn dream.",
-      "visual": "【拍A】独立开发者月收入真实分布：高达 83% 的单干者挤在月入不足 $500 的底层区间。 【拍B】73.30s 重拍：旁边亮起「AI 超级个体财富训练营 · 限时 ¥1,999」的收款海报，卖铲人赚得盆满钵满。",
       "foley": "coin_clatter (73.33s)",
-      "narrativeA": "独立开发者月收入真实分布：高达 83% 的单干者挤在月入不足 $500 的底层区间。",
-      "narrativeB": "73.30s 重拍：旁边亮起「AI 超级个体财富训练营 · 限时 ¥1,999」的收款海报，卖铲人赚得盆满钵满。",
+      "narrativeA": "独立开发者社区真实收入调查显示，高达 83% 的单干者月收入不足 $500。",
+      "narrativeB": "73.30s 重拍：在这场淘金热里唯一旱涝保收的，是收 ¥1,999 报名费教别人“如何成为超级个体”的卖课导师。",
       "start": 70.733,
       "end": 76.6,
       "beatB": 73.3,
@@ -494,7 +493,8 @@
       "en": [
         "Industry surveys show 83% of solo developers earn less than $500 a month;",
         "the only guaranteed winners are gurus charging ¥1,999 to teach the solo-unicorn dream."
-      ]
+      ],
+      "role": "行业真相 · 83%底层与卖铲人暴利"
     },
     {
       "id": "S13",
@@ -516,10 +516,9 @@
       "l2B": "可客户真正愿掏高价的，是机器够不着的【95分】。",
       "enA": "Why is money harder to make as tools improve? Because AI lets anyone produce 60-point passable work;",
       "enB": "yet what clients pay a premium for is the 95-point craft that machines cannot reach.",
-      "visual": "【拍A】能力分水岭：底部 0→60 分及格线（套路代码、模板海报、洗稿文案）被 AI 一秒填平，边际价值归零。 【拍B】79.27s 重拍：上方 60→95 分的深水区（独到审美、极端 Bug 排障、商业兜底）筑起高耸的黄铜护城河。",
       "foley": "slam_impact (79.30s)",
-      "narrativeA": "能力分水岭：底部 0→60 分及格线（套路代码、模板海报、洗稿文案）被 AI 一秒填平，边际价值归零。",
-      "narrativeB": "79.27s 重拍：上方 60→95 分的深水区（独到审美、极端 Bug 排障、商业兜底）筑起高耸的黄铜护城河。",
+      "narrativeA": "为什么工具越强反而越难赚钱？因为 AI 让外行也能一秒交出 60 分的及格活（套路代码、模板设计、洗稿文案）。",
+      "narrativeB": "79.27s 重拍：60 分供给彻底免费化，客户真正愿意掏高价购买的，是机器够不着的 95 分手艺（独到审美、复杂排障与商业兜底）。",
       "start": 76.6,
       "end": 83.067,
       "beatB": 79.267,
@@ -531,7 +530,8 @@
       "en": [
         "Why is money harder to make as tools improve? Because AI lets anyone produce 60-point passable work;",
         "yet what clients pay a premium for is the 95-point craft that machines cannot reach."
-      ]
+      ],
+      "role": "能力通胀 · 60分泛滥与95分稀缺"
     },
     {
       "id": "S14",
@@ -553,10 +553,9 @@
       "l2B": "唯一能拼的只剩压价，【五千元】的活砸到九十九。",
       "enA": "When 500 freelancers bid on the same job with identical 60-point AI drafts,",
       "enB": "the only way to compete is a brutal price war, crashing a ¥5,000 project down to ¥99.",
-      "visual": "【拍A】同一舞台推进至外包竞标大厅：同一个需求下瞬间涌入 500 份高度雷同的 60 分 AI 生成方案。 【拍B】85.70s 重拍：报价牌一路雪崩（¥5,000 → ¥800 → ¥99 包月），没有护城河的 60 分供给沦为白菜价。",
       "foley": "glitch_tear (85.73s)",
-      "narrativeA": "同一舞台推进至外包竞标大厅：同一个需求下瞬间涌入 500 份高度雷同的 60 分 AI 生成方案。",
-      "narrativeB": "85.70s 重拍：报价牌一路雪崩（¥5,000 → ¥800 → ¥99 包月），没有护城河的 60 分供给沦为白菜价。",
+      "narrativeA": "当 500 个接单者拿着高度雷同的 60 分 AI 方案去抢同一个外包需求。",
+      "narrativeB": "85.70s 重拍：在零差异化下唯一能拼的只剩恶性压价，原本 ¥5,000 的项目报价一路雪崩到 ¥99。",
       "start": 83.067,
       "end": 90.033,
       "beatB": 85.7,
@@ -568,7 +567,8 @@
       "en": [
         "When 500 freelancers bid on the same job with identical 60-point AI drafts,",
         "the only way to compete is a brutal price war, crashing a ¥5,000 project down to ¥99."
-      ]
+      ],
+      "role": "价格雪崩 · 500份方案砸到99元"
     },
     {
       "id": "S15",
@@ -590,10 +590,9 @@
       "l2B": "可布商反手把工价砍掉【80%】，织工越忙越贫穷。",
       "enA": "In 1780, British cottage weavers borrowed money to buy new looms, multiplying output tenfold;",
       "enB": "merchants simply slashed piece-rates by 80%, leaving hardworking weavers poorer than before.",
-      "visual": "【拍A】历史镜像对照：1780 年英国手摇纺机织工以为有了新机器就能在家轻松致富，产量暴涨 10 倍。 【拍B】92.80s 重拍：垄断渠道的布商将每匹布收购单价暴砍 80%，与 2026 年 AI 接单者的处境严丝合缝。",
       "foley": "paper_crumple (92.83s)",
-      "narrativeA": "历史镜像对照：1780 年英国手摇纺机织工以为有了新机器就能在家轻松致富，产量暴涨 10 倍。",
-      "narrativeB": "92.80s 重拍：垄断渠道的布商将每匹布收购单价暴砍 80%，与 2026 年 AI 接单者的处境严丝合缝。",
+      "narrativeA": "历史早已演过同一幕：1780 年英国手摇纺机织工贷款买新机器，在家织布产量翻了 10 倍。",
+      "narrativeB": "92.80s 重拍：垄断销售渠道的布商反手将每匹布的收购工价砍掉 80%，织工每天干 16 小时却比以前更穷。",
       "start": 90.033,
       "end": 96.233,
       "beatB": 92.8,
@@ -605,7 +604,8 @@
       "en": [
         "In 1780, British cottage weavers borrowed money to buy new looms, multiplying output tenfold;",
         "merchants simply slashed piece-rates by 80%, leaving hardworking weavers poorer than before."
-      ]
+      ],
+      "role": "历史镜像 · 1780英国织工困局"
     },
     {
       "id": "S16",
@@ -627,10 +627,9 @@
       "l2B": "所谓“一人干十人活”，只是自负盈亏【全能牛马】。",
       "enA": "Crushed simultaneously by 82% admin chores, 70% traffic tolls, and 60-point price wars,",
       "enB": "doing ten people's jobs alone just turns you into a self-funded beast of burden.",
-      "visual": "【拍A】96.23s 全片情绪最高潮：前三幕揭示的三重困局（82% 隐形杂务、70% 平台买量税、60 分白菜价内卷）在画面中央合拢咬死。 【拍B】99.33s 重拍炸响：击碎「一人成军」的浪漫滤镜，亮出本质诊断——「自负盈亏的全能牛马」。",
       "foley": "slam_impact (99.36s)",
-      "narrativeA": "96.23s 全片情绪最高潮：前三幕揭示的三重困局（82% 隐形杂务、70% 平台买量税、60 分白菜价内卷）在画面中央合拢咬死。",
-      "narrativeB": "99.33s 重拍炸响：击碎「一人成军」的浪漫滤镜，亮出本质诊断——「自负盈亏的全能牛马」。",
+      "narrativeA": "96.23s 全片情绪高潮：82% 隐形杂务、70% 平台买量税、60 分白菜价价格战三座大山同时压下。",
+      "narrativeB": "99.33s 重拍定论：没有商业杠杆的“一人干十人活”，本质只是自负盈亏的全能牛马。",
       "start": 96.233,
       "end": 103.5,
       "beatB": 99.333,
@@ -642,7 +641,8 @@
       "en": [
         "Crushed simultaneously by 82% admin chores, 70% traffic tolls, and 60-point price wars,",
         "doing ten people's jobs alone just turns you into a self-funded beast of burden."
-      ]
+      ],
+      "role": "全片高潮 · 自负盈亏的全能牛马"
     },
     {
       "id": "S17",
@@ -664,10 +664,9 @@
       "l2B": "那些活得滋润的独立高手，都守住了【三条铁律】。",
       "enA": "If doing everything yourself is a dead end, how can an ordinary person actually break through?",
       "enB": "The solo practitioners who truly thrive all follow three concrete survival rules.",
-      "visual": "【拍A】103.50s 音乐抽空沉淀（Acoustic Vacuum）：喧嚣褪去，浮现观众最关心的核心追问——普通人到底该怎么活？ 【拍B】106.13s 重拍点亮破局航标：摒弃一个人硬扛十个工种的幻想，亮出经过验证的「三条生存铁律」。",
       "foley": "water_drop (106.16s)",
-      "narrativeA": "103.50s 音乐抽空沉淀（Acoustic Vacuum）：喧嚣褪去，浮现观众最关心的核心追问——普通人到底该怎么活？",
-      "narrativeB": "106.13s 重拍点亮破局航标：摒弃一个人硬扛十个工种的幻想，亮出经过验证的「三条生存铁律」。",
+      "narrativeA": "103.50s 音乐抽空沉淀：既然一个人包揽全公司杂活是死胡同，普通人到底该怎么破局？",
+      "narrativeB": "106.13s 重拍点亮出路：那些真正活得滋润的独立高手，都守住了三条具体生存铁律。",
       "start": 103.5,
       "end": 110.167,
       "beatB": 106.133,
@@ -679,7 +678,8 @@
       "en": [
         "If doing everything yourself is a dead end, how can an ordinary person actually break through?",
         "The solo practitioners who truly thrive all follow three concrete survival rules."
-      ]
+      ],
+      "role": "抽空转折 · 普通人破局三铁律"
     },
     {
       "id": "S18",
@@ -701,10 +701,9 @@
       "l2B": "把全部精力死磕在机器做不到的【95分】真手艺上。",
       "enA": "Rule 1: Offload all 60-point repetitive grunt work to AI instead of competing on cheap labor;",
       "enB": "pour 100% of your human energy into 95-point taste, edge-case mastery, and real accountability.",
-      "visual": "【拍A】破局舞台第一支柱展开（对应破除第四幕 60 分内卷）：将底部 60 分的模板代码、基础排版与常规杂活全部交由自动化工具接管。 【拍B】113.50s 重拍：创作者将 100% 时间投入顶层 95 分稀缺区——独到审美判断、复杂系统排障与对结果的商业兜底。",
       "foley": "lock_click (113.53s)",
-      "narrativeA": "破局舞台第一支柱展开（对应破除第四幕 60 分内卷）：将底部 60 分的模板代码、基础排版与常规杂活全部交由自动化工具接管。",
-      "narrativeB": "113.50s 重拍：创作者将 100% 时间投入顶层 95 分稀缺区——独到审美判断、复杂系统排障与对结果的商业兜底。",
+      "narrativeA": "铁律一（破除 60 分内卷）：把 60 分的重复杂活甩给 AI 和自动化工具，绝不拿肉身跟机器拼低价。",
+      "narrativeB": "113.50s 重拍：把 100% 的心力死磕在机器做不到的 95 分真手艺（行业审美、疑难排障、结果兜底）上。",
       "start": 110.167,
       "end": 117.733,
       "beatB": 113.5,
@@ -716,7 +715,8 @@
       "en": [
         "Rule 1: Offload all 60-point repetitive grunt work to AI instead of competing on cheap labor;",
         "pour 100% of your human energy into 95-point taste, edge-case mastery, and real accountability."
-      ]
+      ],
+      "role": "铁律一 · 甩掉60分死磕95分"
     },
     {
       "id": "S19",
@@ -738,10 +738,9 @@
       "l2B": "第三，跳出竞价漏斗，靠口碑攒下【百名】复购熟客。",
       "enA": "Rule 2: Never quit blindly—ship a 14-day minimum prototype to collect your very first payment;",
       "enB": "Rule 3: Escape platform bidding wars by earning 100 direct, high-trust repeat clients.",
-      "visual": "【拍A】破局舞台第二支柱（对应破除 5.7% 命中率陷阱）：划掉“裸辞开发半年”，确立「14 天最小原型 → 收到第一笔真实付款」的快速验证路径。 【拍B】120.87s 重拍点亮第三支柱（对应破除 70% 买量税）：绕开公域竞价漏斗，凭口碑积累 100 个直接找你复购的高信任熟客（复购率 > 80%）。",
       "foley": "whoosh_deep (120.90s)",
-      "narrativeA": "破局舞台第二支柱（对应破除 5.7% 命中率陷阱）：划掉“裸辞开发半年”，确立「14 天最小原型 → 收到第一笔真实付款」的快速验证路径。",
-      "narrativeB": "120.87s 重拍点亮第三支柱（对应破除 70% 买量税）：绕开公域竞价漏斗，凭口碑积累 100 个直接找你复购的高信任熟客（复购率 > 80%）。",
+      "narrativeA": "铁律二（破除 5.7% 盲目试错）：绝不裸辞闭门造车半年，先用 14 天做出最小作品收到第一笔真实付款。",
+      "narrativeB": "120.87s 重拍：铁律三（破除 70% 买量税）：跳出平台竞价漏斗，靠口碑攒下 100 个直接找你复购的熟客。",
       "start": 117.733,
       "end": 124.7,
       "beatB": 120.867,
@@ -753,7 +752,8 @@
       "en": [
         "Rule 2: Never quit blindly—ship a 14-day minimum prototype to collect your very first payment;",
         "Rule 3: Escape platform bidding wars by earning 100 direct, high-trust repeat clients."
-      ]
+      ],
+      "role": "铁律二与三 · 14天收款与百名熟客"
     },
     {
       "id": "S20",
@@ -775,10 +775,9 @@
       "l2B": "让机器替你跑完前【60分】，凭真手艺体面地赢。",
       "enA": "A true Super-Individual never plays a beast of burden doing a whole company's chores alone;",
       "enB": "let machines run the first 60 points of mass production, and win with your 95-point craft.",
-      "visual": "【拍A】124.70s 终幕收束：三条生存铁律（甩掉 60 分杂活、14 天最小验证、100 个直接复购熟客）在暖金晨光中汇合。 【拍B】127.50s 终极重拍与颂钵余音（127.50s–132.00s）：定格全片带走金句——让机器替你跑完前 60 分，凭真手艺体面地赢。",
       "foley": "singing_bowl_strike (127.53s)",
-      "narrativeA": "124.70s 终幕收束：三条生存铁律（甩掉 60 分杂活、14 天最小验证、100 个直接复购熟客）在暖金晨光中汇合。",
-      "narrativeB": "127.50s 终极重拍与颂钵余音（127.50s–132.00s）：定格全片带走金句——让机器替你跑完前 60 分，凭真手艺体面地赢。",
+      "narrativeA": "124.70s 终幕收束：真正的超级个体，从不靠一个人硬扛整家公司的杂活。",
+      "narrativeB": "127.50s 颂钵余音（127.50s–132.00s）：让机器替你跑完前 60 分量产，凭 95 分真手艺体面地赢。",
       "start": 124.7,
       "end": 132.0,
       "beatB": 127.5,
@@ -790,7 +789,8 @@
       "en": [
         "A true Super-Individual never plays a beast of burden doing a whole company's chores alone;",
         "let machines run the first 60 points of mass production, and win with your 95-point craft."
-      ]
+      ],
+      "role": "终幕余音 · 机器跑60分人赢95分"
     }
   ],
   "designPhilosophy": "Pure Literary Script + Technical/Quality Acceptance Criteria Only (Zero Visual Interference)"
