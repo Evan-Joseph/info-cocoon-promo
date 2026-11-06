@@ -1,60 +1,139 @@
-# 《抽丝剥茧》(UNRAVEL STUDIO) · EP02《超级个体：一人成军的幻觉与科斯暗箱》文学剧本与九列导演表 (v7.0 单一真相源)
+# 《超级个体：一人成军的幻觉与科斯暗箱》无配音纯文学卡点剧本与九列导演表
 
-> **版本状态**：`v7.0`（纯文学剧本与技术质量验收标准版 · 零视觉预设干扰）
-> **全片规格**：`132.0s`（`3,960 frames @ 30fps`，`1920×1080`）｜无配音纯视觉动态图景 + 双语衬线字幕（Zero-Voiceover Beat-Driven Visual Essay）
-> **唯一锁定母带**：[`01_JingWei_DJ0.88x_Offset3.8sDrop_132s_Master.mp3`](file:///Users/joseph/Desktop/【副业】视频创作/03_专题项目/02_超级个体/03_配乐精析与卡点试听/bgm_composed/01_JingWei_DJ0.88x_Offset3.8sDrop_132s_Master.mp3)（实测真鼓点 `112.30 BPM`，每拍 `0.5343s`，每小节 `2.1371s`，`t = 3.800s / Frame 114` 首重拍 Drop）
-> **正交职责边界（Literature vs. Frontend Craft）**：我方唯一负责**文学叙事弧线、真实数据事实、节拍时间轴（`SHOT_BOUNDS`）、屏上中文主锚字（`L1`）、底部双语字幕（`L2`）及技术/质量验收标准**；具体视觉设计、色彩调度、排版构图、矢量图形与运镜动效 **100% 交由 Arena 顶配前端模型（`Claude Opus 5.5 High/Max`）全权自主发挥，本表与下游提示词不预设任何具体图形或排版指令**。
-
----
-
-## 一、 核心创作与验收准则
-
-1. **正交分工：只供文学剧本与质量验收标准，零视觉具体建议**：
-   - 剧本与提示词只提供每一幕的叙事逻辑、核心数据反差、字数受控的双语台词以及客观可测的技术/质量红线；
-   - 绝不向前端模型指定“画几个圆环、画几乘几网格、画左右时钟、用什么背景色块”等具体视觉建议，完全释放顶配前端模型的视觉导演能力。
-2. **节奏与可理解性验收底线（解决「观众没看明白就切下一幕」）**：
-   - **同幕连续演进（Act-Level Continuity）**：全片五幕（每幕 `18.7s–39.0s`），同一幕内各镜头围绕同一核心叙事主题自然递进与反转，避免每 6 秒全屏推倒重来；
-   - **单镜信息极简（1 秒扫视完）**：每镜画面焦点清晰纯粹，配合 `L1A / L1B` 简短中文锚字（`4–10` 字），让观众 `1 秒` 内抓住当镜对比关系；
-   - **双拍字幕叠显不消失（Non-Vanishing Stacked Subtitles）**：拍 A 台词（`L2A`）自镜头开始常驻至镜头结束（`5.27s–7.57s`），拍 B 台词（`L2B`）在重拍点 `beatB` 叠显于 `L2A` 正下方并常驻至镜头结束（`2.80s–4.53s`），绝不中途抽走上半句。
-3. **全片大白话去抽象化与破局三铁律收尾**：
-   - **第一幕（全能幻觉）**：`10亿美金一人公司` 造富预言 vs `14万星开源作者欠费 2.3万`、`两周发 520 条视频 0 进账`、`100万流水年底只剩 12万`；
-   - **第二幕（隐形杂务）**：科斯 `1937`《企业的性质》大白话拆解——公司的法务、财务、税务与渠道替员工挡下 `90%` 外部摩擦，辞职单干后催款、开票、售后瞬间吞掉 `82%` 精力；`2026 年` `6,505` 人半年追踪证实，失去 `18:00` 下班边界后自己成了 `24 小时` 监工，失眠与情绪耗竭暴涨 `+42%`；
-   - **第三幕（买量重税）**：每赚 `¥100`，`¥70` 交了平台投流过路费、`¥18` 交了算力与软件订阅，净剩仅 `¥12`；全球头号独立开发者 Pieter Levels 十年做 `70 个` 产品有 `66 个` 归零（仅 `4 个` 赚钱，命中率 `5.7%`），`83%` 单干者月入不足 `$500`，唯独收 `¥1,999` 教单干的卖课人稳赚；
-   - **第四幕（同质内卷）**：AI 让人人一秒交出 `60 分` 及格活，`500 份` 雷同方案把 `¥5,000` 外包单砸到 `¥99`（正如 `1780 年` 英国织工贷款买新纺机产量翻十倍、收购工价却被布商砍掉 `80%`），三重困局叠加使人沦为「自负盈亏的全能牛马」；
-   - **第五幕（破局活法 · 三条生存铁律）**：给出普通人能直接照着做的三条实操活法——**① 把 `60 分` 杂活甩给 AI，死磕机器做不到的 `95 分` 审美与兜底；② 别裸辞闭门造车，先用 `14 天` 最小作品收第一笔钱；③ 跳出竞价漏斗，靠口碑攒下 `100 个` 长期复购熟客**。
+> **呈现模式**：**无配音纯视觉 / 双语衬线字幕 + 原版配乐正拍主时钟驱动（Zero-Voiceover Beat-Driven Visual Essay）**
+> **模型正交分工声明（Iron Law of Model Division of Labor）**：
+> 1. **文学与节拍层（本文件）**：仅定义六幕故事脊椎、真实考据案例与数据、画内极简中文数字锚点（`L1`）、底部中英双语衬线台词（`L2`）以及精确锁死原曲正拍的起止时间戳（`SHOT_BOUNDS` / `beatB`）；
+> 2. **前端视觉导演层（100% 交由 `Claude Opus 5.5 High / Max` 自由发挥）**：每一镜的具体视觉隐喻、几何造型、材质底板切换、色彩层次与相机推拉运镜，**完全交由前端模型自主创作，本剧本不做任何预设画法干预**。
+> **全片规格**：总时长 **`132.00 秒`**（`3,960 帧 @ 30fps`，对应痛劣《精卫 (DJ 0.88x 纯音乐)》`112.30 BPM`，`t = 3.800s` 首重拍 Drop 后共 `60` 个小节 / `240` 拍，分 `20` 镜，相邻镜头采用 `10 / 12 / 14 / 16` 拍非等长正拍交替，零连续 3 镜等长催眠）| 单拍字幕严格控制在 **`11–15` 个阅读单元**，英文斜体副行严格控制在 **`8–11` 个单词**，每拍驻留 **`2.67s–4.27s`**。
 
 ---
 
-## 二、 五幕二十镜九列导演总表（132.0s / 3,960 Frames @ 30fps）
+## 一、 核心认知目标 (`Viewer Line`)
 
-| 镜号 | 幕次与章节 (`L0`) | 叙事功能 (`Narrative Role`) | 起止时间与帧数 (`Start–End / Dur`) | 镜内重拍点 (`beatB / holdB`) | 屏上锚字 (`L1A -> L1B`) | 底部中文双拍叠显字幕 (`L2A` 常驻 + `L2B` 叠显) | 底部英文文学副标 (`enA / enB`) | 叙事事实脉络与拟音卡点 (`Narrative Facts & Foley +1f`) |
-| :---: | :--- | :---: | :---: | :---: | :--- | :--- | :--- | :--- |
-| **S01** | `第一幕 · 全能幻觉` | `黄金前4秒 · 神话与欠费反差` | `0.000s–6.600s`<br>(`0–198f` / `6.60s`) | `3.800s`<br>(`Frame 114` / `hold 2.80s`) | **A**: `一人公司 $10亿`<br>**B**: `14万星 · 欠费 2.3万` | **A**: 一句“十亿【一人公司】”，点燃全网单干造富梦；<br>**B**: 可【14万星】爆款作者，连服务器电费都交不起。 | **A**: *A viral promise of a billion-dollar one-person company ignited the solo-founder craze;*<br>**B**: *yet a 140k-star open-source creator cannot even pay his own server electricity bill.* | **拍A**：硅谷创投圈疯传「史上第一家 10 亿美元一人公司即将诞生」，宣称一个人配齐 AI 写代码、做设计、剪视频、搞客服就能顶一家公司。<br>**拍B**：3.80s 重拍鼓点反转：GitHub 140,000 星开源爆款作者的真实处境——服务器与算力账单欠费 -¥23,800，收入连电费都交不起。<br>**拟音**：`whoosh_deep (0.46s) + slam_impact (3.83s)` |
-| **S02** | `第一幕 · 全能幻觉` | `案例递进 · 产量暴涨与零进账` | `6.600s–11.867s`<br>(`198–356f` / `5.27s`) | `8.700s`<br>(`Frame 261` / `hold 3.17s`) | **A**: `两周狂发 520 条`<br>**B**: `真实到账 ¥0.00` | **A**: 有人靠AI两周发【520条】视频，看着很热闹；<br>**B**: 可翻开收款后台一看，真实买单进账却是【零元】。 | **A**: *One creator used AI to pump out 520 videos in two weeks with lively view counts;*<br>**B**: *yet opening the merchant ledger reveals a glaring zero in actual paid revenue.* | **拍A**：创作者用 AI 在 14 天内批量产出 520 条视频，表面播放数据看似热闹。<br>**拍B**：8.70s 重拍揭示收款实况：真实转化为买单进账的金额是 ¥0.00。<br>**拟音**：`coin_clatter (8.73s)` |
-| **S03** | `第一幕 · 全能幻觉` | `全片立题 · 百万流水的88%缺口` | `11.867s–18.933s`<br>(`356–568f` / `7.07s`) | `14.667s`<br>(`Frame 440` / `hold 4.27s`) | **A**: `100万流水只剩 12万`<br>**B**: `消失的 88万去哪了` | **A**: 明明没雇员工，一年【百万流水】怎只剩十二万？<br>**B**: 拆开【超级个体】真实账本，才看清背后的暗箱。 | **A**: *With zero employee payroll, how does a million in revenue shrink to just 120k?*<br>**B**: *Opening the real ledger of the Super-Individual reveals the hidden black box behind the hype.* | **拍A**：一人工作室全年做到 ¥1,000,000 流水、明明没有员工工资支出，年底净剩却只有 ¥120,000（12%）。<br>**拍B**：14.67s 重拍立题：中间消失的 ¥880,000（88%）究竟被谁抽走了？<br>**拟音**：`slam_impact (14.70s)` |
-| **S04** | `第二幕 · 隐形杂务` | `理论溯源 · 科斯定理大白话` | `18.933s–25.333s`<br>(`568–760f` / `6.40s`) | `21.600s`<br>(`Frame 648` / `hold 3.73s`) | **A**: `为什么世界需要公司`<br>**B**: `替你挡下 90% 杂事` | **A**: 上班总嫌公司分走大头，诺奖得主【科斯】早算过：<br>**B**: 公司的法务财务与渠道，替你挡下【90%】杂事。 | **A**: *At a job we resent the firm taking a big cut, yet Nobel laureate Ronald Coase showed why:*<br>**B**: *a company's legal, finance, and sales teams quietly absorb 90% of outside friction for you.* | **拍A**：诺贝尔经济学奖得主罗纳德·科斯 1937 年在《企业的性质》中回答了核心问题：打工人总嫌公司分走大头，世界为什么还需要公司？<br>**拍B**：21.60s 重拍揭示：公司的法务、税务、财务、销售与售后团队，替员工挡下了 90% 的外部交易摩擦。<br>**拟音**：`paper_crumple (21.63s)` |
-| **S05** | `第二幕 · 隐形杂务` | `现实反噬 · 82%精力被杂务吞噬` | `25.333s–31.633s`<br>(`760–949f` / `6.30s`) | `27.867s`<br>(`Frame 836` / `hold 3.77s`) | **A**: `机器省下写代码时间`<br>**B**: `催款报税吃掉 82%` | **A**: 辞职单干后，AI确实省下了【写代码】的时间；<br>**B**: 可催款、开票与扯皮售后，吞掉你【82%】精力。 | **A**: *Once you quit to go solo, AI certainly saves you hours on coding and design;*<br>**B**: *yet chasing invoices, filing taxes, and handling refund disputes swallow 82% of your energy.* | **拍A**：辞职单干后，AI 确实把写代码、画图等核心制作时间压缩到了 18%。<br>**拍B**：27.87s 重拍：没了公司挡箭牌，催尾款、开发票、改合同、扯皮售后等杂务全砸在一人身上，吞掉 82% 精力。<br>**拟音**：`glitch_tear (27.90s)` |
-| **S06** | `第二幕 · 隐形杂务` | `供需失衡 · 供给百倍与获客十倍` | `31.633s–38.033s`<br>(`949–1141f` / `6.40s`) | `34.367s`<br>(`Frame 1031` / `hold 3.67s`) | **A**: `同类竞品暴涨 100倍`<br>**B**: `找客户成本贵 10倍` | **A**: 人人都能用AI做产品，市面同类供给暴涨【百倍】；<br>**B**: 可买单的客户没变多，找客户成本反倒贵了【十倍】。 | **A**: *When anyone can ship an AI product overnight, market supply explodes 100-fold;*<br>**B**: *yet the pool of paying customers stays flat, driving acquisition costs up 10-fold.* | **拍A**：AI 让开发门槛骤降，市面上的同类产品与内容供给暴涨 100 倍。<br>**拍B**：34.37s 重拍：买单客户的注意力与预算并未增加，导致找一个付费客户的获客成本（CAC）暴涨 10 倍。<br>**拟音**：`whoosh_deep (34.40s)` |
-| **S07** | `第二幕 · 隐形杂务` | `实证引入 · 6505人半年追踪` | `38.033s–44.933s`<br>(`1141–1348f` / `6.90s`) | `40.667s`<br>(`Frame 1220` / `hold 4.27s`) | **A**: `不用坐班会更幸福吗`<br>**B**: `6,505 人半年追踪` | **A**: 不用坐班总该更轻松吧？【2026年】心理学研究，<br>**B**: 连续半年追踪了【6505名】单干者的真实作息。 | **A**: *Surely no commute and no boss means an easier life? A 2026 psychology study*<br>**B**: *tracked the real daily routines of 6,505 solo workers across six full months.* | **拍A**：大众普遍以为“不用坐班、没有老板管”至少能活得更轻松。<br>**拍B**：40.67s 重拍：2026 年《管理心理学杂志》对 N = 6,505 名高自主权独立工作者展开了为期 6 个月的追踪调查。<br>**拟音**：`paper_crumple (40.70s)` |
-| **S08** | `第二幕 · 隐形杂务` | `边界消失 · 24小时自我监工` | `44.933s–51.100s`<br>(`1348–1533f` / `6.17s`) | `47.433s`<br>(`Frame 1423` / `hold 3.67s`) | **A**: `上班 18:00 到点下班`<br>**B**: `单干 24 小时不敢停` | **A**: 以前在公司上班，六点合上电脑就能【安心休息】；<br>**B**: 单干后停工一小时都像【亏钱】，自己成了狠监工。 | **A**: *In an office job, closing your laptop at 6 PM meant guilt-free rest;*<br>**B**: *solo, every hour off feels like losing money, turning you into your own ruthless 24/7 boss.* | **拍A**：在公司上班有明确的 18:00 下班边界，合上电脑就能心安理得休息。<br>**拍B**：47.43s 重拍：单干后没有底薪兜底，停工一小时都觉得在亏钱，自己成了 24 小时盯着自己的严苛监工。<br>**拟音**：`heartbeat_lub_dub (47.46s)` |
-| **S09** | `第二幕 · 隐形杂务` | `数据定论 · 情绪耗竭暴涨42%` | `51.100s–57.933s`<br>(`1533–1738f` / `6.83s`) | `53.900s`<br>(`Frame 1617` / `hold 4.03s`) | **A**: `越自由反而越焦虑`<br>**B**: `情绪耗竭暴涨 +42%` | **A**: 数据揭开了残酷真相：看似【时间自由】的单干者，<br>**B**: 半年后的失眠与耗竭，反而比预期暴涨了【42%】。 | **A**: *The tracking data exposed a harsh truth: those with the highest apparent schedule freedom*<br>**B**: *suffered a 42% surge in insomnia and emotional exhaustion after six months.* | **拍A**：追踪数据打破了“时间自由等于幸福”的幻想。<br>**拍B**：53.90s 副歌重拍：看似最自由的单干群体，半年后的失眠率与认知情绪耗竭反而暴涨了 +42%（自主权悖论）。<br>**拟音**：`glass_shatter (53.93s)` |
-| **S10** | `第三幕 · 买量重税` | `分账拆解 · 70元买量与18元算力` | `57.933s–63.833s`<br>(`1738–1915f` / `5.90s`) | `60.500s`<br>(`Frame 1815` / `hold 3.33s`) | **A**: `平台投流抽走 ¥70`<br>**B**: `算力扣 ¥18 · 净剩 ¥12` | **A**: 省下的工资去哪了？每赚一百，【70元】交了投流，<br>**B**: 再扣掉【18元】算力订阅，落进口袋只剩十二块。 | **A**: *Where did the saved payroll go? Out of every 100 yuan earned, 70 goes to platform traffic tolls,*<br>**B**: *and another 18 goes to AI compute and software subscriptions, leaving just 12 in pocket.* | **拍A**：回答第一幕的悬念——省下的员工工资去哪了？每赚 ¥100，有 ¥70（70%）交给了公域平台的竞价投流与渠道抽成。<br>**拍B**：60.50s 重拍：再扣掉 ¥18（18%）的 AI 算力账单与软件订阅费，真正落进自己口袋的只有 ¥12（12%）。<br>**拟音**：`reverse_suck (60.53s)` |
-| **S11** | `第三幕 · 买量重税` | `幸存偏差 · 70个项目66个归零` | `63.833s–70.733s`<br>(`1915–2122f` / `6.90s`) | `66.467s`<br>(`Frame 1994` / `hold 4.27s`) | **A**: `头号大神做 70 个项目`<br>**B**: `66 个归零 · 仅 4 个成` | **A**: 连全球头号独立开发者，十年也做了【70个】产品；<br>**B**: 其中【66个】惨淡归零，真正赚钱的只有区区四个。 | **A**: *Even the world's most celebrated solo founder, Pieter Levels, built 70 products over a decade;*<br>**B**: *66 of them failed outright, and only 4 ever became profitable hits (5.7%).* | **拍A**：被全网奉为“一人公司教父”的全球头号独立开发者 Pieter Levels，十年间一共做了 70 个产品。<br>**拍B**：66.47s 重拍：其中 66 个项目惨淡归零（失败率 94.3%），真正跑通赚钱的只有 4 个（命中率仅 5.7%）。<br>**拟音**：`lock_click (66.50s)` |
-| **S12** | `第三幕 · 买量重税` | `行业真相 · 83%底层与卖铲人暴利` | `70.733s–76.600s`<br>(`2122–2298f` / `5.87s`) | `73.300s`<br>(`Frame 2199` / `hold 3.30s`) | **A**: `83% 月入不足 $500`<br>**B**: `卖课导师稳赚 ¥1,999` | **A**: 社区真实统计显示，【83%】单干者月入不足五百；<br>**B**: 唯一稳赚的，是收【1999元】教单干的卖课人。 | **A**: *Industry surveys show 83% of solo developers earn less than $500 a month;*<br>**B**: *the only guaranteed winners are gurus charging ¥1,999 to teach the solo-unicorn dream.* | **拍A**：独立开发者社区真实收入调查显示，高达 83% 的单干者月收入不足 $500。<br>**拍B**：73.30s 重拍：在这场淘金热里唯一旱涝保收的，是收 ¥1,999 报名费教别人“如何成为超级个体”的卖课导师。<br>**拟音**：`coin_clatter (73.33s)` |
-| **S13** | `第四幕 · 同质内卷` | `能力通胀 · 60分泛滥与95分稀缺` | `76.600s–83.067s`<br>(`2298–2492f` / `6.47s`) | `79.267s`<br>(`Frame 2378` / `hold 3.80s`) | **A**: `机器一秒交 60 分活`<br>**B**: `高价只买 95 分手艺` | **A**: 为何工具越强越难赚？AI让人人能交【60分】活；<br>**B**: 可客户真正愿掏高价的，是机器够不着的【95分】。 | **A**: *Why is money harder to make as tools improve? Because AI lets anyone produce 60-point passable work;*<br>**B**: *yet what clients pay a premium for is the 95-point craft that machines cannot reach.* | **拍A**：为什么工具越强反而越难赚钱？因为 AI 让外行也能一秒交出 60 分的及格活（套路代码、模板设计、洗稿文案）。<br>**拍B**：79.27s 重拍：60 分供给彻底免费化，客户真正愿意掏高价购买的，是机器够不着的 95 分手艺（独到审美、复杂排障与商业兜底）。<br>**拟音**：`slam_impact (79.30s)` |
-| **S14** | `第四幕 · 同质内卷` | `价格雪崩 · 500份方案砸到99元` | `83.067s–90.033s`<br>(`2492–2701f` / `6.97s`) | `85.700s`<br>(`Frame 2571` / `hold 4.33s`) | **A**: `500 份雷同生成方案`<br>**B**: `报价 ¥5,000 砸到 ¥99` | **A**: 当五百人拿雷同【60分】AI方案去抢同一外包单，<br>**B**: 唯一能拼的只剩压价，【五千元】的活砸到九十九。 | **A**: *When 500 freelancers bid on the same job with identical 60-point AI drafts,*<br>**B**: *the only way to compete is a brutal price war, crashing a ¥5,000 project down to ¥99.* | **拍A**：当 500 个接单者拿着高度雷同的 60 分 AI 方案去抢同一个外包需求。<br>**拍B**：85.70s 重拍：在零差异化下唯一能拼的只剩恶性压价，原本 ¥5,000 的项目报价一路雪崩到 ¥99。<br>**拟音**：`glitch_tear (85.73s)` |
-| **S15** | `第四幕 · 同质内卷` | `历史镜像 · 1780英国织工困局` | `90.033s–96.233s`<br>(`2701–2887f` / `6.20s`) | `92.800s`<br>(`Frame 2784` / `hold 3.43s`) | **A**: `1780 织工买新机器`<br>**B**: `产量翻十倍 · 工钱砍 80%` | **A**: 两百年前【英国织工】贷款买新纺机，产量翻十倍；<br>**B**: 可布商反手把工价砍掉【80%】，织工越忙越贫穷。 | **A**: *In 1780, British cottage weavers borrowed money to buy new looms, multiplying output tenfold;*<br>**B**: *merchants simply slashed piece-rates by 80%, leaving hardworking weavers poorer than before.* | **拍A**：历史早已演过同一幕：1780 年英国手摇纺机织工贷款买新机器，在家织布产量翻了 10 倍。<br>**拍B**：92.80s 重拍：垄断销售渠道的布商反手将每匹布的收购工价砍掉 80%，织工每天干 16 小时却比以前更穷。<br>**拟音**：`paper_crumple (92.83s)` |
-| **S16** | `第四幕 · 同质内卷` | `全片高潮 · 自负盈亏的全能牛马` | `96.233s–103.500s`<br>(`2887–3105f` / `7.27s`) | `99.333s`<br>(`Frame 2980` / `hold 4.17s`) | **A**: `杂务 · 买量税 · 价格战`<br>**B**: `自负盈亏的全能牛马` | **A**: 八成杂务、七成流量税与内卷，【三座大山】压下；<br>**B**: 所谓“一人干十人活”，只是自负盈亏【全能牛马】。 | **A**: *Crushed simultaneously by 82% admin chores, 70% traffic tolls, and 60-point price wars,*<br>**B**: *doing ten people's jobs alone just turns you into a self-funded beast of burden.* | **拍A**：96.23s 全片情绪高潮：82% 隐形杂务、70% 平台买量税、60 分白菜价价格战三座大山同时压下。<br>**拍B**：99.33s 重拍定论：没有商业杠杆的“一人干十人活”，本质只是自负盈亏的全能牛马。<br>**拟音**：`slam_impact (99.36s)` |
-| **S17** | `第五幕 · 破局活法` | `抽空转折 · 普通人破局三铁律` | `103.500s–110.167s`<br>(`3105–3305f` / `6.67s`) | `106.133s`<br>(`Frame 3184` / `hold 4.03s`) | **A**: `普通人到底怎么破局？`<br>**B**: `真正高手的 3 条铁律` | **A**: 既然包揽全流程是死胡同，普通人该【怎么破局】？<br>**B**: 那些活得滋润的独立高手，都守住了【三条铁律】。 | **A**: *If doing everything yourself is a dead end, how can an ordinary person actually break through?*<br>**B**: *The solo practitioners who truly thrive all follow three concrete survival rules.* | **拍A**：103.50s 音乐抽空沉淀：既然一个人包揽全公司杂活是死胡同，普通人到底该怎么破局？<br>**拍B**：106.13s 重拍点亮出路：那些真正活得滋润的独立高手，都守住了三条具体生存铁律。<br>**拟音**：`water_drop (106.16s)` |
-| **S18** | `第五幕 · 破局活法` | `铁律一 · 甩掉60分死磕95分` | `110.167s–117.733s`<br>(`3305–3532f` / `7.57s`) | `113.500s`<br>(`Frame 3405` / `hold 4.23s`) | **A**: `铁律一 · 甩掉 60分杂活`<br>**B**: `死磕 95分审美与兜底` | **A**: 第一，把【60分】杂活甩给AI，绝不拿体力拼价；<br>**B**: 把全部精力死磕在机器做不到的【95分】真手艺上。 | **A**: *Rule 1: Offload all 60-point repetitive grunt work to AI instead of competing on cheap labor;*<br>**B**: *pour 100% of your human energy into 95-point taste, edge-case mastery, and real accountability.* | **拍A**：铁律一（破除 60 分内卷）：把 60 分的重复杂活甩给 AI 和自动化工具，绝不拿肉身跟机器拼低价。<br>**拍B**：113.50s 重拍：把 100% 的心力死磕在机器做不到的 95 分真手艺（行业审美、疑难排障、结果兜底）上。<br>**拟音**：`lock_click (113.53s)` |
-| **S19** | `第五幕 · 破局活法` | `铁律二与三 · 14天收款与百名熟客` | `117.733s–124.700s`<br>(`3532–3741f` / `6.97s`) | `120.867s`<br>(`Frame 3626` / `hold 3.83s`) | **A**: `铁律二 · 14天收第一笔钱`<br>**B**: `铁律三 · 攒 100个复购熟客` | **A**: 第二，别裸辞闭门造车，用【14天】最小作品收款；<br>**B**: 第三，跳出竞价漏斗，靠口碑攒下【百名】复购熟客。 | **A**: *Rule 2: Never quit blindly—ship a 14-day minimum prototype to collect your very first payment;*<br>**B**: *Rule 3: Escape platform bidding wars by earning 100 direct, high-trust repeat clients.* | **拍A**：铁律二（破除 5.7% 盲目试错）：绝不裸辞闭门造车半年，先用 14 天做出最小作品收到第一笔真实付款。<br>**拍B**：120.87s 重拍：铁律三（破除 70% 买量税）：跳出平台竞价漏斗，靠口碑攒下 100 个直接找你复购的熟客。<br>**拟音**：`whoosh_deep (120.90s)` |
-| **S20** | `第五幕 · 破局活法` | `终幕余音 · 机器跑60分人赢95分` | `124.700s–132.000s`<br>(`3741–3960f` / `7.30s`) | `127.500s`<br>(`Frame 3825` / `hold 4.50s`) | **A**: `机器跑完前 60 分量产`<br>**B**: `凭 95 分真手艺体面赢` | **A**: 真正的【超级个体】，从不靠一人硬扛整家公司杂活；<br>**B**: 让机器替你跑完前【60分】，凭真手艺体面地赢。 | **A**: *A true Super-Individual never plays a beast of burden doing a whole company's chores alone;*<br>**B**: *let machines run the first 60 points of mass production, and win with your 95-point craft.* | **拍A**：124.70s 终幕收束：真正的超级个体，从不靠一个人硬扛整家公司的杂活。<br>**拍B**：127.50s 颂钵余音（127.50s–132.00s）：让机器替你跑完前 60 分量产，凭 95 分真手艺体面地赢。<br>**拟音**：`singing_bowl_strike (127.53s)` |
+看完这支 132 秒的无配音视觉短片，观众将经历**两次认知颠覆**并带走**三条可立即执行的生存准则**：
+1. **第一重颠覆（打破“AI 让公司消亡”迷思 · 1937 科斯定理与剪刀差）**：承认新工具确实把写代码、画图等**内部生产与沟通成本压低了 90%（提速 10 倍）**；但诺贝尔经济学奖得主科斯（Ronald Coase, 1937）早就指出，公司存在的本质是替普通人挡住**外部市场扯皮（找客、法务兜底、抗坏账）**。当工具让每个人的生产成本归零时，全网同质作品暴涨 **100 倍**，反而令单干者的外部找客成本飙升 **10 倍**——省下的房租和工资，高达 **70%** 变成了交给算法平台的竞价买路钱。
+2. **第二重颠覆（打破“单干等于时间自由”迷思 · 6,505 人自由悖论与双向蒸馏）**：2026 年管理心理学顶刊对 **6,505 名**独立从业者的追踪证实，离开公司后精神耗竭率反而**暴涨 42%**（炒掉了朝九晚五的人类老板，却请回 24 小时断更即掉权的算法监工）；剥离卖课泡沫后 **83%** 单干者月净收入不足 **500 美元**，连一人公司鼻祖 Pieter Levels 启动 **70 个**项目也**死掉 66 个**。更残酷的是“双向蒸馏”：你能拿工具替掉员工，甲方也能拿工具替掉你。
+3. **三大破局实操与首尾闭环**：① **不裸辞，先做 14 天收款测试**（用最小作品收到第一笔真钱，没人买立刻换题）；② **甩掉机器能做的 60 分杂活**，死磕机器做不到的 **95 分审美决断与责任兜底**；③ **跳出平台竞价漏斗，攒下 100 个复购熟客**，关掉凌晨三点的报错弹窗。
 
 ---
 
-## 三、 机器可核验硬指标汇总
+## 二、 六幕双语文学剧本全文（100% 锁死原曲正拍）
 
-- **总时长与帧率**：`132.000s`（`3,960 frames @ 30fps`），零黑场淡入（`Frame 0` 即满对比度呈现 `S01` 拍 A），`t = 0.43s` 触发首重动态脉冲，`t = 3.800s`（`Frame 114`）首重拍 Drop 触发核心反差脉冲。
-- **节拍锁相精度**：全部 19 处切镜点与 20 处镜内 `beatB` 100% 锁定 `112.30 BPM` 实测底鼓峰值帧（最大偏差 `<= 16ms`），单镜时长分布于 `5.27s–7.57s`（平均 `6.60s`），相邻镜头零等长机械感。
-- **阅读时长与字数门禁**：40 句中文台词（`l2A`、`l2B`）去括号后字数严格控制在 **`17–22` 字**，每句仅含 **1 处** `【...】` 词级高亮；`l2A` 整镜常驻（`5.27s–7.57s`），`l2B` 在 `beatB` 叠显后保持 `2.80s–4.53s` 充裕阅读窗口。
-- **正交分工与画面净空（Q11 Gate）**：全表零视觉具体预设、零二元对立套话句式、零互联网黑话；屏上 `L1` 锚字 100% 纯中文短语+数字，所有文字字号 `>= 24px`。
+### 【第一幕：具象刺痛 · 14万星神话的亏本账单 (`00:00.000 - 00:20.897` | S01–S03)】
+- **[S01 | `0.000s - 8.074s` (dur `8.074s`, Beat B @ `3.800s`)]**
+  - `L1 画内锚字`：`一人抵一公司 / 140,000 星倒贴`
+  - `L2 拍A (0.000s, 驻留 3.80s)`：全网都在吹【一人抵一家公司】 ｜ *Every feed preaches the one-person company myth*
+  - `L2 拍B (3.800s, 驻留 4.27s)`：可14万星神作，账面却在【持续倒贴】 ｜ *Yet a 140,000-star AI hit bleeds cash every month*
+- **[S02 | `8.074s - 15.554s` (dur `7.480s`, Beat B @ `11.280s`)]**
+  - `L1 画内锚字`：`月入 20,000 美金 / 算力账单赤字`
+  - `L2 拍A (8.074s, 驻留 3.21s)`：开发者单枪匹马，写完【全部代码】 ｜ *One solo builder wrote every line of code with AI*
+  - `L2 拍B (11.280s, 驻留 4.27s)`：月入两万美金，不够交【算力账单】 ｜ *Earning twenty grand a month, yet crushed by server bills*
+- **[S03 | `15.554s - 20.897s` (dur `5.343s`, Beat B @ `18.225s`)]**
+  - `L1 画内锚字`：`1 人开 10 窗 / 凌晨 03:00`
+  - `L2 拍A (15.554s, 驻留 2.67s)`：更有一人开【10个窗口】熬到半夜 ｜ *Another engineer ran ten AI windows until 3 a.m.*
+  - `L2 拍B (18.225s, 驻留 2.67s)`：以为当了老板，其实成了【接线员】 ｜ *Thinking he became a boss, he became a switchboard operator*
+
+### 【第二幕：第一重颠覆 · 1937 科斯之问与生产提效 (`00:20.897 - 00:46.543` | S04–S07)】
+- **[S04 | `20.897s - 27.308s` (dur `6.411s`, Beat B @ `24.103s`)]**
+  - `L1 画内锚字`：`1937 科斯定理 / 《企业的性质》`
+  - `L2 拍A (20.897s, 驻留 3.21s)`：为什么工具越强，单干反而【越累】？ ｜ *Why does working solo get harder as AI grows stronger?*
+  - `L2 拍B (24.103s, 驻留 3.21s)`：答案藏在1937年的【科斯定理】里 ｜ *The answer lies in Ronald Coase's 1937 theorem*
+- **[S05 | `27.308s - 34.788s` (dur `7.480s`, Beat B @ `30.514s`)]**
+  - `L1 画内锚字`：`自由接单 / 50 人公司`
+  - `L2 拍A (27.308s, 驻留 3.21s)`：科斯问：既然人人都可【自由接单】 ｜ *Coase asked: if anyone can trade freely on the market*
+  - `L2 拍B (30.514s, 驻留 4.27s)`：世上为何还会有笨重的【公司】？ ｜ *Why do clumsy companies still exist at all?*
+- **[S06 | `34.788s - 40.131s` (dur `5.343s`, Beat B @ `37.459s`)]**
+  - `L1 画内锚字`：`外部摩擦减 90% / 销售 · 法务 · 兜底`
+  - `L2 拍A (34.788s, 驻留 2.67s)`：因为公司替你挡住了【外部扯皮】 ｜ *Because a firm shields you from external market friction*
+  - `L2 拍B (37.459s, 驻留 2.67s)`：销售找客、法务兜底、公司【抗坏账】 ｜ *Sales finds buyers, legal takes risks, firms absorb bad debt*
+- **[S07 | `40.131s - 46.543s` (dur `6.412s`, Beat B @ `43.337s`)]**
+  - `L1 画内锚字`：`生产提速 10 倍 / 内部成本归 0`
+  - `L2 拍A (40.131s, 驻留 3.21s)`：新工具确实把写码画图【提速10倍】 ｜ *True, AI speeds up coding and drafting by tenfold*
+  - `L2 拍B (43.337s, 驻留 3.21s)`：把团队内部的沟通成本【压到了零】 ｜ *Crushing internal production costs nearly down to zero*
+
+### 【第三幕：底层算账 · 100 倍供给通胀与 70% 买路钱 (`00:46.543 - 01:12.188` | S08–S11)】
+- **[S08 | `46.543s - 54.023s` (dur `7.480s`, Beat B @ `49.749s`)]**
+  - `L1 画内锚字`：`脱离公司 / 同类供给涨 100 倍`
+  - `L2 拍A (46.543s, 驻留 3.21s)`：可当你以为能【甩掉公司】单干时 ｜ *Yet the moment you ditch the company to go solo*
+  - `L2 拍B (49.749s, 驻留 4.27s)`：全网同类作品，也暴涨了【100倍】 ｜ *Identical AI products across the web explode a hundredfold*
+- **[S09 | `54.023s - 59.365s` (dur `5.342s`, Beat B @ `56.694s`)]**
+  - `L1 画内锚字`：`生产成本归 0 / 找客成本涨 10 倍`
+  - `L2 拍A (54.023s, 驻留 2.67s)`：做东西的成本归零，【找客成本】暴涨 ｜ *When making things costs zero, finding buyers costs tenfold*
+  - `L2 拍B (56.694s, 驻留 2.67s)`：没有公司招牌，没人敢付【第一笔钱】 ｜ *Without a firm's trust, no one pays the first invoice*
+- **[S10 | `59.365s - 65.777s` (dur `6.412s`, Beat B @ `62.571s`)]**
+  - `L1 画内锚字`：`8 人小工坊 / 10 万投流包`
+  - `L2 拍A (59.365s, 驻留 3.21s)`：八人小店被诱导升级【企业专业号】 ｜ *An eight-person shop was nudged into a Pro Account*
+  - `L2 拍B (62.571s, 驻留 3.21s)`：自然流量秒断，不买【投流包】就没客 ｜ *Organic reach vanished instantly: buy ad packages or starve*
+- **[S11 | `65.777s - 72.188s` (dur `6.411s`, Beat B @ `68.983s`)]**
+  - `L1 画内锚字`：`省下房租工资 / 70% 平台买路钱`
+  - `L2 拍A (65.777s, 驻留 3.21s)`：你以为单干省下了【房租和工资】 ｜ *You thought going solo saved office rent and payroll*
+  - `L2 拍B (68.983s, 驻留 3.21s)`：结果【70%毛利】全交了平台买路钱 ｜ *Instead, 70% of your margin went to platform ad tolls*
+
+### 【第四幕：第二重颠覆 · 6505 人自由悖论与生存底表 (`01:12.188 - 01:37.834` | S12–S15)】
+- **[S12 | `72.188s - 79.668s` (dur `7.480s`, Beat B @ `75.394s`)]**
+  - `L1 画内锚字`：`2026 追踪实测 / 6,505 名单干者`
+  - `L2 拍A (72.188s, 驻留 3.21s)`：那不用看老板脸色，总更【自由】吧？ ｜ *Without a human boss, shouldn't you feel much freer?*
+  - `L2 拍B (75.394s, 驻留 4.27s)`：2026年学者追踪【6505名】单干者 ｜ *In 2026, researchers tracked 6,505 independent platform workers*
+- **[S13 | `79.668s - 86.080s` (dur `6.412s`, Beat B @ `82.874s`)]**
+  - `L1 画内锚字`：`精神耗竭涨 42% / 24 小时断更掉权`
+  - `L2 拍A (79.668s, 驻留 3.21s)`：结果离开公司后，耗竭率【暴涨42%】 ｜ *After leaving companies, worker burnout surged by 42%*
+  - `L2 拍B (82.874s, 驻留 3.21s)`：断更一天就掉权重，生病也【不敢停】 ｜ *Miss one day, lose your reach—even sick days vanish*
+- **[S14 | `86.080s - 91.422s` (dur `5.342s`, Beat B @ `88.751s`)]**
+  - `L1 画内锚字`：`朝九晚五老板 / 24 小时算法监工`
+  - `L2 拍A (86.080s, 驻留 2.67s)`：你炒掉了朝九晚五的【人类老板】 ｜ *You fired a nine-to-five human boss at the office*
+  - `L2 拍B (88.751s, 驻留 2.67s)`：却请回24小时不休的【算法监工】 ｜ *Only to hire a ruthless 24/7 algorithmic overseer*
+- **[S15 | `91.422s - 97.834s` (dur `6.412s`, Beat B @ `94.628s`)]**
+  - `L1 画内锚字`：`83% 不足 500 刀 / 70 项死掉 66 个`
+  - `L2 拍A (91.422s, 驻留 3.21s)`：去掉卖课，【83%】单干者月入不足五百刀 ｜ *Beyond course-sellers, 83% of solo builders net under $500*
+  - `L2 拍B (94.628s, 驻留 3.21s)`：连独狼鼻祖，70个项目也【死掉66个】 ｜ *Even solo pioneer Pieter Levels saw 66 of 70 fail*
+
+### 【第五幕：双向蒸馏与第四面墙灵魂暴击 (`01:37.834 - 01:52.794` | S16–S17)】
+- **[S16 | `97.834s - 104.245s` (dur `6.411s`, Beat B @ `101.040s`)]**
+  - `L1 画内锚字`：`双向蒸馏 / 60 分算力平权`
+  - `L2 拍A (97.834s, 驻留 3.21s)`：最残酷的真相，叫【双向蒸馏】 ｜ *The cruelest truth of all is two-way distillation*
+  - `L2 拍B (101.040s, 驻留 3.21s)`：你能拿工具替员工，甲方也能【替掉你】 ｜ *You replace staff with AI; clients replace you with AI*
+- **[S17 | `104.245s - 112.794s` (dur `8.549s`, Beat B @ `108.519s`)]**
+  - `L1 画内锚字`：`知乎 4,172 赞 / 凭什么非选你？`
+  - `L2 拍A (104.245s, 驻留 4.27s)`：直到知乎【4172赞】热评刺破屏幕 ｜ *A 4,172-upvote Zhihu comment pierced the illusion*
+  - `L2 拍B (108.519s, 驻留 4.28s)`：人人背后十个工具，甲方【凭什么选你】？ ｜ *With ten AIs behind everyone, why would clients pick you?*
+
+### 【第六幕：破局实操 · 14天收款测试与100个熟客闭环 (`01:52.794 - 02:12.000` | S18–S20)】
+- **[S18 | `112.794s - 119.205s` (dur `6.411s`, Beat B @ `116.000s`)]**
+  - `L1 画内锚字`：`拒绝裸辞 / 14 天收首款测试`
+  - `L2 拍A (112.794s, 驻留 3.21s)`：破局第一步：别裸辞，先做【14天测试】 ｜ *Step 1: Never quit blindly—run a 14-day test first*
+  - `L2 拍B (116.000s, 驻留 3.21s)`：先收【第一笔真钱】，没人买立刻换题 ｜ *Collect your first real payment in 14 days, or pivot*
+- **[S19 | `119.205s - 124.548s` (dur `5.343s`, Beat B @ `121.876s`)]**
+  - `L1 画内锚字`：`甩掉 60 分杂活 / 死磕 95 分手艺`
+  - `L2 拍A (119.205s, 驻留 2.67s)`：破局第二步：甩掉机器能做的【60分活】 ｜ *Step 2: Offload 60-point routine work to AI*
+  - `L2 拍B (121.876s, 驻留 2.67s)`：死磕机器做不到的【95分审美】与兜底 ｜ *Stake your value on 95-point taste and real accountability*
+- **[S20 | `124.548s - 132.000s` (dur `7.452s`, Beat B @ `127.754s`)]**
+  - `L1 画内锚字`：`100 个复购熟客 / 关掉凌晨 03:00 弹窗`
+  - `L2 拍A (124.548s, 驻留 3.21s)`：跳出竞价漏斗，攒下【100个】复购老客 ｜ *Bypass platform bidding and earn 100 repeat clients*
+  - `L2 拍B (127.754s, 驻留 4.25s)`：关掉凌晨三点的弹窗，你才【属于自己】 ｜ *Close those 3 a.m. pop-ups and reclaim your own life*
+
+---
+
+## 三、 九列导演分镜表 (`9-Column Director's Table` · 零视觉画法干预版)
+
+| 镜号 | 时间窗 & 拍数 (`112.30 BPM`) | 画内锚字 (`L1`) & 底部双语字幕 (`L2`) | 核心叙事事实与戏剧张力 (`Narrative Fact & Dramatic Tension` · 视觉实现由前端模型全权主导) | 观众多懂了什么 (`Takeaway`) | 叙事承担 (`Role`) | 单拍驻留与消化窗 (`Beat A / B Hold`) | 跨镜叙事衔接 (`Narrative Seam`) | 关键音效 (`SFX`) |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **S01** | `0.000s - 8.074s`<br>(`8.074s` / `8拍`) | **L1**: `一人抵一公司 / 140,000 星倒贴`<br>**L2 拍A**: 全网都在吹【一人抵一家公司】 (*Every feed preaches the one-person company myth*)<br>**L2 拍B**: 可14万星神作，账面却在【持续倒贴】 (*Yet a 140,000-star AI hit bleeds cash every month*) | 呈现 具象刺痛 · 14万星神话的亏本账单 之核心事实：点破全网“一人独角兽”神话背后的真实亏损账本（OpenClaw 案例）（具体几何构图与动效由前端模型自主设计） | 点破全网“一人独角兽”神话背后的真实亏损账本（OpenClaw 案例） | `Hook` | 拍A `3.80s`<br>拍B `4.27s`<br>(含 `>=1.8s` 静置消化窗) | 开场首镜：`0.000s` 首帧零淡入直接点题，`0.433s` 首重瞬态脉冲，`3.800s` 重拍 Drop 砸出 14 万星亏损反差 | `whoosh_deep + slam_impact` |
+| **S02** | `8.074s - 15.554s`<br>(`7.480s` / `14拍`) | **L1**: `月入 20,000 美金 / 算力账单赤字`<br>**L2 拍A**: 开发者单枪匹马，写完【全部代码】 (*One solo builder wrote every line of code with AI*)<br>**L2 拍B**: 月入两万美金，不够交【算力账单】 (*Earning twenty grand a month, yet crushed by server bills*) | 呈现 具象刺痛 · 14万星神话的亏本账单 之核心事实：代码可以一个人写完，但云端算力账单与合规责任从不打折（具体几何构图与动效由前端模型自主设计） | 代码可以一个人写完，但云端算力账单与合规责任从不打折 | `Contrast` | 拍A `3.21s`<br>拍B `4.27s`<br>(含 `>=1.8s` 静置消化窗) | 承接 S01 的 14 万星开源项目，展开其“单人写完代码 vs 月入 2 万美金难抵算力账单”的财务赤字 | `coin_clatter` |
+| **S03** | `15.554s - 20.897s`<br>(`5.343s` / `10拍`) | **L1**: `1 人开 10 窗 / 凌晨 03:00`<br>**L2 拍A**: 更有一人开【10个窗口】熬到半夜 (*Another engineer ran ten AI windows until 3 a.m.*)<br>**L2 拍B**: 以为当了老板，其实成了【接线员】 (*Thinking he became a boss, he became a switchboard operator*) | 呈现 具象刺痛 · 14万星神话的亏本账单 之核心事实：LinuxDO #2943812 实录：一人包揽五工种，沦为十个窗口的通宵接线员（具体几何构图与动效由前端模型自主设计） | LinuxDO #2943812 实录：一人包揽五工种，沦为十个窗口的通宵接线员 | `Escalation` | 拍A `2.67s`<br>拍B `2.67s`<br>(含 `>=1.8s` 静置消化窗) | 从海外独狼案例推入国内 LinuxDO 全栈工程师凌晨 3 点同时开 10 个窗口、沦为接线员的切身处境 | `glitch_tear` |
+| **S04** | `20.897s - 27.308s`<br>(`6.411s` / `12拍`) | **L1**: `1937 科斯定理 / 《企业的性质》`<br>**L2 拍A**: 为什么工具越强，单干反而【越累】？ (*Why does working solo get harder as AI grows stronger?*)<br>**L2 拍B**: 答案藏在1937年的【科斯定理】里 (*The answer lies in Ronald Coase's 1937 theorem*) | 呈现 第一重颠覆 · 1937 科斯之问与生产提效 之核心事实：抛出全片核心追问，引出诺贝尔经济学奖得主科斯的经典命题（具体几何构图与动效由前端模型自主设计） | 抛出全片核心追问，引出诺贝尔经济学奖得主科斯的经典命题 | `Twist 1 Setup` | 拍A `3.21s`<br>拍B `3.21s`<br>(含 `>=1.8s` 静置消化窗) | 承接 S03 凌晨三点的疲惫追问“为什么工具越强单干越累”，时间倒拨至 1937 年科斯《企业的性质》 | `lock_click` |
+| **S05** | `27.308s - 34.788s`<br>(`7.480s` / `14拍`) | **L1**: `自由接单 / 50 人公司`<br>**L2 拍A**: 科斯问：既然人人都可【自由接单】 (*Coase asked: if anyone can trade freely on the market*)<br>**L2 拍B**: 世上为何还会有笨重的【公司】？ (*Why do clumsy companies still exist at all?*) | 呈现 第一重颠覆 · 1937 科斯之问与生产提效 之核心事实：用大白话还原“科斯之问”：既然市场能交易一切，为什么还需要公司？（具体几何构图与动效由前端模型自主设计） | 用大白话还原“科斯之问”：既然市场能交易一切，为什么还需要公司？ | `Reframing` | 拍A `3.21s`<br>拍B `4.27s`<br>(含 `>=1.8s` 静置消化窗) | 顺着 S04 的 1937 年文献，抛出科斯的核心问题：既然市场能自由接单，为什么还需要 50 人的公司？ | `paper_crumple` |
+| **S06** | `34.788s - 40.131s`<br>(`5.343s` / `10拍`) | **L1**: `外部摩擦减 90% / 销售 · 法务 · 兜底`<br>**L2 拍A**: 因为公司替你挡住了【外部扯皮】 (*Because a firm shields you from external market friction*)<br>**L2 拍B**: 销售找客、法务兜底、公司【抗坏账】 (*Sales finds buyers, legal takes risks, firms absorb bad debt*) | 呈现 第一重颠覆 · 1937 科斯之问与生产提效 之核心事实：揭开公司的真正价值：替普通人挡掉外部市场 90% 的获客、合同与赔付风险（具体几何构图与动效由前端模型自主设计） | 揭开公司的真正价值：替普通人挡掉外部市场 90% 的获客、合同与赔付风险 | `Mechanism` | 拍A `2.67s`<br>拍B `2.67s`<br>(含 `>=1.8s` 静置消化窗) | 正面回答 S05 的科斯之问：公司用销售、法务与商誉替普通个体挡住了 90% 的外部扯皮与坏账 | `singing_bowl_strike` |
+| **S07** | `40.131s - 46.543s`<br>(`6.412s` / `12拍`) | **L1**: `生产提速 10 倍 / 内部成本归 0`<br>**L2 拍A**: 新工具确实把写码画图【提速10倍】 (*True, AI speeds up coding and drafting by tenfold*)<br>**L2 拍B**: 把团队内部的沟通成本【压到了零】 (*Crushing internal production costs nearly down to zero*) | 呈现 第一重颠覆 · 1937 科斯之问与生产提效 之核心事实：铁人反方论证（Steelmanning）：承认 AI 在内部生产端确实带来 10 倍提效（具体几何构图与动效由前端模型自主设计） | 铁人反方论证（Steelmanning）：承认 AI 在内部生产端确实带来 10 倍提效 | `Steelmanning` | 拍A `3.21s`<br>拍B `3.21s`<br>(含 `>=1.8s` 静置消化窗) | 铁人反方论证（Steelmanning）：客观承认新工具确实把内部写码画图提速 10 倍、将内部沟通成本压向 0 | `whoosh_deep` |
+| **S08** | `46.543s - 54.023s`<br>(`7.480s` / `14拍`) | **L1**: `脱离公司 / 同类供给涨 100 倍`<br>**L2 拍A**: 可当你以为能【甩掉公司】单干时 (*Yet the moment you ditch the company to go solo*)<br>**L2 拍B**: 全网同类作品，也暴涨了【100倍】 (*Identical AI products across the web explode a hundredfold*) | 呈现 底层算账 · 100 倍供给通胀与 70% 买路钱 之核心事实：揭示科斯定理下半场：每个人生产成本归零，意味着全网同质供给暴涨 100 倍（具体几何构图与动效由前端模型自主设计） | 揭示科斯定理下半场：每个人生产成本归零，意味着全网同质供给暴涨 100 倍 | `Probe` | 拍A `3.21s`<br>拍B `4.27s`<br>(含 `>=1.8s` 静置消化窗) | 咬住 S07 的“内部成本归零”反转：当你甩掉公司单干时，全网同类作品在同一秒暴涨了 100 倍 | `reverse_suck` |
+| **S09** | `54.023s - 59.365s`<br>(`5.342s` / `10拍`) | **L1**: `生产成本归 0 / 找客成本涨 10 倍`<br>**L2 拍A**: 做东西的成本归零，【找客成本】暴涨 (*When making things costs zero, finding buyers costs tenfold*)<br>**L2 拍B**: 没有公司招牌，没人敢付【第一笔钱】 (*Without a firm's trust, no one pays the first invoice*) | 呈现 底层算账 · 100 倍供给通胀与 70% 买路钱 之核心事实：生产成本归零与外部获客成本飙升 10 倍的残酷剪刀差（具体几何构图与动效由前端模型自主设计） | 生产成本归零与外部获客成本飙升 10 倍的残酷剪刀差 | `Data Slam` | 拍A `2.67s`<br>拍B `2.67s`<br>(含 `>=1.8s` 静置消化窗) | 承接 S08 的 100 倍供给爆炸，揭示“生产成本归 0 vs 外部找客成本暴涨 10 倍”的剪刀差 | `slam_impact` |
+| **S10** | `59.365s - 65.777s`<br>(`6.412s` / `12拍`) | **L1**: `8 人小工坊 / 10 万投流包`<br>**L2 拍A**: 八人小店被诱导升级【企业专业号】 (*An eight-person shop was nudged into a Pro Account*)<br>**L2 拍B**: 自然流量秒断，不买【投流包】就没客 (*Organic reach vanished instantly: buy ad packages or starve*) | 呈现 底层算账 · 100 倍供给通胀与 70% 买路钱 之核心事实：B站 2831 赞真实案例：升级专业号后自然流断绝，被迫掏 1–10 万买曝光（具体几何构图与动效由前端模型自主设计） | B站 2831 赞真实案例：升级专业号后自然流断绝，被迫掏 1–10 万买曝光 | `Case Study` | 拍A `3.21s`<br>拍B `3.21s`<br>(含 `>=1.8s` 静置消化窗) | 将 S09 的 10 倍找客成本具象化为 B 站 2831 赞真实案例：8 人小店升专业号后被断自然流、逼买 10 万投流包 | `lock_click` |
+| **S11** | `65.777s - 72.188s`<br>(`6.411s` / `12拍`) | **L1**: `省下房租工资 / 70% 平台买路钱`<br>**L2 拍A**: 你以为单干省下了【房租和工资】 (*You thought going solo saved office rent and payroll*)<br>**L2 拍B**: 结果【70%毛利】全交了平台买路钱 (*Instead, 70% of your margin went to platform ad tolls*) | 呈现 底层算账 · 100 倍供给通胀与 70% 买路钱 之核心事实：算清资金总账：省下的办公室房租工资，最终变成交给算法平台的竞价买路钱（具体几何构图与动效由前端模型自主设计） | 算清资金总账：省下的办公室房租工资，最终变成交给算法平台的竞价买路钱 | `Ledger Truth` | 拍A `3.21s`<br>拍B `3.21s`<br>(含 `>=1.8s` 静置消化窗) | 汇总 S08–S10 算清总账：单干省下的房租和工资，70% 变成了交给平台的买路钱 | `coin_clatter` |
+| **S12** | `72.188s - 79.668s`<br>(`7.480s` / `14拍`) | **L1**: `2026 追踪实测 / 6,505 名单干者`<br>**L2 拍A**: 那不用看老板脸色，总更【自由】吧？ (*Without a human boss, shouldn't you feel much freer?*)<br>**L2 拍B**: 2026年学者追踪【6505名】单干者 (*In 2026, researchers tracked 6,505 independent platform workers*) | 呈现 第二重颠覆 · 6505 人自由悖论与生存底表 之核心事实：开启第二重认知颠覆：单干真的能换来时间自由与身心解放吗？（具体几何构图与动效由前端模型自主设计） | 开启第二重认知颠覆：单干真的能换来时间自由与身心解放吗？ | `Twist 2 Setup` | 拍A `3.21s`<br>拍B `4.27s`<br>(含 `>=1.8s` 静置消化窗) | 从财务账转入心理账：既然不赚钱，那至少不用看老板脸色更自由吧？引出 2026 年 6505 人追踪实测 | `glass_shatter + heartbeat_lub_dub` |
+| **S13** | `79.668s - 86.080s`<br>(`6.412s` / `12拍`) | **L1**: `精神耗竭涨 42% / 24 小时断更掉权`<br>**L2 拍A**: 结果离开公司后，耗竭率【暴涨42%】 (*After leaving companies, worker burnout surged by 42%*)<br>**L2 拍B**: 断更一天就掉权重，生病也【不敢停】 (*Miss one day, lose your reach—even sick days vanish*) | 呈现 第二重颠覆 · 6505 人自由悖论与生存底表 之核心事实：管理心理学顶刊实证：脱离组织缓冲后，自主权悖论令倦怠率逆势飙升 42%（具体几何构图与动效由前端模型自主设计） | 管理心理学顶刊实证：脱离组织缓冲后，自主权悖论令倦怠率逆势飙升 42% | `Midpoint Twist` | 拍A `3.21s`<br>拍B `3.21s`<br>(含 `>=1.8s` 静置消化窗) | 揭晓 S12 的 6505 人实测结果：离开公司后精神耗竭反而暴涨 42%，断更一天就掉权重 | `slam_impact` |
+| **S14** | `86.080s - 91.422s`<br>(`5.342s` / `10拍`) | **L1**: `朝九晚五老板 / 24 小时算法监工`<br>**L2 拍A**: 你炒掉了朝九晚五的【人类老板】 (*You fired a nine-to-five human boss at the office*)<br>**L2 拍B**: 却请回24小时不休的【算法监工】 (*Only to hire a ruthless 24/7 algorithmic overseer*) | 呈现 第二重颠覆 · 6505 人自由悖论与生存底表 之核心事实：点破心理机制：没有带薪病假与五险一金，算法皮鞭全天候驻扎进大脑（具体几何构图与动效由前端模型自主设计） | 点破心理机制：没有带薪病假与五险一金，算法皮鞭全天候驻扎进大脑 | `Neuro Root` | 拍A `2.67s`<br>拍B `2.67s`<br>(含 `>=1.8s` 静置消化窗) | 剖析 S13 耗竭暴涨的根因：炒掉朝九晚五的人类老板，却把 24 小时不休的算法监工请进了大脑 | `heartbeat_lub_dub` |
+| **S15** | `91.422s - 97.834s`<br>(`6.412s` / `12拍`) | **L1**: `83% 不足 500 刀 / 70 项死掉 66 个`<br>**L2 拍A**: 去掉卖课，【83%】单干者月入不足五百刀 (*Beyond course-sellers, 83% of solo builders net under $500*)<br>**L2 拍B**: 连独狼鼻祖，70个项目也【死掉66个】 (*Even solo pioneer Pieter Levels saw 66 of 70 fail*) | 呈现 第二重颠覆 · 6505 人自由悖论与生存底表 之核心事实：用 Reddit 83% 生存底表与 Pieter Levels 4/70 胜率刺破幸存者泡沫（具体几何构图与动效由前端模型自主设计） | 用 Reddit 83% 生存底表与 Pieter Levels 4/70 胜率刺破幸存者泡沫 | `Base Rate` | 拍A `3.21s`<br>拍B `3.21s`<br>(含 `>=1.8s` 静置消化窗) | 叠加生存率底表：剥离卖课后 83% 单干者月入不足 500 刀，连独狼鼻祖 70 个项目也死掉 66 个 | `water_drop` |
+| **S16** | `97.834s - 104.245s`<br>(`6.411s` / `12拍`) | **L1**: `双向蒸馏 / 60 分算力平权`<br>**L2 拍A**: 最残酷的真相，叫【双向蒸馏】 (*The cruelest truth of all is two-way distillation*)<br>**L2 拍B**: 你能拿工具替员工，甲方也能【替掉你】 (*You replace staff with AI; clients replace you with AI*) | 呈现 双向蒸馏与第四面墙灵魂暴击 之核心事实：理论总装：当 60 分标准化算力彻底平权，纯执行接口的议价权必然归零（具体几何构图与动效由前端模型自主设计） | 理论总装：当 60 分标准化算力彻底平权，纯执行接口的议价权必然归零 | `Synthesis` | 拍A `3.21s`<br>拍B `3.21s`<br>(含 `>=1.8s` 静置消化窗) | 理论总装：为什么单干如此艰难？因为“双向蒸馏”——你能拿工具替员工，甲方也能拿工具替掉你 | `glitch_tear` |
+| **S17** | `104.245s - 112.794s`<br>(`8.549s` / `16拍`) | **L1**: `知乎 4,172 赞 / 凭什么非选你？`<br>**L2 拍A**: 直到知乎【4172赞】热评刺破屏幕 (*A 4,172-upvote Zhihu comment pierced the illusion*)<br>**L2 拍B**: 人人背后十个工具，甲方【凭什么选你】？ (*With ten AIs behind everyone, why would clients pick you?*) | 呈现 双向蒸馏与第四面墙灵魂暴击 之核心事实：打破第四面墙的高潮审视：当工具人人可得，凭什么非选你不可？（具体几何构图与动效由前端模型自主设计） | 打破第四面墙的高潮审视：当工具人人可得，凭什么非选你不可？ | `Meta Moment` | 拍A `4.27s`<br>拍B `4.28s`<br>(含 `>=1.8s` 静置消化窗) | 全片第四面墙高潮（4 小节 `8.549s`）：知乎 4172 赞热评直视观众提问——人人背后十个工具，凭什么选你？ | `singing_bowl` |
+| **S18** | `112.794s - 119.205s`<br>(`6.411s` / `12拍`) | **L1**: `拒绝裸辞 / 14 天收首款测试`<br>**L2 拍A**: 破局第一步：别裸辞，先做【14天测试】 (*Step 1: Never quit blindly—run a 14-day test first*)<br>**L2 拍B**: 先收【第一笔真钱】，没人买立刻换题 (*Collect your first real payment in 14 days, or pivot*) | 呈现 破局实操 · 14天收款测试与100个熟客闭环 之核心事实：破局实操一：对冲 66/70 失败率，在职用 14 天最小原型验证真实付款意愿（具体几何构图与动效由前端模型自主设计） | 破局实操一：对冲 66/70 失败率，在职用 14 天最小原型验证真实付款意愿 | `Payoff 1` | 拍A `3.21s`<br>拍B `3.21s`<br>(含 `>=1.8s` 静置消化窗) | 回应 S17 的灵魂追问，给出破局第一步（针对 70 死 66）：别裸辞，先做 14 天最小作品收第一笔真钱 | `singing_bowl_strike` |
+| **S19** | `119.205s - 124.548s`<br>(`5.343s` / `10拍`) | **L1**: `甩掉 60 分杂活 / 死磕 95 分手艺`<br>**L2 拍A**: 破局第二步：甩掉机器能做的【60分活】 (*Step 2: Offload 60-point routine work to AI*)<br>**L2 拍B**: 死磕机器做不到的【95分审美】与兜底 (*Stake your value on 95-point taste and real accountability*) | 呈现 破局实操 · 14天收款测试与100个熟客闭环 之核心事实：破局实操二：对冲双向蒸馏，不拼批量走量，专攻 95 分审美决断与责任兜底（具体几何构图与动效由前端模型自主设计） | 破局实操二：对冲双向蒸馏，不拼批量走量，专攻 95 分审美决断与责任兜底 | `Payoff 2` | 拍A `2.67s`<br>拍B `2.67s`<br>(含 `>=1.8s` 静置消化窗) | 给出破局第二步（针对双向蒸馏）：甩掉机器能做的 60 分杂活，死磕机器做不到的 95 分审美与兜底 | `lock_click` |
+| **S20** | `124.548s - 132.000s`<br>(`7.452s` / `14拍`) | **L1**: `100 个复购熟客 / 关掉凌晨 03:00 弹窗`<br>**L2 拍A**: 跳出竞价漏斗，攒下【100个】复购老客 (*Bypass platform bidding and earn 100 repeat clients*)<br>**L2 拍B**: 关掉凌晨三点的弹窗，你才【属于自己】 (*Close those 3 a.m. pop-ups and reclaim your own life*) | 呈现 破局实操 · 14天收款测试与100个熟客闭环 之核心事实：破局实操三与首尾闭环：用 100 个复购熟客破除 70% 买路钱漏斗，回扣 S01–S03 凌晨三点书桌（具体几何构图与动效由前端模型自主设计） | 破局实操三与首尾闭环：用 100 个复购熟客破除 70% 买路钱漏斗，回扣 S01–S03 凌晨三点书桌 | `Callback` | 拍A `3.21s`<br>拍B `4.25s`<br>(含 `>=1.8s` 静置消化窗) | 给出破局第三步并回扣 S01–S03 开场：攒下 100 个复购熟客跳出竞价漏斗，关掉凌晨三点的弹窗 | `singing_bowl` |
